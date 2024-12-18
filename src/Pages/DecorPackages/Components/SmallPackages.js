@@ -1,6 +1,6 @@
 import React from 'react';
 import Grid from '@mui/material/Grid2';
-import fullPackageData from '../PackageData';
+import { fullPackageData } from '../PackageData';
 import { Card, CardMedia, CardContent, Box } from '@mui/material';
 import Price from '../../../ReuseableComponents/Price';
 import {
@@ -14,6 +14,7 @@ import {
 	IncludedTwo,
 } from '../DecorPackagesStyles';
 import theme from '../../../../src/theme';
+
 export default function SmallPackages() {
 	return (
 		<Grid container spacing={2} sx={{ alignItems: 'stretch' }}>

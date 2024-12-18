@@ -6,15 +6,25 @@ import Grid from '@mui/material/Grid2';
 import { Facebook, Instagram } from '@mui/icons-material';
 import logo from '../src/Assets/Logo/AnsomEvents.svg';
 
+const footerStyles = {
+	footerContainer: {
+		color: 'black',
+		p: 4,
+		background: '#f2f9ff',
+	},
+	footerLogo: {
+		width: '250px',
+		marginBottom: '1rem',
+	},
+	footerLink: {
+		width: '250px',
+		marginBottom: '1rem',
+	},
+};
+
 const Footer = () => {
 	return (
-		<Box
-			component='footer'
-			sx={{
-				color: 'black',
-				p: 4,
-				background: '#f2f9ff',
-			}}>
+		<Box component='footer' sx={{ ...footerStyles.footerContainer }}>
 			<Grid container spacing={4}>
 				<Grid item size={{ xs: 12, sm: 4 }}>
 					<Box>
@@ -23,7 +33,7 @@ const Footer = () => {
 							alt='Logo Of Ansom Events'
 							title='Logo Of Ansom Events'
 							loading='lazy'
-							style={{ width: '250px', marginBottom: '1rem' }}
+							style={{ ...footerStyles.footerLogo }}
 						/>
 					</Box>
 				</Grid>
@@ -36,15 +46,13 @@ const Footer = () => {
 						<MuiLink
 							component={Link}
 							to='/decorpackages'
-							underline='hover'
-							display='block'>
+							sx={{ ...footerStyles.footerLink }}>
 							Decor Packages
 						</MuiLink>
 						<MuiLink
 							component={Link}
 							to='/latestspecials'
-							underline='hover'
-							display='block'>
+							sx={{ ...footerStyles.footerLink }}>
 							Latest Specials
 						</MuiLink>
 
