@@ -5,6 +5,51 @@ import xmasTree from '../../Assets/Photos/Specials/christmasTreeBalloons.jpg';
 import santaBalloon from '../../Assets/Photos/Specials/santaBalloon.jpg';
 import Price from '../../ReuseableComponents/Price';
 
+const christmasCardStyles = {
+	cardContainer: {
+		display: 'flex',
+		flexDirection: { xs: 'column-reverse', md: 'row' },
+		boxShadow: 3,
+		borderRadius: '16px',
+		height: '100%',
+		padding: '0.75rem',
+	},
+	cardImage: {
+		width: { xs: '100%', md: '40%' },
+		aspectRatio: '2 / 3',
+		borderRadius: '12px',
+		objectFit: 'cover',
+		marginRight: { md: '1.5rem' },
+	},
+	cardContent: {
+		flex: 1,
+		display: 'flex',
+		flexDirection: 'column',
+		justifyContent: 'space-between',
+		textAlign: { xs: 'center', md: 'left' },
+		padding: '0',
+	},
+	cardStack: { width: '100%', alignItems: 'center', marginBlock: '1em' },
+	cardTitle: { fontSize: '0.6em', textTransform: 'uppercase', fontWeight: 600 },
+	cardProductTitle: {
+		fontSize: { xs: '1.4em', md: '2.1' },
+		fontWeight: 600,
+		textAlign: 'center',
+	},
+	cardDescription: {
+		marginBottom: '2em',
+		fontSize: '0.8rem',
+		paddingInline: { xs: '0.5rem', md: '0' },
+	},
+	cardDeliveryInfo: {
+		display: 'flex',
+		flexGrow: 1,
+		alignItems: 'flex-end',
+		justifyContent: 'center',
+		padding: '0',
+	},
+};
+
 const ChristmasCard = () => {
 	const products = [
 		{
@@ -27,83 +72,28 @@ const ChristmasCard = () => {
 		<Grid container spacing={4} marginBottom={4}>
 			{products.map((product, index) => (
 				<Grid item size={{ xs: 12, md: 6 }} key={index}>
-					<Card
-						sx={{
-							display: 'flex',
-							flexDirection: { xs: 'column-reverse', md: 'row' },
-							boxShadow: 3,
-							borderRadius: '16px',
-							height: '100%',
-							padding: '0.75rem',
-						}}>
-						{/* Image */}
+					<Card sx={{ ...christmasCardStyles.cardContainer }}>
 						<Box
 							component='img'
 							src={product.image}
-							alt='Product'
-							sx={{
-								width: { xs: '100%', md: '40%' },
-								aspectRatio: '2 / 3',
-								borderRadius: '12px',
-								objectFit: 'cover',
-								marginRight: { md: '1.5rem' },
-							}}
+							alt={product.title}
+							title={product.title}
+							sx={{ ...christmasCardStyles.cardImage }}
 						/>
-
-						{/* Text Content */}
-						<CardContent
-							sx={{
-								flex: 1,
-								display: 'flex',
-								flexDirection: 'column',
-								justifyContent: 'space-between',
-								textAlign: { xs: 'center', md: 'left' },
-
-								padding: '0',
-							}}>
-							<Stack
-								sx={{
-									width: '100%',
-									alignItems: 'center',
-									marginBlock: '1em',
-								}}>
-								<Typography
-									sx={{
-										fontSize: '0.6em',
-										textTransform: 'uppercase',
-										fontWeight: 600,
-									}}>
+						<CardContent sx={{ ...christmasCardStyles.cardContent }}>
+							<Stack sx={{ ...christmasCardStyles.cardStack }}>
+								<Typography sx={{ ...christmasCardStyles.cardTitle }}>
 									Christmas Special
 								</Typography>
-								<Typography
-									sx={{
-										fontSize: { xs: '1.4em', md: '2.1' },
-										fontWeight: 600,
-										textAlign: 'center',
-									}}>
+								<Typography sx={{ ...christmasCardStyles.cardProductTitle }}>
 									{product.title}
 								</Typography>
 							</Stack>
-							{/* Description */}
-							<Typography
-								sx={{
-									marginBottom: '2em',
-									fontSize: '0.8rem',
-									paddingInline: { xs: '0.5rem', md: '0' },
-								}}>
+							<Typography sx={{ ...christmasCardStyles.cardDescription }}>
 								{product.description}
 							</Typography>
-
-							{/* Price */}
 							<Price price={product.price} />
-							<Box
-								sx={{
-									display: 'flex',
-									flexGrow: 1,
-									alignItems: 'flex-end',
-									justifyContent: 'center',
-									padding: '0',
-								}}>
+							<Box sx={{ ...christmasCardStyles.cardDeliveryInfo }}>
 								<Typography>* Not including delivery</Typography>
 							</Box>
 						</CardContent>

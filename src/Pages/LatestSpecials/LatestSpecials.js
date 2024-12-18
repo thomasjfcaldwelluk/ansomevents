@@ -8,7 +8,6 @@ import PageTitle from '../../ReuseableComponents/PageTitle.js';
 const LatestSpecials = () => {
 	return (
 		<>
-			{/* Section 1: Portrait Image, Text, and Price */}
 			<LatestSpecialsContainer container>
 				<PageTitle
 					pageHeader='Latest Specials'

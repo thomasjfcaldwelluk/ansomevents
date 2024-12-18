@@ -56,7 +56,10 @@ const Footer = () => {
 							Latest Specials
 						</MuiLink>
 
-						<Typography variant='caption' sx={{ mt: 2, display: 'block' }}>
+						<Typography
+							variant='caption'
+							component={'p'}
+							sx={{ mt: 2, display: 'block' }}>
 							<Link href='#section1' underline='hover'>
 								Gallery
 							</Link>{' '}
@@ -79,7 +82,10 @@ const Footer = () => {
 						<IconButton href='https://instagram.com' target='_blank'>
 							<Instagram />
 						</IconButton>
-						<Typography variant='caption' sx={{ mt: 2, display: 'block' }}>
+						<Typography
+							variant='caption'
+							component={'p'}
+							sx={{ mt: 2, display: 'block' }}>
 							© 2024 Ansom Events. All rights reserved.
 						</Typography>
 					</Box>

@@ -61,13 +61,17 @@ const theme = createTheme({
 		subtitle1: {},
 		subtitle2: {},
 		body1: {
-			fontSize: '14px', // Custom font size for <p> tags
-			lineHeight: '1.6', // Custom line height
-			fontWeight: '400', // Custom font weight
-			fontFamily: 'Montserrat,sans-serif', // Custom font family
+			fontSize: '14px',
+			lineHeight: '1.6',
+			fontWeight: '400',
 			textAlign: 'left',
 		},
-		body2: {},
+		body2: {
+			fontSize: '16px',
+			lineHeight: '1.6',
+			fontWeight: '500',
+			textAlign: 'left',
+		},
 		button: {},
 		caption: {},
 		overline: {},

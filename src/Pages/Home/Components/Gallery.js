@@ -54,7 +54,11 @@ const imagesMore = [
 
 export default function Gallery() {
 	return (
-		<Box padding={4} sx={{ backgroundColor: theme.palette.primaryBlue.main }}>
+		<Box
+			padding={4}
+			sx={{ backgroundColor: theme.palette.primaryBlue.main }}
+			component='section'
+			className='Ansom_Events_Gallery'>
 			<SectionHeader
 				sectionHeader='Gallery'
 				sectionSubheader='Our Portfolio Of Dreams'

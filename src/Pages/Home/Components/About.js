@@ -22,6 +22,8 @@ export default function About() {
 
 	return (
 		<Box
+			component='section'
+			className='About_Ansom_Events'
 			sx={{
 				padding: { xs: 0, md: 4 },
 				backgroundColor: theme.palette.primaryBlue.main,

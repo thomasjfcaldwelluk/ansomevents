@@ -67,92 +67,94 @@ const serviceData = [
 
 export default function Services() {
 	return (
-		<Grid
-			container
-			sx={{ backgroundColor: theme.palette.background.default }}
-			padding={4}
-			spacing={3}>
-			<SectionHeader
-				sectionHeader='Our Services'
-				sectionSubheader='We Craft Memories Of Dreams'
-				color={theme.palette.darkBlack.main}
-			/>
-			{/* First Row with 3 Cards */}
-			<Grid container item spacing={4}>
-				{serviceData.slice(0, 3).map((item) => (
-					<Grid item size={{ xs: 12, lg: 4 }} key={item.id}>
-						<Card
-							sx={{
-								height: '100%',
-								padding: 2,
-								borderRadius: 2,
-								backgroundColor: theme.palette.background.paper,
-							}}>
-							<Box>{item.icon}</Box>
-							<CardContent>
-								<Typography
-									sx={{
-										fontSize: '18px',
-										textAlign: 'center',
-										fontWeight: '500',
-										color: theme.palette.darkBlack.main,
-										margin: '-20px 0 20px 0',
-									}}
-									gutterBottom>
-									{item.title}
-								</Typography>
-								<Typography
-									sx={{
-										fontSize: '13px',
-										textAlign: 'center',
-										fontWeight: '300',
-										color: theme.palette.lightBlack.main,
-									}}>
-									{item.description}
-								</Typography>
-							</CardContent>
-						</Card>
-					</Grid>
-				))}
+		<Box component='section' className='Ansom_Events_Services'>
+			<Grid
+				container
+				sx={{ backgroundColor: theme.palette.background.default }}
+				padding={4}
+				spacing={3}>
+				<SectionHeader
+					sectionHeader='Our Services'
+					sectionSubheader='We Craft Memories Of Dreams'
+					color={theme.palette.darkBlack.main}
+				/>
+				{/* First Row with 3 Cards */}
+				<Grid container item spacing={4}>
+					{serviceData.slice(0, 3).map((item) => (
+						<Grid item size={{ xs: 12, lg: 4 }} key={item.id}>
+							<Card
+								sx={{
+									height: '100%',
+									padding: 2,
+									borderRadius: 2,
+									backgroundColor: theme.palette.background.paper,
+								}}>
+								<Box>{item.icon}</Box>
+								<CardContent>
+									<Typography
+										sx={{
+											fontSize: '18px',
+											textAlign: 'center',
+											fontWeight: '500',
+											color: theme.palette.darkBlack.main,
+											margin: '-20px 0 20px 0',
+										}}
+										gutterBottom>
+										{item.title}
+									</Typography>
+									<Typography
+										sx={{
+											fontSize: '13px',
+											textAlign: 'center',
+											fontWeight: '300',
+											color: theme.palette.lightBlack.main,
+										}}>
+										{item.description}
+									</Typography>
+								</CardContent>
+							</Card>
+						</Grid>
+					))}
+				</Grid>
+				{/* Second Row with 2 Cards */}
+				<Grid container item spacing={4}>
+					{serviceData.slice(3).map((item) => (
+						<Grid item size={{ xs: 12, sm: 6 }} key={item.id}>
+							<Card
+								sx={{
+									height: '100%',
+									padding: 2,
+									borderRadius: 2,
+									backgroundColor: theme.palette.background.paper,
+								}}>
+								<Box>{item.icon}</Box>
+								<CardContent>
+									<Typography
+										sx={{
+											fontSize: '18px',
+											textAlign: 'center',
+											fontWeight: '500',
+											color: theme.palette.darkBlack.main,
+											margin: '-20px 0 20px 0',
+										}}
+										gutterBottom>
+										{item.title}
+									</Typography>
+									<Typography
+										sx={{
+											fontSize: '13px',
+											textAlign: 'center',
+											fontWeight: '300',
+											color: theme.palette.lightBlack.main,
+										}}>
+										{item.description}
+									</Typography>
+								</CardContent>
+							</Card>
+						</Grid>
+					))}
+				</Grid>
 			</Grid>
-			{/* Second Row with 2 Cards */}
-			<Grid container item spacing={4}>
-				{serviceData.slice(3).map((item) => (
-					<Grid item size={{ xs: 12, sm: 6 }} key={item.id}>
-						<Card
-							sx={{
-								height: '100%',
-								padding: 2,
-								borderRadius: 2,
-								backgroundColor: theme.palette.background.paper,
-							}}>
-							<Box>{item.icon}</Box>
-							<CardContent>
-								<Typography
-									sx={{
-										fontSize: '18px',
-										textAlign: 'center',
-										fontWeight: '500',
-										color: theme.palette.darkBlack.main,
-										margin: '-20px 0 20px 0',
-									}}
-									gutterBottom>
-									{item.title}
-								</Typography>
-								<Typography
-									sx={{
-										fontSize: '13px',
-										textAlign: 'center',
-										fontWeight: '300',
-										color: theme.palette.lightBlack.main,
-									}}>
-									{item.description}
-								</Typography>
-							</CardContent>
-						</Card>
-					</Grid>
-				))}
-			</Grid>
-		</Grid>
+		</Box>
 	);
 }

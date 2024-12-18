@@ -50,7 +50,11 @@ const contactInfo = [
 
 export default function Contact() {
 	return (
-		<Box sx={{ backgroundColor: theme.palette.background.default }} padding={4}>
+		<Box
+			sx={{ backgroundColor: theme.palette.background.default }}
+			padding={4}
+			component='section'
+			className='Contact_Ansom_Events'>
 			<SectionHeader
 				sectionHeader='Contact Us'
 				sectionSubheader='We Would Love To Hear About Your Events'

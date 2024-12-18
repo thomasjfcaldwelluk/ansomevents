@@ -40,6 +40,7 @@ const imageHero = [
 export default function Hero() {
 	return (
 		<Box
+			component='section'
 			className='Hero_Section'
 			sx={{
 				backgroundColor: theme.palette.background.default,
