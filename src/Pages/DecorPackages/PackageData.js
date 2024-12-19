@@ -9,6 +9,9 @@ import ohBabyBanner from '../../Assets/Photos/Packages/OhBabyBannerAddOn.jpg';
 import ohBabyAddon from '../../Assets/Photos/Packages/ohBabyAddon.jpg';
 import chairAdd from '../../Assets/Photos/Packages/chairAddOn.jpg';
 import pedestalAdd from '../../Assets/Photos/Packages/pedestalStandAddOn.jpg';
+import oneSide from '../../Assets/Photos/Packages/oneSide.jpg';
+import lShape from '../../Assets/Photos/Packages/lShape.jpg';
+import fullSize from '../../Assets/Photos/Packages/fullSize.jpg';
 
 export const fullPackageData = [
 	{
@@ -111,5 +114,26 @@ export const addOnImages = [
 		image: pedestalAdd,
 		alt: 'Image of Decor Pedestal available from Ansom Events',
 		price: '75',
+	},
+];
+
+export const balloonImages = [
+	{
+		title: 'One Side',
+		image: oneSide,
+		alt: 'image of one side balloon garland available from Ansom Events',
+		price: '60',
+	},
+	{
+		title: 'L-Shape',
+		image: lShape,
+		alt: 'image of L-Shape balloon garland available from Ansom Events',
+		price: '90',
+	},
+	{
+		title: '18ft Garland',
+		image: fullSize,
+		alt: 'image of 18ft balloon garland available from Ansom Events',
+		price: '135',
 	},
 ];

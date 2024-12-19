@@ -30,28 +30,30 @@ const addOnStyles = {
 
 export default function AddOn() {
 	return (
-		<Grid container spacing={4} sx={{ ...addOnStyles.addOnContainer }}>
-			<Grid item size={12}>
-				<Typography sx={{ ...addOnStyles.addOnHeader }}>
-					Popular Props To Add
-				</Typography>
-			</Grid>
-			{addOnImages.map((data, index) => (
-				<Grid item key={index} size={{ xs: 6, md: 4, lg: 2 }}>
-					<Box
-						loading='lazy'
-						component='img'
-						src={data.image}
-						alt={data.alt}
-						title={data.title}
-						sx={{ ...addOnStyles.addOnImage }}
-					/>
-					<Typography sx={{ ...addOnStyles.addOnTitle }}>
-						{data.title}
+		<Box component='section' className='Ansom_Events_Addons'>
+			<Grid container spacing={4} sx={{ ...addOnStyles.addOnContainer }}>
+				<Grid item size={12}>
+					<Typography sx={{ ...addOnStyles.addOnHeader }}>
+						Popular Props To Add
 					</Typography>
-					<Price price={data.price} />
 				</Grid>
-			))}
-		</Grid>
+				{addOnImages.map((data, index) => (
+					<Grid item key={index} size={{ xs: 6, md: 4, lg: 2 }}>
+						<Box
+							loading='lazy'
+							component='img'
+							src={data.image}
+							alt={data.alt}
+							title={data.title}
+							sx={{ ...addOnStyles.addOnImage }}
+						/>
+						<Typography sx={{ ...addOnStyles.addOnTitle }}>
+							{data.title}
+						</Typography>
+						<Price price={data.price} />
+					</Grid>
+				))}
+			</Grid>
+		</Box>
 	);
 }

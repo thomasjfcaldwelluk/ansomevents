@@ -26,11 +26,11 @@ import Price from '../../../ReuseableComponents/Price';
 
 export default function Packages() {
 	return (
-		<Box>
+		<>
 			{fullPackageData.slice(0, 2).map((data, index) => (
 				<PackageContainer key={index}>
 					<PackageCardContainer container spacing={2}>
-						<ImageContainer item size={{ sm: 12, md: 7, lg: 6 }}>
+						<ImageContainer item size={{ xs: 12, md: 7, lg: 6 }}>
 							<Image
 								src={data.image}
 								alt={data.alt}
@@ -38,7 +38,7 @@ export default function Packages() {
 								title={data.title}
 							/>
 						</ImageContainer>
-						<ContentContainer item container size={{ sm: 12, md: 5, lg: 6 }}>
+						<ContentContainer item container size={{ xs: 12, md: 5, lg: 6 }}>
 							<TitleContainer item size={{ xs: 12 }}>
 								<Title>{data.title}</Title>
 							</TitleContainer>
@@ -66,6 +66,6 @@ export default function Packages() {
 					</PackageCardContainer>
 				</PackageContainer>
 			))}
-		</Box>
+		</>
 	);
 }

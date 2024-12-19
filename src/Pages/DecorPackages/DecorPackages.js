@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTheme } from '@mui/material';
+import { Box, useTheme } from '@mui/material';
 import Grid from '@mui/material/Grid2';
 import Packages from './Components/Packages';
 import PageTitle from '../../ReuseableComponents/PageTitle';
@@ -10,13 +10,7 @@ import { Helmet } from 'react-helmet-async';
 export default function DecorPackages() {
 	const theme = useTheme();
 	return (
-		<Grid
-			container
-			spacing={4}
-			sx={{
-				backgroundColor: theme.palette.primaryBlue.main,
-				padding: 3,
-			}}>
+		<Box component='main' className='Ansom_Events_Decor_Packages'>
 			<Helmet>
 				<title>Ansom Events - Full-Service Event Planning</title>
 				<meta
@@ -42,13 +36,22 @@ export default function DecorPackages() {
 				<meta property='og:url' content='https://ansomevents.com' />
 				<link rel='canonical' href='https://ansomevents.com/decorpackages' />
 			</Helmet>
-			<PageTitle
-				pageHeader='Decor Packages For Hire At Ansom Events'
-				pageSubheader='Impress Your Guests'
-			/>
-			<Packages />
-			<SmallPackages />
-			<AddOn />
-		</Grid>
+			<Grid
+				component={'section'}
+				container
+				spacing={4}
+				sx={{
+					backgroundColor: theme.palette.primaryBlue.main,
+					padding: 3,
+				}}>
+				<PageTitle
+					pageHeader='Decor Packages For Hire At Ansom Events'
+					pageSubheader='Impress Your Guests'
+				/>
+				<Packages />
+				<SmallPackages />
+				<AddOn />
+			</Grid>
+		</Box>
 	);
 }

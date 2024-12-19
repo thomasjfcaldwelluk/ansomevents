@@ -3,8 +3,10 @@ import Grid from '@mui/material/Grid2';
 import { Box, Typography } from '@mui/material';
 
 export const PriceSectionContainer = styled(Box)(({ theme }) => ({
-	// backgroundColor: 'blue',
 	padding: '1rem',
+	[`@media (min-width: 0px) and (max-width: 374px)`]: {
+		padding: '0.25rem',
+	},
 }));
 
 export const PriceContainer = styled(Grid)(({ theme }) => ({

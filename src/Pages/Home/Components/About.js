@@ -5,17 +5,10 @@ import them from '../../../Assets/Photos/HomePageImages/ownersLandscape.jpg';
 import Grid from '@mui/material/Grid2';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import theme from '../../../theme';
+import { rows } from './HomeData';
 
 export default function About() {
-	const rows = [
-		'Passionate about creating unforgettable events, from weddings to corporate functions',
-		'Expert management and unique decor to bring your vision to life',
-		'Dedicated to delivering stress-free and enjoyable experiences',
-		'From concept to completion, we tailor events to your style and needs',
-		'Let us craft the perfect event for your special moments',
-	];
 	const isSmallScreen = useMediaQuery('(min-width:900px)');
-
 	const imageUrl = isSmallScreen
 		? us // Small screen image
 		: them;
@@ -37,12 +30,10 @@ export default function About() {
 						src={imageUrl} // Replace with your image URL
 						alt='Image of the Owners Of Ansom Events - Melissa Caldwell and Thomas Caldwell'
 						title='Image of the Owners Of Ansom Events - Melissa Caldwell and Thomas Caldwell'
-						width={{ xs: '100%', md: '80%' }}
-						height='auto'
 						sx={{
 							width: { xs: '100%', md: '80%' },
 							height: 'auto',
-							borderRadius: '16px',
+							borderRadius: '8px',
 						}} // Ensures responsive image
 					/>
 				</Grid>

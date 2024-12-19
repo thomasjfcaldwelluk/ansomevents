@@ -1,7 +1,7 @@
 import { styled } from '@mui/system';
-import Grid from '@mui/material/Grid2';
+import { Box } from '@mui/material';
 
-export const LatestSpecialsContainer = styled(Grid)(({ theme }) => ({
+export const LatestSpecialsContainer = styled(Box)(({ theme }) => ({
 	backgroundColor: theme.palette.primaryBlue.main,
 	justifyContent: 'center',
 }));

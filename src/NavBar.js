@@ -84,11 +84,8 @@ const Navbar = () => {
 	};
 
 	return (
-		<>
-			<AppBar
-				component='header'
-				position='static'
-				sx={{ ...navBarStyles.appBarStyles }}>
+		<Box component='header'>
+			<AppBar position='static' sx={{ ...navBarStyles.appBarStyles }}>
 				<Toolbar>
 					<Grid container sx={{ ...navBarStyles.toolbarContainerStyles }}>
 						{/* Logo Section */}
@@ -181,7 +178,7 @@ const Navbar = () => {
 					</MuiLink>
 				</Box>
 			</Drawer>
-		</>
+		</Box>
 	);
 };
 

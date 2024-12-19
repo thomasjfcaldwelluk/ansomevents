@@ -130,7 +130,7 @@ export const BalloonOptionImage = styled('img')(({ theme }) => ({
 	width: '100px',
 	borderRadius: theme.shape.borderRadius,
 	[theme.breakpoints.down('sm')]: {
-		width: '75px',
+		width: '50px',
 	},
 }));
 export const BalloonOptionPrice = styled(Typography)(({ theme }) => ({
