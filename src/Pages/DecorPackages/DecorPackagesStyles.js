@@ -98,7 +98,7 @@ export const BalloonGarlandContainer = styled(Grid)(({ theme }) => ({
 	width: '100%',
 	justifyContent: 'space-around',
 	flexDirection: 'column',
-	borderRadius: '10px',
+	borderRadius: '8px',
 	background: theme.palette.secondaryYellow.secondary,
 	padding: '0.25rem',
 }));

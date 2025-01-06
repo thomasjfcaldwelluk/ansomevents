@@ -153,7 +153,11 @@ const Navbar = () => {
 			</AppBar>
 
 			{/* Side Drawer for Medium Screens and Below */}
-			<Drawer anchor='right' open={drawerOpen} onClose={handleDrawerToggle}>
+			<Drawer
+				item='true'
+				anchor='right'
+				open={drawerOpen}
+				onClose={handleDrawerToggle}>
 				<Box
 					sx={{ ...navBarStyles.navDrawerContainer }}
 					role='presentation'

@@ -6,6 +6,7 @@ import { LatestSpecialsContainer } from './LatestSpecialsStyles.js';
 import PageTitle from '../../ReuseableComponents/PageTitle.js';
 import Grid from '@mui/material/Grid2';
 import { Helmet } from 'react-helmet-async';
+import Valentines from './Valentines.js';
 
 const LatestSpecials = () => {
 	return (
@@ -48,8 +49,9 @@ const LatestSpecials = () => {
 					pageHeader='Latest Specials At Ansom Events'
 					pageSubheader='Seasonal Decor Deals'
 				/>
-				<ChristmasCard />
-				<ChristmasBanners />
+				{/* <ChristmasCard />
+				<ChristmasBanners /> */}
+				<Valentines />
 			</Grid>
 		</LatestSpecialsContainer>
 	);

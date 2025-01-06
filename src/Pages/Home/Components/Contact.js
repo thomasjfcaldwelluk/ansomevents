@@ -60,6 +60,7 @@ export default function Contact() {
 				sectionSubheader='We Would Love To Hear About Your Events'
 				color={theme.palette.darkBlack.main}
 			/>
+
 			<Grid
 				container
 				spacing={5}
