@@ -15,7 +15,6 @@ export default function Valentines() {
 		<Box
 			sx={{
 				display: 'flex',
-				alignItems: 'center',
 				justifyContent: 'center',
 				backgroundColor: '#FFC2C2',
 			}}>
@@ -30,11 +29,7 @@ export default function Valentines() {
 						<Typography>{descriptionText}</Typography>
 					</Box>
 					<Box className='heart' marginBlock={4}>
-						<Grid
-							container
-							spacing={2}
-							justifyContent='center'
-							alignItems='center'>
+						<Grid container spacing={2} justifyContent='center'>
 							{icons.map((icon, index) => (
 								<Grid
 									item
@@ -62,9 +57,7 @@ export default function Valentines() {
 							))}
 						</Grid>
 					</Box>
-					<Box className='form'>
-						<ValentinesDayForm />
-					</Box>
+					<Grid item>{/* <ValentinesDayForm /> */}</Grid>
 				</Grid>
 				<Grid item className='frame_2' size={{ xs: 4 }}>
 					<Box className='image_1'></Box>

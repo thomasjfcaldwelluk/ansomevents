@@ -25,10 +25,11 @@ const faqStyles = {
 	},
 	iconContainer: {
 		display: 'flex',
+		flexDirection: { xs: 'column', md: 'row' },
 		alignItems: 'center',
 	},
 	icon: {
-		fontSize: 150,
+		fontSize: { xs: 105, md: 150 },
 		color: theme.palette.whiteText.main,
 	},
 	contentButton: {

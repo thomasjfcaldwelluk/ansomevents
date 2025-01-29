@@ -16,7 +16,7 @@ const contactInfo = [
 		title: 'Email',
 		href: 'mailto:info@ansomevents.com',
 		information: 'info@ansomevents.com',
-		icon: <EmailIcon />,
+		icon: <EmailIcon sx={{ fontSize: '3em' }} />,
 		description:
 			'We aim to respond to all emails within 24 hours. Your inquiries are important to us!',
 	},
@@ -25,7 +25,7 @@ const contactInfo = [
 		title: 'Telephone',
 		href: 'tel:+447310009764',
 		information: '07310009764',
-		icon: <PhoneIcon />,
+		icon: <PhoneIcon sx={{ fontSize: '3em' }} />,
 		description: 'Feel free to call or text us anytime. We are here for you',
 	},
 	{
@@ -33,7 +33,7 @@ const contactInfo = [
 		title: 'Facebook',
 		href: 'https://www.facebook.com/profile.php?id=61566721061832',
 		information: '@ansomevents',
-		icon: <FacebookIcon />,
+		icon: <FacebookIcon sx={{ fontSize: '3em' }} />,
 		description:
 			'Connect with us on Facebook Messenger anytime and follow us for the latest updates!',
 	},
@@ -42,7 +42,7 @@ const contactInfo = [
 		title: 'Instagram',
 		href: 'https://www.instagram.com/ansomeventsuk/',
 		information: '@ansomeventsuk',
-		icon: <InstagramIcon />,
+		icon: <InstagramIcon sx={{ fontSize: '3em' }} />,
 		description:
 			'Reach out to us on Instagram and follow us for updates and inspiration!',
 	},
@@ -64,7 +64,11 @@ export default function Contact() {
 			<Grid
 				container
 				spacing={5}
-				sx={{ height: '100%', paddingInline: 4, marginBlock: 4 }}>
+				sx={{
+					height: '100%',
+					paddingInline: { xs: 0, md: 4 },
+					marginBlock: 4,
+				}}>
 				{contactInfo.map((data, index) => (
 					<Grid
 						item
@@ -89,7 +93,7 @@ export default function Contact() {
 								width: '100%',
 							}}>
 							{/* Icon */}
-							<Box sx={{ fontSize: '2rem' }}>{data.icon}</Box>
+							<Box m={1}>{data.icon}</Box>
 
 							{/* Title */}
 							<Typography
@@ -108,10 +112,11 @@ export default function Contact() {
 									marginBottom: 1,
 									color: theme.palette.lightBlack.main,
 									textDecoration: 'none',
+									fontWeight: 700,
 								}}>
 								{data.information}
 							</Link>
-							<Typography sx={{ fontSize: '0.7rem' }}>
+							<Typography sx={{ fontSize: '0.7rem', textAlign: 'center' }}>
 								{data.description}
 							</Typography>
 						</Box>

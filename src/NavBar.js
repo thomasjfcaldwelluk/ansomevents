@@ -67,12 +67,18 @@ const navBarStyles = {
 	},
 	navDrawerContainer: {
 		width: 250,
-		padding: '2rem',
 	},
 	navDrawerLink: {
-		marginInline: '1rem',
-		underline: 'hover',
+		textDecoration: 'none',
 		display: 'block',
+		padding: 2,
+		textAlign: 'center',
+		color: theme.palette.darkBlack.main,
+		transition: 'all 0.3s ease-in-out',
+		'&:hover': {
+			backgroundColor: theme.palette.primaryBlue.main,
+			color: theme.palette.background.default,
+		},
 	},
 };
 

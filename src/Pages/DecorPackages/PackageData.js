@@ -75,10 +75,10 @@ export const fullPackageData = [
 export const addOnImages = [
 	{
 		id: 1,
-		title: '4ft Light Up Letter & Numbers',
+		title: '4ft Light Up Letters',
 		image: lightUpNumbers,
 		alt: 'Image of light up letters & Numbers available from Ansom Events',
-		price: '25 Each Or £75 For Love Four Letters',
+		price: '25',
 	},
 	{
 		id: 2,
