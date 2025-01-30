@@ -1,7 +1,5 @@
 import React from 'react';
 import { Box } from '@mui/material';
-import ChristmasCard from './ChristmasCard.js';
-import ChristmasBanners from './ChristmasBanners.js';
 import { LatestSpecialsContainer } from './LatestSpecialsStyles.js';
 import PageTitle from '../../ReuseableComponents/PageTitle.js';
 import Grid from '@mui/material/Grid2';
@@ -47,10 +45,8 @@ const LatestSpecials = () => {
 				}}>
 				<PageTitle
 					pageHeader='Latest Specials At Ansom Events'
-					pageSubheader='Seasonal Decor Deals'
+					pageSubheader='Treat Your Special Someone'
 				/>
-				{/* <ChristmasCard />
-				<ChristmasBanners /> */}
 				<Valentines />
 			</Grid>
 		</LatestSpecialsContainer>
