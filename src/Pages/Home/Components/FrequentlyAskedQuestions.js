@@ -103,7 +103,7 @@ export default function FrequentlyAskedQuestions() {
 								onClick={handleClose}
 								sx={{ mt: 2, cursor: 'pointer' }}
 								variant='outlined'
-								color='secondary'>
+								color='#8DB7E1'>
 								Close
 							</Button>
 						</DialogActions>

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Box } from '@mui/material';
 import { LatestSpecialsContainer } from './LatestSpecialsStyles.js';
 import PageTitle from '../../ReuseableComponents/PageTitle.js';
 import Grid from '@mui/material/Grid2';
@@ -12,14 +11,16 @@ const LatestSpecials = () => {
 			component='main'
 			className='Ansom_Events_Latest_Specials'>
 			<Helmet>
-				<title>Ansom Events - Full-Service Event Planning</title>
+				<title>
+					Valentine’s Day Special: Balloon Stack & 6 Cupcakes for Only £20!
+				</title>
 				<meta
 					name='description'
-					content='Ansom Events offers full-service event planning, prop hire, and event design in Cornwall and Devon.'
+					content='Get the perfect Valentine’s Day gift in Cornwall! A beautiful balloon stack and 6 delicious cupcakes for just £20. Order now from Ansom Events!'
 				/>
 				<meta
 					name='keywords'
-					content='event planning, prop hire, Cornwall, Devon, weddings, coordination'
+					content='Valentine’s Day gift Cornwall,Affordable Valentine’s gifts, Valentines present for girlfriend, cheap but special valentines gift, valentines near plymouth, valentines deal'
 				/>
 				<meta
 					property='og:title'
@@ -44,8 +45,8 @@ const LatestSpecials = () => {
 					padding: 3,
 				}}>
 				<PageTitle
-					pageHeader='Latest Specials At Ansom Events'
-					pageSubheader='Treat Your Special Someone'
+					pageHeader='Valentine’s Day Special – Balloon Stack & Cupcakes for £20!'
+					pageSubheader=' Available in Saltash – Order Yours Today!'
 				/>
 				<Valentines />
 			</Grid>
