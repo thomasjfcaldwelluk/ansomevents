@@ -12,6 +12,40 @@ import { Link } from '@mui/material';
 const descriptionText =
 	'Ansom Events is thrilled to team up with Betty’s Cakes for a Valentine’s Day special! Get a Valentine’s Day Balloon Stack and six delicious cupcakes for just £20 (sold separately for £12.50 each). Celebrate love with this delightful package, perfect for surprising someone special or adding a festive touch to your day. Available for a limited time – don’t miss out! Perfect for couples, friends, or family, this charming bundle adds sweetness and joy to your Valentine’s celebrations. Pre-order now!';
 
+const valentinesStyles = {
+	titleStyle: {
+		fontSize: { xs: '20px', md: '35px' },
+		textAlign: 'center',
+		fontWeight: '700',
+	},
+	iconsStyle: {
+		display: 'flex',
+		justifyContent: 'center',
+		alignItems: 'center',
+	},
+	contactContainerStyles: {
+		alignItems: 'center',
+		display: 'flex',
+		flexDirection: 'column',
+		marginBlock: '1rem',
+	},
+	contactTextStyles: {
+		fontWeight: 600,
+		color: '#2F2E2C',
+	},
+	contactLinkStyles: {
+		marginBottom: 1,
+		color: '#050505',
+		textDecoration: 'none',
+		fontWeight: 700,
+	},
+	imageStyles: {
+		width: '100%',
+		height: 'auto',
+		display: 'block',
+	},
+};
+
 export default function Valentines() {
 	const icons = Array(3).fill(
 		<FavoriteIcon fontSize='large' sx={{ color: '#DD2E44' }} />
@@ -25,12 +59,11 @@ export default function Valentines() {
 			<Grid container padding={2}>
 				<Grid item size={{ xs: 12, md: 9 }} marginBlock={4}>
 					<Box className='title'>
-						<Typography
-							sx={{ fontSize: '35px', textAlign: 'center', fontWeight: '700' }}>
+						<Typography sx={{ ...valentinesStyles.titleStyle }}>
 							Valentines Day Special
 						</Typography>
 					</Box>
-					<Box className='description' padding={6}>
+					<Box className='description' sx={{ padding: { xs: 1, md: 6 } }}>
 						<Typography fontSize={'16px'}>{descriptionText}</Typography>
 					</Box>
 					<Box className='heart' marginBlock={4}>
@@ -40,9 +73,7 @@ export default function Valentines() {
 									item
 									xs={4} // Adjust width for responsiveness
 									key={index}
-									display='flex'
-									justifyContent='center'
-									alignItems='center'>
+									sx={{ ...valentinesStyles.iconsStyle }}>
 									<Box>{icon}</Box>
 								</Grid>
 							))}
@@ -54,81 +85,46 @@ export default function Valentines() {
 									item
 									xs={4} // Adjust width for responsiveness
 									key={index}
-									display='flex'
-									justifyContent='center'
-									alignItems='center'>
+									sx={{ ...valentinesStyles.iconsStyle }}>
 									<Box>{icon}</Box>
 								</Grid>
 							))}
 						</Grid>
 					</Box>
 					<Box>
-						<Box
-							sx={{
-								alignItems: 'center',
-								display: 'flex',
-								flexDirection: 'column',
-								marginBlock: '1rem',
-							}}>
-							<Typography sx={{ fontWeight: 600, color: '#2F2E2C' }}>
+						<Box sx={{ ...valentinesStyles.contactContainerStyles }}>
+							<Typography sx={{ ...valentinesStyles.contactTextStyles }}>
 								Phone
 							</Typography>
 							<Link
 								href={'tel:+447310009764'}
 								target='_blank'
 								rel='noopener'
-								sx={{
-									marginBottom: 1,
-									color: '#050505',
-									textDecoration: 'none',
-									fontWeight: 700,
-								}}>
+								sx={{ ...valentinesStyles.contactLinkStyles }}>
 								07310009764
 							</Link>
 						</Box>
-						<Box
-							sx={{
-								alignItems: 'center',
-								display: 'flex',
-								flexDirection: 'column',
-								marginBlock: '1rem',
-							}}>
-							<Typography sx={{ fontWeight: 600, color: '#2F2E2C' }}>
+						<Box sx={{ ...valentinesStyles.contactContainerStyles }}>
+							<Typography sx={{ ...valentinesStyles.contactTextStyles }}>
 								Email
 							</Typography>
 							<Link
 								href={'mailto:info@ansomevents.com'}
 								target='_blank'
 								rel='noopener'
-								sx={{
-									marginBottom: 1,
-									color: '#050505',
-									textDecoration: 'none',
-									fontWeight: 700,
-								}}>
+								sx={{ ...valentinesStyles.contactLinkStyles }}>
 								info@ansomevents.com
 							</Link>
 						</Box>
-						<Box
-							sx={{
-								alignItems: 'center',
-								display: 'flex',
-								flexDirection: 'column',
-								marginBlock: '1rem',
-							}}>
-							<Typography sx={{ fontWeight: 600, color: '#2F2E2C' }}>
+						<Box sx={{ ...valentinesStyles.contactContainerStyles }}>
+							<Typography sx={{ ...valentinesStyles.contactTextStyles }}>
 								Facebook
 							</Typography>
 							<Link
 								href={'https://www.facebook.com/profile.php?id=61566721061832'}
 								target='_blank'
 								rel='noopener'
-								sx={{
-									marginBottom: 1,
-									color: '#050505',
-									textDecoration: 'none',
-									fontWeight: 700,
-								}}>
+								sx={{ ...valentinesStyles.contactLinkStyles }}>
 								@ansomevents
 							</Link>
 						</Box>
@@ -141,7 +137,7 @@ export default function Valentines() {
 								<img
 									src={imageOne}
 									alt='Description'
-									style={{ width: '100%', height: 'auto', display: 'block' }}
+									style={{ ...valentinesStyles.imageStyles }}
 								/>
 							</Box>
 						</Box>
@@ -151,14 +147,14 @@ export default function Valentines() {
 							<Box
 								component='img'
 								src={imageTwo}
-								sx={{ width: '100%', height: 'auto', display: 'block' }}
+								sx={{ ...valentinesStyles.imageStyles }}
 							/>
 						</Grid>
 						<Grid size={{ xs: 12, sm: 6 }}>
 							<Box
 								component='img'
 								src={imageThree}
-								sx={{ width: '100%', height: 'auto', display: 'block' }}
+								sx={{ ...valentinesStyles.imageStyles }}
 							/>
 						</Grid>
 					</Grid>
@@ -167,14 +163,14 @@ export default function Valentines() {
 							<Box
 								component='img'
 								src={imageFour}
-								sx={{ width: '100%', height: 'auto', display: 'block' }}
+								sx={{ ...valentinesStyles.imageStyles }}
 							/>
 						</Grid>
 						<Grid size={{ xs: 12, sm: 6 }}>
 							<Box
 								component='img'
 								src={imageFive}
-								sx={{ width: '100%', height: 'auto', display: 'block' }}
+								sx={{ ...valentinesStyles.imageStyles }}
 							/>
 						</Grid>
 					</Grid>
