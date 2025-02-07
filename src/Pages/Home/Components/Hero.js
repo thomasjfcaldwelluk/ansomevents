@@ -1,39 +1,54 @@
 import React from 'react';
-import { Box, Button, Typography } from '@mui/material';
+import { Box, Button, Typography, Stack } from '@mui/material';
 import { Link } from 'react-router-dom';
 import theme from '../../../theme';
 import Grid from '@mui/material/Grid2';
-import { imageHero } from './HomeData';
 
 const heroStyles = {
 	sectionContainer: {
 		backgroundColor: theme.palette.background.default,
+		height: '100vh',
 		display: 'flex',
-		alignItems: 'center',
-		paddingBlock: { xs: 6, md: 3 },
+		justifyContent: 'center',
+	},
+	heroContainer: {
+		display: 'flex',
+		flexDirection: 'column',
+		justifyContent: 'center',
+		alignItems: 'space-between',
+	},
+	heroHeaderMain: {
+		color: theme.palette.lightBlack.main,
+	},
+	heroHeaderMainSpan: {
+		background: 'linear-gradient(45deg, #FFC413,#F7DD7D)',
+		WebkitBackgroundClip: 'text',
+		WebkitTextFillColor: 'transparent',
+		fontWeight: 'bold',
+		fontSize: { xs: '1rem', sm: '2.9rem', md: '3rem', lg: '3.8rem' },
+		LineHeight: '1',
+	},
+	heroTagContainer: {
+		padding: '1.3rem',
+	},
+	heroTag: {
+		fontStyle: 'italic',
+		fontWeight: 500,
 	},
 	buttonContainer: {
-		display: 'flex',
+		flexWrap: 'wrap',
 		justifyContent: 'center',
+		alignItems: 'center',
 	},
 	buttonOne: {
+		minWidth: '200px',
 		backgroundColor: '#7096CE',
-		width: '200px',
+		fontSize: { xs: '12px', sm: '14px', md: '16px' }, // Adjust size for different screens
 	},
 	buttonTwo: {
+		minWidth: '200px',
 		borderColor: '#7096CE',
-		width: '200px',
-	},
-	imageContainer: {
-		display: { xs: 'none', md: 'flex' },
-		padding: '3rem',
-		justifyContent: 'center',
-	},
-	imageStyle: {
-		width: '70%',
-		height: 'auto',
-		borderRadius: '8px',
-		boxShadow: 3,
+		fontSize: { xs: '12px', sm: '14px', md: '16px' }, // Adjust size for different screens
 	},
 };
 
@@ -43,69 +58,52 @@ export default function Hero() {
 			component='section'
 			className='Hero_Section'
 			sx={{ ...heroStyles.sectionContainer }}>
-			<Grid container spacing={5}>
-				<Grid item size={12}>
-					<Box>
+			<Grid container spacing={15} sx={{ ...heroStyles.heroContainer }}>
+				<Grid item>
+					<Typography
+						variant='h1'
+						component='h1'
+						sx={{ color: theme.palette.lightBlack.main }}>
+						Ansom Events!
+						<br />
 						<Typography
 							variant='h1'
-							component='h1'
-							sx={{ color: theme.palette.lightBlack.main }}>
-							Ansom Events!
-							<br />
+							component='span'
+							sx={{ ...heroStyles.heroHeaderMainSpan }}>
 							Transforming Dreams Into Memories
 						</Typography>
-					</Box>
-					<Box sx={{ marginTop: '20px' }}>
+					</Typography>
+					<Grid item sx={{ ...heroStyles.heroTagContainer }}>
 						<Typography
 							variant='h2'
 							component='h2'
-							sx={{ fontStyle: 'italic', fontWeight: 200 }}>
-							Bringing Californian Elegance to the UK – Unforgettable Events,
-							Perfectly Curated.
+							sx={{ ...heroStyles.heroTag }}>
+							Bringing Californian Razzamatazz to the UK
 						</Typography>
-					</Box>
+					</Grid>
 				</Grid>
-				<Grid
+
+				<Stack
 					item
-					container
 					spacing={2}
-					size={{ xs: 12 }}
+					direction={{ xs: 'column', md: 'row' }}
 					sx={{ ...heroStyles.buttonContainer }}>
-					<Grid>
-						<Button
-							component={Link}
-							to='/latestspecials'
-							variant='contained'
-							size='large'
-							sx={{ ...heroStyles.buttonOne }}>
-							Latest Specials
-						</Button>
-					</Grid>
-					<Grid>
-						<Button
-							component={Link}
-							to='/decorpackages'
-							variant='outlined'
-							size='large'
-							sx={{ ...heroStyles.buttonTwo }}>
-							See All Packages
-						</Button>
-					</Grid>
-				</Grid>
-				<Grid container item spacing={2} sx={{ ...heroStyles.imageContainer }}>
-					{imageHero.map((data, index) => (
-						<Grid key={index} item size={{ md: 3 }}>
-							<Box
-								component='img'
-								loading='eager'
-								src={data.image}
-								alt={data.alt}
-								title={data.title}
-								sx={{ ...heroStyles.imageStyle }}
-							/>
-						</Grid>
-					))}
-				</Grid>
+					<Button
+						component={Link}
+						to='/latestspecials'
+						variant='contained'
+						sx={{ ...heroStyles.buttonOne }}>
+						Latest Specials
+					</Button>
+
+					<Button
+						component={Link}
+						to='/decorpackages'
+						variant='outlined'
+						sx={{ ...heroStyles.buttonTwo }}>
+						See All Packages
+					</Button>
+				</Stack>
 			</Grid>
 		</Box>
 	);

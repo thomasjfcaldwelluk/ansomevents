@@ -45,8 +45,8 @@ const LatestSpecials = () => {
 					padding: 3,
 				}}>
 				<PageTitle
-					pageHeader='Valentine’s Day Special – Balloon Stack & Cupcakes for £20!'
-					pageSubheader=' Available in Saltash – Order Yours Today!'
+					pageHeader='Valentine’s Day Special'
+					pageSubheader='Order Yours Today!'
 				/>
 				<Valentines />
 			</Grid>

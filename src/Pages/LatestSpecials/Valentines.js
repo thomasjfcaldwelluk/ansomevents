@@ -43,6 +43,8 @@ const valentinesStyles = {
 		width: '100%',
 		height: 'auto',
 		display: 'block',
+		borderRadius: '4px',
+		boxShadow: 1,
 	},
 };
 
@@ -53,8 +55,9 @@ export default function Valentines() {
 	return (
 		<Box
 			sx={{
-				backgroundColor: '#FFC2C2',
+				backgroundColor: '#f2f3f4',
 				borderRadius: '8px',
+				boxShadow: 1,
 			}}>
 			<Grid container padding={2}>
 				<Grid item size={{ xs: 12, md: 9 }} marginBlock={4}>

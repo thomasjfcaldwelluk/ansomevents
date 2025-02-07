@@ -13,6 +13,7 @@ export const PackageCardContainer = styled(Grid)(({ theme }) => ({
 	padding: '1rem',
 	borderRadius: '5px',
 	background: theme.palette.background.paper,
+	boxShadow: 1,
 }));
 export const ImageContainer = styled(Grid)(({ theme }) => ({}));
 export const Image = styled('img')(({ theme }) => ({

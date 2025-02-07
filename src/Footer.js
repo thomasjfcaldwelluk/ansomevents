@@ -19,6 +19,7 @@ const footerStyles = {
 	footerLink: {
 		width: '250px',
 		marginBottom: '1rem',
+		marginInline: '0.2rem',
 	},
 };
 
@@ -60,9 +61,12 @@ const Footer = () => {
 							variant='caption'
 							component={'p'}
 							sx={{ mt: 2, display: 'block' }}>
-							<Link href='#section1' underline='hover'>
-								Gallery
-							</Link>{' '}
+							<MuiLink
+								component={Link}
+								underline='hover'
+								to='/termsandconditions'>
+								Terms And Conditions
+							</MuiLink>{' '}
 							|{' '}
 							<Link href='#section1' underline='hover'>
 								About Us

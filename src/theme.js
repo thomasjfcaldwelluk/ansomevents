@@ -34,17 +34,19 @@ const theme = createTheme({
 		fontFamily: 'Montserrat,sans-serif', // Customize font family
 		fontSize: 14, // Customize base font size
 		h1: {
-			fontSize: '3.5rem',
+			fontSize: '3.8rem',
 			'@media (max-width:600px)': {
-				fontSize: '1.8rem',
+				fontSize: '2.5rem',
 			},
 			fontWeight: 600,
 			color: '#050505',
 		},
 		h2: {
-			fontSize: '1.2rem', // Default font size for small screens
+			fontSize: '1.9rem', // Default font size for small screens
+			fontFamily: 'ABeeZee,serif',
+
 			'@media (max-width:600px)': {
-				fontSize: '0.9rem',
+				fontSize: '1.3rem',
 			},
 			fontWeight: 600,
 			color: '#2F2E2C',

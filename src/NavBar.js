@@ -42,7 +42,6 @@ const navBarStyles = {
 	navMenuLink: {
 		fontSize: '0.9rem',
 		color: theme.palette.lightBlack.main,
-		letterSpacing: '0.1rem',
 		transition: 'all 0.3s ease',
 		'&:hover': {
 			color: theme.palette.darkBlack.main,

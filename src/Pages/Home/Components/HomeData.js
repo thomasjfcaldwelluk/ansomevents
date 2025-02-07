@@ -23,12 +23,16 @@ export const imageHero = [
 		image: oneHero,
 		alt: 'Ansom Events Set Up Of 80th Birthday Party',
 		title: 'Ansom Events Set Up Of 80th Birthday Party',
+		width: 6,
+		height: 12,
 	},
 	{
 		index: 2,
 		image: twoHero,
 		alt: 'Baby Boxes From an Ansom Events set up',
 		title: 'Baby Boxes From an Ansom Events set up',
+		width: 6,
+		height: 12,
 	},
 	{
 		index: 3,
@@ -36,12 +40,16 @@ export const imageHero = [
 		alt: 'Ansom Events set up that includes a shimmer wall with stand, Peacock chair and a pedestal',
 		title:
 			'Ansom Events set up that includes a shimmer wall with stand, Peacock chair and a pedestal',
+		width: 6,
+		height: 12,
 	},
 	{
 		index: 4,
 		image: fourHero,
 		alt: 'Paw Patrol Balloon for a child party available with Ansom Events',
 		title: 'Paw Patrol Balloon for a child party available with Ansom Events',
+		width: 6,
+		height: 12,
 	},
 ];
 
