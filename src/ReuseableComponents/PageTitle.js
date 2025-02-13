@@ -11,14 +11,20 @@ export default function PageTitle({
 	color = 'white',
 }) {
 	return (
-		<PageTitleContainer>
+		<PageTitleContainer spacing={1}>
 			<PageHeader
 				variant='h1'
 				component={'h1'}
-				sx={{ color, letterSpacing: '0.1rem' }}>
+				sx={{
+					color,
+					fontSize: { xs: '18.5px', md: '23px', lg: '30px' },
+				}}>
 				{pageHeader}
 			</PageHeader>
-			<PageSubheader variant='h2' component={'h2'} sx={{ color }}>
+			<PageSubheader
+				variant='h2'
+				component={'h2'}
+				sx={{ color, letterSpacing: '0.1rem' }}>
 				{pageSubheader}
 			</PageSubheader>
 		</PageTitleContainer>

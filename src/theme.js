@@ -44,7 +44,6 @@ const theme = createTheme({
 		h2: {
 			fontSize: '1.9rem', // Default font size for small screens
 			fontFamily: 'ABeeZee,serif',
-
 			'@media (max-width:600px)': {
 				fontSize: '1.3rem',
 			},
