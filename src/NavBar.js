@@ -34,10 +34,10 @@ const navBarStyles = {
 	},
 	navMenuContainer: {
 		display: { xs: 'none', md: 'flex' },
-		justifyContent: 'center',
+		justifyContent: 'space-around',
 		fontWeight: '500',
 		color: theme.palette.darkBlack.main,
-		gap: 8,
+		gap: 4,
 	},
 	navMenuLink: {
 		fontSize: '0.9rem',
@@ -107,7 +107,7 @@ const Navbar = () => {
 						{/* Menu Section */}
 						<Grid
 							item
-							size={{ md: 6 }}
+							size={{ md: 7 }}
 							sx={{ ...navBarStyles.navMenuContainer }}>
 							<MuiLink
 								component={Link}
@@ -133,11 +133,19 @@ const Navbar = () => {
 								sx={{ ...navBarStyles.navMenuLink }}>
 								Latest Specials
 							</MuiLink>
+							<MuiLink
+								component={Link}
+								to='/events'
+								underline='hover'
+								display='block'
+								sx={{ ...navBarStyles.navMenuLink }}>
+								Upcoming Events
+							</MuiLink>
 						</Grid>
 						{/* Social Media + Contact Section (Hidden on Tablet and Below) */}
 						<Grid
 							item
-							size={{ md: 3 }}
+							size={{ md: 2 }}
 							sx={{ ...navBarStyles.navButtonContainer }}>
 							<Button
 								component={Link}

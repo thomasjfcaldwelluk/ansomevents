@@ -5,6 +5,7 @@ import AllServices from './Pages/Services/AllServices';
 import LatestSpecials from './Pages/LatestSpecials/LatestSpecials';
 import ContactPage from './Pages/ContactPage/ContactPage';
 import TermsAndConditions from './Pages/TermsConditions/TermsAndConditions';
+import EventsMain from './Pages/Events/EventsMain';
 import Footer from './Footer';
 import NavBar from './NavBar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -29,6 +30,7 @@ function App() {
 							<Route path='/decorpackages' element={<DecorPackages />} />
 							<Route path='/latestspecials' element={<LatestSpecials />} />
 							<Route path='/contact' element={<ContactPage />} />
+							<Route path='/events' element={<EventsMain />} />
 							<Route
 								path='/termsandconditions'
 								element={<TermsAndConditions />}
