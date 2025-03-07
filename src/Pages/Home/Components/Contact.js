@@ -16,7 +16,11 @@ const contactInfo = [
 		title: 'Email',
 		href: 'mailto:info@ansomevents.com',
 		information: 'info@ansomevents.com',
-		icon: <EmailIcon sx={{ fontSize: '3em' }} />,
+		icon: (
+			<EmailIcon
+				sx={{ fontSize: '3em', color: theme.palette.primaryAccent.secondary }}
+			/>
+		),
 		description:
 			'We aim to respond to all emails within 24 hours. Your inquiries are important to us!',
 	},
@@ -25,7 +29,11 @@ const contactInfo = [
 		title: 'Telephone',
 		href: 'tel:+447310009764',
 		information: '07310009764',
-		icon: <PhoneIcon sx={{ fontSize: '3em' }} />,
+		icon: (
+			<PhoneIcon
+				sx={{ fontSize: '3em', color: theme.palette.primaryAccent.secondary }}
+			/>
+		),
 		description: 'Feel free to call or text us anytime. We are here for you',
 	},
 	{
@@ -33,7 +41,11 @@ const contactInfo = [
 		title: 'Facebook',
 		href: 'https://www.facebook.com/profile.php?id=61566721061832',
 		information: '@ansomevents',
-		icon: <FacebookIcon sx={{ fontSize: '3em' }} />,
+		icon: (
+			<FacebookIcon
+				sx={{ fontSize: '3em', color: theme.palette.primaryAccent.secondary }}
+			/>
+		),
 		description:
 			'Connect with us on Facebook Messenger anytime and follow us for the latest updates!',
 	},
@@ -42,7 +54,11 @@ const contactInfo = [
 		title: 'Instagram',
 		href: 'https://www.instagram.com/ansomeventsuk/',
 		information: '@ansomeventsuk',
-		icon: <InstagramIcon sx={{ fontSize: '3em' }} />,
+		icon: (
+			<InstagramIcon
+				sx={{ fontSize: '3em', color: theme.palette.primaryAccent.secondary }}
+			/>
+		),
 		description:
 			'Reach out to us on Instagram and follow us for updates and inspiration!',
 	},
@@ -51,14 +67,14 @@ const contactInfo = [
 export default function Contact() {
 	return (
 		<Box
-			sx={{ backgroundColor: theme.palette.background.default }}
+			sx={{ backgroundColor: theme.palette.primaryBackground.main }}
 			padding={4}
 			component='section'
 			className='Contact_Ansom_Events'>
 			<SectionHeader
 				sectionHeader='Contact Us'
 				sectionSubheader='We Would Love To Hear About Your Events'
-				color={theme.palette.darkBlack.main}
+				color={theme.palette.primaryHeader.main}
 			/>
 
 			<Grid
@@ -86,7 +102,7 @@ export default function Contact() {
 								alignItems: 'center',
 								textAlign: 'center',
 								padding: theme.spacing(3),
-								backgroundColor: theme.palette.background.paper,
+								backgroundColor: theme.palette.primaryBackground.secondary,
 								height: '100%',
 								borderRadius: 2,
 								boxShadow: 1,
@@ -99,7 +115,7 @@ export default function Contact() {
 							<Typography
 								variant='h4'
 								component='h4'
-								sx={{ margin: '-15px 0 15px 0', fontSize: '1.5rem' }}>
+								sx={{ margin: '-15px 0 15px 0', fontSize: '0.9rem' }}>
 								{data.title}
 							</Typography>
 
@@ -110,13 +126,18 @@ export default function Contact() {
 								rel='noopener'
 								sx={{
 									marginBottom: 1,
-									color: theme.palette.lightBlack.main,
+									color: theme.palette.primaryText.main,
 									textDecoration: 'none',
-									fontWeight: 700,
+									fontWeight: 600,
 								}}>
 								{data.information}
 							</Link>
-							<Typography sx={{ fontSize: '0.7rem', textAlign: 'center' }}>
+							<Typography
+								sx={{
+									fontSize: '0.7rem',
+									textAlign: 'center',
+									color: theme.palette.primaryText.secondary,
+								}}>
 								{data.description}
 							</Typography>
 						</Box>

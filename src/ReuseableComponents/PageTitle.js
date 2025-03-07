@@ -18,6 +18,7 @@ export default function PageTitle({
 				sx={{
 					color,
 					fontSize: { xs: '18.5px', md: '23px', lg: '30px' },
+					fontFamily: 'Playfair',
 				}}>
 				{pageHeader}
 			</PageHeader>

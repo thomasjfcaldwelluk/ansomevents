@@ -6,7 +6,7 @@ import Grid from '@mui/material/Grid2';
 
 const heroStyles = {
 	sectionContainer: {
-		backgroundColor: theme.palette.background.default,
+		backgroundColor: theme.palette.primaryBackground.main,
 		height: '100vh',
 		display: 'flex',
 		justifyContent: 'center',
@@ -18,7 +18,7 @@ const heroStyles = {
 		alignItems: 'space-between',
 	},
 	heroHeaderMain: {
-		color: theme.palette.lightBlack.main,
+		color: theme.palette.primaryHeader.main,
 	},
 	heroHeaderMainSpan: {
 		background: 'linear-gradient(45deg, #FFC413,#F7DD7D)',
@@ -32,8 +32,8 @@ const heroStyles = {
 		padding: '1.3rem',
 	},
 	heroTag: {
-		fontStyle: 'italic',
 		fontWeight: 500,
+		color: theme.palette.primaryHeader.secondary,
 	},
 	buttonContainer: {
 		flexWrap: 'wrap',
@@ -42,12 +42,13 @@ const heroStyles = {
 	},
 	buttonOne: {
 		minWidth: '200px',
-		backgroundColor: '#7096CE',
+		backgroundColor: theme.palette.primaryHeader.main,
 		fontSize: { xs: '12px', sm: '14px', md: '16px' }, // Adjust size for different screens
 	},
 	buttonTwo: {
 		minWidth: '200px',
-		borderColor: '#7096CE',
+		borderColor: theme.palette.primaryHeader.main,
+		color: theme.palette.primaryHeader.main,
 		fontSize: { xs: '12px', sm: '14px', md: '16px' }, // Adjust size for different screens
 	},
 };
@@ -60,10 +61,7 @@ export default function Hero() {
 			sx={{ ...heroStyles.sectionContainer }}>
 			<Grid container spacing={15} sx={{ ...heroStyles.heroContainer }}>
 				<Grid item>
-					<Typography
-						variant='h1'
-						component='h1'
-						sx={{ color: theme.palette.lightBlack.main }}>
+					<Typography variant='h1' component='h1'>
 						Ansom Events!
 						<br />
 						<Typography

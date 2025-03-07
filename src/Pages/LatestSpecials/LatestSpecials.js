@@ -1,15 +1,19 @@
 import React from 'react';
-import { LatestSpecialsContainer } from './LatestSpecialsStyles.js';
 import PageTitle from '../../ReuseableComponents/PageTitle.js';
 import Grid from '@mui/material/Grid2';
 import { Helmet } from 'react-helmet-async';
-import Valentines from './Valentines.js';
+import { Box } from '@mui/material';
+import theme from './../../theme.js';
 
 const LatestSpecials = () => {
 	return (
-		<LatestSpecialsContainer
+		<Box
 			component='main'
-			className='Ansom_Events_Latest_Specials'>
+			className='Ansom_Events_Latest_Specials'
+			sx={{
+				backgroundColor: theme.palette.primaryBlue.main,
+				justifyContent: 'center',
+			}}>
 			<Helmet>
 				<title>
 					Valentine’s Day Special: Balloon Stack & 6 Cupcakes for Only £20!
@@ -37,20 +41,13 @@ const LatestSpecials = () => {
 				<meta property='og:url' content='https://ansomevents.com' />
 				<link rel='canonical' href='https://ansomevents.com/decorpackages' />
 			</Helmet>
-			<Grid
-				component={'section'}
-				container
-				spacing={4}
-				sx={{
-					padding: 3,
-				}}>
+			<Grid component={'section'} container spacing={4} padding={3}>
 				<PageTitle
-					pageHeader='Valentine’s Day Special'
+					pageHeader='Easter Special'
 					pageSubheader='Order Yours Today!'
 				/>
-				<Valentines />
 			</Grid>
-		</LatestSpecialsContainer>
+		</Box>
 	);
 };
 

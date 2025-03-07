@@ -14,7 +14,7 @@ import SectionHeader from '../../../ReuseableComponents/SectionHeader';
 
 const faqStyles = {
 	faqContainer: {
-		backgroundColor: theme.palette.primaryBlue.main,
+		backgroundColor: theme.palette.primaryBackground.secondary,
 		padding: 5,
 	},
 	contentContainer: {
@@ -30,16 +30,16 @@ const faqStyles = {
 	},
 	icon: {
 		fontSize: { xs: 105, md: 150 },
-		color: theme.palette.whiteText.main,
+		color: theme.palette.primaryAccent.secondary,
 	},
 	contentButton: {
-		backgroundColor: theme.palette.whiteText.main,
-		color: theme.palette.darkBlack.main,
+		backgroundColor: theme.palette.primaryBackground.main,
+		color: theme.palette.primaryText.main,
 	},
 	textContainer: {
-		width: { xs: '90%', md: '75%' },
+		width: { xs: '90%', md: '90%' },
 		marginBlock: '1rem',
-		color: theme.palette.whiteText.main,
+		color: theme.palette.primaryText.main,
 	},
 };
 
@@ -54,6 +54,7 @@ export default function FrequentlyAskedQuestions() {
 				<SectionHeader
 					sectionHeader='Have a Question?'
 					sectionSubheader='Read Our FAQs'
+					color={theme.palette.primaryHeader.main}
 				/>
 				<Grid item size={{ xs: 12 }} sx={{ ...faqStyles.contentContainer }}>
 					<Grid

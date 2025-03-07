@@ -1,4 +1,4 @@
-import { Box, Typography } from '@mui/material';
+import { Box } from '@mui/material';
 import React from 'react';
 import Grid from '@mui/material/Grid2';
 import PageTitle from '../../ReuseableComponents/PageTitle';

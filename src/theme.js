@@ -3,6 +3,21 @@ import { createTheme } from '@mui/material/styles';
 // A custom theme for this app
 const theme = createTheme({
 	palette: {
+		primaryBackground: {
+			main: '#F8F5F0', //off white
+			secondary: '#F2EFEA', // light grey
+		},
+		primaryHeader: {
+			main: '#1C3D5A', // navy blue
+			secondary: '#3D3D3D', // Charcoal Gray
+		},
+		primaryText: {
+			main: '#4A4A4A', // dark grey
+			secondary: '#6D5F4A', // warm taupe
+		},
+		primaryAccent: {
+			secondary: '#C5A46D', //gold
+		},
 		primaryBlue: {
 			main: '#7096CE',
 			secondary: '#8DB7E1',
@@ -39,15 +54,14 @@ const theme = createTheme({
 				fontSize: '2.5rem',
 			},
 			fontWeight: 600,
-			color: '#050505',
+			color: '#1C3D5A',
 		},
 		h2: {
 			fontSize: '1.9rem', // Default font size for small screens
-			fontFamily: 'ABeeZee,serif',
 			'@media (max-width:600px)': {
 				fontSize: '1.3rem',
 			},
-			fontWeight: 600,
+			fontWeight: 300,
 			color: '#2F2E2C',
 		},
 		h3: {

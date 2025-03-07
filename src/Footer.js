@@ -5,12 +5,13 @@ import { Link } from 'react-router-dom';
 import Grid from '@mui/material/Grid2';
 import { Facebook, Instagram } from '@mui/icons-material';
 import logo from '../src/Assets/Logo/AnsomEvents.svg';
+import theme from './theme';
 
 const footerStyles = {
 	footerContainer: {
 		color: 'black',
 		p: 4,
-		background: '#f2f9ff',
+		background: theme.palette.primaryBackground.main,
 	},
 	footerLogo: {
 		width: '250px',
@@ -22,6 +23,7 @@ const footerStyles = {
 		marginInline: '0.2rem',
 	},
 };
+const getCurrentYear = () => new Date().getFullYear();
 
 const Footer = () => {
 	return (
@@ -66,11 +68,7 @@ const Footer = () => {
 								underline='hover'
 								to='/termsandconditions'>
 								Terms And Conditions
-							</MuiLink>{' '}
-							|{' '}
-							<Link href='#section1' underline='hover'>
-								About Us
-							</Link>
+							</MuiLink>
 						</Typography>
 					</Box>
 				</Grid>
@@ -90,7 +88,7 @@ const Footer = () => {
 							variant='caption'
 							component={'p'}
 							sx={{ mt: 2, display: 'block' }}>
-							© 2024 Ansom Events. All rights reserved.
+							© {getCurrentYear()} Ansom Events. All rights reserved.
 						</Typography>
 					</Box>
 				</Grid>

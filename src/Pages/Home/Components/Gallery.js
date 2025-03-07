@@ -20,13 +20,13 @@ export default function Gallery() {
 	return (
 		<Box
 			padding={4}
-			sx={{ backgroundColor: theme.palette.primaryBlue.main }}
+			sx={{ backgroundColor: theme.palette.primaryBackground.secondary }}
 			component='section'
 			className='Ansom_Events_Gallery'>
 			<SectionHeader
 				sectionHeader='Gallery'
 				sectionSubheader='Our Portfolio Of Dreams'
-				color={theme.palette.whiteText.main}
+				color={theme.palette.primaryHeader.main}
 			/>
 
 			<Grid container spacing={2}>

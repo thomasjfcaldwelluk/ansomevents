@@ -19,7 +19,7 @@ export default function About() {
 			className='About_Ansom_Events'
 			sx={{
 				padding: { xs: 0, md: 4 },
-				backgroundColor: theme.palette.primaryBlue.main,
+				backgroundColor: theme.palette.primaryBackground.secondary,
 			}}>
 			<Grid container padding={5}>
 				{/* First Column: Image */}
@@ -47,7 +47,7 @@ export default function About() {
 						<Typography
 							sx={{
 								fontSize: '1em',
-								color: theme.palette.whiteText.main,
+								color: theme.palette.primaryHeader.main,
 								textTransform: 'uppercase',
 								fontWeight: 600,
 							}}>
@@ -56,7 +56,7 @@ export default function About() {
 						<Typography
 							sx={{
 								fontSize: { xs: '1.8em', md: '2.5rem' },
-								color: theme.palette.whiteText.main,
+								color: theme.palette.primaryHeader.main,
 								fontWeight: 600,
 							}}>
 							The Team Behind Ansom Events
@@ -86,7 +86,7 @@ export default function About() {
 									<Grid item>
 										<CheckCircleIcon
 											sx={{
-												color: theme.palette.whiteText.main,
+												color: theme.palette.primaryText.secondary,
 												marginTop: '5px',
 											}}
 										/>
@@ -95,7 +95,7 @@ export default function About() {
 										<Typography
 											variant='body1'
 											sx={{
-												color: theme.palette.whiteText.main,
+												color: theme.palette.primaryText.secondary,
 											}}>
 											{text}
 										</Typography>

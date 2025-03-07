@@ -17,8 +17,8 @@ import logo from './Assets/Logo/AnsomEvents.svg';
 
 const navBarStyles = {
 	appBarStyles: {
-		background: '#f2f9ff',
-		color: 'black',
+		background: theme.palette.primaryBackground.main,
+		color: theme.palette.primaryText.main,
 		boxShadow: 0,
 	},
 	toolbarContainerStyles: {
@@ -35,16 +35,13 @@ const navBarStyles = {
 	navMenuContainer: {
 		display: { xs: 'none', md: 'flex' },
 		justifyContent: 'space-around',
-		fontWeight: '500',
-		color: theme.palette.darkBlack.main,
 		gap: 4,
 	},
 	navMenuLink: {
 		fontSize: '0.9rem',
-		color: theme.palette.lightBlack.main,
+		color: theme.palette.primaryText.main,
 		transition: 'all 0.3s ease',
 		'&:hover': {
-			color: theme.palette.darkBlack.main,
 			fontWeight: '600',
 		},
 	},
@@ -53,11 +50,11 @@ const navBarStyles = {
 		justifyContent: 'flex-end',
 	},
 	navButton: {
-		borderColor: theme.palette.primaryBlue.main,
-		color: theme.palette.primaryBlue.main,
+		borderColor: theme.palette.primaryHeader.main,
+		color: theme.palette.primaryHeader.main,
 		'&:hover': {
-			borderColor: theme.palette.primaryBlue.secondary,
-			color: theme.palette.primaryBlue.secondary,
+			borderColor: theme.palette.primaryHeader.secondary,
+			color: theme.palette.primaryHeader.secondary,
 		},
 	},
 	navIconButtonContainer: {
@@ -72,11 +69,10 @@ const navBarStyles = {
 		display: 'block',
 		padding: 2,
 		textAlign: 'center',
-		color: theme.palette.darkBlack.main,
+		color: theme.palette.primaryText.main,
 		transition: 'all 0.3s ease-in-out',
 		'&:hover': {
-			backgroundColor: theme.palette.primaryBlue.main,
-			color: theme.palette.background.default,
+			backgroundColor: theme.palette.primaryBackground.secondary,
 		},
 	},
 };

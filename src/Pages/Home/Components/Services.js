@@ -14,7 +14,7 @@ const serviceData = [
 		id: 1,
 		icon: (
 			<CelebrationIcon
-				sx={{ fontSize: 50, color: theme.palette.lightBlack.main }}
+				sx={{ fontSize: 50, color: theme.palette.primaryAccent.secondary }}
 			/>
 		),
 		title: 'Full service Event Planning',
@@ -24,7 +24,9 @@ const serviceData = [
 	{
 		id: 2,
 		icon: (
-			<TodayIcon sx={{ fontSize: 50, color: theme.palette.lightBlack.main }} />
+			<TodayIcon
+				sx={{ fontSize: 50, color: theme.palette.primaryAccent.secondary }}
+			/>
 		),
 		title: 'Day of Coordination',
 		description:
@@ -34,7 +36,7 @@ const serviceData = [
 		id: 3,
 		icon: (
 			<VerticalShadesIcon
-				sx={{ fontSize: 50, color: theme.palette.lightBlack.main }}
+				sx={{ fontSize: 50, color: theme.palette.primaryAccent.secondary }}
 			/>
 		),
 		title: 'Backdrop Decor',
@@ -45,7 +47,7 @@ const serviceData = [
 		id: 4,
 		icon: (
 			<LocalFloristIcon
-				sx={{ fontSize: 50, color: theme.palette.lightBlack.main }}
+				sx={{ fontSize: 50, color: theme.palette.primaryAccent.secondary }}
 			/>
 		),
 		title: 'Prop Hire and Balloon Decor',
@@ -56,7 +58,7 @@ const serviceData = [
 		id: 5,
 		icon: (
 			<DesignServicesIcon
-				sx={{ fontSize: 50, color: theme.palette.lightBlack.main }}
+				sx={{ fontSize: 50, color: theme.palette.primaryAccent.secondary }}
 			/>
 		),
 		title: 'Event Design',
@@ -70,13 +72,13 @@ export default function Services() {
 		<Box component='section' className='Ansom_Events_Services'>
 			<Grid
 				container
-				sx={{ backgroundColor: theme.palette.background.default }}
+				sx={{ backgroundColor: theme.palette.primaryBackground.main }}
 				padding={4}
 				spacing={3}>
 				<SectionHeader
 					sectionHeader='Our Services'
 					sectionSubheader='We Craft Memories Of Dreams'
-					color={theme.palette.darkBlack.main}
+					color={theme.palette.primaryHeader.main}
 				/>
 				{/* First Row with 3 Cards */}
 				<Grid container item spacing={4}>
@@ -87,7 +89,7 @@ export default function Services() {
 									height: '100%',
 									padding: 2,
 									borderRadius: 2,
-									backgroundColor: theme.palette.background.paper,
+									backgroundColor: theme.palette.primaryBackground.secondary,
 								}}>
 								<Box>{item.icon}</Box>
 								<CardContent>
@@ -96,7 +98,7 @@ export default function Services() {
 											fontSize: '18px',
 											textAlign: 'center',
 											fontWeight: '500',
-											color: theme.palette.darkBlack.main,
+											color: theme.palette.primaryText.main,
 											margin: '-20px 0 20px 0',
 										}}
 										gutterBottom>
@@ -107,7 +109,7 @@ export default function Services() {
 											fontSize: '13px',
 											textAlign: 'center',
 											fontWeight: '300',
-											color: theme.palette.lightBlack.main,
+											color: theme.palette.primaryText.secondary,
 										}}>
 										{item.description}
 									</Typography>
@@ -125,7 +127,7 @@ export default function Services() {
 									height: '100%',
 									padding: 2,
 									borderRadius: 2,
-									backgroundColor: theme.palette.background.paper,
+									backgroundColor: theme.palette.primaryBackground.secondary,
 								}}>
 								<Box>{item.icon}</Box>
 								<CardContent>
@@ -134,7 +136,7 @@ export default function Services() {
 											fontSize: '18px',
 											textAlign: 'center',
 											fontWeight: '500',
-											color: theme.palette.darkBlack.main,
+											color: theme.palette.primaryText.main,
 											margin: '-20px 0 20px 0',
 										}}
 										gutterBottom>
@@ -145,7 +147,7 @@ export default function Services() {
 											fontSize: '13px',
 											textAlign: 'center',
 											fontWeight: '300',
-											color: theme.palette.lightBlack.main,
+											color: theme.palette.primaryText.secondary,
 										}}>
 										{item.description}
 									</Typography>

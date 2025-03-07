@@ -12,11 +12,9 @@ export const PageTitleContainer = styled(Stack)(({ theme }) => ({
 export const PageHeader = styled(Typography)(({ theme }) => ({
 	fontSize: '1.1rem',
 	textTransform: 'uppercase',
-	fontWeight: 900,
 }));
 
 export const PageSubheader = styled(Typography)(({ theme }) => ({
 	fontSize: '1.8rem',
-	fontWeight: 900,
 	textAlign: 'center',
 }));
