@@ -75,8 +75,8 @@ const theme = createTheme({
 		h6: {},
 		subtitle1: {},
 		subtitle2: {},
-		body1: {
-			fontSize: '14px',
+		p: {
+			color: '#4A4A4A',
 			lineHeight: '1.6',
 			fontWeight: '400',
 			textAlign: 'left',

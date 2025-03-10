@@ -19,6 +19,7 @@ const heroStyles = {
 	},
 	heroHeaderMain: {
 		color: theme.palette.primaryHeader.main,
+		textAlign: 'center',
 	},
 	heroHeaderMainSpan: {
 		background: 'linear-gradient(45deg, #FFC413,#F7DD7D)',
@@ -34,6 +35,7 @@ const heroStyles = {
 	heroTag: {
 		fontWeight: 500,
 		color: theme.palette.primaryHeader.secondary,
+		textAlign: 'center',
 	},
 	buttonContainer: {
 		flexWrap: 'wrap',
@@ -61,7 +63,10 @@ export default function Hero() {
 			sx={{ ...heroStyles.sectionContainer }}>
 			<Grid container spacing={15} sx={{ ...heroStyles.heroContainer }}>
 				<Grid item>
-					<Typography variant='h1' component='h1'>
+					<Typography
+						variant='h1'
+						component='h1'
+						sx={{ ...heroStyles.heroHeaderMain }}>
 						Ansom Events!
 						<br />
 						<Typography
@@ -81,7 +86,7 @@ export default function Hero() {
 					</Grid>
 				</Grid>
 
-				<Stack
+				{/* <Stack
 					item
 					spacing={2}
 					direction={{ xs: 'column', md: 'row' }}
@@ -101,7 +106,7 @@ export default function Hero() {
 						sx={{ ...heroStyles.buttonTwo }}>
 						See All Packages
 					</Button>
-				</Stack>
+				</Stack> */}
 			</Grid>
 		</Box>
 	);

@@ -41,7 +41,7 @@ export default function DecorPackages() {
 				container
 				spacing={4}
 				sx={{
-					backgroundColor: theme.palette.primaryBlue.main,
+					backgroundColor: theme.palette.primaryBackground.main,
 					padding: 3,
 				}}>
 				<PageTitle

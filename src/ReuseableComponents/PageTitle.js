@@ -4,11 +4,12 @@ import {
 	PageHeader,
 	PageSubheader,
 } from './ReuseableComponentsStyles/PageTitleStyles';
+import theme from './../theme';
 
 export default function PageTitle({
 	pageHeader,
 	pageSubheader,
-	color = 'white',
+	color = theme.palette.primaryHeader.main,
 }) {
 	return (
 		<PageTitleContainer spacing={1}>

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Grid, Typography, Box } from '@mui/material';
+import { Typography, Box } from '@mui/material';
+import Grid from '@mui/material/Grid2';
 
 const faq = [
 	{
@@ -76,17 +77,17 @@ function QuestionAndAnswers() {
 				{faq.map((qa, index) => (
 					<React.Fragment key={index}>
 						{/* Question */}
-						<Grid item xs={12} sm={12}>
+						<Grid item size={{ xs: 12 }}>
 							<Typography
 								variant='body1'
-								component='div'
+								component='p'
 								sx={{ fontWeight: 'bold' }}>
 								{index + 1}. {qa.question}
 							</Typography>
 						</Grid>
 						{/* Answer */}
-						<Grid item xs={12} sm={12}>
-							<Typography variant='body1' component='div'>
+						<Grid item size={{ xs: 12 }}>
+							<Typography variant='body1' component='p'>
 								{qa.answer}
 							</Typography>
 						</Grid>

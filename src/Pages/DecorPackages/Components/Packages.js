@@ -1,5 +1,4 @@
 import React from 'react';
-import { Box } from '@mui/material';
 import { fullPackageData } from '../PackageData';
 import {
 	PackageContainer,
@@ -44,7 +43,9 @@ export default function Packages() {
 							</TitleContainer>
 							<DetailsContainer item container size={{ xs: 12 }}>
 								<DescriptionContainer item size={{ xs: 12, md: 6 }}>
-									<Description>{data.description}</Description>
+									<Description variant='p' component='p'>
+										{data.description}
+									</Description>
 								</DescriptionContainer>
 								<InformationContainer item size={{ xs: 12, md: 6 }}>
 									<IncludedContainer>

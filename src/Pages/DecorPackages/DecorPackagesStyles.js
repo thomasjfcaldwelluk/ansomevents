@@ -12,7 +12,7 @@ export const PackageCardContainer = styled(Grid)(({ theme }) => ({
 	display: 'flex',
 	padding: '1rem',
 	borderRadius: '5px',
-	background: theme.palette.background.paper,
+	background: theme.palette.primaryBackground.secondary,
 	boxShadow: 1,
 }));
 export const ImageContainer = styled(Grid)(({ theme }) => ({}));
@@ -34,8 +34,9 @@ export const TitleContainer = styled(Box)(({ theme }) => ({
 	width: '100%',
 }));
 export const Title = styled(Typography)(({ theme }) => ({
-	fontSize: '2em',
+	fontSize: '1.5em',
 	fontWeight: 700,
+	color: theme.palette.primaryHeader.main,
 }));
 
 export const DetailsContainer = styled(Grid)(({ theme }) => ({
@@ -46,7 +47,7 @@ export const DescriptionContainer = styled(Grid)(({ theme }) => ({
 	marginBottom: '1rem',
 	// paddingInline: '1rem',
 }));
-export const Description = styled(Typography)(({ theme }) => ({
+export const Description = styled('p')(({ theme }) => ({
 	fontSize: '0.9em',
 }));
 export const InformationContainer = styled(Grid)(({ theme }) => ({
@@ -100,12 +101,12 @@ export const BalloonGarlandContainer = styled(Grid)(({ theme }) => ({
 	justifyContent: 'space-around',
 	flexDirection: 'column',
 	borderRadius: '8px',
-	background: theme.palette.secondaryYellow.secondary,
+	background: theme.palette.primaryBackground.main,
 	padding: '0.25rem',
 }));
 
 export const BalloonGarlandTitle = styled('h4')(({ theme }) => ({
-	color: theme.palette.primaryBlue.main,
+	color: theme.palette.primaryHeader.secondary,
 	textAlign: 'center',
 }));
 export const BalloonGarlandOptionsContainer = styled(Grid)(({ theme }) => ({

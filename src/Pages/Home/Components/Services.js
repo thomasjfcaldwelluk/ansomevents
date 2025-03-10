@@ -14,7 +14,7 @@ const serviceData = [
 		id: 1,
 		icon: (
 			<CelebrationIcon
-				sx={{ fontSize: 50, color: theme.palette.primaryAccent.secondary }}
+				sx={{ fontSize: 25, color: theme.palette.primaryAccent.secondary }}
 			/>
 		),
 		title: 'Full service Event Planning',
@@ -25,7 +25,7 @@ const serviceData = [
 		id: 2,
 		icon: (
 			<TodayIcon
-				sx={{ fontSize: 50, color: theme.palette.primaryAccent.secondary }}
+				sx={{ fontSize: 25, color: theme.palette.primaryAccent.secondary }}
 			/>
 		),
 		title: 'Day of Coordination',
@@ -36,7 +36,7 @@ const serviceData = [
 		id: 3,
 		icon: (
 			<VerticalShadesIcon
-				sx={{ fontSize: 50, color: theme.palette.primaryAccent.secondary }}
+				sx={{ fontSize: 25, color: theme.palette.primaryAccent.secondary }}
 			/>
 		),
 		title: 'Backdrop Decor',
@@ -47,7 +47,7 @@ const serviceData = [
 		id: 4,
 		icon: (
 			<LocalFloristIcon
-				sx={{ fontSize: 50, color: theme.palette.primaryAccent.secondary }}
+				sx={{ fontSize: 25, color: theme.palette.primaryAccent.secondary }}
 			/>
 		),
 		title: 'Prop Hire and Balloon Decor',
@@ -58,7 +58,7 @@ const serviceData = [
 		id: 5,
 		icon: (
 			<DesignServicesIcon
-				sx={{ fontSize: 50, color: theme.palette.primaryAccent.secondary }}
+				sx={{ fontSize: 25, color: theme.palette.primaryAccent.secondary }}
 			/>
 		),
 		title: 'Event Design',
@@ -91,7 +91,14 @@ export default function Services() {
 									borderRadius: 2,
 									backgroundColor: theme.palette.primaryBackground.secondary,
 								}}>
-								<Box>{item.icon}</Box>
+								<Box
+									sx={{
+										display: 'flex',
+										justifyContent: 'center',
+										marginBlock: 1,
+									}}>
+									{item.icon}
+								</Box>
 								<CardContent>
 									<Typography
 										sx={{
@@ -129,7 +136,14 @@ export default function Services() {
 									borderRadius: 2,
 									backgroundColor: theme.palette.primaryBackground.secondary,
 								}}>
-								<Box>{item.icon}</Box>
+								<Box
+									sx={{
+										display: 'flex',
+										justifyContent: 'center',
+										marginBlock: 1,
+									}}>
+									{item.icon}
+								</Box>
 								<CardContent>
 									<Typography
 										sx={{

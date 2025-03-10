@@ -18,7 +18,7 @@ const contactInfo = [
 		information: 'info@ansomevents.com',
 		icon: (
 			<EmailIcon
-				sx={{ fontSize: '3em', color: theme.palette.primaryAccent.secondary }}
+				sx={{ fontSize: 25, color: theme.palette.primaryAccent.secondary }}
 			/>
 		),
 		description:
@@ -31,7 +31,7 @@ const contactInfo = [
 		information: '07310009764',
 		icon: (
 			<PhoneIcon
-				sx={{ fontSize: '3em', color: theme.palette.primaryAccent.secondary }}
+				sx={{ fontSize: 25, color: theme.palette.primaryAccent.secondary }}
 			/>
 		),
 		description: 'Feel free to call or text us anytime. We are here for you',
@@ -43,7 +43,7 @@ const contactInfo = [
 		information: '@ansomevents',
 		icon: (
 			<FacebookIcon
-				sx={{ fontSize: '3em', color: theme.palette.primaryAccent.secondary }}
+				sx={{ fontSize: 25, color: theme.palette.primaryAccent.secondary }}
 			/>
 		),
 		description:
@@ -56,7 +56,7 @@ const contactInfo = [
 		information: '@ansomeventsuk',
 		icon: (
 			<InstagramIcon
-				sx={{ fontSize: '3em', color: theme.palette.primaryAccent.secondary }}
+				sx={{ fontSize: 25, color: theme.palette.primaryAccent.secondary }}
 			/>
 		),
 		description:
@@ -109,7 +109,7 @@ export default function Contact() {
 								width: '100%',
 							}}>
 							{/* Icon */}
-							<Box m={1}>{data.icon}</Box>
+							<Box mb={2}>{data.icon}</Box>
 
 							{/* Title */}
 							<Typography

@@ -21,7 +21,7 @@ const smallStyles = {
 		margin: 'auto',
 		padding: 2,
 		height: '100%',
-		backgroundColor: theme.palette.background.paper,
+		backgroundColor: theme.palette.primaryBackground.secondary,
 	},
 	cardImage: {
 		width: '100%',
@@ -50,7 +50,9 @@ export default function SmallPackages() {
 							</TitleContainer>
 							<Grid container>
 								<DescriptionContainer item size={12}>
-									<Description>{data.description}</Description>
+									<Description variant='p' component='p'>
+										{data.description}
+									</Description>
 								</DescriptionContainer>
 								<Box item size={12}>
 									<IncludedTitleContainer>

@@ -11,8 +11,9 @@ const LatestSpecials = () => {
 			component='main'
 			className='Ansom_Events_Latest_Specials'
 			sx={{
-				backgroundColor: theme.palette.primaryBlue.main,
+				backgroundColor: theme.palette.primaryBackground.main,
 				justifyContent: 'center',
+				height: '100vh',
 			}}>
 			<Helmet>
 				<title>

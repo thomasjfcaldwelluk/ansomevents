@@ -18,9 +18,10 @@ const footerStyles = {
 		marginBottom: '1rem',
 	},
 	footerLink: {
-		width: '250px',
 		marginBottom: '1rem',
 		marginInline: '0.2rem',
+		textDecoration: 'none',
+		color: theme.palette.primaryText.main,
 	},
 };
 const getCurrentYear = () => new Date().getFullYear();
@@ -42,29 +43,43 @@ const Footer = () => {
 				</Grid>
 				{/* Second Column */}
 				<Grid item size={{ xs: 12, sm: 4 }}>
-					<Box>
-						<Typography variant='h4' component='h4' sx={{ mb: 1 }}>
+					<Box
+						sx={{
+							display: 'flex',
+							flexDirection: 'column',
+						}}>
+						<Typography
+							variant='h4'
+							component='h4'
+							sx={{ mb: 1, textAlign: 'center' }}>
 							Links
 						</Typography>
-						<MuiLink
-							component={Link}
-							to='/decorpackages'
-							sx={{ ...footerStyles.footerLink }}>
-							Decor Packages
-						</MuiLink>
-						<MuiLink
-							component={Link}
-							to='/latestspecials'
-							sx={{ ...footerStyles.footerLink }}>
-							Latest Specials
-						</MuiLink>
+						<Box sx={{ display: 'flex', justifyContent: 'space-around' }}>
+							<MuiLink
+								component={Link}
+								to='/decorpackages'
+								sx={{ ...footerStyles.footerLink }}>
+								Decor Packages
+							</MuiLink>
+							<MuiLink
+								component={Link}
+								to='/latestspecials'
+								sx={{ ...footerStyles.footerLink }}>
+								Latest Specials
+							</MuiLink>
+						</Box>
 
 						<Typography
 							variant='caption'
 							component={'p'}
-							sx={{ mt: 2, display: 'block' }}>
+							sx={{
+								mt: 2,
+								display: 'block',
+								textAlign: 'center',
+							}}>
 							<MuiLink
 								component={Link}
+								sx={{ color: theme.palette.primaryText.secondary }}
 								underline='hover'
 								to='/termsandconditions'>
 								Terms And Conditions

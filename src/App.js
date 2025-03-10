@@ -1,4 +1,4 @@
-import './App.css';
+// import './App.css';
 import Home from '../src/Pages/Home/Components/Home';
 import DecorPackages from './Pages/DecorPackages/DecorPackages';
 import AllServices from './Pages/Services/AllServices';

@@ -29,7 +29,7 @@ const faqStyles = {
 		alignItems: 'center',
 	},
 	icon: {
-		fontSize: { xs: 105, md: 150 },
+		fontSize: { xs: 25, md: 50 },
 		color: theme.palette.primaryAccent.secondary,
 	},
 	contentButton: {
@@ -39,7 +39,6 @@ const faqStyles = {
 	textContainer: {
 		width: { xs: '90%', md: '90%' },
 		marginBlock: '1rem',
-		color: theme.palette.primaryText.main,
 	},
 };
 
@@ -76,7 +75,13 @@ export default function FrequentlyAskedQuestions() {
 						</Box>
 					</Grid>
 					<Box item size={{ xs: 6 }} sx={{ ...faqStyles.textContainer }}>
-						<Typography variant='body2' component='p'>
+						<Typography
+							variant='p'
+							component='p'
+							sx={{
+								color: theme.palette.primaryText.secondary,
+								fontWeight: 450,
+							}}>
 							Explore our FAQs for quick answers to common questions. If you
 							don’t find what you’re looking for, feel free to contact us—we’re
 							here to help and provide personalized support!

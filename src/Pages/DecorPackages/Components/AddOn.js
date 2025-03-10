@@ -3,10 +3,11 @@ import Grid from '@mui/material/Grid2';
 import { Box, Typography } from '@mui/material';
 import { addOnImages } from '../PackageData';
 import Price from '../../../ReuseableComponents/Price';
+import theme from '../../../theme';
 
 const addOnStyles = {
 	addOnContainer: {
-		backgroundColor: '#F7DD7D',
+		backgroundColor: theme.palette.primaryBackground.secondary,
 		padding: 5,
 		borderRadius: '8px',
 		boxShadow: 1,
