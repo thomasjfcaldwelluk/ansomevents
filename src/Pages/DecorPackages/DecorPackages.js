@@ -3,8 +3,7 @@ import { Box, useTheme } from '@mui/material';
 import Grid from '@mui/material/Grid2';
 import Packages from './Components/Packages';
 import PageTitle from '../../ReuseableComponents/PageTitle';
-import SmallPackages from './Components/SmallPackages';
-import AddOn from './Components/AddOn';
+
 import { Helmet } from 'react-helmet-async';
 
 export default function DecorPackages() {
@@ -49,8 +48,6 @@ export default function DecorPackages() {
 					pageSubheader='Impress Your Guests'
 				/>
 				<Packages />
-				<SmallPackages />
-				<AddOn />
 			</Grid>
 		</Box>
 	);

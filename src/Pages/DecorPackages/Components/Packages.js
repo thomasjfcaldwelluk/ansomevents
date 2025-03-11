@@ -1,72 +1,45 @@
 import React from 'react';
+import { List, ListItem, ListItemText, Box, Typography } from '@mui/material';
+import Grid from '@mui/material/Grid2';
 import { fullPackageData } from '../PackageData';
-import {
-	PackageContainer,
-	PackageCardContainer,
-	ImageContainer,
-	Image,
-	ContentContainer,
-	TitleContainer,
-	Title,
-	DetailsContainer,
-	DescriptionContainer,
-	Description,
-	InformationContainer,
-	IncludedContainer,
-	IncludedTitleContainer,
-	IncludedTitle,
-	IncludedTextContainer,
-	IncludedOne,
-	IncludedTwo,
-	PriceContainer,
-} from '../DecorPackagesStyles';
-import BalloonGarland from './BalloonGarland';
-import Price from '../../../ReuseableComponents/Price';
+
+const packageStyles = {
+	introStyle: {
+		width: '100%',
+	},
+};
 
 export default function Packages() {
 	return (
-		<>
-			{fullPackageData.slice(0, 2).map((data, index) => (
-				<PackageContainer key={index}>
-					<PackageCardContainer container spacing={2}>
-						<ImageContainer item size={{ xs: 12, md: 7, lg: 6 }}>
-							<Image
-								src={data.image}
-								alt={data.alt}
-								loading='eager'
-								title={data.title}
-							/>
-						</ImageContainer>
-						<ContentContainer item container size={{ xs: 12, md: 5, lg: 6 }}>
-							<TitleContainer item size={{ xs: 12 }}>
-								<Title>{data.title}</Title>
-							</TitleContainer>
-							<DetailsContainer item container size={{ xs: 12 }}>
-								<DescriptionContainer item size={{ xs: 12, md: 6 }}>
-									<Description variant='p' component='p'>
-										{data.description}
-									</Description>
-								</DescriptionContainer>
-								<InformationContainer item size={{ xs: 12, md: 6 }}>
-									<IncludedContainer>
-										<IncludedTitleContainer>
-											<IncludedTitle>Included</IncludedTitle>
-										</IncludedTitleContainer>
-										<IncludedTextContainer>
-											<IncludedOne>{data.include1}</IncludedOne>
-											<IncludedTwo>{data.include2}</IncludedTwo>
-										</IncludedTextContainer>
-									</IncludedContainer>
-									<PriceContainer>
-										<Price price={data.price} />
-									</PriceContainer>
-								</InformationContainer>
-								<BalloonGarland />
-							</DetailsContainer>
-						</ContentContainer>
-					</PackageCardContainer>
-				</PackageContainer>
-			))}
-		</>
+		<Box>
+			<Box>
+				<Typography sx={{ ...packageStyles.introStyle }}>
+					We offer a décor package for every budget, with plenty of add-ons to
+					customize your event. From elegant essentials to luxurious extras, we
+					make every occasion special. Book now to secure your date and let us
+					bring your vision to life with stunning decorations!
+				</Typography>
+				{fullPackageData.map((pkg, index) => (
+					<Grid key={index} container marginBlock={1}>
+						<Grid item size={{ xs: 12, md: 4 }}>
+							<img src={pkg.image} alt={pkg.alt} width='100%' />
+						</Grid>
+						<Grid item size={{ xs: 12, md: 8 }}>
+							<Typography>
+								{pkg.title} - £{pkg.price}
+							</Typography>
+							<Typography>{pkg.description}</Typography>
+							<List>
+								{pkg.included.map((item, itemIndex) => (
+									<ListItem key={itemIndex} sx={{ padding: 0 }}>
+										<ListItemText padding={0}>{item}</ListItemText>
+									</ListItem>
+								))}
+							</List>
+						</Grid>
+					</Grid>
+				))}
+			</Box>
+		</Box>
 	);
 }
