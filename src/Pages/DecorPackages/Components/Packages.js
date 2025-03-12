@@ -2,7 +2,7 @@ import React from 'react';
 import { List, ListItem, ListItemText, Box, Typography } from '@mui/material';
 import Grid from '@mui/material/Grid2';
 import { fullPackageData } from '../PackageData';
-
+import theme from '../../../theme';
 const packageStyles = {
 	introStyle: {
 		width: '100%',
@@ -32,7 +32,9 @@ export default function Packages() {
 							<List>
 								{pkg.included.map((item, itemIndex) => (
 									<ListItem key={itemIndex} sx={{ padding: 0 }}>
-										<ListItemText padding={0}>{item}</ListItemText>
+										<ListItemText padding={0} variant='listText' component='p'>
+											{item}
+										</ListItemText>
 									</ListItem>
 								))}
 							</List>

@@ -87,6 +87,9 @@ const theme = createTheme({
 			fontWeight: '500',
 			textAlign: 'left',
 		},
+		listText: {
+			fontSize: '1px',
+		},
 		button: {},
 		caption: {},
 		overline: {},
