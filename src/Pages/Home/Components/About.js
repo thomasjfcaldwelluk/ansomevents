@@ -65,7 +65,7 @@ export default function About() {
 					<Box
 						item
 						sx={{ width: { xs: '100%', md: '80%' }, marginBlock: '1rem' }}>
-						<Typography variant='body1' textAlign='left'>
+						<Typography variant='p' component={'p'} textAlign='left'>
 							We are a husband and wife team based in Cornwall, offering full
 							event management, prop hire, and venue design. With over 20 years
 							of experience, Melissa brings her extensive knowledge of the
@@ -86,17 +86,13 @@ export default function About() {
 									<Grid item>
 										<CheckCircleIcon
 											sx={{
-												color: theme.palette.primaryText.secondary,
+												color: theme.palette.primaryText.main,
 												marginTop: '5px',
 											}}
 										/>
 									</Grid>
 									<Grid item xs>
-										<Typography
-											variant='body1'
-											sx={{
-												color: theme.palette.primaryText.secondary,
-											}}>
+										<Typography variant='p' component={'p'}>
 											{text}
 										</Typography>
 									</Grid>

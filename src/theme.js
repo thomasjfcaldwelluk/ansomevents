@@ -69,10 +69,21 @@ const theme = createTheme({
 			fontWeight: 200,
 		},
 		h4: {
-			fontSize: '1rem',
+			fontSize: '1.8rem',
+			fontFamily: 'Playfair, serif',
+			fontWeight: 700,
+			color: '#1C3D5A',
 		},
-		h5: {},
-		h6: {},
+		h5: {
+			fontSize: '1.2rem',
+			fontFamily: 'Playfair, serif',
+			fontWeight: 700,
+		},
+		h6: {
+			fontSize: '1rem',
+			fontFamily: 'Playfair, serif',
+			fontWeight: 700,
+		},
 		subtitle1: {},
 		subtitle2: {},
 		p: {
@@ -82,13 +93,36 @@ const theme = createTheme({
 			textAlign: 'left',
 		},
 		body2: {
-			fontSize: '16px',
 			lineHeight: '1.6',
 			fontWeight: '500',
 			textAlign: 'left',
 		},
+		infoText: {
+			color: '#6D5F4A',
+			fontSize: 15,
+			fontWeight: 300,
+			alignText: 'center',
+		},
+		infoHeaderText: {
+			fontSize: 18,
+			textAlign: 'center',
+			fontWeight: '500',
+			color: '#3D3D3D',
+		},
 		listText: {
-			fontSize: '1px',
+			fontSize: 15,
+			color: '#6D5F4A',
+			fontWeight: 400,
+			// marginBlock: 1,
+		},
+		introText: {
+			fontSize: 16,
+			fontWeight: 300,
+			color: '#4A4A4A',
+		},
+		descriptionText: {
+			fontSize: 13,
+			color: '#4A4A4A',
 		},
 		button: {},
 		caption: {},

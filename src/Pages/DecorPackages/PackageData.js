@@ -1,13 +1,17 @@
-import lightUpNumbers from '../../Assets/Photos/Packages/numbersAddon.jpg';
-import happyBirthday from '../../Assets/Photos/Packages/happybirthdayAddOn.jpg';
-import ohBabyBanner from '../../Assets/Photos/Packages/OhBabyBannerAddOn.jpg';
-import ohBabyAddon from '../../Assets/Photos/Packages/ohBabyAddon.jpg';
-import chairAdd from '../../Assets/Photos/Packages/chairAddOn.jpg';
-import pedestalAdd from '../../Assets/Photos/Packages/pedestalStandAddOn.jpg';
+import lightUpNumbers from '../../Assets/Photos/Packages/numbersAddon.webp';
+import happyBirthday from '../../Assets/Photos/Packages/happybirthdayAddOn.webp';
+import ohBabyBanner from '../../Assets/Photos/Packages/OhBabyBannerAddOn.webp';
+import ohBabyAddon from '../../Assets/Photos/Packages/ohBabyAddon.webp';
+import chairAdd from '../../Assets/Photos/Packages/peacockChairAddon.webp';
+import pedestalAdd from '../../Assets/Photos/Packages/vaseAddon.webp';
+import propAdd from '../../Assets/Photos/Packages/winnieThePooh.webp';
 import platinum from '../../Assets/Photos/Packages/packagePlatinum.webp';
 import gold from '../../Assets/Photos/Packages/packageGold.webp';
 import silver from '../../Assets/Photos/Packages/packageSilver.webp';
 import bronze from '../../Assets/Photos/Packages/packageBronze.webp';
+import shimmerImage from '../../Assets/Photos/Packages/shimmerPackage.webp';
+import fringeImage from '../../Assets/Photos/Packages/fringePackage.webp';
+import hoopImage from '../../Assets/Photos/Packages/hoopImage.webp';
 
 export const fullPackageData = [
 	{
@@ -79,7 +83,50 @@ export const fullPackageData = [
 	},
 ];
 
-export const addOnImages = [
+export const backdropData = [
+	{
+		id: 1,
+		title: 'Shimmer Wall With Stand',
+		image: shimmerImage,
+		alt: 'Shimmer Wall backdrop Image',
+		description:
+			'Transform your event with our 5x6 stand and shimmer backdrop. Customize with balloon garlands for a stunning, elegant focal point, perfect for photos and special occasions.',
+		included: ['5ft by 6ft Stand', 'Shimmer Backdrop', 'Balloon Garland'],
+		price: [
+			'Wall With Stand £100 ',
+			'1 side £160 ',
+			'L-Shape £190 ',
+			'Full £235',
+		],
+	},
+	{
+		id: 2,
+		title: 'Fringe Wall With Stand',
+		image: fringeImage,
+		alt: 'Fringe Wall & Stand backdrop Image',
+		description:
+			'Enhance your event with a 6x6 stand and fringe backdrop. Add balloon garlands for a vibrant centerpiece, perfect for photos and bringing flair to any celebration',
+		included: ['5ft by 6ft Stand', 'Fringe Backdrop', 'Balloon Garland'],
+		price: [
+			'Wall With Stand £80 ',
+			'1 side £140 ',
+			'L-Shape £170 ',
+			'Full £215',
+		],
+	},
+	{
+		id: 3,
+		title: 'Hoop Balloon Garland',
+		image: hoopImage,
+		alt: 'Hoop Balloon Garland Image',
+		description:
+			'Create a stunning focal point with a full or half hoop balloon garland. A stylish, customizable addition, perfect for photos and enhancing any celebration or special gathering.',
+		included: ['2m by 2m Hoop Stand', 'Full Hoop or Half Hoop Ballon Garland'],
+		price: [' Half £175 ', 'Full £225'],
+	},
+];
+
+export const addOnData = [
 	{
 		id: 1,
 		title: '4ft Light Up Letters',
@@ -120,6 +167,20 @@ export const addOnImages = [
 		title: 'Decor Pedestal',
 		image: pedestalAdd,
 		alt: 'Image of Decor Pedestal available from Ansom Events',
+		price: '75',
+	},
+	{
+		id: 7,
+		title: 'Props',
+		image: propAdd,
+		alt: 'Image of Decor props available from Ansom Events',
+		price: '75',
+	},
+	{
+		id: 8,
+		title: 'Props',
+		image: propAdd,
+		alt: 'Image of Decor props available from Ansom Events',
 		price: '75',
 	},
 ];

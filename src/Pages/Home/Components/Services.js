@@ -95,29 +95,17 @@ export default function Services() {
 									sx={{
 										display: 'flex',
 										justifyContent: 'center',
-										marginBlock: 1,
 									}}>
 									{item.icon}
 								</Box>
 								<CardContent>
 									<Typography
-										sx={{
-											fontSize: '18px',
-											textAlign: 'center',
-											fontWeight: '500',
-											color: theme.palette.primaryText.main,
-											margin: '-20px 0 20px 0',
-										}}
+										variant='infoHeaderText'
+										component={'h6'}
 										gutterBottom>
 										{item.title}
 									</Typography>
-									<Typography
-										sx={{
-											fontSize: '13px',
-											textAlign: 'center',
-											fontWeight: '300',
-											color: theme.palette.primaryText.secondary,
-										}}>
+									<Typography variant='infoText' component={'p'}>
 										{item.description}
 									</Typography>
 								</CardContent>
@@ -146,23 +134,12 @@ export default function Services() {
 								</Box>
 								<CardContent>
 									<Typography
-										sx={{
-											fontSize: '18px',
-											textAlign: 'center',
-											fontWeight: '500',
-											color: theme.palette.primaryText.main,
-											margin: '-20px 0 20px 0',
-										}}
+										variant='infoHeaderText'
+										component={'h6'}
 										gutterBottom>
 										{item.title}
 									</Typography>
-									<Typography
-										sx={{
-											fontSize: '13px',
-											textAlign: 'center',
-											fontWeight: '300',
-											color: theme.palette.primaryText.secondary,
-										}}>
+									<Typography variant='infoText' component={'p'}>
 										{item.description}
 									</Typography>
 								</CardContent>

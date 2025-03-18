@@ -112,10 +112,7 @@ export default function Contact() {
 							<Box mb={2}>{data.icon}</Box>
 
 							{/* Title */}
-							<Typography
-								variant='h4'
-								component='h4'
-								sx={{ margin: '-15px 0 15px 0', fontSize: '0.9rem' }}>
+							<Typography variant='infoHeaderText' component={'h6'}>
 								{data.title}
 							</Typography>
 
@@ -132,12 +129,7 @@ export default function Contact() {
 								}}>
 								{data.information}
 							</Link>
-							<Typography
-								sx={{
-									fontSize: '0.7rem',
-									textAlign: 'center',
-									color: theme.palette.primaryText.secondary,
-								}}>
+							<Typography variant='infoText' component={'p'}>
 								{data.description}
 							</Typography>
 						</Box>
