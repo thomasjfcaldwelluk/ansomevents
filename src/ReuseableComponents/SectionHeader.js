@@ -12,11 +12,7 @@ export default function SectionHeader({
 }) {
 	return (
 		<SectionHeaderContainer>
-			<SectionHeaderText
-				variant='h2'
-				component={'h2'}
-				sx={{ color, letterSpacing: '0.1rem' }}
-				r>
+			<SectionHeaderText variant='h2' component={'h2'} sx={{ color }} r>
 				{sectionHeader}
 			</SectionHeaderText>
 			<SectionSubHeader variant='h3' component={'h3'} sx={{ color }}>

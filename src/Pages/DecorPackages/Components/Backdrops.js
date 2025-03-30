@@ -53,7 +53,7 @@ export default function Backdrops() {
 									</ListItem>
 								))}
 							</List>
-							<Typography component={'h5'} variant='h6'>
+							<Typography component={'h5'} variant='h5'>
 								{' '}
 								{pkg.price}
 							</Typography>

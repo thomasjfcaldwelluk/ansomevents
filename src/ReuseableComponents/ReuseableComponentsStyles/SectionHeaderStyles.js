@@ -13,6 +13,7 @@ export const SectionHeaderText = styled(Typography)(({ theme }) => ({
 	fontSize: '1.1rem',
 	textTransform: 'uppercase',
 	fontWeight: 600,
+	letterSpacing: '0.1rem',
 }));
 
 export const SectionSubHeader = styled(Typography)(({ theme }) => ({

@@ -3,7 +3,7 @@ import { Box, Typography } from '@mui/material';
 import Grid from '@mui/material/Grid2';
 
 export const ContactUsContainer = styled(Grid)(({ theme }) => ({
-	backgroundColor: theme.palette.primaryBlue.main,
+	backgroundColor: theme.palette.primaryBackground.main,
 	borderRadius: '8px',
 	display: 'flex',
 

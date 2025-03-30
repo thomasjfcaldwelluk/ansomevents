@@ -10,7 +10,6 @@ export const PriceSectionContainer = styled(Box)(({ theme }) => ({
 }));
 
 export const PriceContainer = styled(Grid)(({ theme }) => ({
-	// backgroundColor: 'yellow',
 	display: 'flex,',
 	justifyContent: 'center',
 	alignItems: 'center',
@@ -19,7 +18,6 @@ export const PriceText = styled(Typography)(({ theme }) => ({
 	fontSize: '0.8rem',
 }));
 export const PriceAmountContainer = styled(Grid)(({ theme }) => ({
-	// display: 'flex',
 	alignItems: 'center',
 	border: '1px solid black',
 	borderRadius: '3px',

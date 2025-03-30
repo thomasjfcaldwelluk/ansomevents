@@ -5,7 +5,7 @@ import { fullPackageData } from '../PackageData';
 import theme from '../../../theme';
 const packageStyles = {
 	introStyle: {
-		width: '90%',
+		width: '100%',
 		margin: '0 auto',
 	},
 	packageContainerStyle: {
@@ -69,13 +69,13 @@ export default function Packages() {
 									justifyContent: 'center',
 								}}>
 								<Typography
-									component={'h4'}
+									component={'h3'}
 									variant='h4'
 									sx={{ ...packageStyles.titleStyle }}>
 									{pkg.title}
 								</Typography>
 								<Typography
-									component={'h5'}
+									component={'h4'}
 									variant='h5'
 									sx={{ ...packageStyles.priceStyle }}>
 									£{pkg.price}
@@ -91,7 +91,6 @@ export default function Packages() {
 								{pkg.included.map((item, itemIndex) => (
 									<ListItem key={itemIndex} sx={{ ...packageStyles.listStyle }}>
 										<Typography
-											padding={0}
 											variant='listText'
 											component='p'
 											sx={{ ...packageStyles.listItemStyle }}>

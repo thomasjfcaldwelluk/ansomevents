@@ -4,6 +4,7 @@ import Grid from '@mui/material/Grid2';
 import PageTitle from '../../ReuseableComponents/PageTitle';
 import theme from '../../theme';
 import easterParty from './EventsAssets/easterParty.png';
+import { Helmet } from 'react-helmet-async';
 
 export default function EventsMain() {
 	return (
@@ -13,6 +14,37 @@ export default function EventsMain() {
 				backgroundColor: theme.palette.primaryBackground.main,
 				padding: 2,
 			}}>
+			<Helmet>
+				<title>Easter Event 2025 | Family Fun in Saltash | Ansom Events</title>
+				<meta
+					name='description'
+					content='Join us for a fantastic Easter event at Saltash Football Club! Meet the Easter Bunny, enjoy fun activities, and create magical memories. Book now!'
+				/>
+				<meta
+					name='keywords'
+					content='Easter event Cornwall, Easter activities Saltash, family events, Easter Bunny meet and greet, kids Easter fun, cookie painting, Easter party'
+				/>
+				<meta
+					property='og:title'
+					content='Easter Event 2025 | Fun for the Whole Family!'
+				/>
+				<meta
+					property='og:description'
+					content='Hop into Easter with an exciting family-friendly event! Meet the Easter Bunny, join the Bunny Hop Dance Party, and enjoy festive fun. Limited tickets available!'
+				/>
+				<meta
+					property='og:image'
+					content='https://ansomevents.com/images/easter-event-2025.jpg'
+				/>
+				<meta
+					property='og:url'
+					content='https://ansomevents.com/latest-events/easter-2025'
+				/>
+				<link
+					rel='canonical'
+					href='https://ansomevents.com/latest-events/easter-2025'
+				/>
+			</Helmet>
 			<PageTitle
 				pageHeader='Upcoming Events'
 				pageSubheader='With Ansom Events'
@@ -69,7 +101,7 @@ export default function EventsMain() {
 							</Typography>
 							<Typography variant='p' color='error'>
 								<strong>
-									Presale tickets only – No tickets available at the door.
+									Pre-sale tickets only – No tickets available at the door.
 								</strong>
 							</Typography>
 						</Box>

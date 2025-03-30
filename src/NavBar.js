@@ -39,10 +39,12 @@ const navBarStyles = {
 	},
 	navMenuLink: {
 		fontSize: '0.9rem',
-		color: theme.palette.primaryText.main,
+		fontWeight: 600,
+		color: theme.palette.primaryHeader.secondary,
 		transition: 'all 0.3s ease',
 		'&:hover': {
-			fontWeight: '600',
+			color: theme.palette.primaryHover.main,
+			textDecoration: 'none',
 		},
 	},
 	navButtonContainer: {

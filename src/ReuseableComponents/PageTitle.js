@@ -18,15 +18,13 @@ export default function PageTitle({
 				component={'h1'}
 				sx={{
 					color,
-					fontSize: { xs: '18.5px', md: '23px', lg: '30px' },
+					fontSize: { xs: '28px', md: '40px', lg: '50px' },
 					fontFamily: 'Playfair',
+					textAlign: 'center',
 				}}>
 				{pageHeader}
 			</PageHeader>
-			<PageSubheader
-				variant='h2'
-				component={'h2'}
-				sx={{ color, letterSpacing: '0.1rem' }}>
+			<PageSubheader variant='h2' component={'h2'} sx={{ color }}>
 				{pageSubheader}
 			</PageSubheader>
 		</PageTitleContainer>

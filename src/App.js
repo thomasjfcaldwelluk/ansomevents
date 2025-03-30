@@ -8,6 +8,7 @@ import TermsAndConditions from './Pages/TermsConditions/TermsAndConditions';
 import EventsMain from './Pages/Events/EventsMain';
 import Footer from './Footer';
 import NavBar from './NavBar';
+import BalloonDisplays from './Pages/DecorPackages/BalloonDisplays';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import useAnalytics from './useAnalytics';
 import CookieConsent from 'react-cookie-consent';
@@ -35,6 +36,7 @@ function App() {
 								path='/termsandconditions'
 								element={<TermsAndConditions />}
 							/>
+							<Route path='/balloondisplays' element={<BalloonDisplays />} />
 						</Routes>
 						<Footer />
 						<CookieConsent

@@ -18,30 +18,13 @@ const theme = createTheme({
 		primaryAccent: {
 			secondary: '#C5A46D', //gold
 		},
-		primaryBlue: {
-			main: '#7096CE',
-			secondary: '#8DB7E1',
+
+		primaryHover: {
+			main: '#d3d3d3', //light grey
 		},
-		secondaryYellow: {
-			main: '#FFC413',
-			secondary: '#F7DD7D',
-		},
+
 		error: {
 			main: '#f44336', // Customize error color
-		},
-		background: {
-			default: '#f2f9ff', // Customize background color
-			paper: '#ffffff', // Customize paper color
-		},
-		lightBlack: {
-			main: '#2F2E2C',
-		},
-		darkBlack: {
-			main: '#050505',
-		},
-		whiteText: {
-			main: '#f2f3f4',
-			darker: '#dfe0e0',
 		},
 	},
 	typography: {
@@ -58,10 +41,10 @@ const theme = createTheme({
 		},
 		h2: {
 			fontSize: '1.9rem', // Default font size for small screens
-			'@media (max-width:600px)': {
-				fontSize: '1.3rem',
+			'@media (max-width:420px)': {
+				fontSize: '1.45rem',
 			},
-			fontWeight: 300,
+			fontWeight: 500,
 			color: '#2F2E2C',
 		},
 		h3: {
@@ -75,14 +58,15 @@ const theme = createTheme({
 			color: '#1C3D5A',
 		},
 		h5: {
-			fontSize: '1.2rem',
+			fontSize: '1.1rem',
 			fontFamily: 'Playfair, serif',
-			fontWeight: 700,
+			fontWeight: 600,
+			color: '#1C3D5A',
 		},
 		h6: {
 			fontSize: '1rem',
-			fontFamily: 'Playfair, serif',
-			fontWeight: 700,
+			fontWeight: 550,
+			color: '#4A4A4A',
 		},
 		subtitle1: {},
 		subtitle2: {},
@@ -110,19 +94,23 @@ const theme = createTheme({
 			color: '#3D3D3D',
 		},
 		listText: {
-			fontSize: 15,
 			color: '#6D5F4A',
-			fontWeight: 400,
+			fontWeight: 450,
+			fontSize: 14,
 			// marginBlock: 1,
 		},
 		introText: {
 			fontSize: 16,
-			fontWeight: 300,
+			'@media (max-width:420px)': {
+				fontSize: 13,
+			},
+			fontWeight: 550,
 			color: '#4A4A4A',
 		},
 		descriptionText: {
 			fontSize: 13,
 			color: '#4A4A4A',
+			fontWeight: 500,
 		},
 		button: {},
 		caption: {},

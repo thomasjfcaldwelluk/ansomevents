@@ -6,6 +6,7 @@ import Grid from '@mui/material/Grid2';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import theme from '../../../theme';
 import { rows } from './HomeData';
+import SectionHeader from '../../../ReuseableComponents/SectionHeader';
 
 export default function About() {
 	const isSmallScreen = useMediaQuery('(min-width:900px)');
@@ -44,23 +45,11 @@ export default function About() {
 						sx={{
 							width: '100%',
 						}}>
-						<Typography
-							sx={{
-								fontSize: '1em',
-								color: theme.palette.primaryHeader.main,
-								textTransform: 'uppercase',
-								fontWeight: 600,
-							}}>
-							About Us
-						</Typography>
-						<Typography
-							sx={{
-								fontSize: { xs: '1.8em', md: '2.5rem' },
-								color: theme.palette.primaryHeader.main,
-								fontWeight: 600,
-							}}>
-							The Team Behind Ansom Events
-						</Typography>
+						<SectionHeader
+							sectionHeader='About Us'
+							sectionSubheader='The Team Behind Ansom Events'
+							color={theme.palette.primaryHeader.main}
+						/>
 					</Stack>
 					<Box
 						item

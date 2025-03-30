@@ -16,31 +16,35 @@ const LatestSpecials = () => {
 				height: '100vh',
 			}}>
 			<Helmet>
-				<title>
-					Valentine’s Day Special: Balloon Stack & 6 Cupcakes for Only £20!
-				</title>
+				<title>Baby Shower Package £200 | Ansom Events Special Offer</title>
 				<meta
 					name='description'
-					content='Get the perfect Valentine’s Day gift in Cornwall! A beautiful balloon stack and 6 delicious cupcakes for just £20. Order now from Ansom Events!'
+					content='Celebrate in style with our Baby Shower Package for just £200! Includes balloon garland, décor, personalized welcome sign, and more. Book now!'
 				/>
 				<meta
 					name='keywords'
-					content='Valentine’s Day gift Cornwall,Affordable Valentine’s gifts, Valentines present for girlfriend, cheap but special valentines gift, valentines near plymouth, valentines deal'
+					content='baby shower package, baby shower decorations, balloon garland, event planning Cornwall, baby shower props, baby shower setup, Ansom Events'
 				/>
 				<meta
 					property='og:title'
-					content='Ansom Events - Full-Service Event Planning'
+					content='Baby Shower Package £200 | Limited-Time Special'
 				/>
 				<meta
 					property='og:description'
-					content='We specialize in event coordination and design across Cornwall and Devon.'
+					content='Get our stunning Baby Shower Package for just £200! Includes sailboard or balloon hoop, Oh Baby sign, garland, centerpiece, and more. Book today!'
 				/>
 				<meta
 					property='og:image'
-					content='https://example.com/your-image.jpg'
+					content='https://ansomevents.com/images/baby-shower-package.jpg'
 				/>
-				<meta property='og:url' content='https://ansomevents.com' />
-				<link rel='canonical' href='https://ansomevents.com/decorpackages' />
+				<meta
+					property='og:url'
+					content='https://ansomevents.com/latest-specials/baby-shower-package'
+				/>
+				<link
+					rel='canonical'
+					href='https://ansomevents.com/latest-specials/baby-shower-package'
+				/>
 			</Helmet>
 			<Grid component={'section'} container spacing={4} padding={3}>
 				<PageTitle

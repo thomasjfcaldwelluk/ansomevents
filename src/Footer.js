@@ -50,7 +50,7 @@ const Footer = () => {
 						}}>
 						<Typography
 							variant='h6'
-							component='h6'
+							component='h4'
 							sx={{ mb: 1, textAlign: 'center' }}>
 							Links
 						</Typography>
@@ -90,7 +90,7 @@ const Footer = () => {
 				{/* Third Column */}
 				<Grid item size={{ xs: 12, sm: 4 }}>
 					<Box>
-						<Typography variant='h6' component='h6' sx={{ mb: 1 }}>
+						<Typography variant='h6' component='h5' sx={{ mb: 1 }}>
 							Follow Us
 						</Typography>
 						<IconButton href='https://facebook.com' target='_blank'>

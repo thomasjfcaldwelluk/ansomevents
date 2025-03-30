@@ -87,7 +87,7 @@ export default function Services() {
 							<Card
 								sx={{
 									height: '100%',
-									padding: 2,
+									padding: 1,
 									borderRadius: 2,
 									backgroundColor: theme.palette.primaryBackground.secondary,
 								}}>
@@ -101,7 +101,7 @@ export default function Services() {
 								<CardContent>
 									<Typography
 										variant='infoHeaderText'
-										component={'h6'}
+										component={'h4'}
 										gutterBottom>
 										{item.title}
 									</Typography>
@@ -120,7 +120,7 @@ export default function Services() {
 							<Card
 								sx={{
 									height: '100%',
-									padding: 2,
+									padding: 1,
 									borderRadius: 2,
 									backgroundColor: theme.palette.primaryBackground.secondary,
 								}}>
@@ -135,7 +135,7 @@ export default function Services() {
 								<CardContent>
 									<Typography
 										variant='infoHeaderText'
-										component={'h6'}
+										component={'h4'}
 										gutterBottom>
 										{item.title}
 									</Typography>

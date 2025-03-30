@@ -13,29 +13,31 @@ export default function DecorPackages() {
 	return (
 		<Box component='main' className='Ansom_Events_Decor_Packages'>
 			<Helmet>
-				<title>Ansom Events - Full-Service Event Planning</title>
+				<title>
+					Event Packages | Decor, Linen & Balloon Styling | Ansom Events
+				</title>
 				<meta
 					name='description'
-					content='Ansom Events offers full-service event planning, prop hire, and event design in Cornwall and Devon.'
+					content='Explore our event packages for weddings, corporate events, and private parties. Includes decor hire, linen, balloon styling, and bespoke designs in Cornwall & Devon.'
 				/>
 				<meta
 					name='keywords'
-					content='event planning, prop hire, Cornwall, Devon, weddings, coordination'
+					content='event packages Cornwall, corporate event decor, wedding styling, prop hire, balloon decorations, linen hire, party planning, bespoke event decor'
 				/>
 				<meta
 					property='og:title'
-					content='Ansom Events - Full-Service Event Planning'
+					content='Event Packages | Weddings, Corporate & Private Events'
 				/>
 				<meta
 					property='og:description'
-					content='We specialize in event coordination and design across Cornwall and Devon.'
+					content='From weddings to corporate events, our tailored packages include decor hire, linen, and balloon styling. Stunning designs for all occasions. Book now!'
 				/>
 				<meta
 					property='og:image'
-					content='https://example.com/your-image.jpg'
+					content='https://ansomevents.com/images/event-packages.jpg'
 				/>
-				<meta property='og:url' content='https://ansomevents.com' />
-				<link rel='canonical' href='https://ansomevents.com/decorpackages' />
+				<meta property='og:url' content='https://ansomevents.com/packages' />
+				<link rel='canonical' href='https://ansomevents.com/packages' />
 			</Helmet>
 			<Grid
 				component={'section'}

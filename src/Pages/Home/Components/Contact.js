@@ -112,7 +112,7 @@ export default function Contact() {
 							<Box mb={2}>{data.icon}</Box>
 
 							{/* Title */}
-							<Typography variant='infoHeaderText' component={'h6'}>
+							<Typography variant='infoHeaderText' component={'h4'}>
 								{data.title}
 							</Typography>
 
