@@ -1,23 +1,49 @@
-import { Box, Grid2, Typography } from '@mui/material';
+import { Box, Card, CardMedia, Typography, CardContent } from '@mui/material';
 import React from 'react';
 import { balloonDisplayData } from './PackageData';
 import Grid from '@mui/material/Grid2';
+
 export default function BalloonDisplays() {
 	return (
-		<Box>
-			<Grid container spacing={4}>
+		<Box marginBlock={5}>
+			<Grid container rowSpacing={4} columnSpacing={2} padding={2}>
 				{balloonDisplayData.map((x, index) => (
-					<Grid item size={{ xs: 12, sm: 6, md: 4, lg: 3 }}>
-						<Grid container sx={{ display: 'flex' }}>
-							<Grid>
-								<Box component={'img'} src={x.image} sx={{ width: '100px' }} />
-							</Grid>
-							<Grid>
-								<Typography fontSize={12}>{x.title}</Typography>
-								<Typography fontSize={3}>{x.description}</Typography>
-								<Typography fontSize={16}>{x.price}</Typography>
-							</Grid>
-						</Grid>
+					<Grid item size={{ xs: 12, sm: 6, md: 4, lg: 4 }} key={index}>
+						<Card
+							sx={{
+								display: 'flex',
+								flexDirection: 'row',
+								alignItems: 'stretch',
+								height: '100%', // Ensures all cards match height
+								padding: 1,
+							}}>
+							{/* Image Section */}
+							<CardMedia
+								component='img'
+								image={x.image}
+								alt={x.title}
+								sx={{
+									width: 150,
+									height: '100%',
+									objectFit: 'cover',
+									borderRadius: '8px',
+								}}
+							/>
+							{/* Content Section */}
+							<Box sx={{ display: 'flex', flexDirection: 'column', flex: 1 }}>
+								<CardContent sx={{ flexGrow: 1 }}>
+									<Typography
+										variant='p'
+										component={'h6'}
+										sx={{ whiteSpace: 'normal' }}>
+										{x.title}
+									</Typography>
+									<Typography variant='subtitle1' color='primary'>
+										{x.price}
+									</Typography>
+								</CardContent>
+							</Box>
+						</Card>
 					</Grid>
 				))}
 			</Grid>
