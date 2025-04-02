@@ -2,9 +2,10 @@ import React from 'react';
 import PageTitle from '../../ReuseableComponents/PageTitle.js';
 import Grid from '@mui/material/Grid2';
 import { Helmet } from 'react-helmet-async';
-import { Box } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import theme from './../../theme.js';
 
+import BabyShowerPackage from './BabyShowerPackage.js';
 const LatestSpecials = () => {
 	return (
 		<Box
@@ -12,8 +13,6 @@ const LatestSpecials = () => {
 			className='Ansom_Events_Latest_Specials'
 			sx={{
 				backgroundColor: theme.palette.primaryBackground.main,
-				justifyContent: 'center',
-				height: '100vh',
 			}}>
 			<Helmet>
 				<title>Baby Shower Package £200 | Ansom Events Special Offer</title>
@@ -46,12 +45,13 @@ const LatestSpecials = () => {
 					href='https://ansomevents.com/latest-specials/baby-shower-package'
 				/>
 			</Helmet>
-			<Grid component={'section'} container spacing={4} padding={3}>
+			<Grid component={'section'} container spacing={4}>
 				<PageTitle
-					pageHeader='Easter Special'
-					pageSubheader='Order Yours Today!'
+					pageHeader='Latest Special'
+					pageSubheader='At Ansom Events'
 				/>
 			</Grid>
+			<BabyShowerPackage />
 		</Box>
 	);
 };
