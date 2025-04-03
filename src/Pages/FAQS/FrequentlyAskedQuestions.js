@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Box, Button, Typography } from '@mui/material';
 import Grid from '@mui/material/Grid2';
-import QuestionAndAnswers from '../QuestionsAndAnswers';
+import QuestionAndAnswers from './QuestionsAndAnswers';
 import QuestionAnswerIcon from '@mui/icons-material/QuestionAnswer';
 import {
 	Dialog,
@@ -9,8 +9,8 @@ import {
 	DialogContent,
 	DialogActions,
 } from '@mui/material';
-import theme from '../../../theme';
-import SectionHeader from '../../../ReuseableComponents/SectionHeader';
+import theme from '../../theme';
+import SectionHeader from '../../ReuseableComponents/SectionHeader';
 
 const faqStyles = {
 	faqContainer: {

@@ -1,12 +1,7 @@
 import React from 'react';
-import Hero from './Hero';
-import About from './About';
-import Services from './Services';
-import Gallery from './Gallery';
-import Contact from './Contact';
+import Hero from './Components/Hero';
 import { Helmet } from 'react-helmet-async';
 import { Box } from '@mui/material';
-import FrequentlyAskedQuestions from './FrequentlyAskedQuestions';
 
 export default function Home() {
 	return (
@@ -37,11 +32,6 @@ export default function Home() {
 				<link rel='canonical' href='https://ansomevents.com' />
 			</Helmet>
 			<Hero />
-			<About />
-			<Services />
-			<Gallery />
-			<Contact />
-			<FrequentlyAskedQuestions />
 		</Box>
 	);
 }

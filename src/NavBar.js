@@ -28,18 +28,17 @@ const navBarStyles = {
 		alignItems: 'center',
 	},
 	navLogo: {
-		width: '100%',
+		width: '150px',
 		height: 'auto',
-		padding: 1,
+		paddingBlock: 1,
 	},
 	navMenuContainer: {
 		display: { xs: 'none', md: 'flex' },
 		justifyContent: 'space-around',
-		gap: 4,
 	},
 	navMenuLink: {
-		fontSize: '0.9rem',
-		fontWeight: 600,
+		fontSize: '0.8rem',
+		fontWeight: 500,
 		color: theme.palette.primaryHeader.secondary,
 		transition: 'all 0.3s ease',
 		'&:hover': {
@@ -61,7 +60,7 @@ const navBarStyles = {
 	},
 	navIconButtonContainer: {
 		display: { xs: 'flex', md: 'none' },
-		justifyContent: 'flex-end',
+		justifyContent: 'center',
 	},
 	navDrawerContainer: {
 		width: 250,
@@ -105,7 +104,7 @@ const Navbar = () => {
 						{/* Menu Section */}
 						<Grid
 							item
-							size={{ md: 7 }}
+							size={{ md: 8 }}
 							sx={{ ...navBarStyles.navMenuContainer }}>
 							<MuiLink
 								component={Link}
@@ -117,19 +116,27 @@ const Navbar = () => {
 							</MuiLink>
 							<MuiLink
 								component={Link}
-								to='/decorpackages'
+								to='/packages'
 								underline='hover'
 								display='block'
 								sx={{ ...navBarStyles.navMenuLink }}>
-								Decor Packages
+								Packages
 							</MuiLink>
 							<MuiLink
 								component={Link}
-								to='/latestspecials'
+								to='/prophire'
 								underline='hover'
 								display='block'
 								sx={{ ...navBarStyles.navMenuLink }}>
-								Latest Specials
+								Prop/Decor Hire
+							</MuiLink>
+							<MuiLink
+								component={Link}
+								to='/services'
+								underline='hover'
+								display='block'
+								sx={{ ...navBarStyles.navMenuLink }}>
+								Services
 							</MuiLink>
 							<MuiLink
 								component={Link}
@@ -137,7 +144,31 @@ const Navbar = () => {
 								underline='hover'
 								display='block'
 								sx={{ ...navBarStyles.navMenuLink }}>
-								Upcoming Events
+								Events
+							</MuiLink>
+							<MuiLink
+								component={Link}
+								to='/gallery'
+								underline='hover'
+								display='block'
+								sx={{ ...navBarStyles.navMenuLink }}>
+								Gallery
+							</MuiLink>
+							<MuiLink
+								component={Link}
+								to='/specialoffers'
+								underline='hover'
+								display='block'
+								sx={{ ...navBarStyles.navMenuLink }}>
+								Special Offers
+							</MuiLink>
+							<MuiLink
+								component={Link}
+								to='/faqs'
+								underline='hover'
+								display='block'
+								sx={{ ...navBarStyles.navMenuLink }}>
+								FAQs
 							</MuiLink>
 						</Grid>
 						{/* Social Media + Contact Section (Hidden on Tablet and Below) */}
@@ -181,15 +212,45 @@ const Navbar = () => {
 					</MuiLink>
 					<MuiLink
 						component={Link}
-						to='/decorpackages'
+						to='/packages'
 						sx={{ ...navBarStyles.navDrawerLink }}>
-						Decor Packages
+						Packages
 					</MuiLink>
 					<MuiLink
 						component={Link}
-						to='/latestspecials'
+						to='/prophire'
 						sx={{ ...navBarStyles.navDrawerLink }}>
-						Latest Specials
+						Prop/Decor Hire
+					</MuiLink>
+					<MuiLink
+						component={Link}
+						to='/services'
+						sx={{ ...navBarStyles.navDrawerLink }}>
+						Services
+					</MuiLink>
+					<MuiLink
+						component={Link}
+						to='/gallery'
+						sx={{ ...navBarStyles.navDrawerLink }}>
+						Gallery
+					</MuiLink>
+					<MuiLink
+						component={Link}
+						to='/specialoffers'
+						sx={{ ...navBarStyles.navDrawerLink }}>
+						Special Offers
+					</MuiLink>
+					<MuiLink
+						component={Link}
+						to='/faqs'
+						sx={{ ...navBarStyles.navDrawerLink }}>
+						FAQs
+					</MuiLink>
+					<MuiLink
+						component={Link}
+						to='/contact'
+						sx={{ ...navBarStyles.navDrawerLink }}>
+						Contact Us
 					</MuiLink>
 				</Box>
 			</Drawer>

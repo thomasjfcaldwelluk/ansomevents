@@ -1,11 +1,11 @@
 import React from 'react';
 import { Box } from '@mui/material';
-import theme from '../../../theme';
-import SectionHeader from '../../../ReuseableComponents/SectionHeader';
-
+import theme from '../../theme';
+import SectionHeader from '../../ReuseableComponents/SectionHeader';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
-import { itemData } from './HomeData';
+import { itemData } from '../Home/Components/HomeData';
+import { Helmet } from 'react-helmet-async';
 
 function srcset(image, size, rows = 1, cols = 1) {
 	return {
@@ -23,6 +23,31 @@ export default function Gallery() {
 			sx={{ backgroundColor: theme.palette.primaryBackground.secondary }}
 			component='section'
 			className='Ansom_Events_Gallery'>
+			<Helmet>
+				<title>Ansom Events - Stunning Event Gallery</title>
+				<meta
+					name='description'
+					content='Explore our gallery of beautifully styled weddings, parties, and corporate events across Cornwall and Devon.'
+				/>
+				<meta
+					name='keywords'
+					content='event gallery, wedding decor, party setups, event inspiration'
+				/>
+				<meta
+					property='og:title'
+					content='Ansom Events - Stunning Event Gallery'
+				/>
+				<meta
+					property='og:description'
+					content='Get inspired by our past event setups and decorations.'
+				/>
+				<meta
+					property='og:image'
+					content='https://example.com/your-image.jpg'
+				/>
+				<meta property='og:url' content='https://ansomevents.com/gallery' />
+				<link rel='canonical' href='https://ansomevents.com/gallery' />
+			</Helmet>
 			<SectionHeader
 				sectionHeader='Gallery'
 				sectionSubheader='Our Portfolio Of Dreams'

@@ -1,7 +1,7 @@
 import React from 'react';
 import { List, ListItem, Box, Typography } from '@mui/material';
 import Grid from '@mui/material/Grid2';
-import { backdropData } from '../PackageData';
+import { backdropData } from '../DecorPackages/PackageData';
 
 export default function Backdrops() {
 	return (

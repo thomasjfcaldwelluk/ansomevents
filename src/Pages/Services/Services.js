@@ -5,9 +5,10 @@ import LocalFloristIcon from '@mui/icons-material/LocalFlorist';
 import DesignServicesIcon from '@mui/icons-material/DesignServices';
 import VerticalShadesIcon from '@mui/icons-material/VerticalShades';
 import CelebrationIcon from '@mui/icons-material/Celebration';
-import SectionHeader from '../../../ReuseableComponents/SectionHeader';
+import SectionHeader from '../../ReuseableComponents/SectionHeader';
 import Grid from '@mui/material/Grid2';
-import theme from '../../../theme';
+import theme from '../../theme';
+import { Helmet } from 'react-helmet-async';
 
 const serviceData = [
 	{
@@ -70,6 +71,31 @@ const serviceData = [
 export default function Services() {
 	return (
 		<Box component='section' className='Ansom_Events_Services'>
+			<Helmet>
+				<title>Ansom Events - Event Planning & Design Services</title>
+				<meta
+					name='description'
+					content='We offer full-service event planning, on-the-day coordination, and custom event styling across Cornwall and Devon.'
+				/>
+				<meta
+					name='keywords'
+					content='event planning, wedding coordination, event design, Cornwall, Devon'
+				/>
+				<meta
+					property='og:title'
+					content='Ansom Events - Event Planning & Design Services'
+				/>
+				<meta
+					property='og:description'
+					content='Let us handle every detail of your event with our expert planning and design services.'
+				/>
+				<meta
+					property='og:image'
+					content='https://example.com/your-image.jpg'
+				/>
+				<meta property='og:url' content='https://ansomevents.com/services' />
+				<link rel='canonical' href='https://ansomevents.com/services' />
+			</Helmet>
 			<Grid
 				container
 				sx={{ backgroundColor: theme.palette.primaryBackground.main }}

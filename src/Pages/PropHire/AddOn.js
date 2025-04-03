@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Typography } from '@mui/material';
-import { addOnData } from '../PackageData';
+import { addOnData } from '../DecorPackages/PackageData';
 import Grid from '@mui/material/Grid2';
 
 export default function AddOn() {

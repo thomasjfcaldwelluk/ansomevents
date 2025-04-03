@@ -1,14 +1,16 @@
 // import './App.css';
-import Home from '../src/Pages/Home/Components/Home';
-import DecorPackages from './Pages/DecorPackages/DecorPackages';
-import AllServices from './Pages/Services/AllServices';
-import LatestSpecials from './Pages/LatestSpecials/LatestSpecials';
-import ContactPage from './Pages/ContactPage/ContactPage';
+import Home from './Pages/Home/Home';
+import Packages from './Pages/Packages/Packages';
+import Services from './Pages/Services/Services';
+import Props from './Pages/PropHire/Props';
+import SpecialOffers from './Pages/SpecialOffers/SpecialOffers';
+import Gallery from './Pages/Gallery/Gallery';
+import Contact from './Pages/Contact/Contact';
 import TermsAndConditions from './Pages/TermsConditions/TermsAndConditions';
-import EventsMain from './Pages/Events/EventsMain';
+import FrequentlyAskedQuestions from './Pages/FAQS/FrequentlyAskedQuestions';
+import Events from './Pages/Events/Events';
 import Footer from './Footer';
 import NavBar from './NavBar';
-import BalloonDisplays from './Pages/DecorPackages/BalloonDisplays';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import useAnalytics from './useAnalytics';
 import CookieConsent from 'react-cookie-consent';
@@ -27,16 +29,19 @@ function App() {
 						<NavBar />
 						<Routes>
 							<Route path='/' element={<Home />} />
-							<Route path='/services' element={<AllServices />} />
-							<Route path='/decorpackages' element={<DecorPackages />} />
-							<Route path='/latestspecials' element={<LatestSpecials />} />
-							<Route path='/contact' element={<ContactPage />} />
-							<Route path='/events' element={<EventsMain />} />
+							<Route path='/packages' element={<Packages />} />
+							<Route path='prophire' element={<Props />} />
+							<Route path='/services' element={<Services />} />
+							<Route path='/gallery' element={<Gallery />} />
+							<Route path='/events' element={<Events />} />
+							<Route path='/faqs' element={<FrequentlyAskedQuestions />} />
+							<Route path='/specialoffers' element={<SpecialOffers />} />
+							<Route path='/contact' element={<Contact />} />
+
 							<Route
 								path='/termsandconditions'
 								element={<TermsAndConditions />}
 							/>
-							<Route path='/balloondisplays' element={<BalloonDisplays />} />
 						</Routes>
 						<Footer />
 						<CookieConsent

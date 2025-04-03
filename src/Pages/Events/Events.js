@@ -6,7 +6,7 @@ import theme from '../../theme';
 import easterParty from './EventsAssets/easterParty.png';
 import { Helmet } from 'react-helmet-async';
 
-export default function EventsMain() {
+export default function Events() {
 	return (
 		<Box
 			component={'main'}
@@ -15,35 +15,29 @@ export default function EventsMain() {
 				padding: 2,
 			}}>
 			<Helmet>
-				<title>Easter Event 2025 | Family Fun in Saltash | Ansom Events</title>
+				<title>Ansom Events - Weddings, Parties & Corporate Events</title>
 				<meta
 					name='description'
-					content='Join us for a fantastic Easter event at Saltash Football Club! Meet the Easter Bunny, enjoy fun activities, and create magical memories. Book now!'
+					content='From intimate weddings to grand corporate events, we bring your vision to life with expert planning and stunning decor.'
 				/>
 				<meta
 					name='keywords'
-					content='Easter event Cornwall, Easter activities Saltash, family events, Easter Bunny meet and greet, kids Easter fun, cookie painting, Easter party'
+					content='weddings, parties, corporate events, event coordination, Cornwall, Devon'
 				/>
 				<meta
 					property='og:title'
-					content='Easter Event 2025 | Fun for the Whole Family!'
+					content='Ansom Events - Weddings, Parties & Corporate Events'
 				/>
 				<meta
 					property='og:description'
-					content='Hop into Easter with an exciting family-friendly event! Meet the Easter Bunny, join the Bunny Hop Dance Party, and enjoy festive fun. Limited tickets available!'
+					content='We create unforgettable weddings, parties, and events with expert styling and coordination.'
 				/>
 				<meta
 					property='og:image'
-					content='https://ansomevents.com/images/easter-event-2025.jpg'
+					content='https://example.com/your-image.jpg'
 				/>
-				<meta
-					property='og:url'
-					content='https://ansomevents.com/latest-events/easter-2025'
-				/>
-				<link
-					rel='canonical'
-					href='https://ansomevents.com/latest-events/easter-2025'
-				/>
+				<meta property='og:url' content='https://ansomevents.com/events' />
+				<link rel='canonical' href='https://ansomevents.com/events' />
 			</Helmet>
 			<PageTitle
 				pageHeader='Upcoming Events'
