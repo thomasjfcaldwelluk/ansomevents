@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Typography } from '@mui/material';
+import { Box, IconButton, Typography } from '@mui/material';
 import Grid from '@mui/material/Grid2';
 import { Link } from '@mui/material';
 import PhoneIcon from '@mui/icons-material/Phone';
@@ -9,6 +9,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import theme from '../../theme';
 import { Element } from 'react-scroll';
+import ContactForm from './ContactForm';
 
 const contactInfo = [
 	{
@@ -80,62 +81,32 @@ export default function Contact() {
 
 				<Grid
 					container
-					spacing={5}
-					sx={{
-						height: '100%',
-						paddingInline: { xs: 0, md: 4 },
-						marginBlock: 4,
-					}}>
-					{contactInfo.map((data, index) => (
-						<Grid
-							item
-							size={{ xs: 12, sm: 6, md: 3 }}
-							key={index}
-							sx={{
-								display: 'flex',
-								alignItems: 'stretch', // Ensures all items are the same height
-								justifyContent: 'center',
-							}}>
-							<Box
-								sx={{
-									display: 'flex',
-									flexDirection: 'column',
-									alignItems: 'center',
-									textAlign: 'center',
-									padding: theme.spacing(3),
-									backgroundColor: theme.palette.primaryBackground.secondary,
-									height: '100%',
-									borderRadius: 2,
-									boxShadow: 1,
-									width: '100%',
-								}}>
-								{/* Icon */}
-								<Box mb={2}>{data.icon}</Box>
-
-								{/* Title */}
-								<Typography variant='infoHeaderText' component={'h4'}>
-									{data.title}
-								</Typography>
-
-								{/* Link */}
-								<Link
-									href={data.href}
-									target='_blank'
-									rel='noopener'
-									sx={{
-										marginBottom: 1,
-										color: theme.palette.primaryText.main,
-										textDecoration: 'none',
-										fontWeight: 600,
-									}}>
-									{data.information}
-								</Link>
-								<Typography variant='infoText' component={'p'}>
-									{data.description}
-								</Typography>
-							</Box>
-						</Grid>
-					))}
+					maxWidth={'1200px'}
+					minWidth={'320px'}
+					spacing={2}
+					margin={'0 auto'}>
+					<Grid item size={{ xs: 12, md: 6 }} sx={{ backgroundColor: 'red' }}>
+						{contactInfo.map((data, index) => (
+							<Grid container key={index} marginBlock={1}>
+								<Grid item size={12}>
+									<Box>
+										<Typography>{data.title}</Typography>
+										<Box component={'a'} href={data.href}>
+											{data.icon}
+										</Box>
+									</Box>
+								</Grid>
+								<Grid item size={12}>
+									<Box>
+										<Typography>{data.information}</Typography>
+									</Box>
+								</Grid>
+							</Grid>
+						))}
+					</Grid>
+					<Grid item size={{ xs: 12, md: 6 }} justifyContent={'center'}>
+						<ContactForm />
+					</Grid>
 				</Grid>
 			</Box>
 		</Element>

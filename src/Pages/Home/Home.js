@@ -2,6 +2,11 @@ import React from 'react';
 import Hero from './Components/Hero';
 import { Helmet } from 'react-helmet-async';
 import { Box } from '@mui/material';
+import Grid from '@mui/material/Grid2';
+import PackagesPreview from './Components/PackagesPreview';
+import PropHirePreview from './Components/PropHirePreview';
+import GalleryPreview from './Components/GalleryPreview';
+import theme from '../../theme';
 
 export default function Home() {
 	return (
@@ -32,6 +37,25 @@ export default function Home() {
 				<link rel='canonical' href='https://ansomevents.com' />
 			</Helmet>
 			<Hero />
+			<Box sx={{ flexGrow: 1 }}>
+				<Grid
+					container
+					sx={{ backgroundColor: theme.palette.primaryBackground.main }}>
+					<Grid item size={6}>
+						<Box>
+							<PackagesPreview />
+						</Box>
+					</Grid>
+					<Grid item size={{ xs: 12, md: 6 }}>
+						<Box>
+							<PropHirePreview />
+						</Box>
+					</Grid>
+				</Grid>
+			</Box>
+			<Box>
+				<GalleryPreview />
+			</Box>
 		</Box>
 	);
 }

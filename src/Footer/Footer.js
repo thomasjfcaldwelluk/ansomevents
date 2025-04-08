@@ -4,8 +4,8 @@ import { Link as MuiLink } from '@mui/material';
 import { Link } from 'react-router-dom';
 import Grid from '@mui/material/Grid2';
 import { Facebook, Instagram } from '@mui/icons-material';
-import logo from '../src/Assets/Logo/AnsomEvents.svg';
-import theme from './theme';
+import logo from '../Assets/Logo/AnsomEvents.svg';
+import theme from '../theme';
 
 const footerStyles = {
 	footerContainer: {

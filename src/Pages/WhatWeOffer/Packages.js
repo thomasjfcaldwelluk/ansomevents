@@ -5,8 +5,8 @@ import PageTitle from '../../ReuseableComponents/PageTitle';
 import { List, ListItem, Typography } from '@mui/material';
 import { fullPackageData } from './PackageData';
 import theme from '../../theme';
-
 import { Helmet } from 'react-helmet-async';
+
 const packageStyles = {
 	introStyle: {
 		width: '100%',

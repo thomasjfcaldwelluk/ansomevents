@@ -1,32 +1,39 @@
 import React from 'react';
-import { Box, Button, Typography, Stack } from '@mui/material';
-import { Link } from 'react-router-dom';
+import { Box, Typography } from '@mui/material';
 import theme from '../../../theme';
 import Grid from '@mui/material/Grid2';
+import heroImage from '../../../Assets/Photos/HomePageImages/websiteHero.webp';
 
 const heroStyles = {
 	sectionContainer: {
-		backgroundColor: theme.palette.primaryBackground.main,
 		height: '100vh',
 		display: 'flex',
 		justifyContent: 'center',
+		backgroundImage: `url(${heroImage})`,
+		backgroundColor: 'black',
+		backgroundSize: 'cover',
+		backgroundPosition: 'center',
+		backgroundRepeat: 'no-repeat',
+		position: 'relative',
 	},
 	heroContainer: {
 		display: 'flex',
 		flexDirection: 'column',
 		justifyContent: 'center',
 		alignItems: 'space-between',
+		position: 'relative',
+		zIndex: 2,
 	},
 	heroHeaderMain: {
 		color: theme.palette.primaryHeader.main,
 		textAlign: 'center',
 	},
 	heroHeaderMainSpan: {
-		background: 'linear-gradient(45deg, #FFC413,#F7DD7D)',
+		background: theme.palette.primaryHeader.main,
 		WebkitBackgroundClip: 'text',
 		WebkitTextFillColor: 'transparent',
 		fontWeight: 'bold',
-		fontSize: { xs: '1rem', sm: '2.9rem', md: '3rem', lg: '3.8rem' },
+		fontSize: { xs: '1.9rem', sm: '2.9rem', md: '3rem', lg: '3.8rem' },
 		LineHeight: '1',
 	},
 	heroTagContainer: {
@@ -61,6 +68,17 @@ export default function Hero() {
 			component='section'
 			className='Hero_Section'
 			sx={{ ...heroStyles.sectionContainer }}>
+			<Box
+				sx={{
+					position: 'absolute',
+					top: 0,
+					left: 0,
+					width: '100%',
+					height: '100%',
+					backgroundColor: 'rgba(228, 222, 222, 0.5)', // ← dark overlay
+					zIndex: 1,
+				}}
+			/>
 			<Grid container spacing={15} sx={{ ...heroStyles.heroContainer }}>
 				<Grid item>
 					<Typography

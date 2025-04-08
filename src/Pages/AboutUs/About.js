@@ -1,12 +1,12 @@
 import React from 'react';
 import { Typography, Box, Stack, useMediaQuery } from '@mui/material';
-import us from '../../../Assets/Photos/HomePageImages/OwnersPhoto.jpg';
-import them from '../../../Assets/Photos/HomePageImages/ownersLandscape.jpg';
+import us from '../../Assets/Photos/HomePageImages/OwnersPhoto.jpg';
+import them from '../../Assets/Photos/HomePageImages/ownersLandscape.jpg';
 import Grid from '@mui/material/Grid2';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
-import theme from '../../../theme';
-import { rows } from './HomeData';
-import SectionHeader from '../../../ReuseableComponents/SectionHeader';
+import theme from '../../theme';
+import { rows } from '../Home/Components/HomeData';
+import SectionHeader from '../../ReuseableComponents/SectionHeader';
 
 export default function About() {
 	const isSmallScreen = useMediaQuery('(min-width:900px)');
@@ -16,7 +16,7 @@ export default function About() {
 
 	return (
 		<Box
-			component='section'
+			component='main'
 			className='About_Ansom_Events'
 			sx={{
 				padding: { xs: 0, md: 4 },

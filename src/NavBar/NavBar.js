@@ -7,13 +7,15 @@ import {
 	Button,
 	Box,
 	Drawer,
+	Menu,
+	MenuItem,
 } from '@mui/material';
 import Grid from '@mui/material/Grid2';
 import { Link as MuiLink } from '@mui/material';
 import { Link } from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
-import theme from './theme';
-import logo from './Assets/Logo/AnsomEvents.svg';
+import theme from '../theme';
+import logo from '../Assets/Logo/AnsomEvents.svg';
 
 const navBarStyles = {
 	appBarStyles: {
@@ -22,8 +24,8 @@ const navBarStyles = {
 		boxShadow: 0,
 	},
 	toolbarContainerStyles: {
-		width: '100%', // Ensures the container spans the full width
-		margin: 0, // Resets any default margins
+		width: '100%',
+		margin: 0,
 		justifyContent: 'space-between',
 		alignItems: 'center',
 	},
@@ -80,9 +82,18 @@ const navBarStyles = {
 
 const Navbar = () => {
 	const [drawerOpen, setDrawerOpen] = useState(false);
+	const [anchorEl, setAnchorEl] = useState(null);
 
 	const handleDrawerToggle = () => {
 		setDrawerOpen(!drawerOpen);
+	};
+
+	const handleMenuClick = (event) => {
+		setAnchorEl(event.currentTarget);
+	};
+
+	const handleMenuClose = () => {
+		setAnchorEl(null);
 	};
 
 	return (
@@ -116,28 +127,76 @@ const Navbar = () => {
 							</MuiLink>
 							<MuiLink
 								component={Link}
-								to='/packages'
-								underline='hover'
-								display='block'
-								sx={{ ...navBarStyles.navMenuLink }}>
-								Packages
-							</MuiLink>
-							<MuiLink
-								component={Link}
-								to='/prophire'
-								underline='hover'
-								display='block'
-								sx={{ ...navBarStyles.navMenuLink }}>
-								Prop/Decor Hire
-							</MuiLink>
-							<MuiLink
-								component={Link}
 								to='/services'
 								underline='hover'
 								display='block'
 								sx={{ ...navBarStyles.navMenuLink }}>
 								Services
 							</MuiLink>
+							{/* New "What We Offer" dropdown */}
+							<MuiLink
+								component='button'
+								onClick={handleMenuClick}
+								underline='hover'
+								display='block'
+								sx={{ ...navBarStyles.navMenuLink }}>
+								What We Offer
+							</MuiLink>
+							<Menu
+								anchorEl={anchorEl}
+								open={Boolean(anchorEl)}
+								onClose={handleMenuClose}>
+								<MenuItem onClick={handleMenuClose}>
+									<Link
+										to='/whatweoffer/packages'
+										style={{
+											textDecoration: 'none',
+											...navBarStyles.navMenuLink,
+										}}>
+										Decor Packages
+									</Link>
+								</MenuItem>
+								<MenuItem onClick={handleMenuClose}>
+									<Link
+										to='/whatweoffer/backdrops'
+										style={{
+											textDecoration: 'none',
+											...navBarStyles.navMenuLink,
+										}}>
+										Backdrops
+									</Link>
+								</MenuItem>
+								<MenuItem onClick={handleMenuClose}>
+									<Link
+										to='/whatweoffer/balloondisplays'
+										style={{
+											textDecoration: 'none',
+											...navBarStyles.navMenuLink,
+										}}>
+										Balloon Displays
+									</Link>
+								</MenuItem>
+								<MenuItem onClick={handleMenuClose}>
+									<Link
+										to='/whatweoffer/prophire'
+										style={{
+											textDecoration: 'none',
+											...navBarStyles.navMenuLink,
+										}}>
+										Prop Hire
+									</Link>
+								</MenuItem>
+								<MenuItem onClick={handleMenuClose}>
+									<Link
+										to='/whatweoffer/specialoffers'
+										style={{
+											textDecoration: 'none',
+											...navBarStyles.navMenuLink,
+										}}>
+										Special Offer On Decor
+									</Link>
+								</MenuItem>
+							</Menu>
 							<MuiLink
 								component={Link}
 								to='/events'
@@ -156,11 +215,11 @@ const Navbar = () => {
 							</MuiLink>
 							<MuiLink
 								component={Link}
-								to='/specialoffers'
+								to='/aboutus'
 								underline='hover'
 								display='block'
 								sx={{ ...navBarStyles.navMenuLink }}>
-								Special Offers
+								About Us
 							</MuiLink>
 							<MuiLink
 								component={Link}
@@ -171,7 +230,7 @@ const Navbar = () => {
 								FAQs
 							</MuiLink>
 						</Grid>
-						{/* Social Media + Contact Section (Hidden on Tablet and Below) */}
+						{/* Contact Section (Hidden on Tablet and Below) */}
 						<Grid
 							item
 							size={{ md: 2 }}
@@ -210,18 +269,7 @@ const Navbar = () => {
 						sx={{ ...navBarStyles.navDrawerLink }}>
 						Home
 					</MuiLink>
-					<MuiLink
-						component={Link}
-						to='/packages'
-						sx={{ ...navBarStyles.navDrawerLink }}>
-						Packages
-					</MuiLink>
-					<MuiLink
-						component={Link}
-						to='/prophire'
-						sx={{ ...navBarStyles.navDrawerLink }}>
-						Prop/Decor Hire
-					</MuiLink>
+
 					<MuiLink
 						component={Link}
 						to='/services'
@@ -236,9 +284,9 @@ const Navbar = () => {
 					</MuiLink>
 					<MuiLink
 						component={Link}
-						to='/specialoffers'
+						to='/aboutus'
 						sx={{ ...navBarStyles.navDrawerLink }}>
-						Special Offers
+						About Us
 					</MuiLink>
 					<MuiLink
 						component={Link}

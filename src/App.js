@@ -1,16 +1,19 @@
 // import './App.css';
 import Home from './Pages/Home/Home';
-import Packages from './Pages/Packages/Packages';
+import Packages from './Pages/WhatWeOffer/Packages';
 import Services from './Pages/Services/Services';
-import Props from './Pages/PropHire/Props';
-import SpecialOffers from './Pages/SpecialOffers/SpecialOffers';
+import Props from './Pages/WhatWeOffer/Props';
+import SpecialOffers from './Pages/WhatWeOffer/SpecialOffers/SpecialOffers';
 import Gallery from './Pages/Gallery/Gallery';
+import About from './Pages/AboutUs/About';
 import Contact from './Pages/Contact/Contact';
+import Backdrops from './Pages/WhatWeOffer/Backdrops';
+import BalloonDisplays from './Pages/WhatWeOffer/BalloonDisplays';
 import TermsAndConditions from './Pages/TermsConditions/TermsAndConditions';
 import FrequentlyAskedQuestions from './Pages/FAQS/FrequentlyAskedQuestions';
 import Events from './Pages/Events/Events';
-import Footer from './Footer';
-import NavBar from './NavBar';
+import Footer from './Footer/Footer';
+import NavBar from './NavBar/NavBar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import useAnalytics from './useAnalytics';
 import CookieConsent from 'react-cookie-consent';
@@ -29,14 +32,23 @@ function App() {
 						<NavBar />
 						<Routes>
 							<Route path='/' element={<Home />} />
-							<Route path='/packages' element={<Packages />} />
-							<Route path='prophire' element={<Props />} />
+							<Route path='/whatweoffer/packages' element={<Packages />} />
+							<Route
+								path='/whatweoffer/balloondisplays'
+								element={<BalloonDisplays />}
+							/>
+							<Route path='/whatweoffer/prophire' element={<Props />} />
+							<Route path='/whatweoffer/backdrops' element={<Backdrops />} />
+							<Route
+								path='/whatweoffer/specialoffers'
+								element={<SpecialOffers />}
+							/>
 							<Route path='/services' element={<Services />} />
 							<Route path='/gallery' element={<Gallery />} />
 							<Route path='/events' element={<Events />} />
 							<Route path='/faqs' element={<FrequentlyAskedQuestions />} />
-							<Route path='/specialoffers' element={<SpecialOffers />} />
 							<Route path='/contact' element={<Contact />} />
+							<Route path='/aboutus' element={<About />} />
 
 							<Route
 								path='/termsandconditions'

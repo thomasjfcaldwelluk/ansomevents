@@ -1,9 +1,9 @@
 import React from 'react';
-import PageTitle from '../../ReuseableComponents/PageTitle.js';
+import PageTitle from '../../../ReuseableComponents/PageTitle.js';
 import Grid from '@mui/material/Grid2';
 import { Helmet } from 'react-helmet-async';
 import { Box } from '@mui/material';
-import theme from '../../theme.js';
+import theme from '../../../theme.js';
 import BabyShowerPackage from './BabyShowerPackage.js';
 
 export default function SpecialOffers() {

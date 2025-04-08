@@ -1,6 +1,7 @@
 import React from 'react';
 import { Typography, Box } from '@mui/material';
 import Grid from '@mui/material/Grid2';
+import theme from '../../theme';
 
 const faq = [
 	{
@@ -62,18 +63,26 @@ const faq = [
 
 function QuestionAndAnswers() {
 	return (
-		<Box sx={{ flexGrow: 1, padding: 1 }}>
-			<Box sx={{ padding: 2, backgroundColor: '#F7DD7D', marginBlock: 1 }}>
+		<Box
+			sx={{
+				flexGrow: 1,
+				backgroundColor: theme.palette.primaryBackground.main,
+			}}>
+			<Box
+				sx={{
+					padding: 4,
+					backgroundColor: theme.palette.primaryBackground.secondary,
+				}}>
 				<Typography>
 					<Typography sx={{ fontWeight: 600, display: 'inline' }}>
-						Safety Warning for Balloons:{' '}
+						Safety Warning for Balloons:
 					</Typography>
 					Balloons pose a choking hazard and should always be used under adult
 					supervision. Please note that latex balloons are made from natural
 					rubber latex, which may cause allergic reactions in some individuals.
 				</Typography>
 			</Box>
-			<Grid container spacing={2}>
+			<Grid container spacing={2} padding={2}>
 				{faq.map((qa, index) => (
 					<React.Fragment key={index}>
 						{/* Question */}
