@@ -28,7 +28,11 @@ const getCurrentYear = () => new Date().getFullYear();
 
 const Footer = () => {
 	return (
-		<Box component='footer' sx={{ ...footerStyles.footerContainer }}>
+		<Box
+			component='footer'
+			id='footer'
+			aria-label='Footer'
+			sx={{ ...footerStyles.footerContainer }}>
 			<Grid container spacing={4}>
 				<Grid item size={{ xs: 12, sm: 4 }}>
 					<Box>

@@ -1,23 +1,16 @@
 import React from 'react';
-import {
-	SectionHeaderContainer,
-	SectionHeaderText,
-	SectionSubHeader,
-} from './ReuseableComponentsStyles/SectionHeaderStyles';
+import { Stack } from '@mui/system';
+import { Typography } from '@mui/material';
 
-export default function SectionHeader({
-	sectionHeader,
-	sectionSubheader,
-	color = 'white',
-}) {
+export default function SectionHeader({ sectionHeader, sectionSubheader }) {
 	return (
-		<SectionHeaderContainer>
-			<SectionHeaderText variant='h2' component={'h2'} sx={{ color }} r>
+		<Stack alignItems='center'>
+			<Typography variant='h2' component={'h2'}>
 				{sectionHeader}
-			</SectionHeaderText>
-			<SectionSubHeader variant='h3' component={'h3'} sx={{ color }}>
+			</Typography>
+			<Typography variant='h3' component={'h3'}>
 				{sectionSubheader}
-			</SectionSubHeader>
-		</SectionHeaderContainer>
+			</Typography>
+		</Stack>
 	);
 }

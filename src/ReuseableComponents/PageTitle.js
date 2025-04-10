@@ -1,32 +1,39 @@
 import React from 'react';
-import {
-	PageTitleContainer,
-	PageHeader,
-	PageSubheader,
-} from './ReuseableComponentsStyles/PageTitleStyles';
-import theme from './../theme';
+import { Stack } from '@mui/system';
+import { Typography } from '@mui/material';
 
 export default function PageTitle({
 	pageHeader,
 	pageSubheader,
-	color = theme.palette.primaryHeader.main,
+	smallHeaderOnMobile = false,
+	smallSubheaderOnMobile = false,
 }) {
 	return (
-		<PageTitleContainer spacing={1}>
-			<PageHeader
-				variant='h1'
+		<Stack alignItems='center' justifyContent={'center'}>
+			<Typography
+				variant='pageHeaderText'
 				component={'h1'}
 				sx={{
-					color,
-					fontSize: { xs: '28px', md: '40px', lg: '50px' },
-					fontFamily: 'Playfair',
-					textAlign: 'center',
+					...(smallHeaderOnMobile && {
+						'@media (max-width:430px)': {
+							fontSize: 28,
+						},
+					}),
 				}}>
 				{pageHeader}
-			</PageHeader>
-			<PageSubheader variant='h2' component={'h2'} sx={{ color }}>
+			</Typography>
+			<Typography
+				variant='pageSubheaderText'
+				component={'h2'}
+				sx={{
+					...(smallSubheaderOnMobile && {
+						'@media (max-width:400px)': {
+							fontSize: 12,
+						},
+					}),
+				}}>
 				{pageSubheader}
-			</PageSubheader>
-		</PageTitleContainer>
+			</Typography>
+		</Stack>
 	);
 }

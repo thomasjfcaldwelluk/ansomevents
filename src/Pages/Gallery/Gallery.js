@@ -1,11 +1,12 @@
 import React from 'react';
 import { Box } from '@mui/material';
 import theme from '../../theme';
-import SectionHeader from '../../ReuseableComponents/SectionHeader';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import { itemData } from '../Home/Components/HomeData';
 import { Helmet } from 'react-helmet-async';
+import PageTitle from '../../ReuseableComponents/PageTitle';
+import LayoutWrapper from '../../ReuseableComponents/LayoutWrapper';
 
 function srcset(image, size, rows = 1, cols = 1) {
 	return {
@@ -18,11 +19,7 @@ function srcset(image, size, rows = 1, cols = 1) {
 
 export default function Gallery() {
 	return (
-		<Box
-			padding={4}
-			sx={{ backgroundColor: theme.palette.primaryBackground.secondary }}
-			component='section'
-			className='Ansom_Events_Gallery'>
+		<Box component='main' id='Ansom_Events_Gallery' aria-label='Main Gallery'>
 			<Helmet>
 				<title>Ansom Events - Stunning Event Gallery</title>
 				<meta
@@ -48,36 +45,44 @@ export default function Gallery() {
 				<meta property='og:url' content='https://ansomevents.com/gallery' />
 				<link rel='canonical' href='https://ansomevents.com/gallery' />
 			</Helmet>
-			<SectionHeader
-				sectionHeader='Gallery'
-				sectionSubheader='Our Portfolio Of Dreams'
-				color={theme.palette.primaryHeader.main}
+			<PageTitle
+				pageHeader={'Ansom Events Gallery'}
+				pageSubheader={'Take A Look At Our Creations'}
+				smallHeaderOnMobile
 			/>
-			<Box sx={{ marginBlock: 5, display: 'flex', justifyContent: 'center' }}>
-				<ImageList
+			<LayoutWrapper>
+				<Box
 					sx={{
-						maxWidth: '1000px',
-						minWidth: '250px',
-						maxHeight: 1550,
-						minHeight: 450,
-					}}
-					variant='quilted'
-					cols={4}
-					rowHeight='auto'>
-					{itemData.map((item) => (
-						<ImageListItem
-							key={item.img}
-							cols={item.cols || 1}
-							rows={item.rows || 1}>
-							<img
-								{...srcset(item.img, 121, item.rows, item.cols)}
-								alt={item.title}
-								loading='lazy'
-							/>
-						</ImageListItem>
-					))}
-				</ImageList>
-			</Box>
+						display: 'flex',
+						justifyContent: 'center',
+					}}>
+					<ImageList
+						sx={
+							{
+								// maxWidth: '1000px',
+								// minWidth: '250px',
+								// maxHeight: 1550,
+								// minHeight: 450,
+							}
+						}
+						variant='quilted'
+						cols={4}
+						rowHeight='auto'>
+						{itemData.map((item) => (
+							<ImageListItem
+								key={item.img}
+								cols={item.cols || 1}
+								rows={item.rows || 1}>
+								<img
+									{...srcset(item.img, 121, item.rows, item.cols)}
+									alt={item.title}
+									loading='lazy'
+								/>
+							</ImageListItem>
+						))}
+					</ImageList>
+				</Box>
+			</LayoutWrapper>
 		</Box>
 	);
 }

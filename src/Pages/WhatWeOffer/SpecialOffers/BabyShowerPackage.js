@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography, Box, List, ListItem, ListItemText } from '@mui/material';
+import { Typography, Box, List, ListItem } from '@mui/material';
 import Grid from '@mui/material/Grid2';
 
 import babyShowerSpecial from '../../../Assets/Photos/Specials/babyShowerSpecial.webp';
@@ -10,72 +10,75 @@ import easel from '../../../Assets/Photos/Specials/easel.webp';
 export default function BabyShowerPackage() {
 	return (
 		<Box>
-			<Grid container sx={{ padding: 5 }} spacing={4}>
-				<Grid item size={6}>
-					<Box component='img' src={babyShowerSpecial} width={'80%'} />
+			<Grid
+				container
+				spacing={2}
+				sx={{
+					alignItems: 'stretch',
+					flexWrap: { xs: 'wrap', md: 'nowrap' },
+				}}>
+				{/* Left Image Column */}
+				<Grid item size={{ xs: 12, md: 6 }}>
+					<Box
+						component='img'
+						src={babyShowerSpecial}
+						sx={{
+							width: '100%',
+							height: '100%',
+							objectFit: 'cover',
+							borderRadius: 4,
+						}}
+					/>
 				</Grid>
-				<Grid item size={6}>
-					<Box sx={{ width: '100%' }}>
-						<Typography component={'h2'} variant='h2'>
-							Baby Shower Package
-						</Typography>
-						<Box>
-							<List
-								sx={{
-									width: '100%',
-								}}>
-								{[
-									'Sailboard',
-									'oh baby sign',
-									'Balloon garland in your event theme colour made with high quality bio-degradable latex balloons',
-									'Baby box with balloons for gift table',
-									'Easel decorated faux florals arrangement and personalized welcome sign',
-									'Cake Pedestal',
-									'Choice of 2 baby shower game (Up to 20 players)*',
-								].map((value) => (
-									<ListItem key={value} disableGutters padding={0}>
-										<ListItemText primary={`${value}`} padding={0} />
-									</ListItem>
-								))}
-							</List>
-						</Box>
-						<Box
-							sx={{
-								marginBlock: 2,
-								display: 'flex',
-								justifyContent: 'center',
-							}}>
-							<Typography
-								sx={{
-									textAlign: 'center',
-									padding: 2,
-									border: '1px solid blue',
-									display: 'inline',
-									fontSize: 19,
-								}}>
-								200 Pounds
-							</Typography>
-						</Box>
-						<Box>
-							<Typography>
-								*Games options: Baby Bingo, Name that Baby Song, Don't Say The
-								Word Baby, Baby Word Search and Guess The Safety Pin Count
-							</Typography>
-						</Box>
+
+				{/* Right Content Column */}
+				<Grid
+					item
+					size={{ xs: 12, md: 6 }}
+					sx={{
+						display: 'flex',
+						flexDirection: 'column',
+						justifyContent: 'space-between',
+						backgroundColor: '#F2EFEA',
+						borderRadius: 4,
+					}}>
+					{/* Title */}
+					<Typography
+						component='h2'
+						variant='titleText'
+						sx={{ textAlign: 'center', mb: 2 }}>
+						Baby Shower Package
+					</Typography>
+
+					{/* Included Items */}
+					<List sx={{ paddingLeft: 2 }}>
+						{[
+							'Sailboard',
+							'Oh Baby sign',
+							'Balloon garland in your theme colours (biodegradable latex)',
+							'Baby box with balloons for gift table',
+							'Easel with faux florals & personalised sign',
+							'Cake Pedestal',
+							'Choice of 2 baby shower games (Up to 20 players)*',
+						].map((value, i) => (
+							<ListItem key={i} sx={{ py: 0.5 }}>
+								<Typography variant='body2'>• {value}</Typography>
+							</ListItem>
+						))}
+					</List>
+
+					{/* Price */}
+					<Box sx={{ textAlign: 'center', my: 2 }}>
+						<Typography variant='h6'>£200</Typography>
 					</Box>
-					<Box sx={{ width: '100%' }}>
-						<Grid container spacing={1}>
-							<Grid item size={4}>
-								<Box component='img' src={easel} width={'100%'} />
-							</Grid>
-							<Grid item size={4}>
-								<Box component='img' src={babyBoxes} width={'100%'} />
-							</Grid>
-							<Grid item size={4}>
-								<Box component='img' src={babyBingo} width={'100%'} />
-							</Grid>
-						</Grid>
-					</Box>
+
+					{/* Disclaimer */}
+					<Typography component='p' variant='smallerP' sx={{ mb: 2 }}>
+						*Game options: Baby Bingo, Name That Baby Song, Don't Say "Baby",
+						Baby Word Search, and Guess the Safety Pin Count
+					</Typography>
+
+					{/* Row of 3 Images */}
 				</Grid>
 			</Grid>
 		</Box>

@@ -14,8 +14,10 @@ const theme = createTheme({
 		primaryText: {
 			main: '#4A4A4A', // dark grey
 			secondary: '#6D5F4A', // warm taupe
+			darker: '#333333', // Deep charcoal
 		},
 		primaryAccent: {
+			primary: '#3B3C36', //Olive Charcoal
 			secondary: '#C5A46D', //gold
 		},
 
@@ -68,50 +70,37 @@ const theme = createTheme({
 			fontWeight: 550,
 			color: '#4A4A4A',
 		},
-		subtitle1: {},
-		subtitle2: {},
+		pageHeaderText: {
+			fontFamily: 'Playfair, serif',
+			color: '#1C3D5A',
+			fontSize: 40,
+		},
+		pageSubheaderText: {
+			fontSize: 15,
+			color: '#4A4A4A',
+			marginTop: '-10px',
+			fontWeight: 400,
+		},
+		titleText: {
+			color: '#333333',
+			fontSize: 15,
+			fontWeight: 550,
+		},
 		p: {
 			color: '#4A4A4A',
 			lineHeight: '1.6',
 			fontWeight: '400',
 			textAlign: 'left',
-		},
-		body2: {
-			lineHeight: '1.6',
-			fontWeight: '500',
-			textAlign: 'left',
-		},
-		infoText: {
-			color: '#6D5F4A',
-			fontSize: 15,
-			fontWeight: 300,
-			alignText: 'center',
-		},
-		infoHeaderText: {
-			fontSize: 18,
-			textAlign: 'center',
-			fontWeight: '500',
-			color: '#3D3D3D',
-		},
-		listText: {
-			color: '#6D5F4A',
-			fontWeight: 450,
 			fontSize: 14,
-			// marginBlock: 1,
 		},
-		introText: {
-			fontSize: 16,
-			'@media (max-width:420px)': {
-				fontSize: 13,
-			},
-			fontWeight: 550,
+		smallerP: {
 			color: '#4A4A4A',
+			lineHeight: '1.6',
+			fontWeight: '400',
+			textAlign: 'left',
+			fontSize: 12,
 		},
-		descriptionText: {
-			fontSize: 13,
-			color: '#4A4A4A',
-			fontWeight: 500,
-		},
+
 		button: {},
 		caption: {},
 		overline: {},
@@ -125,7 +114,15 @@ const theme = createTheme({
 				},
 			},
 		},
-		// Add more component customizations as needed
+		MuiCssBaseline: {
+			styleOverrides: {
+				body: {
+					backgroundColor: '#F8F5F0',
+					margin: 0,
+					padding: 0,
+				},
+			},
+		},
 	},
 });
 

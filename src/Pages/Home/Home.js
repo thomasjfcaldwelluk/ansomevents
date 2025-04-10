@@ -6,7 +6,6 @@ import Grid from '@mui/material/Grid2';
 import PackagesPreview from './Components/PackagesPreview';
 import PropHirePreview from './Components/PropHirePreview';
 import GalleryPreview from './Components/GalleryPreview';
-import theme from '../../theme';
 
 export default function Home() {
 	return (
@@ -36,24 +35,32 @@ export default function Home() {
 				<meta property='og:url' content='https://ansomevents.com' />
 				<link rel='canonical' href='https://ansomevents.com' />
 			</Helmet>
-			<Hero />
-			<Box sx={{ flexGrow: 1 }}>
+			<Box id='hero' component='section' aria-label='Hero'>
+				<Hero />
+			</Box>
+			<Box
+				sx={{ flexGrow: 1, padding: 2 }}
+				id='whatweoffer-preview'
+				component='section'
+				aria-label='What We Offer Preview'>
 				<Grid
 					container
-					sx={{ backgroundColor: theme.palette.primaryBackground.main }}>
-					<Grid item size={6}>
-						<Box>
-							<PackagesPreview />
-						</Box>
+					spacing={2}
+					sx={{
+						height: '100vh',
+					}}>
+					<Grid item size={{ xs: 12, md: 6 }}>
+						<PackagesPreview />
 					</Grid>
 					<Grid item size={{ xs: 12, md: 6 }}>
-						<Box>
-							<PropHirePreview />
-						</Box>
+						<PropHirePreview />
 					</Grid>
 				</Grid>
 			</Box>
-			<Box>
+			<Box
+				id='gallery-preview'
+				component='section'
+				aria-label='Gallery Preview'>
 				<GalleryPreview />
 			</Box>
 		</Box>

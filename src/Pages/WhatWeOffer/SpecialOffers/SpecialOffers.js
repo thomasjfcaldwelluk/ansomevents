@@ -5,15 +5,14 @@ import { Helmet } from 'react-helmet-async';
 import { Box } from '@mui/material';
 import theme from '../../../theme.js';
 import BabyShowerPackage from './BabyShowerPackage.js';
+import LayoutWrapper from '../../../ReuseableComponents/LayoutWrapper.js';
 
 export default function SpecialOffers() {
 	return (
 		<Box
 			component='main'
-			className='Ansom_Events_Latest_Specials'
-			sx={{
-				backgroundColor: theme.palette.primaryBackground.main,
-			}}>
+			id='special_offers'
+			aria-label='Special Offers At Ansom Events'>
 			<Helmet>
 				<title>Ansom Events - Special Offers on Event Packages</title>
 				<meta
@@ -42,13 +41,10 @@ export default function SpecialOffers() {
 				/>
 				<link rel='canonical' href='https://ansomevents.com/special-offers' />
 			</Helmet>
-			<Grid component={'section'} container spacing={4}>
-				<PageTitle
-					pageHeader='Latest Special'
-					pageSubheader='At Ansom Events'
-				/>
-			</Grid>
-			<BabyShowerPackage />
+			<PageTitle pageHeader='Latest Special' pageSubheader='At Ansom Events' />
+			<LayoutWrapper>
+				<BabyShowerPackage />
+			</LayoutWrapper>
 		</Box>
 	);
 }

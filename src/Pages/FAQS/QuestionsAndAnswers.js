@@ -63,44 +63,38 @@ const faq = [
 
 function QuestionAndAnswers() {
 	return (
-		<Box
-			sx={{
-				flexGrow: 1,
-				backgroundColor: theme.palette.primaryBackground.main,
-			}}>
+		<Box component='section' aria-label='Questions And Answers for FAQs'>
 			<Box
 				sx={{
-					padding: 4,
 					backgroundColor: theme.palette.primaryBackground.secondary,
+					marginBlock: 2,
+					padding: 1,
 				}}>
-				<Typography>
-					<Typography sx={{ fontWeight: 600, display: 'inline' }}>
-						Safety Warning for Balloons:
-					</Typography>
+				<Typography component={'p'} variant='titleText'>
+					Safety Warning for Balloons:
+				</Typography>
+				<Typography component={'p'} variant='p'>
 					Balloons pose a choking hazard and should always be used under adult
 					supervision. Please note that latex balloons are made from natural
 					rubber latex, which may cause allergic reactions in some individuals.
 				</Typography>
 			</Box>
-			<Grid container spacing={2} padding={2}>
+			<Grid container spacing={2}>
 				{faq.map((qa, index) => (
-					<React.Fragment key={index}>
+					<Box key={index}>
 						{/* Question */}
 						<Grid item size={{ xs: 12 }}>
-							<Typography
-								variant='body1'
-								component='p'
-								sx={{ fontWeight: 'bold' }}>
+							<Typography component={'p'} variant='titleText'>
 								{index + 1}. {qa.question}
 							</Typography>
 						</Grid>
 						{/* Answer */}
 						<Grid item size={{ xs: 12 }}>
-							<Typography variant='body1' component='p'>
+							<Typography component={'p'} variant='smallerP'>
 								{qa.answer}
 							</Typography>
 						</Grid>
-					</React.Fragment>
+					</Box>
 				))}
 			</Grid>
 		</Box>

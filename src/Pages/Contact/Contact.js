@@ -1,15 +1,14 @@
 import React from 'react';
-import { Box, IconButton, Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import Grid from '@mui/material/Grid2';
-import { Link } from '@mui/material';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
-import SectionHeader from '../../ReuseableComponents/SectionHeader';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import theme from '../../theme';
-import { Element } from 'react-scroll';
 import ContactForm from './ContactForm';
+import PageTitle from '../../ReuseableComponents/PageTitle';
+import LayoutWrapper from '../../ReuseableComponents/LayoutWrapper';
 
 const contactInfo = [
 	{
@@ -67,24 +66,13 @@ const contactInfo = [
 
 export default function Contact() {
 	return (
-		<Element name='contact-section'>
-			<Box
-				sx={{ backgroundColor: theme.palette.primaryBackground.main }}
-				padding={4}
-				component='section'
-				className='Contact_Ansom_Events'>
-				<SectionHeader
-					sectionHeader='Contact Us'
-					sectionSubheader='We Would Love To Hear About Your Events'
-					color={theme.palette.primaryHeader.main}
-				/>
-
-				<Grid
-					container
-					maxWidth={'1200px'}
-					minWidth={'320px'}
-					spacing={2}
-					margin={'0 auto'}>
+		<Box component={'main'} id='contact' aria-label='Contact Ansom Events'>
+			<PageTitle
+				pageHeader={'Contact Us'}
+				pageSubheader={'Looking To Book? Have A Question?'}
+			/>
+			<LayoutWrapper>
+				<Grid container spacing={2}>
 					<Grid item size={{ xs: 12, md: 6 }} sx={{ backgroundColor: 'red' }}>
 						{contactInfo.map((data, index) => (
 							<Grid container key={index} marginBlock={1}>
@@ -108,7 +96,7 @@ export default function Contact() {
 						<ContactForm />
 					</Grid>
 				</Grid>
-			</Box>
-		</Element>
+			</LayoutWrapper>
+		</Box>
 	);
 }

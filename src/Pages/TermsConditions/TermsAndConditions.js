@@ -5,10 +5,15 @@ import Grid from '@mui/material/Grid2';
 import { termsData, balloonTip } from './TermsConditionsData';
 import theme from '../../theme';
 import { Helmet } from 'react-helmet-async';
+import PageTitle from '../../ReuseableComponents/PageTitle';
+import LayoutWrapper from '../../ReuseableComponents/LayoutWrapper';
 
 export default function TermsAndConditions() {
 	return (
-		<Box sx={{ backgroundColor: theme.palette.primaryBackground.main }}>
+		<Box
+			component={'main'}
+			id='terms_and_conditions'
+			aria-label='Terms And Conditions'>
 			<Helmet>
 				<title>Terms & Conditions | Ansom Events</title>
 				<meta
@@ -37,73 +42,54 @@ export default function TermsAndConditions() {
 					href='https://ansomevents.com/terms-and-conditions'
 				/>
 			</Helmet>
-			<Box
-				sx={{
-					display: 'flex',
-					justifyContent: 'center',
-				}}>
-				<Typography variant='h3' component={'h3'}>
-					Terms And Conditions
-				</Typography>
-			</Box>
-			<Grid
-				container
-				sx={{
-					display: 'flex',
-					padding: 3,
-				}}
-				spacing={2}>
+			<PageTitle
+				pageHeader={'Terms And Conditions'}
+				pageSubheader={'All You Need To Know'}
+			/>
+			<LayoutWrapper>
 				<Grid
-					item
-					size={{ xs: 12, md: 6 }}
+					container
 					sx={{
-						backgroundColor: theme.palette.primaryBackground.secondary,
-						padding: 2,
-						borderRadius: '4px',
-					}}>
-					<Box>
-						{termsData.map((data, index) => (
-							<Box key={index} sx={{ display: 'flex', padding: '0.25rem' }}>
-								<Typography
-									sx={{
-										margin: '0 1rem',
-										color: theme.palette.primaryText.main,
-									}}
-									variant='p'
-									component={'p'}>
-									{data.id}:
-								</Typography>
-								<Typography
-									variant='p'
-									component={'p'}
-									sx={{
-										textAlign: 'left',
-										fontWeight: 600,
-										color: theme.palette.primaryText.main,
-									}}>
-									{data.term}
-								</Typography>
-							</Box>
-						))}
-					</Box>
+						display: 'flex',
+						padding: 3,
+					}}
+					spacing={2}>
+					<Grid item size={{ xs: 12, md: 6 }}>
+						<Box>
+							{termsData.map((data, index) => (
+								<Box key={index}>
+									<Typography
+										variant='titleText'
+										component={'p'}
+										display={'inline'}>
+										{data.id}:{'   '}
+									</Typography>
+									<Typography
+										variant='smallerP'
+										component={'p'}
+										display={'inline'}>
+										{data.term}
+									</Typography>
+								</Box>
+							))}
+						</Box>
+					</Grid>
+					<Grid item size={{ xs: 12, md: 6 }}>
+						<Box>
+							{balloonTip.map((tips, index) => (
+								<Box key={index}>
+									<Typography variant='titleText' component={'p'}>
+										{tips.id}:
+									</Typography>
+									<Typography variant='p' component={'p'}>
+										{tips.tip}
+									</Typography>
+								</Box>
+							))}
+						</Box>
+					</Grid>
 				</Grid>
-				<Grid
-					item
-					size={{ xs: 12, md: 6 }}
-					sx={{
-						padding: 2,
-						backgroundColor: theme.palette.primaryBackground.secondary,
-					}}>
-					<Box>
-						{balloonTip.map((tips, index) => (
-							<Box key={index} sx={{ display: 'flex', padding: '0.25rem' }}>
-								<Typography sx={{ margin: '0 1rem' }}>{tips.id}:</Typography>
-								<Typography>{tips.tip}</Typography>
-							</Box>
-						))}
-					</Box>
-				</Grid>
-			</Grid>
+			</LayoutWrapper>
 		</Box>
 	);
 }

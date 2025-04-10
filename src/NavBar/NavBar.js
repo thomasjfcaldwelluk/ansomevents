@@ -97,8 +97,13 @@ const Navbar = () => {
 	};
 
 	return (
-		<Box component='header'>
-			<AppBar position='static' sx={{ ...navBarStyles.appBarStyles }}>
+		<Box component='header' id='header' aria-label='Header'>
+			<AppBar
+				position='static'
+				sx={{ ...navBarStyles.appBarStyles }}
+				id='nav'
+				component='nav'
+				aria-label='nav'>
 				<Toolbar>
 					<Grid container sx={{ ...navBarStyles.toolbarContainerStyles }}>
 						{/* Logo Section */}
