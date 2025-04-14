@@ -86,6 +86,12 @@ const theme = createTheme({
 			fontSize: 15,
 			fontWeight: 550,
 		},
+		productTitle: {
+			fontFamily: 'Playfair, serif',
+			fontSize: 13,
+			fontWeight: 800,
+			color: '#1C3D5A',
+		},
 		p: {
 			color: '#4A4A4A',
 			lineHeight: '1.6',

@@ -18,7 +18,7 @@ export default function BabyShowerPackage() {
 					flexWrap: { xs: 'wrap', md: 'nowrap' },
 				}}>
 				{/* Left Image Column */}
-				<Grid item size={{ xs: 12, md: 6 }}>
+				<Grid item size={{ xs: 12, md: 5, lg: 4 }}>
 					<Box
 						component='img'
 						src={babyShowerSpecial}
@@ -32,53 +32,54 @@ export default function BabyShowerPackage() {
 				</Grid>
 
 				{/* Right Content Column */}
-				<Grid
-					item
-					size={{ xs: 12, md: 6 }}
-					sx={{
-						display: 'flex',
-						flexDirection: 'column',
-						justifyContent: 'space-between',
-						backgroundColor: '#F2EFEA',
-						borderRadius: 4,
-					}}>
-					{/* Title */}
-					<Typography
-						component='h2'
-						variant='titleText'
-						sx={{ textAlign: 'center', mb: 2 }}>
-						Baby Shower Package
-					</Typography>
+				<Grid item size={{ xs: 12, md: 7, lg: 9 }}>
+					<Box
+						sx={{
+							display: 'flex',
+							flexDirection: 'column',
+							justifyContent: 'space-between',
+							backgroundColor: '#F2EFEA',
+							borderRadius: 4,
+							padding: { xs: 1, md: 3, lg: 5 },
+						}}>
+						<Typography
+							component='h2'
+							variant='productTitle'
+							sx={{ textAlign: 'center', mb: 2, fontSize: 17 }}>
+							Baby Shower Package
+						</Typography>
 
-					{/* Included Items */}
-					<List sx={{ paddingLeft: 2 }}>
-						{[
-							'Sailboard',
-							'Oh Baby sign',
-							'Balloon garland in your theme colours (biodegradable latex)',
-							'Baby box with balloons for gift table',
-							'Easel with faux florals & personalised sign',
-							'Cake Pedestal',
-							'Choice of 2 baby shower games (Up to 20 players)*',
-						].map((value, i) => (
-							<ListItem key={i} sx={{ py: 0.5 }}>
-								<Typography variant='body2'>• {value}</Typography>
-							</ListItem>
-						))}
-					</List>
+						{/* Included Items */}
+						<List sx={{ paddingLeft: 2 }}>
+							{[
+								'Sailboard',
+								'Oh Baby sign',
+								'Balloon garland in your theme colours (biodegradable latex)',
+								'Baby box with balloons for gift table',
+								'Easel with faux florals & personalised sign',
+								'Cake Pedestal',
+								'Choice of 2 baby shower games (Up to 20 players)*',
+							].map((value, i) => (
+								<ListItem key={i} sx={{ py: 0.5 }}>
+									<Typography component={'p'} variant='p'>
+										• {value}
+									</Typography>
+								</ListItem>
+							))}
+						</List>
 
-					{/* Price */}
-					<Box sx={{ textAlign: 'center', my: 2 }}>
-						<Typography variant='h6'>£200</Typography>
+						{/* Price */}
+						<Box sx={{ textAlign: 'center', my: 2 }}>
+							<Typography variant='titleText'>£200</Typography>
+						</Box>
+
+						{/* Disclaimer */}
+						<Typography component='p' variant='smallerP' sx={{ mb: 2 }}>
+							*Game options: Baby Bingo, Name That Baby Song, Don't Say "Baby",
+							Baby Word Search, and Guess the Safety Pin Count
+						</Typography>
 					</Box>
-
-					{/* Disclaimer */}
-					<Typography component='p' variant='smallerP' sx={{ mb: 2 }}>
-						*Game options: Baby Bingo, Name That Baby Song, Don't Say "Baby",
-						Baby Word Search, and Guess the Safety Pin Count
-					</Typography>
-
-					{/* Row of 3 Images */}
+					{/* Title */}
 				</Grid>
 			</Grid>
 		</Box>

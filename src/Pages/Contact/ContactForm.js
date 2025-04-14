@@ -1,12 +1,17 @@
 import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
-import { Box, Button } from '@mui/material';
+import { Box, Button, Typography } from '@mui/material';
 import TextField from '@mui/material/TextField';
+import theme from '../../theme';
 
 export default function ContactForm() {
 	const [state, handleSubmit] = useForm('manepldw');
 	if (state.succeeded) {
-		return <p>Thanks for joining!</p>;
+		return (
+			<Typography component={'p'} variant='titleText'>
+				Thanks For Reaching Out - We're Respond Within 24 hours!
+			</Typography>
+		);
 	}
 	return (
 		<Box
@@ -18,7 +23,7 @@ export default function ContactForm() {
 				width: '100%',
 				padding: 5,
 				borderRadius: 1,
-				backgroundColor: 'grey',
+				backgroundColor: theme.palette.primaryBackground.secondary,
 			}}>
 			<TextField
 				label='Name'
@@ -47,7 +52,13 @@ export default function ContactForm() {
 				variant='standard'
 			/>
 			<ValidationError prefix='Message' field='message' errors={state.errors} />
-			<Button type='submit' disabled={state.submitting}>
+			<Button
+				type='submit'
+				disabled={state.submitting}
+				sx={{
+					backgroundColor: 'none',
+					color: theme.palette.primaryHeader.primary,
+				}}>
 				Send Message
 			</Button>
 		</Box>

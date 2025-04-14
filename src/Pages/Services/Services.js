@@ -97,7 +97,7 @@ export default function Services() {
 							<Card
 								sx={{
 									height: '100%',
-									padding: 1,
+									padding: 4,
 									borderRadius: 2,
 									backgroundColor: theme.palette.primaryBackground.secondary,
 								}}>
@@ -105,14 +105,18 @@ export default function Services() {
 									sx={{
 										display: 'flex',
 										justifyContent: 'center',
+										alignItems: 'center',
 									}}>
 									{item.icon}
 								</Box>
 								<CardContent>
-									<Typography component={'h3'} variant='titleText'>
+									<Typography
+										component={'h3'}
+										variant='titleText'
+										textAlign={'center'}>
 										{item.title}
 									</Typography>
-									<Typography component={'p'} variant='p'>
+									<Typography component={'p'} variant='p' marginBlock={3}>
 										{item.description}
 									</Typography>
 								</CardContent>

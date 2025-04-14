@@ -5,6 +5,7 @@ import PageTitle from '../../ReuseableComponents/PageTitle';
 import easterParty from './EventsAssets/easterParty.png';
 import { Helmet } from 'react-helmet-async';
 import LayoutWrapper from '../../ReuseableComponents/LayoutWrapper';
+import theme from '../../theme';
 
 export default function Events() {
 	return (
@@ -39,50 +40,80 @@ export default function Events() {
 				pageSubheader='With Ansom Events'
 			/>
 			<LayoutWrapper>
-				<Grid container padding={6} justifyContent={'center'}>
+				<Grid container padding={2} justifyContent={'center'}>
 					<Grid size={{ xs: 12, md: 8 }}>
-						<Box paddingBlock={5}>
-							<Typography component={'h3'}>
-								Easter Fun at Saltash Football Club! 🐰🎉
+						<Box
+							padding={5}
+							sx={{
+								backgroundColor: theme.palette.primaryBackground.secondary,
+							}}>
+							<Typography
+								component={'h3'}
+								variant='titleText'
+								fontSize={28}
+								sx={{ textAlign: 'center' }}>
+								Easter Fun at Saltash Football Club!
 							</Typography>
-							<Typography component={'h5'}>
-								Join us for a fantastic Easter event on April 16th, 2025, from
+							<Typography
+								component={'h4'}
+								variant='smallerP'
+								marginBlock={1}
+								sx={{ fontWeight: 450, fontSize: 14, textAlign: 'center' }}>
+								Join us for a fantastic Easter event on April 16th, 2025
+							</Typography>
+							<Typography
+								component={'h5'}
+								variant='titleText'
+								sx={{ textAlign: 'center' }}>
 								11 AM - 12:30 PM at Saltash Football Club!
 							</Typography>
-
-							<Box>
-								<Typography> What’s Included?</Typography>
+							<Box marginBlock={5}>
+								<Typography
+									component={'h5'}
+									variant='titleText'
+									sx={{ textAlign: 'center' }}>
+									{' '}
+									What’s Included?
+								</Typography>
 								<Box>
-									<Typography>
+									<Typography
+										component={'p'}
+										variant='smallerP'
+										sx={{ textAlign: 'center', fontWeight: 550, p: 1 }}>
 										Meet & Greet with the Easter Bunny – A perfect photo
 										opportunity!
 									</Typography>
-								</Box>
-								<Box>
-									<Typography>
+									<Typography
+										component={'p'}
+										variant='smallerP'
+										sx={{ textAlign: 'center', fontWeight: 550, p: 1 }}>
 										🎶Bunny Hop Dance Party – Get ready to groove!
 									</Typography>
-								</Box>
-								<Box>
-									<Typography>
+									<Typography
+										component={'p'}
+										variant='smallerP'
+										sx={{ textAlign: 'center', fontWeight: 550, p: 1 }}>
 										Easter Cookie Painting – Unleash creativity with festive
 										treats.
 									</Typography>
-								</Box>
-								<Box>
-									<Typography>
+									<Typography
+										component={'p'}
+										variant='smallerP'
+										sx={{ textAlign: 'center', fontWeight: 550, p: 1 }}>
 										A Special Treat from the Easter Bunny – A little surprise
 										for every child!
 									</Typography>
 								</Box>
 							</Box>
 
-							<Box>
-								<Typography>Tickets & Booking</Typography>
-								<Typography>
+							<Box sx={{ textAlign: 'center', marginBlock: 2 }}>
+								<Typography component={'h5'} variant='titleText'>
+									Tickets & Booking
+								</Typography>
+								<Typography component={'h5'} variant='titleText'>
 									Price: £7.50 per child ( Adults go FREE!)
 								</Typography>
-								<Typography>
+								<Typography component={'h5'} variant='titleText'>
 									Pre-sale tickets only – No tickets available at the door.
 								</Typography>
 							</Box>

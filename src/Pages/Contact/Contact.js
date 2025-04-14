@@ -18,7 +18,7 @@ const contactInfo = [
 		information: 'info@ansomevents.com',
 		icon: (
 			<EmailIcon
-				sx={{ fontSize: 25, color: theme.palette.primaryAccent.secondary }}
+				sx={{ fontSize: 20, color: theme.palette.primaryHover.main }}
 			/>
 		),
 		description:
@@ -31,7 +31,7 @@ const contactInfo = [
 		information: '07310009764',
 		icon: (
 			<PhoneIcon
-				sx={{ fontSize: 25, color: theme.palette.primaryAccent.secondary }}
+				sx={{ fontSize: 20, color: theme.palette.primaryHover.main }}
 			/>
 		),
 		description: 'Feel free to call or text us anytime. We are here for you',
@@ -43,7 +43,7 @@ const contactInfo = [
 		information: '@ansomevents',
 		icon: (
 			<FacebookIcon
-				sx={{ fontSize: 25, color: theme.palette.primaryAccent.secondary }}
+				sx={{ fontSize: 20, color: theme.palette.primaryHover.main }}
 			/>
 		),
 		description:
@@ -56,7 +56,7 @@ const contactInfo = [
 		information: '@ansomeventsuk',
 		icon: (
 			<InstagramIcon
-				sx={{ fontSize: 25, color: theme.palette.primaryAccent.secondary }}
+				sx={{ fontSize: 20, color: theme.palette.primaryHover.main }}
 			/>
 		),
 		description:
@@ -73,24 +73,45 @@ export default function Contact() {
 			/>
 			<LayoutWrapper>
 				<Grid container spacing={2}>
-					<Grid item size={{ xs: 12, md: 6 }} sx={{ backgroundColor: 'red' }}>
-						{contactInfo.map((data, index) => (
-							<Grid container key={index} marginBlock={1}>
-								<Grid item size={12}>
-									<Box>
-										<Typography>{data.title}</Typography>
-										<Box component={'a'} href={data.href}>
+					<Grid item size={{ xs: 12, md: 6 }}>
+						<Box
+							sx={{
+								display: 'flex',
+								flexDirection: 'column',
+								justifyContent: 'space-between',
+							}}>
+							<Box>
+								<Typography component={'p'} variant='p'>
+									We’d love to hear from you! Whether you're planning a
+									celebration, have questions about our services, or just want
+									to say hello, feel free to reach out. At Ansom Events, we’re
+									here to make your experience as smooth and exciting as
+									possible. Fill out the form below or drop us a message – let’s
+									start bringing your vision to life!
+								</Typography>
+							</Box>
+							<Box marginBlock={4}>
+								{contactInfo.map((data, index) => (
+									<Box
+										sx={{
+											display: 'flex',
+											alignItems: 'center',
+											justifyContent: 'center',
+										}}
+										key={index}>
+										<Box
+											component={'a'}
+											href={data.href}
+											sx={{ marginInline: 1, marginTop: 1 }}>
 											{data.icon}
 										</Box>
+										<Typography component={'p'} variant='titleText' margin={0}>
+											{data.information}
+										</Typography>
 									</Box>
-								</Grid>
-								<Grid item size={12}>
-									<Box>
-										<Typography>{data.information}</Typography>
-									</Box>
-								</Grid>
-							</Grid>
-						))}
+								))}
+							</Box>
+						</Box>
 					</Grid>
 					<Grid item size={{ xs: 12, md: 6 }} justifyContent={'center'}>
 						<ContactForm />

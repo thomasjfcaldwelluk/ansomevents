@@ -8,6 +8,8 @@ import theme from '../../theme';
 import { rows } from '../Home/Components/HomeData';
 import { Helmet } from 'react-helmet-async';
 import PageTitle from '../../ReuseableComponents/PageTitle';
+import LayoutWrapper from '../../ReuseableComponents/LayoutWrapper';
+import { GifBoxOutlined } from '@mui/icons-material';
 
 export default function About() {
 	const isSmallScreen = useMediaQuery('(min-width:900px)');
@@ -40,27 +42,27 @@ export default function About() {
 				<link rel='canonical' href='https://ansomevents.com/gallery' />
 			</Helmet>
 			<PageTitle pageHeader={'About Us'} pageSubheader={'Learn About Us'} />
-			<Box>
-				<Grid container>
+			<LayoutWrapper>
+				<Grid container spacing={1}>
 					{/* First Column: Image */}
-					<Grid item size={{ xs: 12, md: 6 }}>
-						{/* <Box
-						loading='lazy'
-						component='img'
-						src={imageUrl} // Replace with your image URL
-						alt='Image of the Owners Of Ansom Events - Melissa Caldwell and Thomas Caldwell'
-						title='Image of the Owners Of Ansom Events - Melissa Caldwell and Thomas Caldwell'
-						sx={{
-							width: { xs: '100%', md: '80%' },
-							borderRadius: '8px',
-						}} // Ensures responsive image
-					/> */}
+					<Grid item size={{ xs: 12, md: 4 }}>
+						<Box
+							loading='lazy'
+							component='img'
+							src={imageUrl} // Replace with your image URL
+							alt='Image of the Owners Of Ansom Events - Melissa Caldwell and Thomas Caldwell'
+							title='Image of the Owners Of Ansom Events - Melissa Caldwell and Thomas Caldwell'
+							sx={{
+								width: { xs: '100%', md: '100%', lg: '80%' },
+								borderRadius: '8px',
+							}} // Ensures responsive image
+						/>
 					</Grid>
 
 					{/* Second Column: Text */}
-					<Grid item size={{ xs: 12, md: 6 }}>
-						<Box sx={{ width: { xs: '100%', md: '80%' }, marginBlock: '1rem' }}>
-							<Typography>
+					<Grid item size={{ xs: 12, md: 8 }}>
+						<Box>
+							<Typography component={'p'} variant='p'>
 								We are a husband and wife team based in Cornwall, offering full
 								event management, prop hire, and venue design. With over 20
 								years of experience, Melissa brings her extensive knowledge of
@@ -68,34 +70,33 @@ export default function About() {
 								marketing ensures every detail is both creative and polished.
 							</Typography>
 						</Box>
-						{/* <Box sx={{ maxWidth: '700px' }}>
-						<Grid container direction='column' spacing={{ xs: 2, sm: 1 }}>
+						<Box sx={{ maxWidth: '700px', marginBlock: 4 }}>
 							{rows.map((text, index) => (
-								<Grid
-									item
+								<Box
 									key={index}
-									container
 									alignItems='center'
 									wrap='nowrap'
+									marginBlock={2}
 									spacing={{ xs: 3, sm: 1 }}>
-									<Grid item>
-										<CheckCircleIcon
-											sx={{
-												color: theme.palette.primaryText.main,
-												marginTop: '5px',
-											}}
-										/>
-									</Grid>
-									<Grid item>
-										<Typography>{text}</Typography>
-									</Grid>
-								</Grid>
+									<CheckCircleIcon
+										sx={{
+											color: theme.palette.primaryText.main,
+											display: 'inline',
+											fontSize: 12,
+										}}
+									/>
+									<Typography
+										component={'p'}
+										variant='titleText'
+										display='inline'>
+										{text}
+									</Typography>
+								</Box>
 							))}
-						</Grid>
-					</Box> */}
+						</Box>
 					</Grid>
 				</Grid>
-			</Box>
+			</LayoutWrapper>
 		</Box>
 	);
 }

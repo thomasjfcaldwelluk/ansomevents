@@ -12,13 +12,12 @@ import bronze from '../../Assets/Photos/Packages/packageBronze.webp';
 import shimmerImage from '../../Assets/Photos/Packages/shimmerPackage.webp';
 import fringeImage from '../../Assets/Photos/Packages/fringePackage.webp';
 import hoopImage from '../../Assets/Photos/Packages/hoopImage.webp';
-import threeDArch from '../../Assets/Photos/Packages/Balloons/3dArch.webp';
-import archesAndBackdrops from '../../Assets/Photos/Packages/Balloons/ArchesAndBackdrops.webp';
 import balloonBoxes from '../../Assets/Photos/Packages/Balloons/BalloonBoxes.webp';
 import balloonWall from '../../Assets/Photos/Packages/Balloons/balloonWall.webp';
 import characterCutOut from '../../Assets/Photos/Packages/Balloons/characterCutout.webp';
 import customStack from '../../Assets/Photos/Packages/Balloons/customStack.webp';
 import diagonalHoop from '../../Assets/Photos/Packages/Balloons/diagonalHoop.webp';
+import singleSailBoard from '../../Assets/Photos/Packages/Balloons/singleSailBoard.webp';
 import doubleSailBoard from '../../Assets/Photos/Packages/Balloons/doubleSailBoard.webp';
 import doubleStack from '../../Assets/Photos/Packages/Balloons/doubleStack.webp';
 import easelSign from '../../Assets/Photos/Packages/Balloons/easelSign.webp';
@@ -27,10 +26,7 @@ import halfHoop from '../../Assets/Photos/Packages/Balloons/halfHoop.webp';
 import lightUpBig from '../../Assets/Photos/Packages/Balloons/lightUpBigGarland.webp';
 import lightUpSmall from '../../Assets/Photos/Packages/Balloons/lightUpSmallGarland.webp';
 import lightUp from '../../Assets/Photos/Packages/Balloons/lightUpNumber.webp';
-import rippleSailBoard from '../../Assets/Photos/Packages/Balloons/rippleSailBoard.webp';
-import sailBoardAndArch from '../../Assets/Photos/Packages/Balloons/sailBoardAndArch.webp';
 import sequinWall from '../../Assets/Photos/Packages/Balloons/sequinWall.webp';
-import sequinWall2 from '../../Assets/Photos/Packages/Balloons/sequinWall2.webp';
 import singleStack from '../../Assets/Photos/Packages/Balloons/Single Stack.WebP';
 import tableCenterPiece from '../../Assets/Photos/Packages/Balloons/TableCenterPiece.webp';
 import tripleSailBoard from '../../Assets/Photos/Packages/Balloons/tripleSailBoard.webp';
@@ -213,206 +209,171 @@ export const balloonDisplayData = [
 		id: 1,
 		title: 'Single Stack',
 		image: singleStack,
-		alt: '',
+		alt: 'Single Large Foil Balloon Stack Image',
 		description:
-			'Balloons, sparkle, laughter, celebrate, magic, vibrant, joy, elegance',
-		price: 12,
+			'A large foil balloon stack makes a bold statement with vibrant metallic balloons, available as a single or double stack to create a striking, high-impact focal point at your event.',
+		price: 25,
 	},
 	{
 		id: 2,
 		title: 'Double Stack',
 		image: doubleStack,
-		alt: '',
+		alt: 'Double Large Foil Balloon Stack Image',
 		description:
-			'Balloons, sparkle, laughter, celebrate, magic, vibrant, joy, elegance',
-		price: 12,
+			'A large foil balloon stack makes a bold statement with vibrant metallic balloons, available as a single or double stack to create a striking, high-impact focal point at your event.',
+		price: 40,
 	},
 	{
 		id: 3,
 		title: 'Welcome Sign With Balloon Garland',
 		image: welcomeSign,
-		alt: '',
+		alt: 'Welcome Sign With Balloon Garland Image',
 		description:
-			'Balloons, sparkle, laughter, celebrate, magic, vibrant, joy, elegance',
-		price: 12,
+			'A welcome sign with a balloon garland is the perfect way to greet your guests in style, setting the tone for your celebration with a fun and festive display.',
+		price: 110,
 	},
 	{
 		id: 4,
 		title: 'Easel Sign With Balloon Garland',
 		image: easelSign,
-		alt: '',
+		alt: 'Easel Sign With Balloon Garland',
 		description:
-			'Balloons, sparkle, laughter, celebrate, magic, vibrant, joy, elegance',
-		price: 12,
+			'An easel sign with a balloon garland adds a warm, personalised welcome to your event—perfect for entrances, gift tables, or photo spots with a touch of charm and colour.',
+		price: 90,
 	},
 	{
 		id: 5,
 		title: 'Light Up Letter/Number',
 		image: lightUp,
-		alt: '',
+		alt: 'Light Up Letter/Number Image',
 		description:
-			'Balloons, sparkle, laughter, celebrate, magic, vibrant, joy, elegance',
-		price: 12,
+			'Light-up letters or numbers add a bold, illuminated statement to your event—perfect for highlighting ages, initials, or meaningful words with a touch of sparkle and style',
+		price: 25,
 	},
 	{
 		id: 6,
 		title: 'Single Light Up Letter/Number With Balloon Garland',
 		image: lightUpSmall,
-		alt: '',
+		alt: 'Single Light Up Letter/Number With Balloon Garland Image',
 		description:
-			'Balloons, sparkle, laughter, celebrate, magic, vibrant, joy, elegance',
-		price: 12,
+			'Light-up letters or numbers paired with a balloon garland create a stunning focal point—combining glowing elegance with vibrant colour for unforgettable photo moment',
+		price: 85,
 	},
 	{
 		id: 7,
 		title: 'Double Light Up Letter/Number With Balloon Garland',
 		image: lightUpBig,
-		alt: '',
+		alt: 'Double Light Up Letter/Number With Balloon Garland Image',
 		description:
-			'Balloons, sparkle, laughter, celebrate, magic, vibrant, joy, elegance',
-		price: 12,
+			'Light-up letters or numbers paired with a balloon garland create a stunning focal point—combining glowing elegance with vibrant colour for unforgettable photo moment ',
+		price: 110,
 	},
 	{
 		id: 8,
 		title: 'Full Hoop Balloon Garland',
 		image: fullHoop,
-		alt: '',
+		alt: 'Full Hoop Image',
 		description:
-			'Balloons, sparkle, laughter, celebrate, magic, vibrant, joy, elegance',
-		price: 12,
+			'A balloon hoop garland is a stylish circular frame decorated with balloons in your chosen colours,',
+		price: 225,
 	},
 	{
 		id: 9,
 		title: 'Half Hoop Balloon Garland',
 		image: halfHoop,
-		alt: '',
+		alt: 'Half Hoop Image',
 		description:
-			'Balloons, sparkle, laughter, celebrate, magic, vibrant, joy, elegance',
-		price: 12,
+			'A balloon hoop garland is a stylish circular frame decorated with balloons in your chosen colours,',
+		price: 175,
 	},
 	{
 		id: 10,
 		title: 'Diagonal Hoop Balloon Garland',
 		image: diagonalHoop,
-		alt: '',
+		alt: 'Diagonal Hoop Image',
 		description:
-			'Balloons, sparkle, laughter, celebrate, magic, vibrant, joy, elegance',
-		price: 12,
+			'A balloon hoop garland is a stylish circular frame decorated with balloons in your chosen colours,',
+		price: 175,
 	},
 	{
 		id: 11,
 		title: 'Custom Balloon Stack',
 		image: customStack,
-		alt: '',
-		description: '',
-		price: 12,
+		alt: 'Custom Balloon Stack Image',
+		description:
+			'A custom balloon stack is a freestanding arrangement tailored to your theme or colours, perfect for adding a playful, eye-catching feature to any event space.',
+		price: `${'10 per foot'}`,
 	},
 	{
 		id: 12,
-		title: '3D Arch',
-		image: threeDArch,
-		alt: '',
+		title: 'Single Sail Board',
+		image: singleSailBoard,
+		alt: 'Single Sail Board Image',
 		description:
-			'Balloons, sparkle, laughter, celebrate, magic, vibrant, joy, elegance',
-		price: 12,
+			'A sail board is a sleek, modern backdrop perfect for showcasing signage, balloon garlands, or floral accents',
+		price: 125,
 	},
 	{
 		id: 13,
-		title: 'Arch And Backdrop',
-		image: archesAndBackdrops,
-		alt: '',
+		title: 'Double Sail Board',
+		image: doubleSailBoard,
+		alt: 'Double Sail Board Image',
 		description:
-			'Balloons, sparkle, laughter, celebrate, magic, vibrant, joy, elegance',
-		price: 12,
+			'A sail board is a sleek, modern backdrop perfect for showcasing signage, balloon garlands, or floral accents',
+		price: 175,
 	},
 	{
 		id: 14,
-		title: 'Ripple Sail Board',
-		image: rippleSailBoard,
-		alt: '',
+		title: 'Triple Sail Board',
+		image: tripleSailBoard,
+		alt: 'Triple Sail Board Image',
 		description:
-			'Balloons, sparkle, laughter, celebrate, magic, vibrant, joy, elegance',
-		price: 12,
+			'A sail board is a sleek, modern backdrop perfect for showcasing signage, balloon garlands, or floral accents',
+		price: 225,
 	},
 	{
 		id: 15,
-		title: 'Sail Board And Arch',
-		image: sailBoardAndArch,
-		alt: '',
+		title: 'Sequin Wall',
+		image: sequinWall,
+		alt: 'Sequin Wall Image',
 		description:
-			'Balloons, sparkle, laughter, celebrate, magic, vibrant, joy, elegance',
-		price: 12,
+			'A sequin wall adds a touch of glamour and sparkle to your event, catching the light beautifully and creating a dazzling backdrop for photos and displays.',
+		price: 175,
 	},
 	{
 		id: 16,
-		title: 'Double Sail Board',
-		image: doubleSailBoard,
-		alt: '',
+		title: 'Balloon Wall',
+		image: balloonWall,
+		alt: 'Balloon Wall Image',
 		description:
-			'Balloons, sparkle, laughter, celebrate, magic, vibrant, joy, elegance',
-		price: 12,
+			'A balloon wall is a stunning backdrop made entirely of balloons, ideal for photo opportunities and creating a bold, beautiful focal point at any event.',
+		price: 200,
 	},
 	{
 		id: 17,
-		title: 'Triple Sail Board',
-		image: tripleSailBoard,
-		alt: '',
+		title: 'Balloon Boxes',
+		image: balloonBoxes,
+		alt: 'Balloon Boxes Image',
 		description:
-			'Balloons, sparkle, laughter, celebrate, magic, vibrant, joy, elegance',
-		price: 12,
+			'Balloon boxes are stylish transparent cubes filled with balloons, perfect for spelling out themed words like "BABY" or "LOVE" to add a fun, eye-catching touch to your celebration décor.',
+		price: 25,
 	},
 	{
 		id: 18,
-		title: 'Sequin Wall',
-		image: sequinWall,
-		alt: '',
+		title: 'Character Cut Out',
+		image: characterCutOut,
+		alt: 'Character Cut Out Image',
 		description:
-			'Balloons, sparkle, laughter, celebrate, magic, vibrant, joy, elegance',
-		price: 12,
+			'A character cut-out is a playful, custom-designed silhouette that adds a fun and interactive element to your event, perfect for themed celebrations and photo opportunities.',
+		price: 35,
 	},
 	{
 		id: 19,
-		title: 'Different Sequin Wall',
-		image: sequinWall2,
-		alt: '',
-		description:
-			'Balloons, sparkle, laughter, celebrate, magic, vibrant, joy, elegance',
-		price: 12,
-	},
-	{
-		id: 20,
-		title: 'Balloon Wall',
-		image: balloonWall,
-		alt: '',
-		description:
-			'Balloons, sparkle, laughter, celebrate, magic, vibrant, joy, elegance',
-		price: 12,
-	},
-	{
-		id: 21,
-		title: 'Balloon Boxes',
-		image: balloonBoxes,
-		alt: '',
-		description:
-			'Balloons, sparkle, laughter, celebrate, magic, vibrant, joy, elegance',
-		price: 12,
-	},
-	{
-		id: 22,
-		title: 'Character Cut Out',
-		image: characterCutOut,
-		alt: '',
-		description:
-			'Balloons, sparkle, laughter, celebrate, magic, vibrant, joy, elegance',
-		price: 12,
-	},
-	{
-		id: 23,
 		title: 'Table Center Piece',
 		image: tableCenterPiece,
-		alt: '',
+		alt: 'Table Center Piece Image',
 		description:
-			'Balloons, sparkle, laughter, celebrate, magic, vibrant, joy, elegance',
-		price: 12,
+			'A table centerpiece is a beautifully crafted arrangement that adds an elegant touch to your event, enhancing your table settings with style and a personalized flair',
+		price: 15,
 	},
 ];
