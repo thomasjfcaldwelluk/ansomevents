@@ -195,13 +195,6 @@ export const addOnData = [
 		alt: 'Image of Decor props available from Ansom Events',
 		price: '75',
 	},
-	{
-		id: 8,
-		title: 'Props',
-		image: propAdd,
-		alt: 'Image of Decor props available from Ansom Events',
-		price: '75',
-	},
 ];
 
 export const balloonDisplayData = [

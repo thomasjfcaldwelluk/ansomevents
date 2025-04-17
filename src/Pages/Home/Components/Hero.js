@@ -25,20 +25,10 @@ const heroStyles = {
 		zIndex: 2,
 	},
 	heroHeaderMain: {
-		color: theme.palette.primaryHeader.main,
+		color: theme.palette.primaryHeader.secondary,
 		textAlign: 'center',
 	},
-	heroHeaderMainSpan: {
-		background: theme.palette.primaryHeader.main,
-		WebkitBackgroundClip: 'text',
-		WebkitTextFillColor: 'transparent',
-		fontWeight: 'bold',
-		fontSize: { xs: '1.9rem', sm: '2.9rem', md: '3rem', lg: '3.8rem' },
-		LineHeight: '1',
-	},
-	heroTagContainer: {
-		padding: '1.3rem',
-	},
+
 	heroTag: {
 		fontWeight: 500,
 		color: theme.palette.primaryHeader.secondary,
@@ -75,34 +65,27 @@ export default function Hero() {
 					left: 0,
 					width: '100%',
 					height: '100%',
-					backgroundColor: 'rgba(228, 222, 222, 0.5)', // ← dark overlay
+					backgroundColor: 'rgba(255, 255, 255, 0.7)', // ← dark overlay
 					zIndex: 1,
 				}}
 			/>
-			<Grid container spacing={15} sx={{ ...heroStyles.heroContainer }}>
-				<Grid item>
+			<Box spacing={15} sx={{ ...heroStyles.heroContainer }}>
+				<Box>
 					<Typography
 						variant='h1'
 						component='h1'
 						sx={{ ...heroStyles.heroHeaderMain }}>
-						Ansom Events!
-						<br />
-						<Typography
-							variant='h1'
-							component='span'
-							sx={{ ...heroStyles.heroHeaderMainSpan }}>
-							Transforming Dreams Into Memories
-						</Typography>
+						Ansom Events - Transforming Dreams Into Memories
 					</Typography>
 					<Grid item sx={{ ...heroStyles.heroTagContainer }}>
 						<Typography
 							variant='h2'
 							component='h2'
 							sx={{ ...heroStyles.heroTag }}>
-							Bringing Californian Razzamatazz to the UK
+							Cali Cool Meets UK Chic
 						</Typography>
 					</Grid>
-				</Grid>
+				</Box>
 
 				{/* <Stack
 					item
@@ -125,7 +108,7 @@ export default function Hero() {
 						See All Packages
 					</Button>
 				</Stack> */}
-			</Grid>
+			</Box>
 		</Box>
 	);
 }

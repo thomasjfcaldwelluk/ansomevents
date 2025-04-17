@@ -34,20 +34,22 @@ const theme = createTheme({
 		fontFamily: 'Montserrat,sans-serif', // Customize font family
 		fontSize: 14, // Customize base font size
 		h1: {
-			fontSize: '3.8rem',
+			color: '#3B3C36',
+			fontWeight: 'bold',
+			fontSize: 45,
 			'@media (max-width:600px)': {
-				fontSize: '2.5rem',
+				fontSize: 30,
 			},
-			fontWeight: 600,
-			color: '#1C3D5A',
+			fontFamily: 'Playfair, serif',
+			LineHeight: '1',
 		},
 		h2: {
-			fontSize: '1.9rem', // Default font size for small screens
-			'@media (max-width:420px)': {
-				fontSize: '1.45rem',
+			fontWeight: 900,
+			color: '#3B3C36',
+			fontSize: 40,
+			'@media (max-width:600px)': {
+				fontSize: 20,
 			},
-			fontWeight: 500,
-			color: '#2F2E2C',
 		},
 		h3: {
 			fontSize: '1.1rem', // Default font size for small screens

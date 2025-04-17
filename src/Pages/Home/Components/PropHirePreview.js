@@ -1,7 +1,8 @@
-import { Box, Typography, Button } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import React from 'react';
 import PropHirePreviewImage from '../../../Assets/Photos/HomePageImages/propsPreview.webp';
 import { Link } from 'react-router-dom';
+import { Link as MuiLink } from '@mui/material';
 
 export default function PropHirePreview() {
 	return (
@@ -28,16 +29,23 @@ export default function PropHirePreview() {
 					backgroundColor: 'rgba(0, 0, 0, 0.4)', // optional for readability
 					borderRadius: 2,
 				}}>
-				<Typography variant='h4' sx={{ mb: 2 }}>
-					Our Decor Packages
+				<Typography
+					variant='h4'
+					component={'h4'}
+					sx={{ mb: 2, color: 'white' }}>
+					Prop Hire
 				</Typography>
-				<Button
-					variant='contained'
-					color='secondary'
-					component={Link}
-					to='/decor-packages'>
-					View Packages
-				</Button>
+				<Box>
+					<MuiLink
+						component={Link}
+						color='white'
+						variant='titleText'
+						to='/whatweoffer/prophire'
+						underline='hover'
+						display='block'>
+						See More Of Our Beautiful Creations
+					</MuiLink>
+				</Box>
 			</Box>
 		</Box>
 	);

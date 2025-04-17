@@ -1,7 +1,8 @@
-import { Box, Button, Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import React from 'react';
 import PackagePreviewImage from '../../../Assets/Photos/HomePageImages/packagesPreview.webp';
 import { Link } from 'react-router-dom';
+import { Link as MuiLink } from '@mui/material';
 
 export default function PackagesPreview() {
 	return (
@@ -28,16 +29,23 @@ export default function PackagesPreview() {
 					backgroundColor: 'rgba(0, 0, 0, 0.4)', // optional for readability
 					borderRadius: 2,
 				}}>
-				<Typography variant='h4' sx={{ mb: 2 }}>
+				<Typography
+					variant='h4'
+					component={'h4'}
+					sx={{ mb: 2, color: 'white' }}>
 					Our Decor Packages
 				</Typography>
-				<Button
-					variant='contained'
-					color='secondary'
-					component={Link}
-					to='/whatweoffer/packages'>
-					View Packages
-				</Button>
+				<Box>
+					<MuiLink
+						component={Link}
+						color='white'
+						variant='titleText'
+						to='/whatweoffer/packages'
+						underline='hover'
+						display='block'>
+						See More Of Our Beautiful Creations
+					</MuiLink>
+				</Box>
 			</Box>
 		</Box>
 	);

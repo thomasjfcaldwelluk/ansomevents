@@ -20,7 +20,7 @@ const serviceData = [
 		),
 		title: 'Full service Event Planning',
 		description:
-			'Comprehensive event planning and management, handling venue and vendor selection for a stress-free experience',
+			'At Ansom Events, we take the stress out of planning by offering full-service event management — from sourcing the perfect venue to coordinating trusted suppliers. Whether it’s a wedding, celebration, or corporate function, we handle every detail with creativity and care so you can focus on enjoying your special day.',
 	},
 	{
 		id: 2,
@@ -31,7 +31,7 @@ const serviceData = [
 		),
 		title: 'Day of Coordination',
 		description:
-			'Relax and enjoy your event as we handle coordination, ensuring a seamless, stress-free, and memorable day',
+			'Let us take the stress off your shoulders on the big day. We’ll handle the setup, manage suppliers, keep things on track, and make sure everything runs smoothly. You just focus on having fun and enjoying every moment — we’ve got the behind-the-scenes covered so you don’t have to.',
 	},
 	{
 		id: 3,
@@ -42,7 +42,7 @@ const serviceData = [
 		),
 		title: 'Prop Hire and Balloon/Backdrop Decor',
 		description:
-			'Elevate your event with Marquee Lights and festive balloon decor, adding style and excitement for an unforgettable celebration.',
+			'Add that extra wow-factor to your event with our unique prop and décor hire. From eye-catching marquee lights to stunning balloon displays and stylish backdrops, we’ve got everything to make your celebration look amazing. Perfect for parties, weddings, and everything in between — let’s make it unforgettable.',
 	},
 	{
 		id: 4,
@@ -53,7 +53,7 @@ const serviceData = [
 		),
 		title: 'Event Design',
 		description:
-			'We transform venues with creative decor, bringing your dream event to life and leaving a lasting impression',
+			'Our event design service takes your vision and turns it into reality. We transform any space with creative décor, setting the perfect tone for your event. From stylish setups to personalized touches, we ensure your event leaves a lasting impression, making it a day to remember.',
 	},
 ];
 
@@ -97,7 +97,7 @@ export default function Services() {
 							<Card
 								sx={{
 									height: '100%',
-									padding: 4,
+									padding: 2,
 									borderRadius: 2,
 									backgroundColor: theme.palette.primaryBackground.secondary,
 								}}>
@@ -116,7 +116,7 @@ export default function Services() {
 										textAlign={'center'}>
 										{item.title}
 									</Typography>
-									<Typography component={'p'} variant='p' marginBlock={3}>
+									<Typography component={'p'} variant='p' marginBlock={1}>
 										{item.description}
 									</Typography>
 								</CardContent>
