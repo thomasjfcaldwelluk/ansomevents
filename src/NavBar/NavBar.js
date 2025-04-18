@@ -16,6 +16,8 @@ import { Link } from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
 import theme from '../theme';
 import logo from '../Assets/Logo/AnsomEvents.svg';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 
 const navBarStyles = {
 	appBarStyles: {
@@ -95,6 +97,7 @@ const Navbar = () => {
 	const handleMenuClose = () => {
 		setAnchorEl(null);
 	};
+	const [showOfferLinks, setShowOfferLinks] = useState(false);
 
 	return (
 		<Box component='header' id='header' aria-label='Header'>
@@ -259,50 +262,127 @@ const Navbar = () => {
 			</AppBar>
 
 			{/* Side Drawer for Medium Screens and Below */}
-			<Drawer
-				item='true'
-				anchor='right'
-				open={drawerOpen}
-				onClose={handleDrawerToggle}>
-				<Box
-					sx={{ ...navBarStyles.navDrawerContainer }}
-					role='presentation'
-					onClick={handleDrawerToggle}>
+			<Drawer anchor='right' open={drawerOpen} onClose={handleDrawerToggle}>
+				<Box sx={{ ...navBarStyles.navDrawerContainer }} role='presentation'>
 					<MuiLink
 						component={Link}
 						to='/'
-						sx={{ ...navBarStyles.navDrawerLink }}>
+						sx={{ ...navBarStyles.navDrawerLink }}
+						onClick={handleDrawerToggle}>
 						Home
 					</MuiLink>
 
 					<MuiLink
 						component={Link}
 						to='/services'
-						sx={{ ...navBarStyles.navDrawerLink }}>
+						sx={{ ...navBarStyles.navDrawerLink }}
+						onClick={handleDrawerToggle}>
 						Services
 					</MuiLink>
+
+					<Box
+						onClick={() => setShowOfferLinks((prev) => !prev)}
+						sx={{
+							display: 'flex',
+							alignItems: 'center',
+							justifyContent: 'space-between',
+							cursor: 'pointer',
+							...navBarStyles.navDrawerLink,
+						}}>
+						What We Offer
+						{showOfferLinks ? (
+							<ExpandLessIcon sx={{ ml: 1 }} />
+						) : (
+							<ExpandMoreIcon sx={{ ml: 1 }} />
+						)}
+					</Box>
+
+					{showOfferLinks && (
+						<Box sx={{ pl: 2 }}>
+							<MuiLink
+								component={Link}
+								to='/whatweoffer/packages'
+								sx={{
+									...navBarStyles.navDrawerLink,
+									fontSize: 12,
+									fontWeight: 550,
+								}}
+								onClick={handleDrawerToggle}>
+								Decor Packages
+							</MuiLink>
+							<MuiLink
+								component={Link}
+								to='/whatweoffer/backdrops'
+								sx={{
+									...navBarStyles.navDrawerLink,
+									fontSize: 12,
+									fontWeight: 550,
+								}}
+								onClick={handleDrawerToggle}>
+								Backdrops
+							</MuiLink>
+							<MuiLink
+								component={Link}
+								to='/whatweoffer/balloondisplays'
+								sx={{
+									...navBarStyles.navDrawerLink,
+									fontSize: 12,
+									fontWeight: 550,
+								}}
+								onClick={handleDrawerToggle}>
+								Balloon Displays
+							</MuiLink>
+							<MuiLink
+								component={Link}
+								to='/whatweoffer/prophire'
+								sx={{
+									...navBarStyles.navDrawerLink,
+									fontSize: 12,
+									fontWeight: 550,
+								}}
+								onClick={handleDrawerToggle}>
+								Prop Hire
+							</MuiLink>
+							<MuiLink
+								component={Link}
+								to='/whatweoffer/specialoffers'
+								sx={{
+									...navBarStyles.navDrawerLink,
+									fontSize: 12,
+									fontWeight: 550,
+								}}
+								onClick={handleDrawerToggle}>
+								Special Offer On Decor
+							</MuiLink>
+						</Box>
+					)}
+
 					<MuiLink
 						component={Link}
 						to='/gallery'
-						sx={{ ...navBarStyles.navDrawerLink }}>
+						sx={{ ...navBarStyles.navDrawerLink }}
+						onClick={handleDrawerToggle}>
 						Gallery
 					</MuiLink>
 					<MuiLink
 						component={Link}
 						to='/aboutus'
-						sx={{ ...navBarStyles.navDrawerLink }}>
+						sx={{ ...navBarStyles.navDrawerLink }}
+						onClick={handleDrawerToggle}>
 						About Us
 					</MuiLink>
 					<MuiLink
 						component={Link}
 						to='/faqs'
-						sx={{ ...navBarStyles.navDrawerLink }}>
+						sx={{ ...navBarStyles.navDrawerLink }}
+						onClick={handleDrawerToggle}>
 						FAQs
 					</MuiLink>
 					<MuiLink
 						component={Link}
 						to='/contact'
-						sx={{ ...navBarStyles.navDrawerLink }}>
+						sx={{ ...navBarStyles.navDrawerLink }}
+						onClick={handleDrawerToggle}>
 						Contact Us
 					</MuiLink>
 				</Box>
