@@ -50,7 +50,10 @@ export default function Backdrops() {
 									<List>
 										{pkg.included.map((item, itemIndex) => (
 											<ListItem key={itemIndex} sx={{ py: 0 }}>
-												<Typography component='p' variant='smallerP'>
+												<Typography
+													component='p'
+													variant='p'
+													sx={{ fontWeight: 600 }}>
 													- {item}
 												</Typography>
 											</ListItem>

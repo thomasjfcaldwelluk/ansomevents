@@ -33,7 +33,7 @@ export default function Packages() {
 			marginBlock: 2,
 		},
 		listStyle: { padding: 0 },
-		listItemStyle: { padding: 0 },
+		listItemStyle: { padding: 0, marginBlock: 1 },
 	};
 	return (
 		<Box component='main' id='packages' aria-label='Packages At Ansom Events'>
@@ -124,9 +124,9 @@ export default function Packages() {
 									<ListItem key={itemIndex} sx={{ ...packageStyles.listStyle }}>
 										<Typography
 											component='p'
-											variant='smallerP'
-											sx={{ ...packageStyles.listItemStyle }}>
-											{item}
+											variant='p'
+											sx={{ ...packageStyles.listItemStyle, fontWeight: 600 }}>
+											-{item}
 										</Typography>
 									</ListItem>
 								))}

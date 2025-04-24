@@ -9,7 +9,6 @@ import { rows } from '../Home/Components/HomeData';
 import { Helmet } from 'react-helmet-async';
 import PageTitle from '../../ReuseableComponents/PageTitle';
 import LayoutWrapper from '../../ReuseableComponents/LayoutWrapper';
-import { GifBoxOutlined } from '@mui/icons-material';
 
 export default function About() {
 	const isSmallScreen = useMediaQuery('(min-width:900px)');
@@ -82,13 +81,14 @@ export default function About() {
 										sx={{
 											color: theme.palette.primaryText.main,
 											display: 'inline',
-											fontSize: 12,
+											fontSize: 15,
 										}}
 									/>
 									<Typography
 										component={'p'}
 										variant='titleText'
-										display='inline'>
+										display='inline'
+										sx={{ marginInline: 1 }}>
 										{text}
 									</Typography>
 								</Box>

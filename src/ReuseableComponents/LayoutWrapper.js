@@ -6,7 +6,7 @@ export default function LayoutWrapper({ children, sx = {} }) {
 		<Box
 			component={'section'}
 			sx={{
-				width: '80%',
+				width: '90%',
 				maxWidth: '1440px',
 				minWidth: '300px',
 				mx: 'auto',

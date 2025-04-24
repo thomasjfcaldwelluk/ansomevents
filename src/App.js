@@ -17,6 +17,7 @@ import NavBar from './NavBar/NavBar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import useAnalytics from './useAnalytics';
 import CookieConsent from 'react-cookie-consent';
+import { Box } from '@mui/material';
 
 const AnalyticsWrapper = ({ children }) => {
 	useAnalytics(); // Call the analytics hook
@@ -28,7 +29,7 @@ function App() {
 		<div className='App'>
 			<Router>
 				<AnalyticsWrapper>
-					<div>
+					<Box component={'body'}>
 						<NavBar />
 						<Routes>
 							<Route path='/' element={<Home />} />
@@ -71,7 +72,7 @@ function App() {
 								You can change your cookie settings at any time.
 							</span>
 						</CookieConsent>
-					</div>
+					</Box>
 				</AnalyticsWrapper>
 			</Router>
 		</div>
