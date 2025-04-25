@@ -26,6 +26,8 @@ export default function PropHirePreview() {
 					zIndex: 2,
 					textAlign: 'center',
 					p: 2,
+					bottom: 10,
+					left: 10,
 					backgroundColor: 'rgba(0, 0, 0, 0.4)', // optional for readability
 					borderRadius: 2,
 				}}>
@@ -43,7 +45,7 @@ export default function PropHirePreview() {
 						to='/whatweoffer/prophire'
 						underline='hover'
 						display='block'>
-						See More Of Our Beautiful Creations
+						Take A Look At How To Complete Your Events
 					</MuiLink>
 				</Box>
 			</Box>

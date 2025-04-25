@@ -25,6 +25,8 @@ export default function PackagesPreview() {
 					position: 'absolute',
 					zIndex: 2,
 					textAlign: 'center',
+					bottom: 10,
+					left: 10,
 					p: 2,
 					backgroundColor: 'rgba(0, 0, 0, 0.4)', // optional for readability
 					borderRadius: 2,

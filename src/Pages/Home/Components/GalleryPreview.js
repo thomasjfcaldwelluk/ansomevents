@@ -57,8 +57,10 @@ export default function GalleryPreview() {
 					variant='titleText'
 					to='/gallery'
 					underline='hover'
-					display='block'>
-					Find The Perfect Package For You
+					display='block'
+					color='#3D3D3D'
+					fontSize={20}>
+					See More Of Our Past Events
 				</MuiLink>
 			</Box>
 		</Box>
