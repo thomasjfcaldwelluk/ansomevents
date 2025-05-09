@@ -71,13 +71,13 @@ export const fullPackageData = [
 	},
 	{
 		id: 3,
-		title: 'Sliver Package',
+		title: 'Silver Package',
 		image: silver,
 		alt: 'Sliver Available From Ansom Events',
 		description:
 			'A stylish and affordable option, offering a beautifully coordinated look that enhances your event with carefully curated décor and a welcoming atmosphere',
 		included: [
-			'Choice of Backdrop either Twinkle Wall, Circle Arch or Sail Board with Balloon Garland',
+			'Sailboard with Balloon Garland',
 			'Baby Box with balloons or Pedestal with Vase & Arrangement',
 			'Selection of up to 3 Balloon Non-Chrome Colours',
 			'"Oh Baby" Wooden Sign',

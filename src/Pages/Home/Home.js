@@ -6,7 +6,6 @@ import Grid from '@mui/material/Grid2';
 import PackagesPreview from './Components/PackagesPreview';
 import PropHirePreview from './Components/PropHirePreview';
 import GalleryPreview from './Components/GalleryPreview';
-import Services from '../Services/Services';
 import ContactForm from '../Contact/ContactForm';
 
 export default function Home() {
