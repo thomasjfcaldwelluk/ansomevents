@@ -1,7 +1,7 @@
 import { Box, Card, CardMedia, Typography, CardContent } from '@mui/material';
 import React from 'react';
 import { balloonDisplayData } from './PackageData';
-import Grid from '@mui/material/Grid2';
+import Grid from '@mui/material/Grid';
 import theme from '../../theme';
 import PageTitle from '../../ReuseableComponents/PageTitle';
 import LayoutWrapper from '../../ReuseableComponents/LayoutWrapper';

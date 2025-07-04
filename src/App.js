@@ -29,8 +29,8 @@ function App() {
 		<div className='App'>
 			<Router>
 				<AnalyticsWrapper>
+					<NavBar />
 					<Box component={'body'}>
-						<NavBar />
 						<Routes>
 							<Route path='/' element={<Home />} />
 							<Route path='/whatweoffer/packages' element={<Packages />} />

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Box } from '@mui/material';
-import theme from '../../theme';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import { itemData } from '../Home/Components/HomeData';

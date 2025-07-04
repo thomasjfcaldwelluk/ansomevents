@@ -10,7 +10,7 @@ import {
 	Menu,
 	MenuItem,
 } from '@mui/material';
-import Grid from '@mui/material/Grid2';
+import Grid from '@mui/material/Grid';
 import { Link as MuiLink } from '@mui/material';
 import { Link } from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -44,22 +44,52 @@ const navBarStyles = {
 		fontSize: '0.8rem',
 		fontWeight: 500,
 		color: theme.palette.primaryHeader.secondary,
+		position: 'relative', // Required for ::after positioning
+		textDecoration: 'none',
 		transition: 'all 0.3s ease',
+
+		'&::after': {
+			content: '""',
+			position: 'absolute',
+			left: 0,
+			bottom: '-4px', // space below text
+			width: '100%',
+			height: '4px', // thickness of the line
+			backgroundColor: theme.palette.primaryAccent.secondary,
+			transform: 'scaleX(0)',
+			transformOrigin: 'center',
+			transition: 'transform 0.3s ease-in-out',
+		},
+
 		'&:hover': {
-			color: theme.palette.primaryHover.main,
+			color: theme.palette.primaryAccent.secondary,
 			textDecoration: 'none',
 		},
+
+		'&:hover::after': {
+			transform: 'scaleX(1)',
+		},
 	},
+
 	navButtonContainer: {
 		display: { xs: 'none', md: 'flex' },
 		justifyContent: 'flex-end',
 	},
 	navButton: {
-		borderColor: theme.palette.primaryHeader.main,
-		color: theme.palette.primaryHeader.main,
+		position: 'relative',
+		overflow: 'hidden',
+		borderColor: theme.palette.primaryHeader.secondary,
+		color: theme.palette.primaryHeader.secondary,
+		backgroundColor:
+			'linear-gradient(to right, theme.palette.primaryHeader.secondary 50%, transparent 50%)',
+		backgroundSize: '200% 100%',
+		backgroundPosition: 'right bottom',
+		transition: 'all 0.4s ease',
 		'&:hover': {
-			borderColor: theme.palette.primaryHeader.secondary,
-			color: theme.palette.primaryHeader.secondary,
+			backgroundColor: theme.palette.primaryAccent.secondary,
+			color: 'white',
+			borderColor: 'transparent',
+			backgroundPosition: 'left bottom',
 		},
 	},
 	navIconButtonContainer: {

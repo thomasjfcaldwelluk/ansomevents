@@ -2,7 +2,7 @@ import React from 'react';
 import { Box, Typography, IconButton } from '@mui/material';
 import { Link as MuiLink } from '@mui/material';
 import { Link } from 'react-router-dom';
-import Grid from '@mui/material/Grid2';
+import Grid from '@mui/material/Grid';
 import { Facebook, Instagram } from '@mui/icons-material';
 import logo from '../Assets/Logo/AnsomEvents.svg';
 import theme from '../theme';

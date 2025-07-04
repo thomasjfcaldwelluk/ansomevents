@@ -1,6 +1,6 @@
 import React from 'react';
 import { List, ListItem, Box, Typography, Card } from '@mui/material';
-import Grid from '@mui/material/Grid2';
+import Grid from '@mui/material/Grid';
 import { backdropData } from './PackageData';
 import PageTitle from '../../ReuseableComponents/PageTitle';
 import LayoutWrapper from '../../ReuseableComponents/LayoutWrapper';

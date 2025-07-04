@@ -1,7 +1,7 @@
 import { Box, Typography } from '@mui/material';
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
-import Grid from '@mui/material/Grid2';
+import Grid from '@mui/material/Grid';
 import { addOnData } from './PackageData';
 import PageTitle from '../../ReuseableComponents/PageTitle';
 import LayoutWrapper from '../../ReuseableComponents/LayoutWrapper';

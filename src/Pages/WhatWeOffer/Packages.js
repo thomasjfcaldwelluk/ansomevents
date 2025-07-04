@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, useTheme } from '@mui/material';
-import Grid from '@mui/material/Grid2';
+import Grid from '@mui/material/Grid';
 import PageTitle from '../../ReuseableComponents/PageTitle';
 import { List, ListItem, Typography } from '@mui/material';
 import { fullPackageData } from './PackageData';

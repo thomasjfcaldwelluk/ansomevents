@@ -1,6 +1,5 @@
 import React from 'react';
 import { Box, Typography } from '@mui/material';
-import Grid from '@mui/material/Grid2';
 import QuestionAndAnswers from './QuestionsAndAnswers';
 import theme from '../../theme';
 import PageTitle from '../../ReuseableComponents/PageTitle';

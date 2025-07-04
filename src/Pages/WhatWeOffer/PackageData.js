@@ -42,7 +42,7 @@ export const fullPackageData = [
 			'Our most luxurious package, designed to create an unforgettable experience with stunning décor and elegant details that elevate your event to the highest level.',
 		included: [
 			'Backdrop Twinkle Wall With Balloon Garland',
-			'Circle Arch or Sail Board With Balloon Garland',
+			'Circle Arch or Sailboard With Balloon Garland',
 			'Pedestal with Vase & Arrangement',
 			'Selection of up to 3 Balloon Non-Chrome Colours',
 			'Peacock Chair',
@@ -59,7 +59,7 @@ export const fullPackageData = [
 		description:
 			'A perfect balance of style and sophistication, this package brings a touch of elegance to any event, ensuring a beautifully designed and memorable setting',
 		included: [
-			'Choice of Backdrop either Twinkle Wall, Circle Arch or Sail Board with Balloon Garland',
+			'Choice of Backdrop either Twinkle Wall, Circle Arch or Sailboard with Balloon Garland',
 			'Pedestal with Vase & Arrangement',
 			'"Oh Baby" Wooden Sign',
 			'Selection of up to 3 Balloon Non-Chrome Colours',
@@ -151,7 +151,7 @@ export const addOnData = [
 		title: '4ft Light Up Letters',
 		image: lightUpNumbers,
 		alt: 'Image of light up letters & Numbers available from Ansom Events',
-		price: 25,
+		price: 35,
 	},
 	{
 		id: 2,
@@ -241,7 +241,7 @@ export const balloonDisplayData = [
 		alt: 'Light Up Letter/Number Image',
 		description:
 			'Light-up letters or numbers add a bold, illuminated statement to your event—perfect for highlighting ages, initials, or meaningful words with a touch of sparkle and style',
-		price: 25,
+		price: 35,
 	},
 	{
 		id: 6,
@@ -299,29 +299,29 @@ export const balloonDisplayData = [
 	},
 	{
 		id: 12,
-		title: 'Single Sail Board',
+		title: 'Single Sailboard',
 		image: singleSailBoard,
 		alt: 'Single Sail Board Image',
 		description:
-			'A sail board is a sleek, modern backdrop perfect for showcasing signage, balloon garlands, or floral accents',
+			'A sailboard is a sleek, modern backdrop perfect for showcasing signage, balloon garlands, or floral accents',
 		price: 125,
 	},
 	{
 		id: 13,
-		title: 'Double Sail Board',
+		title: 'Double Sailboard',
 		image: doubleSailBoard,
 		alt: 'Double Sail Board Image',
 		description:
-			'A sail board is a sleek, modern backdrop perfect for showcasing signage, balloon garlands, or floral accents',
+			'A sailboard is a sleek, modern backdrop perfect for showcasing signage, balloon garlands, or floral accents',
 		price: 175,
 	},
 	{
 		id: 14,
-		title: 'Triple Sail Board',
+		title: 'Triple Sailboard',
 		image: tripleSailBoard,
 		alt: 'Triple Sail Board Image',
 		description:
-			'A sail board is a sleek, modern backdrop perfect for showcasing signage, balloon garlands, or floral accents',
+			'A sailboard is a sleek, modern backdrop perfect for showcasing signage, balloon garlands, or floral accents',
 		price: 225,
 	},
 	{

@@ -1,9 +1,8 @@
 import React from 'react';
 import { Typography } from '@mui/material';
 import { Box } from '@mui/material';
-import Grid from '@mui/material/Grid2';
+import Grid from '@mui/material/Grid';
 import { termsData, balloonTip } from './TermsConditionsData';
-import theme from '../../theme';
 import { Helmet } from 'react-helmet-async';
 import PageTitle from '../../ReuseableComponents/PageTitle';
 import LayoutWrapper from '../../ReuseableComponents/LayoutWrapper';

@@ -1,6 +1,6 @@
 import { Box, Typography } from '@mui/material';
 import React from 'react';
-import Grid from '@mui/material/Grid2';
+import Grid from '@mui/material/Grid';
 import PageTitle from '../../ReuseableComponents/PageTitle';
 import { Helmet } from 'react-helmet-async';
 import LayoutWrapper from '../../ReuseableComponents/LayoutWrapper';

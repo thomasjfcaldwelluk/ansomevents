@@ -1,11 +1,11 @@
 import React from 'react';
 import { Typography, Box, List, ListItem } from '@mui/material';
-import Grid from '@mui/material/Grid2';
+import Grid from '@mui/material/Grid';
 
 import babyShowerSpecial from '../../../Assets/Photos/Specials/babyShowerSpecial.webp';
-import babyBingo from '../../../Assets/Photos/Specials/babyBingo.webp';
-import babyBoxes from '../../../Assets/Photos/Specials/Babyboxes.webp';
-import easel from '../../../Assets/Photos/Specials/easel.webp';
+// import babyBingo from '../../../Assets/Photos/Specials/babyBingo.webp';
+// import babyBoxes from '../../../Assets/Photos/Specials/Babyboxes.webp';
+// import easel from '../../../Assets/Photos/Specials/easel.webp';
 
 export default function BabyShowerPackage() {
 	return (
@@ -39,6 +39,7 @@ export default function BabyShowerPackage() {
 							flexDirection: 'column',
 							justifyContent: 'space-between',
 							backgroundColor: '#F2EFEA',
+							height: '100%',
 							borderRadius: 4,
 							padding: { xs: 1, md: 3, lg: 5 },
 						}}>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Typography } from '@mui/material';
 import theme from '../../../theme';
-import Grid from '@mui/material/Grid2';
+import Grid from '@mui/material/Grid';
 import heroImage from '../../../Assets/Photos/HomePageImages/websiteHero.webp';
 
 const heroStyles = {
@@ -65,7 +65,7 @@ export default function Hero() {
 					left: 0,
 					width: '100%',
 					height: '100%',
-					backgroundColor: 'rgba(255, 255, 255, 0.7)', // ← dark overlay
+					// backgroundColor: 'rgba(255, 255, 255, 0.7)', // ← dark overlay
 					zIndex: 1,
 				}}
 			/>
@@ -86,28 +86,6 @@ export default function Hero() {
 						</Typography>
 					</Grid>
 				</Box>
-
-				{/* <Stack
-					item
-					spacing={2}
-					direction={{ xs: 'column', md: 'row' }}
-					sx={{ ...heroStyles.buttonContainer }}>
-					<Button
-						component={Link}
-						to='/latestspecials'
-						variant='contained'
-						sx={{ ...heroStyles.buttonOne }}>
-						Latest Specials
-					</Button>
-
-					<Button
-						component={Link}
-						to='/decorpackages'
-						variant='outlined'
-						sx={{ ...heroStyles.buttonTwo }}>
-						See All Packages
-					</Button>
-				</Stack> */}
 			</Box>
 		</Box>
 	);

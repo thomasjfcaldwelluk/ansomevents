@@ -4,7 +4,7 @@ import TodayIcon from '@mui/icons-material/Today';
 import LocalFloristIcon from '@mui/icons-material/LocalFlorist';
 import DesignServicesIcon from '@mui/icons-material/DesignServices';
 import CelebrationIcon from '@mui/icons-material/Celebration';
-import Grid from '@mui/material/Grid2';
+import Grid from '@mui/material/Grid';
 import theme from '../../theme';
 import { Helmet } from 'react-helmet-async';
 import PageTitle from '../../ReuseableComponents/PageTitle';
