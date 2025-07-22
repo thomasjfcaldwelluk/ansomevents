@@ -18,6 +18,8 @@ export default function PropHirePreview() {
 				alignItems: 'center',
 				justifyContent: 'center',
 				color: '#fff',
+				borderRadius: 2,
+				boxShadow: 2,
 			}}>
 			{/* Overlay Content */}
 			<Box
@@ -25,11 +27,13 @@ export default function PropHirePreview() {
 					position: 'absolute',
 					zIndex: 2,
 					textAlign: 'center',
+					left: '50%',
+					bottom: 30,
+					transform: 'translateX(-50%)',
 					p: 2,
-					bottom: 10,
-					left: 10,
-					backgroundColor: 'rgba(0, 0, 0, 0.4)', // optional for readability
+					backgroundColor: 'rgba(0, 0, 0, 0.4)',
 					borderRadius: 2,
+					width: { xs: '90%', sm: 'auto' }, // optional: responsive width
 				}}>
 				<Typography
 					variant='h4'
@@ -45,7 +49,7 @@ export default function PropHirePreview() {
 						to='/whatweoffer/prophire'
 						underline='hover'
 						display='block'>
-						Take A Look At How To Complete Your Events
+						See How To Complete Your Events
 					</MuiLink>
 				</Box>
 			</Box>

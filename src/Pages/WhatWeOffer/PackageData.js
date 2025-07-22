@@ -370,3 +370,26 @@ export const balloonDisplayData = [
 		price: 15,
 	},
 ];
+
+export const ansomAndEasyData = [
+	{
+		id: 1,
+		title: 'Save time and stress',
+		included: [
+			'Themed Hired Table Decor',
+			'Plates/Cups/ Forks/ Napkins (8 ppl)',
+			'Themed Side or Room Decor',
+			'Either: Party Hat, Glasses, Bubbles or Mask to match style (8 ppl)',
+			'Invites (8 ppl)',
+		],
+		addOn: [
+			'Themed Loot Bags or Boxes',
+			'Photo Op Backdrop',
+			'Additional Guests (sets of 8)',
+			'Grab and Go (pre-made) Balloon Garland or DIY Balloon Themed Kit',
+			'Themed Keepsake Activity',
+			'Themed Cake',
+			'Fresh Florals',
+		],
+	},
+];

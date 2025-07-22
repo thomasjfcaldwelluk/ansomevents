@@ -226,6 +226,36 @@ const Navbar = () => {
 								</MenuItem>
 								<MenuItem onClick={handleMenuClose}>
 									<Link
+										to='/whatweoffer/ansom_and_easy'
+										style={{
+											textDecoration: 'none',
+											...navBarStyles.navMenuLink,
+										}}>
+										Ansom And Easy Party Packs
+									</Link>
+								</MenuItem>
+								<MenuItem onClick={handleMenuClose}>
+									<Link
+										to='/whatweoffer/design_print_services'
+										style={{
+											textDecoration: 'none',
+											...navBarStyles.navMenuLink,
+										}}>
+										Design and Print Services
+									</Link>
+								</MenuItem>
+								<MenuItem onClick={handleMenuClose}>
+									<Link
+										to='/whatweoffer/full_event_service'
+										style={{
+											textDecoration: 'none',
+											...navBarStyles.navMenuLink,
+										}}>
+										Full Event Service
+									</Link>
+								</MenuItem>
+								<MenuItem onClick={handleMenuClose}>
+									<Link
 										to='/whatweoffer/specialoffers'
 										style={{
 											textDecoration: 'none',
@@ -235,14 +265,14 @@ const Navbar = () => {
 									</Link>
 								</MenuItem>
 							</Menu>
-							<MuiLink
+							{/* <MuiLink
 								component={Link}
 								to='/events'
 								underline='hover'
 								display='block'
 								sx={{ ...navBarStyles.navMenuLink }}>
 								Events
-							</MuiLink>
+							</MuiLink> */}
 							<MuiLink
 								component={Link}
 								to='/gallery'

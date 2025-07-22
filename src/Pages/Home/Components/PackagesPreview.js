@@ -18,24 +18,27 @@ export default function PackagesPreview() {
 				alignItems: 'center',
 				justifyContent: 'center',
 				color: '#fff',
+				borderRadius: 2,
+				boxShadow: 2,
 			}}>
-			{/* Overlay Content */}
 			<Box
 				sx={{
 					position: 'absolute',
 					zIndex: 2,
 					textAlign: 'center',
-					bottom: 10,
-					left: 10,
+					left: '50%',
+					bottom: 30,
+					transform: 'translateX(-50%)',
 					p: 2,
-					backgroundColor: 'rgba(0, 0, 0, 0.4)', // optional for readability
+					backgroundColor: 'rgba(0, 0, 0, 0.4)',
 					borderRadius: 2,
+					width: { xs: '90%', sm: 'auto' }, // optional: responsive width
 				}}>
 				<Typography
 					variant='h4'
 					component={'h4'}
 					sx={{ mb: 2, color: 'white' }}>
-					Our Decor Packages
+					Decor Packages
 				</Typography>
 				<Box>
 					<MuiLink

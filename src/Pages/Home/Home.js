@@ -7,6 +7,7 @@ import PackagesPreview from './Components/PackagesPreview';
 import PropHirePreview from './Components/PropHirePreview';
 import GalleryPreview from './Components/GalleryPreview';
 import ContactForm from '../Contact/ContactForm';
+import Services from './../Services/Services';
 
 export default function Home() {
 	return (
@@ -58,13 +59,15 @@ export default function Home() {
 					</Grid>
 				</Grid>
 			</Box>
+			<Box id='services' component='section' aria-label='services'>
+				<Services />
+			</Box>
 			<Box
 				id='gallery-preview'
 				component='section'
 				aria-label='Gallery Preview'>
 				<GalleryPreview />
 			</Box>
-
 			<Box id='contact' component={'section'} aria-label='contact-us'>
 				<Grid container sx={{ display: 'flex', justifyContent: 'center' }}>
 					<Grid item size={{ xs: 12, md: 6 }}>

@@ -46,7 +46,7 @@ export default function BabyShowerPackage() {
 						<Typography
 							component='h2'
 							variant='productTitle'
-							sx={{ textAlign: 'center', mb: 2, fontSize: 17 }}>
+							sx={{ textAlign: 'center', mb: 2, fontSize: 25 }}>
 							Baby Shower Package
 						</Typography>
 
@@ -71,12 +71,17 @@ export default function BabyShowerPackage() {
 
 						{/* Price */}
 						<Box sx={{ textAlign: 'center', my: 2 }}>
-							<Typography variant='titleText'>£200</Typography>
+							<Typography
+								component={'p'}
+								variant='titleText'
+								sx={{ fontSize: 20 }}>
+								£200
+							</Typography>
 						</Box>
 
 						{/* Disclaimer */}
 						<Typography component='p' variant='smallerP' sx={{ mb: 2 }}>
-							*Game options: Baby Bingo, Name That Baby Song, Don't Say "Baby",
+							* Game options: Baby Bingo, Name That Baby Song, Don't Say "Baby",
 							Baby Word Search, and Guess the Safety Pin Count
 						</Typography>
 					</Box>
