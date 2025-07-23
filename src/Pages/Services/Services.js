@@ -22,7 +22,7 @@ const serviceData = [
 		id: 1,
 		icon: (
 			<CelebrationIcon
-				sx={{ fontSize: 25, color: theme.palette.primaryAccent.secondary }}
+				sx={{ fontSize: 35, color: theme.palette.primaryAccent.secondary }}
 			/>
 		),
 		title: 'Full service Event Planning',
@@ -43,7 +43,7 @@ const serviceData = [
 		id: 2,
 		icon: (
 			<TodayIcon
-				sx={{ fontSize: 25, color: theme.palette.primaryAccent.secondary }}
+				sx={{ fontSize: 35, color: theme.palette.primaryAccent.secondary }}
 			/>
 		),
 		title: 'Day of Coordination',
@@ -64,7 +64,7 @@ const serviceData = [
 		id: 3,
 		icon: (
 			<DesignServicesIcon
-				sx={{ fontSize: 25, color: theme.palette.primaryAccent.secondary }}
+				sx={{ fontSize: 35, color: theme.palette.primaryAccent.secondary }}
 			/>
 		),
 		title: 'Event Design',
@@ -85,7 +85,7 @@ const serviceData = [
 		id: 4,
 		icon: (
 			<LocalFloristIcon
-				sx={{ fontSize: 25, color: theme.palette.primaryAccent.secondary }}
+				sx={{ fontSize: 35, color: theme.palette.primaryAccent.secondary }}
 			/>
 		),
 		title: 'Balloon Stacks',
@@ -106,7 +106,7 @@ const serviceData = [
 		id: 5,
 		icon: (
 			<PhotoCameraFrontIcon
-				sx={{ fontSize: 25, color: theme.palette.primaryAccent.secondary }}
+				sx={{ fontSize: 35, color: theme.palette.primaryAccent.secondary }}
 			/>
 		),
 		title: 'Backdrops & Displays',
@@ -127,7 +127,7 @@ const serviceData = [
 		id: 6,
 		icon: (
 			<FollowTheSignsIcon
-				sx={{ fontSize: 25, color: theme.palette.primaryAccent.secondary }}
+				sx={{ fontSize: 35, color: theme.palette.primaryAccent.secondary }}
 			/>
 		),
 		title: 'Prop Hire',
@@ -148,7 +148,7 @@ const serviceData = [
 		id: 7,
 		icon: (
 			<LocalMallIcon
-				sx={{ fontSize: 25, color: theme.palette.primaryAccent.secondary }}
+				sx={{ fontSize: 35, color: theme.palette.primaryAccent.secondary }}
 			/>
 		),
 		title: '"Ansom & Easy" Pick-Up Party Pack',
@@ -169,7 +169,7 @@ const serviceData = [
 		id: 8,
 		icon: (
 			<DrawIcon
-				sx={{ fontSize: 25, color: theme.palette.primaryAccent.secondary }}
+				sx={{ fontSize: 35, color: theme.palette.primaryAccent.secondary }}
 			/>
 		),
 		title: 'Design & Print Services',
@@ -190,7 +190,7 @@ const serviceData = [
 		id: 9,
 		icon: (
 			<AutoAwesomeIcon
-				sx={{ fontSize: 25, color: theme.palette.primaryAccent.secondary }}
+				sx={{ fontSize: 35, color: theme.palette.primaryAccent.secondary }}
 			/>
 		),
 		title: 'Full Setup & Styling Package',
@@ -258,13 +258,14 @@ export default function Services() {
 										display: 'flex',
 										justifyContent: 'center',
 										alignItems: 'center',
+										marginBlock: 1,
 									}}>
 									{item.icon}
 								</Box>
 								<CardContent>
 									<Typography
 										component={'h3'}
-										variant='titleText'
+										variant='h4'
 										textAlign={'center'}>
 										{item.title}
 									</Typography>
