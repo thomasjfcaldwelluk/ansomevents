@@ -41,16 +41,11 @@ export default function Home() {
 				<Hero />
 			</Box>
 			<Box
-				sx={{ flexGrow: 1, padding: 2 }}
+				sx={{ flexGrow: 1, padding: 2, marginBlock: 5 }}
 				id='whatweoffer-preview'
 				component='section'
 				aria-label='What We Offer Preview'>
-				<Grid
-					container
-					spacing={2}
-					sx={{
-						height: '100vh',
-					}}>
+				<Grid container spacing={2}>
 					<Grid item size={{ xs: 12, md: 6 }}>
 						<PackagesPreview />
 					</Grid>
@@ -65,7 +60,8 @@ export default function Home() {
 			<Box
 				id='gallery-preview'
 				component='section'
-				aria-label='Gallery Preview'>
+				aria-label='Gallery Preview'
+				sx={{ flexGrow: 1, padding: 2 }}>
 				<GalleryPreview />
 			</Box>
 			<Box id='contact' component={'section'} aria-label='contact-us'>

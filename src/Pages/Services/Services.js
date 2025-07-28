@@ -275,7 +275,11 @@ export default function Services() {
 									{item.features && (
 										<Box component='ul' sx={{ pl: 2, mb: 0 }}>
 											{item.features.map((feature, idx) => (
-												<Typography component='li' variant='body2' key={idx}>
+												<Typography
+													component='li'
+													variant='body2'
+													key={idx}
+													marginBlock={0.5}>
 													{feature}
 												</Typography>
 											))}

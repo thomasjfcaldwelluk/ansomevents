@@ -34,12 +34,15 @@ const theme = createTheme({
 		fontFamily: 'Montserrat,sans-serif', // Customize font family
 		fontSize: 14, // Customize base font size
 		h1: {
-			color: '#3B3C36',
 			fontWeight: 'bold',
-			fontSize: 45,
+			fontSize: 90,
 			'@media (max-width:600px)': {
-				fontSize: 30,
+				fontSize: 50,
 			},
+			'@media (max-width:374px)': {
+				fontSize: 40,
+			},
+
 			fontFamily: 'Playfair, serif',
 			LineHeight: '1',
 		},
@@ -49,6 +52,9 @@ const theme = createTheme({
 			fontSize: 40,
 			'@media (max-width:600px)': {
 				fontSize: 20,
+			},
+			'@media (max-width:400px)': {
+				fontSize: 16,
 			},
 		},
 		h3: {

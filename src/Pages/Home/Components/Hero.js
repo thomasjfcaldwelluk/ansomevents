@@ -1,7 +1,5 @@
-import React from 'react';
 import { Box, Typography } from '@mui/material';
 import theme from '../../../theme';
-import Grid from '@mui/material/Grid';
 import heroImage from '../../../Assets/Photos/HomePageImages/websiteHero.webp';
 
 const heroStyles = {
@@ -23,41 +21,24 @@ const heroStyles = {
 		alignItems: 'space-between',
 		position: 'relative',
 		zIndex: 2,
+		bgcolor: 'transparent',
+		padding: theme.spacing(2),
 	},
 	heroHeaderMain: {
-		color: theme.palette.primaryHeader.secondary,
+		color: '#EFEFEF',
 		textAlign: 'center',
 	},
 
 	heroTag: {
 		fontWeight: 500,
-		color: theme.palette.primaryHeader.secondary,
+		color: '#F5F5F5',
 		textAlign: 'center',
-	},
-	buttonContainer: {
-		flexWrap: 'wrap',
-		justifyContent: 'center',
-		alignItems: 'center',
-	},
-	buttonOne: {
-		minWidth: '200px',
-		backgroundColor: theme.palette.primaryHeader.main,
-		fontSize: { xs: '12px', sm: '14px', md: '16px' }, // Adjust size for different screens
-	},
-	buttonTwo: {
-		minWidth: '200px',
-		borderColor: theme.palette.primaryHeader.main,
-		color: theme.palette.primaryHeader.main,
-		fontSize: { xs: '12px', sm: '14px', md: '16px' }, // Adjust size for different screens
 	},
 };
 
 export default function Hero() {
 	return (
-		<Box
-			component='section'
-			className='Hero_Section'
-			sx={{ ...heroStyles.sectionContainer }}>
+		<Box sx={{ ...heroStyles.sectionContainer }}>
 			<Box
 				sx={{
 					position: 'absolute',
@@ -65,26 +46,24 @@ export default function Hero() {
 					left: 0,
 					width: '100%',
 					height: '100%',
-					// backgroundColor: 'rgba(255, 255, 255, 0.7)', // ← dark overlay
+					backgroundColor: 'rgba(0, 0, 0, 0.45)', // ← dark overlay
 					zIndex: 1,
 				}}
 			/>
 			<Box spacing={15} sx={{ ...heroStyles.heroContainer }}>
-				<Box>
+				<Box bgColor='white' p={2}>
 					<Typography
 						variant='h1'
 						component='h1'
 						sx={{ ...heroStyles.heroHeaderMain }}>
-						Ansom Events - Transforming Dreams Into Memories
+						Ansom Events
 					</Typography>
-					<Grid item sx={{ ...heroStyles.heroTagContainer }}>
-						<Typography
-							variant='h2'
-							component='h2'
-							sx={{ ...heroStyles.heroTag }}>
-							Cali Cool Meets UK Chic
-						</Typography>
-					</Grid>
+					<Typography
+						variant='h2'
+						component='h2'
+						sx={{ ...heroStyles.heroTag }}>
+						Where Style Meets Celebration
+					</Typography>
 				</Box>
 			</Box>
 		</Box>
