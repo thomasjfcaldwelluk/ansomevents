@@ -112,10 +112,10 @@ export const backdropData = [
 			'Transform your event with our 5x6 stand and shimmer backdrop. Customize with balloon garlands for a stunning, elegant focal point, perfect for photos and special occasions.',
 		included: ['5ft by 6ft Stand', 'Shimmer Backdrop', 'Balloon Garland'],
 		price: [
-			'Wall With Stand £100 -',
-			'One side £160 -',
-			'L-Shape £190 -',
-			'Full £235',
+			'Wall With Stand £100',
+			' - One side £160',
+			' - L-Shape £190',
+			' - Full £235',
 		],
 	},
 	{
@@ -127,10 +127,10 @@ export const backdropData = [
 			'Enhance your event with a 6x6 stand and fringe backdrop. Add balloon garlands for a vibrant centerpiece, perfect for photos and bringing flair to any celebration',
 		included: ['5ft by 6ft Stand', 'Fringe Backdrop', 'Balloon Garland'],
 		price: [
-			'Wall With Stand £80 -',
-			'One side £140 -',
-			'L-Shape £170 -',
-			'Full £215',
+			'Wall With Stand £80',
+			' - One side £140',
+			' - L-Shape £170',
+			' - Full £215',
 		],
 	},
 	{
@@ -141,7 +141,7 @@ export const backdropData = [
 		description:
 			'Create a stunning focal point with a full or half hoop balloon garland. A stylish, customizable addition, perfect for photos and enhancing any celebration or special gathering.',
 		included: ['2m by 2m Hoop Stand', 'Full Hoop or Half Hoop Ballon Garland'],
-		price: [' Half £175-', 'Full £225'],
+		price: [' Half £175 - ', 'Full £225'],
 	},
 ];
 

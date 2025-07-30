@@ -13,7 +13,7 @@ export default function DesignPrintServices() {
 			id='design_print_services'
 			aria-label='Design and Print Services'>
 			<PageTitle
-				pageHeader={'Design and Print Services'}
+				pageHeader={'Design & Print'}
 				pageSubheader={'Custom Creations for Your Event'}
 			/>
 			<LayoutWrapper>
@@ -27,27 +27,27 @@ export default function DesignPrintServices() {
 					touch of elegance and professionalism to your event.
 				</Typography>
 				<Box>
-					<Grid container spacing={2} sx={{ mt: 2, alignItems: 'stretch' }}>
+					<Grid container spacing={2} sx={{ mt: 2, alignItems: 'center' }}>
 						<Grid item size={{ xs: 12, md: 6 }}>
-							<Box bgcolor={'blue'} sx={{ p: 2, height: '100%' }}>
+							<Box sx={{ p: { xs: 0, md: 2 }, height: '100%' }}>
 								<Grid container spacing={2} sx={{ m: 2 }}>
 									<Grid item size={6}>
 										<Box>
-											<Typography>Whats In included</Typography>
+											<Typography variant='p'>Whats In included</Typography>
 											<Box component={'ul'}>
-												<Typography component={'li'}>
+												<Typography component={'li'} variant='smallerP'>
 													Fully custom invite design
 												</Typography>
-												<Typography component={'li'}>
+												<Typography component={'li'} variant='smallerP'>
 													Personalised to vour theme
 												</Typography>
-												<Typography component={'li'}>
+												<Typography component={'li'} variant='smallerP'>
 													High-quality print-ready files
 												</Typography>
-												<Typography component={'li'}>
+												<Typography component={'li'} variant='smallerP'>
 													Optional printing available
 												</Typography>
-												<Typography component={'li'}>
+												<Typography component={'li'} variant='smallerP'>
 													Free design consultation
 												</Typography>
 											</Box>
@@ -55,15 +55,15 @@ export default function DesignPrintServices() {
 									</Grid>
 									<Grid item size={6}>
 										<Box>
-											<Typography>Whats In included</Typography>
+											<Typography>Add Ons</Typography>
 											<Box component={'ul'}>
-												<Typography component={'li'}>
+												<Typography component={'li'} variant='smallerP'>
 													Table name cards
 												</Typography>
-												<Typography component={'li'}>
-													Table name cards
+												<Typography component={'li'} variant='smallerP'>
+													Menu Cards
 												</Typography>
-												<Typography component={'li'}>
+												<Typography component={'li'} variant='smallerP'>
 													Thank you cards
 												</Typography>
 											</Box>

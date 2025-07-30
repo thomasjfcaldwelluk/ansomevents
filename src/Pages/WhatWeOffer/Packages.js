@@ -28,7 +28,9 @@ export default function Packages() {
 		titleStyle: {
 			marginInline: 1,
 		},
-		priceStyle: {},
+		priceStyle: {
+			fontSize: '1.5rem',
+		},
 		descriptionStyle: {
 			marginBlock: 2,
 		},
