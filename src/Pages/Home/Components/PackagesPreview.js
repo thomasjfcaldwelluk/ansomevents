@@ -20,16 +20,32 @@ export default function PackagesPreview() {
 					alt='Your image alt text'
 				/>
 				<CardContent sx={{ flex: 1 }}>
-					<Typography variant='h4' component={'h4'} sx={{ mb: 2 }}>
+					<Typography
+						variant='h4'
+						component={'h4'}
+						sx={{ mb: 2, textAlign: 'center' }}>
 						Decor Packages
 					</Typography>
+					<Box>
+						<Typography component={'p'} variant='smallerP'>
+							Effortlessly stylish and beautifully coordinated, our décor
+							packages bring your event theme to life with ease
+						</Typography>
+					</Box>
 					<Box>
 						<MuiLink
 							component={Link}
 							variant='titleText'
 							to='/whatweoffer/packages'
 							underline='hover'
-							display='block'>
+							display='block'
+							sx={{
+								marginTop: 4,
+								color: theme.palette.primaryAccent.primary,
+								'&:hover': {
+									color: theme.palette.primaryAccent.secondary,
+								},
+							}}>
 							See More Of Our Beautiful Creations
 						</MuiLink>
 					</Box>

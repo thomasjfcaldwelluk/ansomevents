@@ -42,6 +42,7 @@ export default function GalleryPreview() {
 				<Grid item size={{ xs: 12, md: 6 }}>
 					<Box
 						bgcolor={theme.palette.primaryBackground.secondary}
+						p={3}
 						borderRadius={2}
 						height={'100%'}
 						boxShadow={2}>
@@ -52,10 +53,10 @@ export default function GalleryPreview() {
 							underline='hover'
 							display='block'
 							color='theme.palette.primaryHeader.main'
-							sx={{ mb: 2, textAlign: 'center' }}>
+							sx={{ textAlign: 'center' }}>
 							Gallery Of Our Past Events
 						</MuiLink>
-						<Box>
+						<Box p={3}>
 							<Typography component={'p'} variant='p'>
 								Explore our gallery to see the beautiful moments captured from
 								our past events. From weddings to corporate gatherings, each

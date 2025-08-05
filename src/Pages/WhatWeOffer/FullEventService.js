@@ -1,10 +1,10 @@
-import React from 'react';
 import PageTitle from '../../ReuseableComponents/PageTitle';
 import LayoutWrapper from '../../ReuseableComponents/LayoutWrapper';
 import { Box, Typography, Grid, Card, CardContent } from '@mui/material';
 import fullEventServiceImageOne from '../../../src/Assets/Photos/FullEvents/fullEventOne.webp';
 import fullEventServiceImageTwo from '../../../src/Assets/Photos/FullEvents/fullEventTwo.webp';
 import fullEventServiceImageThree from '../../../src/Assets/Photos/FullEvents/fullEventThree.webp';
+import theme from '../../../src/theme';
 
 const fullEventServiceImages = [
 	fullEventServiceImageOne,
@@ -31,11 +31,17 @@ export default function FullEventService() {
 					will work with you to create a stunning atmosphere that reflects your
 					vision and exceeds your expectations.
 				</Typography>
-				<Grid container spacing={2} sx={{ my: 4 }}>
+				<Grid container spacing={2} sx={{ my: 4, alignItems: 'stretch' }}>
 					<Grid item size={{ xs: 12, md: 4 }}>
-						<Box>
-							<Card>
-								<CardContent>
+						<Box height='100%'>
+							<Card
+								sx={{
+									height: '100%',
+									display: 'flex',
+									flexDirection: 'column',
+									bgcolor: theme.palette.primaryBackground.secondary,
+								}}>
+								<CardContent sx={{ flexGrow: 1 }}>
 									<Typography variant='h4' component='h3' align='center'>
 										Silver
 									</Typography>
@@ -46,10 +52,13 @@ export default function FullEventService() {
 										<Typography variant='smallerP' component={'li'}>
 											Card box with simple table décor
 										</Typography>
-										<Typography component={'p'}>
+										<Typography
+											component={'p'}
+											variant='p'
+											sx={{ fontWeight: '600' }}>
 											Your choice of one photo backdrop:
 										</Typography>
-										<Typography variant='p' component={'p'}>
+										<Typography variant='smallerP' component={'p'}>
 											Either Arch with fabric & faux florals or Sailboard with
 											balloon garland or Shimmer wall with balloon garland
 										</Typography>
@@ -63,14 +72,23 @@ export default function FullEventService() {
 						</Box>
 					</Grid>
 					<Grid item size={{ xs: 12, md: 4 }}>
-						<Box>
-							<Card>
-								<CardContent>
+						<Box height='100%'>
+							<Card
+								sx={{
+									height: '100%',
+									display: 'flex',
+									flexDirection: 'column',
+									bgcolor: theme.palette.primaryBackground.secondary,
+								}}>
+								<CardContent sx={{ flexGrow: 1 }}>
 									<Typography variant='h4' component='h3' align='center'>
 										Gold
 									</Typography>
 									<Box component={'ul'}>
-										<Typography component={'p'}>
+										<Typography
+											component={'p'}
+											variant='p'
+											sx={{ mb: 2, fontWeight: '600' }}>
 											Everything included in the Silver Package PLUS
 										</Typography>
 										<Typography variant='smallerP' component={'li'}>
@@ -85,14 +103,23 @@ export default function FullEventService() {
 						</Box>
 					</Grid>
 					<Grid item size={{ xs: 12, md: 4 }}>
-						<Box>
-							<Card>
-								<CardContent>
+						<Box height='100%'>
+							<Card
+								sx={{
+									height: '100%',
+									display: 'flex',
+									flexDirection: 'column',
+									bgcolor: theme.palette.primaryBackground.secondary,
+								}}>
+								<CardContent sx={{ flexGrow: 1 }}>
 									<Typography variant='h4' component='h3' align='center'>
 										Platinum
 									</Typography>
 									<Box component={'ul'}>
-										<Typography component={'p'}>
+										<Typography
+											component={'p'}
+											variant='p'
+											sx={{ mb: 2, fontWeight: '600' }}>
 											Everything included in the Silver & Gold Packages PLUS
 										</Typography>
 										<Typography variant='smallerP' component={'li'}>
@@ -110,29 +137,47 @@ export default function FullEventService() {
 						</Box>
 					</Grid>
 				</Grid>
-				<Box sx={{ p: 2, bgcolor: '#f5f5f5', borderRadius: 2 }}>
+				<Box
+					sx={{
+						p: 2,
+						bgcolor: theme.palette.primaryBackground.secondary,
+						borderRadius: 2,
+						boxShadow: 1,
+					}}>
 					<Typography component={'h4'} variant='h4' align='center'>
 						Optional Add-Ons
 					</Typography>
 					<Grid container spacing={2} sx={{ my: 2 }}>
 						<Grid item size={{ xs: 12, md: 4 }}>
-							<Typography component={'p'} variant='smallerP' align='center'>
+							<Typography
+								component={'p'}
+								variant='p'
+								sx={{ fontWeight: '600' }}
+								align='center'>
 								Chair covers with bows
 							</Typography>
 						</Grid>
 						<Grid item size={{ xs: 12, md: 4 }}>
-							<Typography component={'p'} variant='smallerP' align='center'>
+							<Typography
+								component={'p'}
+								variant='p'
+								sx={{ fontWeight: '600' }}
+								align='center'>
 								Personalised menus/place cards
 							</Typography>
 						</Grid>
 						<Grid item size={{ xs: 12, md: 4 }}>
-							<Typography component={'p'} variant='smallerP' align='center'>
+							<Typography
+								component={'p'}
+								variant='p'
+								sx={{ fontWeight: '600' }}
+								align='center'>
 								On-the-day coordinator
 							</Typography>
 						</Grid>
 					</Grid>
 				</Box>
-				<Box>
+				<Box padding={4}>
 					<Typography component={'p'} variant='smallerP' align='center'>
 						* All packages include delivery, setup & retrieval within Saltash.
 						Delivery available across Cornwall & Devon (fees may apply).
@@ -160,6 +205,8 @@ export default function FullEventService() {
 						sx={{
 							width: '100%',
 							height: '100%',
+							boxShadow: 1,
+							borderRadius: 2,
 							objectFit: 'cover',
 							gridColumn: {
 								xs: '1', // Full width on xs
@@ -180,6 +227,8 @@ export default function FullEventService() {
 						sx={{
 							width: '100%',
 							height: '100%',
+							boxShadow: 1,
+							borderRadius: 2,
 							objectFit: 'cover',
 							gridColumn: {
 								xs: '1',
@@ -199,6 +248,8 @@ export default function FullEventService() {
 						alt='Image 3'
 						sx={{
 							width: '100%',
+							boxShadow: 1,
+							borderRadius: 2,
 							height: '100%',
 							objectFit: 'cover',
 							gridColumn: {

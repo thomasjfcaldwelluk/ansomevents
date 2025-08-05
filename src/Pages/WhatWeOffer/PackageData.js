@@ -149,7 +149,7 @@ export const addOnData = [
 	{
 		id: 1,
 		title: '4ft Light Up Letters',
-		image: lightUpNumbers,
+		image: lightUpNumbers, 
 		alt: 'Image of light up letters & Numbers available from Ansom Events',
 		price: 35,
 	},

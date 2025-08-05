@@ -1,12 +1,4 @@
-import {
-	Card,
-	CardContent,
-	CardMedia,
-	Grid,
-	Typography,
-	Box,
-} from '@mui/material';
-import React from 'react';
+import { Card, CardContent, CardMedia, Typography, Box } from '@mui/material';
 import PropHirePreviewImage from '../../../Assets/Photos/HomePageImages/propsPreview.webp';
 import { Link } from 'react-router-dom';
 import { Link as MuiLink } from '@mui/material';
@@ -30,16 +22,32 @@ export default function PropHirePreview() {
 				/>
 				<CardContent sx={{ flex: 1 }}>
 					<Box>
-						<Typography variant='h4' component={'h4'} sx={{ mb: 2 }}>
+						<Typography
+							variant='h4'
+							component={'h4'}
+							sx={{ mb: 2, textAlign: 'center' }}>
 							Prop Hire
 						</Typography>
+						<Box>
+							<Typography component={'p'} variant='smallerP'>
+								From statement backdrops to elegant table pieces, our prop hire
+								collection has everything you need to elevate your event.
+							</Typography>
+						</Box>
 						<Box>
 							<MuiLink
 								component={Link}
 								variant='titleText'
 								to='/whatweoffer/prophire'
 								underline='hover'
-								display='block'>
+								display='block'
+								sx={{
+									marginTop: 4,
+									color: theme.palette.primaryAccent.primary,
+									'&:hover': {
+										color: theme.palette.primaryAccent.secondary,
+									},
+								}}>
 								See How To Complete Your Events
 							</MuiLink>
 						</Box>

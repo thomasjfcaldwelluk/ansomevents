@@ -1,8 +1,7 @@
 import React from 'react';
 import { Typography } from '@mui/material';
 import { Box } from '@mui/material';
-import Grid from '@mui/material/Grid';
-import { termsData, balloonTip } from './TermsConditionsData';
+import { termsData } from './TermsConditionsData';
 import { Helmet } from 'react-helmet-async';
 import PageTitle from '../../ReuseableComponents/PageTitle';
 import LayoutWrapper from '../../ReuseableComponents/LayoutWrapper';
@@ -46,48 +45,26 @@ export default function TermsAndConditions() {
 				pageSubheader={'All You Need To Know'}
 			/>
 			<LayoutWrapper>
-				<Grid
-					container
-					sx={{
-						display: 'flex',
-						padding: 3,
-					}}
-					spacing={2}>
-					<Grid item size={{ xs: 12, md: 6 }}>
-						<Box>
-							{termsData.map((data, index) => (
-								<Box key={index}>
-									<Typography
-										variant='titleText'
-										component={'p'}
-										display={'inline'}>
-										{data.id}:{'   '}
-									</Typography>
-									<Typography
-										variant='smallerP'
-										component={'p'}
-										display={'inline'}>
-										{data.term}
-									</Typography>
-								</Box>
-							))}
+				<Box>
+					{termsData.map((term) => (
+						<Box key={term.id} sx={{ mb: 4 }}>
+							<Typography variant='h3' sx={{ fontWeight: 'bold', mb: 2 }}>
+								{term.title || `Term ${term.id}`}
+							</Typography>
+							{Array.isArray(term.term) ? (
+								<Typography variant='body1'>
+									{term.term.map((t, index) => (
+										<Box key={index} sx={{ mb: 1 }}>
+											{t}
+										</Box>
+									))}
+								</Typography>
+							) : (
+								<Typography variant='body1'>{term.term}</Typography>
+							)}
 						</Box>
-					</Grid>
-					<Grid item size={{ xs: 12, md: 6 }}>
-						<Box>
-							{balloonTip.map((tips, index) => (
-								<Box key={index}>
-									<Typography variant='titleText' component={'p'}>
-										{tips.id}:
-									</Typography>
-									<Typography variant='p' component={'p'}>
-										{tips.tip}
-									</Typography>
-								</Box>
-							))}
-						</Box>
-					</Grid>
-				</Grid>
+					))}
+				</Box>
 			</LayoutWrapper>
 		</Box>
 	);

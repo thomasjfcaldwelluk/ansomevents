@@ -6,7 +6,7 @@ import Grid from '@mui/material/Grid';
 import PackagesPreview from './Components/PackagesPreview';
 import PropHirePreview from './Components/PropHirePreview';
 import GalleryPreview from './Components/GalleryPreview';
-import ContactForm from '../Contact/ContactForm';
+import Contact from '../Contact/Contact';
 import Services from './../Services/Services';
 
 export default function Home() {
@@ -65,11 +65,7 @@ export default function Home() {
 				<GalleryPreview />
 			</Box>
 			<Box id='contact' component={'section'} aria-label='contact-us'>
-				<Grid container sx={{ display: 'flex', justifyContent: 'center' }}>
-					<Grid item size={{ xs: 12, md: 6 }}>
-						<ContactForm />
-					</Grid>
-				</Grid>
+				<Contact />
 			</Box>
 		</Box>
 	);
