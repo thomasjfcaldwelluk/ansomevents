@@ -32,7 +32,7 @@ export default function AnsomAndEasy() {
 					{ansomAndEasyData.map((item, index) => (
 						<Box key={index}>
 							<Typography
-								component='p'
+								component='h3'
 								variant='sectionHeader'
 								sx={{ mt: 4, mb: 2 }}>
 								{item.title}
@@ -40,16 +40,22 @@ export default function AnsomAndEasy() {
 							{item.included && (
 								<Box component='ul' sx={{ pl: 2, mb: 0 }}>
 									{item.included.map((include, idx) => (
-										<Typography component='li' variant='body2' key={idx}>
+										<Typography component='li' variant='smallerP' key={idx}>
 											{include}
 										</Typography>
 									))}
 								</Box>
 							)}
+							<Typography
+								component='h4'
+								variant='sectionHeader'
+								sx={{ mt: 2, mb: 1 }}>
+								{item.extraTitle}
+							</Typography>
 							{item.addOn && (
 								<Box component='ul' sx={{ pl: 2, mb: 0 }}>
 									{item.addOn.map((addOns, idx) => (
-										<Typography component='li' variant='body2' key={idx}>
+										<Typography component='li' variant='smallerP' key={idx}>
 											{addOns}
 										</Typography>
 									))}

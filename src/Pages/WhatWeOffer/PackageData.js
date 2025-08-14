@@ -149,7 +149,7 @@ export const addOnData = [
 	{
 		id: 1,
 		title: '4ft Light Up Letters',
-		image: lightUpNumbers, 
+		image: lightUpNumbers,
 		alt: 'Image of light up letters & Numbers available from Ansom Events',
 		price: 35,
 	},
@@ -374,7 +374,7 @@ export const balloonDisplayData = [
 export const ansomAndEasyData = [
 	{
 		id: 1,
-		title: 'Save time and stress',
+		title: 'Save time With Ansom & Easy',
 		included: [
 			'Themed Hired Table Decor',
 			'Plates/Cups/ Forks/ Napkins (8 ppl)',
@@ -382,6 +382,7 @@ export const ansomAndEasyData = [
 			'Either: Party Hat, Glasses, Bubbles or Mask to match style (8 ppl)',
 			'Invites (8 ppl)',
 		],
+		extraTitle: 'Add Ons',
 		addOn: [
 			'Themed Loot Bags or Boxes',
 			'Photo Op Backdrop',

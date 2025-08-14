@@ -40,7 +40,10 @@ export default function About() {
 				<meta property='og:url' content='https://ansomevents.com/gallery' />
 				<link rel='canonical' href='https://ansomevents.com/gallery' />
 			</Helmet>
-			<PageTitle pageHeader={'About Us'} pageSubheader={'Learn About Us'} />
+			<PageTitle
+				pageHeader={'About Us At Ansom Events'}
+				pageSubheader={'Learn About Us'}
+			/>
 			<LayoutWrapper>
 				<Grid container spacing={1} alignItems={'stretch'}>
 					{/* First Column: Image */}

@@ -51,7 +51,12 @@ export default function Props() {
 				<Grid container sx={{ marginBlock: 4 }} spacing={2}>
 					{addOnData.map((pkg, index) => (
 						<Grid item key={index} size={{ xs: 12, sm: 6, md: 3 }}>
-							<Box sx={{ backgroundColor: '#F2EFEA', padding: 2 }}>
+							<Box
+								sx={{
+									backgroundColor: '#F2EFEA',
+									padding: 2,
+									borderRadius: 2,
+								}}>
 								<Box>
 									<img
 										src={pkg.image}

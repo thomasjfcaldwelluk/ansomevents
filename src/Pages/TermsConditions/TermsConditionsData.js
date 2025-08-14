@@ -132,7 +132,7 @@ export const balloonTip = [
 	},
 	{
 		id: 2,
-		tip: '* When collecting/transporting, we recommend removing any sharp objects, collapsing back seats or emptying back of car to optimise space. Having a base sheet is recommended.',
+		tip: '* When collecting/transporting, we recommend removing any sharp objects, collapsing back seats or emptying back of car to optimize space. Having a base sheet is recommended.',
 	},
 	{
 		id: 3,

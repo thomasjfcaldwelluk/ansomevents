@@ -56,8 +56,13 @@ export default function ContactForm() {
 				type='submit'
 				disabled={state.submitting}
 				sx={{
-					backgroundColor: 'none',
-					color: theme.palette.primaryHeader.primary,
+					marginBlock: 2,
+					backgroundColor: theme.palette.primaryHeader.main,
+					color: theme.palette.primaryBackground.main,
+					'&:hover': {
+						backgroundColor: theme.palette.primaryAccent.secondary,
+						color: theme.palette.primaryBackground.main,
+					},
 				}}>
 				Send Message
 			</Button>
