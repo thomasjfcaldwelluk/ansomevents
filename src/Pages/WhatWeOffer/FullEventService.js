@@ -19,7 +19,7 @@ export default function FullEventService() {
 			id='Full_Event_Service'
 			aria-label='Full Event Service'>
 			<PageTitle
-				pageHeader={'Full Event Service'}
+				pageHeader={'Wedding & Celebration Packages'}
 				pageSubheader={'Event Styling and Coordination'}
 			/>
 			<LayoutWrapper>

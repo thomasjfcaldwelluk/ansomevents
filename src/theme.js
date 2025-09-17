@@ -82,6 +82,9 @@ const theme = createTheme({
 			fontFamily: 'Playfair, serif',
 			color: '#1C3D5A',
 			fontSize: 40,
+			'@media (max-width:400px)': {
+				fontSize: 20,
+			},
 		},
 		pageSubheaderText: {
 			fontSize: 15,

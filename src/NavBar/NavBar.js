@@ -251,7 +251,7 @@ const Navbar = () => {
 											textDecoration: 'none',
 											...navBarStyles.navMenuLink,
 										}}>
-										Full Event Service
+										Wedding & Celebration Packages
 									</Link>
 								</MenuItem>
 								<MenuItem onClick={handleMenuClose}>
@@ -402,6 +402,39 @@ const Navbar = () => {
 								}}
 								onClick={handleDrawerToggle}>
 								Prop Hire
+							</MuiLink>
+							<MuiLink
+								component={Link}
+								to='/whatweoffer/ansom_and_easy'
+								sx={{
+									...navBarStyles.navDrawerLink,
+									fontSize: 12,
+									fontWeight: 550,
+								}}
+								onClick={handleDrawerToggle}>
+								Ansom And Easy Party Packs
+							</MuiLink>
+							<MuiLink
+								component={Link}
+								to='/whatweoffer/design_print_services'
+								sx={{
+									...navBarStyles.navDrawerLink,
+									fontSize: 12,
+									fontWeight: 550,
+								}}
+								onClick={handleDrawerToggle}>
+								Design and Print Services
+							</MuiLink>
+							<MuiLink
+								component={Link}
+								to='/whatweoffer/full_event_service'
+								sx={{
+									...navBarStyles.navDrawerLink,
+									fontSize: 12,
+									fontWeight: 550,
+								}}
+								onClick={handleDrawerToggle}>
+								Wedding & Celebration Packages
 							</MuiLink>
 							<MuiLink
 								component={Link}

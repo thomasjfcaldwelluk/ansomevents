@@ -3,8 +3,6 @@ import PageTitle from '../../ReuseableComponents/PageTitle';
 import LayoutWrapper from '../../ReuseableComponents/LayoutWrapper';
 import { Box, Grid, Typography } from '@mui/material';
 import designPrintOne from '../../../src/Assets/Photos/DesignPrint/designPrintOne.webp';
-import saveTheDateMockUp from '../../../src/Assets/Photos/DesignPrint/SaveTheDate.webp';
-import weddingMenu from '../../../src/Assets/Photos/DesignPrint/WeddingMenuMenu.webp';
 
 export default function DesignPrintServices() {
 	return (
@@ -39,7 +37,7 @@ export default function DesignPrintServices() {
 													Fully custom invite design
 												</Typography>
 												<Typography component={'li'} variant='smallerP'>
-													Personalised to vour theme
+													Personalised to your theme
 												</Typography>
 												<Typography component={'li'} variant='smallerP'>
 													High-quality print-ready files

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Stack } from '@mui/system';
 import { Typography } from '@mui/material';
 
@@ -16,7 +15,7 @@ export default function PageTitle({
 				sx={{
 					...(smallHeaderOnMobile && {
 						'@media (max-width:430px)': {
-							fontSize: 28,
+							fontSize: 18,
 						},
 					}),
 				}}>
