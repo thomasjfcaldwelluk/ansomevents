@@ -1,6 +1,7 @@
 // import './App.css';
 import Home from './Pages/Home/Home';
 import Packages from './Pages/WhatWeOffer/Packages';
+import XmasDisplays from './Pages/WhatWeOffer/XmasDisplays';
 import AnsomAndEasy from './Pages/WhatWeOffer/AnsomAndEasy';
 import DesignPrintServices from './Pages/WhatWeOffer/DesignPrintServices';
 import FullEventService from './Pages/WhatWeOffer/FullEventService';
@@ -65,6 +66,10 @@ function App() {
 						<Route path='/faqs' element={<FrequentlyAskedQuestions />} />
 						<Route path='/contact' element={<Contact />} />
 						<Route path='/aboutus' element={<About />} />
+						<Route
+							path='/whatweoffer/xmasdisplays'
+							element={<XmasDisplays />}
+						/>
 
 						<Route
 							path='/termsandconditions'

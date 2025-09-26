@@ -256,6 +256,16 @@ const Navbar = () => {
 								</MenuItem>
 								<MenuItem onClick={handleMenuClose}>
 									<Link
+										to='/whatweoffer/xmasdisplays'
+										style={{
+											textDecoration: 'none',
+											...navBarStyles.navMenuLink,
+										}}>
+										Xmas Displays
+									</Link>
+								</MenuItem>
+								<MenuItem onClick={handleMenuClose}>
+									<Link
 										to='/whatweoffer/specialoffers'
 										style={{
 											textDecoration: 'none',
