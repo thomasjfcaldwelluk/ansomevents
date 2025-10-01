@@ -1,5 +1,6 @@
 import { Box, Typography } from '@mui/material';
 import { Helmet } from 'react-helmet-async';
+import XmasElfs from './XmasElfs';
 import Grid from '@mui/material/Grid';
 import PageTitle from '../../ReuseableComponents/PageTitle';
 import LayoutWrapper from '../../ReuseableComponents/LayoutWrapper';
@@ -13,33 +14,56 @@ import SetUp4 from '../../Assets/Photos/XmasImages/christmasSetUp4.webp';
 import SetUp5 from '../../Assets/Photos/XmasImages/christmasSetUp5.webp';
 import SetUp6 from '../../Assets/Photos/XmasImages/christmasSetUp6.webp';
 
-const items = [
-	{ id: 1, title: 'Backdrop Frame', price: '£125', img: SetUp1 },
+const additions = [
+	{ id: 1, title: 'White Twinkle Wall behind arch or Hoop', price: '£125' },
 	{
 		id: 2,
-		title: 'Sailboard + Balloons',
-		price: '£150',
+		title: 'White Drapery with stand behind arch or Hoop',
+		price: '£100',
+	},
+	{ id: 3, title: '(5) Gift Boxes to the sides of backdrops', price: '£30' },
+	{ id: 4, title: 'Peacock Chair with Red Throw Pillows', price: '£50' },
+	{ id: 5, title: '(2) Festive Entrance Poles', price: '£30' },
+	{ id: 6, title: 'Chair Cover with Bow', price: '£3.50 each' },
+	{
+		id: 7,
+		title: 'Table Design festive centerpiece with runner',
+		price: '£25 each table',
+	},
+];
+
+const items = [
+	{ id: 1, title: '3m x 3m Frame Backdrop', price: '£125', img: SetUp1 },
+	{
+		id: 2,
+		title: ' Hoop Backdrop Faux Garland',
+		price: '£225',
 		img: SetUp2,
 	},
 	{
 		id: 3,
-		title: 'Gold Shimmer Wall',
-		price: '£165',
+		title: 'Hoop with Greenery, Floral & Drapery',
+		price: '£350',
 		img: SetUp3,
 	},
 	{
 		id: 4,
-		title: 'Full Hoop Garland',
-		price: '£225',
+		title: '5ft x 6ft Gold Shimmer Wall',
+		price: '£165',
 		img: SetUp4,
 	},
 	{
 		id: 5,
-		title: 'Half Hoop Garland',
-		price: '£200',
+		title: '7ft Sailboard Backdrop',
+		price: '£150',
 		img: SetUp5,
 	},
-	{ id: 6, title: 'Deluxe Hoop', price: '£250', img: SetUp6 },
+	{
+		id: 6,
+		title: 'Squared Arch With Garland/Baubles',
+		price: '£225',
+		img: SetUp6,
+	},
 ];
 
 export default function XmasDisplays() {
@@ -108,6 +132,27 @@ export default function XmasDisplays() {
 						</Grid>
 					))}
 				</Grid>
+				<Box>
+					<Typography variant='h5' gutterBottom>
+						Possible Additions
+					</Typography>
+					<Grid container spacing={3}>
+						{additions.map((item) => (
+							<Grid item size={{ xs: 12, sm: 6, md: 4 }} key={item.id}>
+								<Card
+									sx={{ backgroundColor: 'transparent', boxShadow: 'none' }}>
+									<CardContent>
+										<Typography variant='subtitle1' fontWeight='bold'>
+											{item.title}
+										</Typography>
+										<Typography color='text.secondary'>{item.price}</Typography>
+									</CardContent>
+								</Card>
+							</Grid>
+						))}
+					</Grid>
+				</Box>
+				<XmasElfs />
 			</LayoutWrapper>
 		</Box>
 	);

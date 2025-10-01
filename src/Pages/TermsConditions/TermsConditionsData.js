@@ -51,6 +51,7 @@ export const termsData = [
 			'To the fullest extent permitted by law, the Planner’s total liability for any claim, whether in contract, tort (including negligence), or otherwise, shall be limited to the amount paid by the Client under this Agreement. The Planner shall not be liable for indirect or consequential loss, including emotional distress, loss of enjoyment, or reputational damage.',
 			'The Planner is not liable for any injuries, damages, delays, or losses caused by third-party vendors or unforeseen circumstances. The Planner may recommend or coordinate services provided by third-party vendors. These vendors are independent contractors and are not employees or agents of the Planner. The Planner is not responsible for the performance, conduct, or availability of any third-party vendor.',
 			'The Planner shall not be responsible for delays in service caused by the Client’s failure to provide required information, approvals, or payments within the specified timelines.',
+			'Any damage caused by venue, vendors or guest of event to hired equipment will be the client’s responsibility to cover cost for repair or replacement to any damaged/lost items.',
 		],
 	},
 	{
@@ -64,7 +65,7 @@ export const termsData = [
 		id: 8,
 		title: 'DESIGN & CREATIVE RIGHTS CLAUSE',
 		term: [
-			'While the Planner will use reasonable skill and care in the delivery of services, no specific outcomes or results are guaranteed, and the Client understands that the final appearance and experience of the event may be influenced by factors beyond the Planner’s control',
+			'Concepts, sketches, drafts, mood boards, or unused designs produced during the creative process remain the property of Ansom Events and may not be used, reproduced, or disclosed by the Client without prior written consent. The Client agrees that Ansom Events may be identified as the creator of the Work in marketing materials and project showcases unless otherwise agreed in writing.',
 		],
 	},
 	{

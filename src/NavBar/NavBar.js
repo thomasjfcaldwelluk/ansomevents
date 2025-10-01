@@ -259,6 +259,7 @@ const Navbar = () => {
 										to='/whatweoffer/xmasdisplays'
 										style={{
 											textDecoration: 'none',
+											fontWeight: 900,
 											...navBarStyles.navMenuLink,
 										}}>
 										Xmas Displays
@@ -445,6 +446,17 @@ const Navbar = () => {
 								}}
 								onClick={handleDrawerToggle}>
 								Wedding & Celebration Packages
+							</MuiLink>
+							<MuiLink
+								component={Link}
+								to='/whatweoffer/xmasdisplays'
+								sx={{
+									...navBarStyles.navDrawerLink,
+									fontSize: 12,
+									fontWeight: 550,
+								}}
+								onClick={handleDrawerToggle}>
+								Xmas Displays
 							</MuiLink>
 							<MuiLink
 								component={Link}
