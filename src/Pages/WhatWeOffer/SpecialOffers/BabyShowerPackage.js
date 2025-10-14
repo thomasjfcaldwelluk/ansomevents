@@ -47,23 +47,20 @@ export default function BabyShowerPackage() {
 							component='h2'
 							variant='productTitle'
 							sx={{ textAlign: 'center', mb: 2, fontSize: 25 }}>
-							Baby Shower Package
+							Celebrating Package Special
 						</Typography>
 
 						{/* Included Items */}
 						<List sx={{ paddingLeft: 2 }}>
 							{[
-								'Sailboard',
-								'Oh Baby sign',
-								'Balloon garland in your theme colours (biodegradable latex)',
-								'Baby box with balloons for gift table',
-								'Easel with faux florals & personalised sign',
-								'Cake Pedestal',
-								'Choice of 2 baby shower games (Up to 20 players)*',
-							].map((value, i) => (
+								'Choice of Backdrop with Bio Degradable Latex Balloon Garland (choice of Oh Baby, Happy Birthday or Let’s Party sign)',
+								'Personalised Welcome Sign',
+								'Table Styling and design (in your colour scheme)',
+								'Plus choice of welcome Reception, Gift or Cake Table Design & Styling ',
+							].map((included, i) => (
 								<ListItem key={i} sx={{ py: 0.5 }}>
 									<Typography component={'p'} variant='p'>
-										• {value}
+										• {included}
 									</Typography>
 								</ListItem>
 							))}
@@ -75,14 +72,13 @@ export default function BabyShowerPackage() {
 								component={'p'}
 								variant='titleText'
 								sx={{ fontSize: 20 }}>
-								£200
+								£250
 							</Typography>
 						</Box>
-
 						{/* Disclaimer */}
 						<Typography component='p' variant='smallerP' sx={{ mb: 2 }}>
-							* Game options: Baby Bingo, Name That Baby Song, Don't Say "Baby",
-							Baby Word Search, and Guess the Safety Pin Count
+							* Perfect for your next Baby Shower, Birthday, Anniversary or
+							Engagement Celebration
 						</Typography>
 					</Box>
 					{/* Title */}

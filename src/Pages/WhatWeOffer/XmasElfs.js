@@ -15,30 +15,26 @@ import xmasBalloon4 from '../../../src/Assets/Photos/ElfImages/xmasBalloon4.webp
 const elfItems = [
 	{
 		id: 1,
-		title: 'Elf Balloon Garland 1',
-		description: 'Description Coming Soon',
-		price: 'Price Coming Soon',
+		title: 'Balloon Gift Design',
+		price: 10,
 		img: xmasBalloon1,
 	},
 	{
 		id: 2,
-		title: 'Elf Balloon Garland 2',
-		description: 'Description Coming Soon',
-		price: 'Price Coming Soon',
+		title: 'Balloon Star Stack',
+		price: 15,
 		img: xmasBalloon2,
 	},
 	{
 		id: 3,
-		title: 'Elf Balloon Garland 3',
-		description: 'Description Coming Soon',
-		price: 'Price Coming Soon',
+		title: 'Centerpiece Balloon',
+		price: 20,
 		img: xmasBalloon3,
 	},
 	{
 		id: 4,
-		title: 'Elf Balloon Garland 4',
-		description: 'Description Coming Soon',
-		price: 'Price Coming Soon',
+		title: 'Elf Mailbox',
+		price: 15,
 		img: xmasBalloon4,
 	},
 ];
@@ -46,6 +42,13 @@ const elfItems = [
 export default function XmasElfs() {
 	return (
 		<Box>
+			<Typography
+				variant='h4'
+				component={'h5'}
+				gutterBottom
+				sx={{ textAlign: 'center' }}>
+				Elfs
+			</Typography>
 			<Grid container spacing={4} sx={{ mt: 2 }}>
 				{elfItems.map((item) => (
 					<Grid item size={{ xs: 12, md: 4, lg: 3 }} key={item.id}>

@@ -133,7 +133,11 @@ export default function XmasDisplays() {
 					))}
 				</Grid>
 				<Box>
-					<Typography variant='h5' gutterBottom>
+					<Typography
+						variant='h4'
+						component={'h5'}
+						gutterBottom
+						sx={{ textAlign: 'center' }}>
 						Possible Additions
 					</Typography>
 					<Grid container spacing={3}>
