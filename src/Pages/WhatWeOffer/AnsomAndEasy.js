@@ -5,6 +5,7 @@ import { ansomAndEasyData } from './PackageData';
 import imageOne from '../.././../src/Assets/Photos/AnsomAndEasy/partyPackOne.webp';
 import imageTwo from '../.././../src/Assets/Photos/AnsomAndEasy/partyPackTwo.webp';
 import imageThree from '../.././../src/Assets/Photos/AnsomAndEasy/partyPackThree.webp';
+import { Helmet } from 'react-helmet-async';
 
 export default function AnsomAndEasy() {
 	return (
@@ -12,6 +13,39 @@ export default function AnsomAndEasy() {
 			component='main'
 			id='ansom_and_easy'
 			aria-label='Ansom and Easy Party Packs'>
+			<Helmet>
+				<title>
+					Ansom & Easy: Pre-Prepped DIY Party Decoration & Styling Packs
+				</title>
+				<meta
+					name='description'
+					content='Planning made easy! Our Ansom & Easy packs offer affordable, pre-prepped party decorations and styling kits ready for collection in Cornwall and Devon. Perfect for DIY events.'
+				/>
+				<meta
+					name='keywords'
+					content='DIY party decoration packs, affordable event styling, party kit hire Cornwall, easy decoration collection Devon, pre-prepped party supplies'
+				/>
+				<link
+					rel='canonical'
+					href='https://ansomevents.com/whatweoffer/ansom_and_easy'
+				/>
+				<meta
+					property='og:title'
+					content='Ansom & Easy: Stress-Free, Affordable DIY Party Decor Kits'
+				/>
+				<meta
+					property='og:description'
+					content='Discover the easy way to style your event! Get beautiful, pre-designed party kits ready for self-styling at an affordable price.'
+				/>
+				<meta
+					property='og:image'
+					content='https://ansomevents.com/images/ansom-easy-pack.jpg'
+				/>
+				<meta
+					property='og:url'
+					content='https://ansomevents.com/whatweoffer/ansom_and_easy'
+				/>
+			</Helmet>
 			<PageTitle
 				pageHeader={'Ansom and Easy Party Packs'}
 				pageSubheader={'Effortless Party Hosting'}

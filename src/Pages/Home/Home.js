@@ -13,29 +13,32 @@ export default function Home() {
 	return (
 		<Box component={'main'}>
 			<Helmet>
-				<title>Ansom Events - Full-Service Event Planning</title>
+				<title>
+					Ansom Events | Premier Wedding & Corporate Planners in Cornwall &
+					Devon
+				</title>
 				<meta
 					name='description'
-					content='Ansom Events offers full-service event planning, prop hire, and event design in Cornwall and Devon.'
+					content='Ansom Events is the premier full-service event planning, styling, and hire company for weddings and corporate functions across Cornwall and Devon. Stress-free coordination.'
 				/>
 				<meta
 					name='keywords'
-					content='event planning, prop hire, Cornwall, Devon, weddings, coordination'
+					content='wedding planning Cornwall, corporate event planning Devon, full-service event design, luxury prop hire, Ansom Events'
 				/>
+				<link rel='canonical' href='https://ansomevents.com' />
 				<meta
 					property='og:title'
-					content='Ansom Events - Full-Service Event Planning'
+					content='Ansom Events: Full-Service Event Planning & Styling for the South West'
 				/>
 				<meta
 					property='og:description'
-					content='We specialize in event coordination and design across Cornwall and Devon.'
+					content='Specialists in event design, wedding planning, and corporate coordination throughout Cornwall and Devon.'
 				/>
 				<meta
 					property='og:image'
-					content='https://example.com/your-image.jpg'
+					content='https://ansomevents.com/images/homepage-brand-hero.jpg'
 				/>
 				<meta property='og:url' content='https://ansomevents.com' />
-				<link rel='canonical' href='https://ansomevents.com' />
 			</Helmet>
 			<Box id='hero' component='section' aria-label='Hero'>
 				<Hero />

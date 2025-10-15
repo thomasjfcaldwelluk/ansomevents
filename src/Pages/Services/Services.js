@@ -213,29 +213,31 @@ export default function Services() {
 	return (
 		<Box component='main' id='service' aria-label='Services At Ansom Events'>
 			<Helmet>
-				<title>Ansom Events - Event Planning & Design Services</title>
+				<title>
+					Full Event Planning, Styling & Prop Hire Services | Ansom Events
+				</title>
 				<meta
 					name='description'
-					content='We offer full-service event planning, on-the-day coordination, and custom event styling across Cornwall and Devon.'
+					content='Ansom Events offers full-service event planning, custom styling & design, on-the-day coordination, and luxury prop hire across Cornwall and Devon.'
 				/>
 				<meta
 					name='keywords'
-					content='event planning, wedding coordination, event design, Cornwall, Devon'
+					content='event planning services, wedding coordination, event styling, luxury prop hire Cornwall, on-the-day coordination Devon'
 				/>
+				<link rel='canonical' href='https://ansomevents.com/services' />
 				<meta
 					property='og:title'
-					content='Ansom Events - Event Planning & Design Services'
+					content='Ansom Events: Full Event Planning, Design & Coordination Services'
 				/>
 				<meta
 					property='og:description'
-					content='Let us handle every detail of your event with our expert planning and design services.'
+					content='Explore our full suite of event services, from comprehensive wedding planning and design to on-the-day management and prop hire.'
 				/>
 				<meta
 					property='og:image'
-					content='https://example.com/your-image.jpg'
+					content='https://ansomevents.com/images/services-hero-image.jpg'
 				/>
 				<meta property='og:url' content='https://ansomevents.com/services' />
-				<link rel='canonical' href='https://ansomevents.com/services' />
 			</Helmet>
 			<PageTitle
 				pageHeader={'Services At Ansom Events'}

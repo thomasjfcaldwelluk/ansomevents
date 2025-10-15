@@ -14,32 +14,41 @@ export default function BalloonDisplays() {
 			id='balloon_displays'
 			aria-label='Balloon Display At Ansom Events'>
 			<Helmet>
-				<title>Ansom Events - Event Packages for Every Budget</title>
+				<title>
+					Bespoke Balloon Displays, Garlands & Installations | Ansom Events
+				</title>
 				<meta
 					name='description'
-					content='Discover our event packages, from luxury setups to budget-friendly options. We provide tailored event décor in Cornwall and Devon.'
+					content='Book bespoke balloon displays for your event! We create elegant garlands, playful stacks, and installations tailored for weddings & parties in Cornwall and Devon.'
 				/>
 				<meta
 					name='keywords'
-					content='event packages, event decor, Cornwall, Devon, weddings, parties'
+					content='balloon display hire Cornwall, bespoke balloon garlands Devon, balloon installations, wedding balloon decor, party balloon stacks'
+				/>
+				<link
+					rel='canonical'
+					href='https://ansomevents.com/whatweoffer/balloondisplays'
 				/>
 				<meta
 					property='og:title'
-					content='Ansom Events - Statement Balloon Designs For Every Occasion'
+					content='Bespoke Balloon Displays & Installations for Hire | Ansom Events'
 				/>
+				<meta property='og:type' content='product' />
 				<meta
 					property='og:description'
-					content='Explore our customizable event packages, perfect for weddings, parties, and corporate events.'
+					content='Make your event stand out with a custom balloon display, including garlands, stacks, and large installations tailored to your theme and space.'
 				/>
 				<meta
 					property='og:image'
-					content='https://example.com/your-image.jpg'
+					content='https://ansomevents.com/images/balloon-display-hero.jpg'
 				/>
-				<meta property='og:url' content='https://ansomevents.com/packages' />
-				<link rel='canonical' href='https://ansomevents.com/packages' />
+				<meta
+					property='og:url'
+					content='https://ansomevents.com/whatweoffer/balloondisplays'
+				/>
 			</Helmet>
 			<PageTitle
-				pageHeader={'Balloon Displays'}
+				pageHeader={'Bespoke Balloon Displays'}
 				pageSubheader={'Statement Balloon Designs For Every Occasion'}
 				smallSubheaderOnMobile
 			/>
@@ -60,7 +69,7 @@ export default function BalloonDisplays() {
 									alignItems: 'stretch',
 									height: '100%', // Ensures all cards match height
 									backgroundColor: theme.palette.primaryBackground.secondary,
-									paddingBlock: 1,
+									// paddingBlock: 1,
 								}}>
 								{/* Image Section */}
 								<CardMedia
@@ -74,7 +83,6 @@ export default function BalloonDisplays() {
 										height: 'auto',
 										objectFit: 'cover',
 										borderRadius: '8px',
-										paddingInline: 3,
 									}}
 								/>
 								{/* Content Section */}

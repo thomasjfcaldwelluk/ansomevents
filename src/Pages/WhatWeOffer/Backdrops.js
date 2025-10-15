@@ -4,12 +4,47 @@ import Grid from '@mui/material/Grid';
 import { backdropData } from './PackageData';
 import PageTitle from '../../ReuseableComponents/PageTitle';
 import LayoutWrapper from '../../ReuseableComponents/LayoutWrapper';
+import { Helmet } from 'react-helmet-async';
 
 export default function Backdrops() {
 	return (
 		<Box component='main' id='backdrops' aria-label='Backdrops At Ansom Events'>
+			<Helmet>
+				<title>
+					Event Backdrops & Hoop Designs for Hire in Cornwall & Devon
+				</title>
+				<meta
+					name='description'
+					content='Hire the perfect event backdrop! We offer shimmer, fringe, classic plain white, and stunning full or half hoop designs available for collection in Cornwall and Devon.'
+				/>
+				<meta
+					name='keywords'
+					content='event backdrop hire Cornwall, shimmer wall rental Devon, fringe backdrop, wedding hoop design, classic photo backdrops'
+				/>
+				<link
+					rel='canonical'
+					href='https://ansomevents.com/whatweoffer/backdrops'
+				/>
+				<meta
+					property='og:title'
+					content='Shimmer Walls & Hoop Backdrops for Hire | Ansom Events'
+				/>
+				<meta property='og:type' content='product' />
+				<meta
+					property='og:description'
+					content='Browse our range of stunning event backdrops, including shimmer walls, fringe designs, and elegant floral hoops for your next party.'
+				/>
+				<meta
+					property='og:image'
+					content='https://ansomevents.com/images/backdrop-hero-image.jpg'
+				/>
+				<meta
+					property='og:url'
+					content='https://ansomevents.com/whatweoffer/backdrops'
+				/>
+			</Helmet>
 			<PageTitle
-				pageHeader={'Backdrops'}
+				pageHeader={'Backdrops & Hoop Designs'}
 				pageSubheader={'Great Photo Ops For Your Event'}
 			/>
 			<LayoutWrapper>
@@ -41,7 +76,7 @@ export default function Backdrops() {
 
 								{/* Content Section */}
 								<Box sx={{ flexGrow: 1 }}>
-									<Typography component='h4' variant='h4'>
+									<Typography component='h3' variant='h4'>
 										{pkg.title}
 									</Typography>
 									<Typography component='p' variant='p'>

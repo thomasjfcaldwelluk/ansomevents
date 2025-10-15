@@ -20,29 +20,32 @@ export default function Gallery() {
 	return (
 		<Box component='main' id='Ansom_Events_Gallery' aria-label='Main Gallery'>
 			<Helmet>
-				<title>Ansom Events - Stunning Event Gallery</title>
+				<title>
+					Event Gallery: Weddings, Parties & Corporate Events in Cornwall &
+					Devon
+				</title>
 				<meta
 					name='description'
-					content='Explore our gallery of beautifully styled weddings, parties, and corporate events across Cornwall and Devon.'
+					content='View the Ansom Events gallery of stunningly styled weddings, corporate parties, and custom celebrations across Cornwall and Devon. Get inspired for your event!'
 				/>
 				<meta
 					name='keywords'
-					content='event gallery, wedding decor, party setups, event inspiration'
+					content='event gallery Cornwall, wedding decor Devon, party setups, corporate event inspiration, luxury styling portfolio'
 				/>
+				<link rel='canonical' href='https://ansomevents.com/gallery' />
 				<meta
 					property='og:title'
-					content='Ansom Events - Stunning Event Gallery'
+					content='Ansom Events Portfolio: See Our Stunning Weddings & Parties'
 				/>
 				<meta
 					property='og:description'
-					content='Get inspired by our past event setups and decorations.'
+					content='Browse our photo gallery and get inspired by hundreds of beautifully styled events and wedding setups across the South West.'
 				/>
 				<meta
 					property='og:image'
-					content='https://example.com/your-image.jpg'
+					content='https://ansomevents.com/images/gallery-hero-image.jpg'
 				/>
 				<meta property='og:url' content='https://ansomevents.com/gallery' />
-				<link rel='canonical' href='https://ansomevents.com/gallery' />
 			</Helmet>
 			<PageTitle
 				pageHeader={'Ansom Events Gallery'}

@@ -19,26 +19,31 @@ export default function About() {
 	return (
 		<Box component={'main'} id='about_us' aria-label='About Ansom Events'>
 			<Helmet>
-				<title>Ansom Events - Learn About Us</title>
+				<title>
+					Ansom Events: Your Leading Event Planners in Cornwall & Devon
+				</title>
 				<meta
 					name='description'
-					content='Explore our gallery of beautifully styled weddings, parties, and corporate events across Cornwall and Devon.'
+					content='Ansom Events: premier wedding and corporate event planners for Cornwall and Devon. We create stress-free, beautifully styled events with guaranteed client satisfaction.'
 				/>
 				<meta
 					name='keywords'
-					content='event gallery, wedding decor, party setups, event inspiration'
+					content='Cornwall event planners, Devon wedding planning, corporate event specialists, luxury event company, Ansom Events story'
 				/>
-				<meta property='og:title' content='Ansom Events - Learn About Us' />
+				<link rel='canonical' href='https://ansomevents.com/aboutus' />
+				<meta
+					property='og:title'
+					content='Ansom Events: The Premier Planning Team for the South West'
+				/>
 				<meta
 					property='og:description'
-					content='Get inspired by our past event setups and decorations.'
+					content='Ansom Events are the premier wedding and corporate event planners for Cornwall and Devon. We create stress-free, beautifully styled events with guaranteed client satisfaction.'
 				/>
 				<meta
 					property='og:image'
-					content='https://example.com/your-image.jpg'
+					content='https://ansomevents.com/images/about-us-team-photo.jpg' // Use a professional team photo or logo
 				/>
-				<meta property='og:url' content='https://ansomevents.com/gallery' />
-				<link rel='canonical' href='https://ansomevents.com/gallery' />
+				<meta property='og:url' content='https://ansomevents.com/aboutus' />
 			</Helmet>
 			<PageTitle
 				pageHeader={'About Us At Ansom Events'}

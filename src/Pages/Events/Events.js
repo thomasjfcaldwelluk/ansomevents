@@ -9,29 +9,33 @@ export default function Events() {
 	return (
 		<Box component={'main'} id='Events' aria-label='Events'>
 			<Helmet>
-				<title>Ansom Events - Weddings, Parties & Corporate Events</title>
+				<title>
+					Upcoming Events in Cornwall & Devon | Ansom Events Schedule
+				</title>
 				<meta
 					name='description'
-					content='From intimate weddings to grand corporate events, we bring your vision to life with expert planning and stunning decor.'
+					content='Check the latest schedule of upcoming weddings, corporate functions, and themed parties planned by Ansom Events across Cornwall and Devon. Book your slot today!'
 				/>
 				<meta
 					name='keywords'
-					content='weddings, parties, corporate events, event coordination, Cornwall, Devon'
+					content='upcoming events Cornwall, Devon event schedule, Ansom Events booking, local corporate events, public parties'
 				/>
+
+				<link rel='canonical' href='https://ansomevents.com/events' />
+
 				<meta
 					property='og:title'
-					content='Ansom Events - Weddings, Parties & Corporate Events'
+					content='See Our Full List of Upcoming Events & Dates | Ansom Events'
 				/>
 				<meta
 					property='og:description'
-					content='We create unforgettable weddings, parties, and events with expert styling and coordination.'
+					content='Find your perfect event! View the current list of upcoming public and private events, weddings, and parties across the South West.'
 				/>
 				<meta
 					property='og:image'
-					content='https://example.com/your-image.jpg'
+					content='https://ansomevents.com/images/events-schedule-preview.jpg'
 				/>
 				<meta property='og:url' content='https://ansomevents.com/events' />
-				<link rel='canonical' href='https://ansomevents.com/events' />
 			</Helmet>
 			<LayoutWrapper>
 				<PageTitle
