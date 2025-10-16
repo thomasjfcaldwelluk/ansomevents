@@ -12,10 +12,8 @@ import bronze from '../../Assets/Photos/Packages/packageBronze.webp';
 import shimmerImage from '../../Assets/Photos/Packages/shimmerPackage.webp';
 import fringeImage from '../../Assets/Photos/Packages/fringePackage.webp';
 import hoopImage from '../../Assets/Photos/Packages/hoopImage.webp';
-import balloonBoxes from '../../Assets/Photos/Packages/Balloons/BalloonBoxes.webp';
 import balloonWall from '../../Assets/Photos/Packages/Balloons/balloonWall.webp';
 import characterCutOut from '../../Assets/Photos/Packages/Balloons/characterCutout.webp';
-import customStack from '../../Assets/Photos/Packages/Balloons/customStack.webp';
 import diagonalHoop from '../../Assets/Photos/Packages/Balloons/diagonalHoop.webp';
 import singleSailBoard from '../../Assets/Photos/Packages/Balloons/singleSailBoard.webp';
 import doubleSailBoard from '../../Assets/Photos/Packages/Balloons/doubleSailBoard.webp';
@@ -29,7 +27,6 @@ import lightUp from '../../Assets/Photos/Packages/Balloons/lightUpNumber.webp';
 import sequinWall from '../../Assets/Photos/Packages/Balloons/sequinWall.webp';
 import singleStack from '../../Assets/Photos/Packages/Balloons/Single Stack.WebP';
 import tableCenterPiece from '../../Assets/Photos/Packages/Balloons/TableCenterPiece.webp';
-import tripleSailBoard from '../../Assets/Photos/Packages/Balloons/tripleSailBoard.webp';
 import welcomeSign from '../../Assets/Photos/Packages/Balloons/WelcomeSign.webp';
 
 export const fullPackageData = [
@@ -288,15 +285,15 @@ export const balloonDisplayData = [
 			'A balloon hoop garland is a stylish circular frame decorated with balloons in your chosen colours,',
 		price: 175,
 	},
-	{
-		id: 11,
-		title: 'Custom Balloon Stack',
-		image: customStack,
-		alt: 'Custom Balloon Stack Image',
-		description:
-			'A custom balloon stack is a freestanding arrangement tailored to your theme or colours, perfect for adding a playful, eye-catching feature to any event space.',
-		price: `${'10 per foot'}`,
-	},
+	// {
+	// 	id: 11,
+	// 	title: 'Custom Balloon Stack',
+	// 	image: customStack,
+	// 	alt: 'Custom Balloon Stack Image',
+	// 	description:
+	// 		'A custom balloon stack is a freestanding arrangement tailored to your theme or colours, perfect for adding a playful, eye-catching feature to any event space.',
+	// 	price: `${'10 per foot'}`,
+	// },
 	{
 		id: 12,
 		title: 'Single Sailboard',
@@ -315,15 +312,15 @@ export const balloonDisplayData = [
 			'A sailboard is a sleek, modern backdrop perfect for showcasing signage, balloon garlands, or floral accents',
 		price: 175,
 	},
-	{
-		id: 14,
-		title: 'Triple Sailboard',
-		image: tripleSailBoard,
-		alt: 'Triple Sail Board Image',
-		description:
-			'A sailboard is a sleek, modern backdrop perfect for showcasing signage, balloon garlands, or floral accents',
-		price: 225,
-	},
+	// {
+	// 	id: 14,
+	// 	title: 'Triple Sailboard',
+	// 	image: tripleSailBoard,
+	// 	alt: 'Triple Sail Board Image',
+	// 	description:
+	// 		'A sailboard is a sleek, modern backdrop perfect for showcasing signage, balloon garlands, or floral accents',
+	// 	price: 225,
+	// },
 	{
 		id: 15,
 		title: 'Sequin Wall',
@@ -342,15 +339,15 @@ export const balloonDisplayData = [
 			'A balloon wall is a stunning backdrop made entirely of balloons, ideal for photo opportunities and creating a bold, beautiful focal point at any event.',
 		price: 200,
 	},
-	{
-		id: 17,
-		title: 'Balloon Boxes',
-		image: balloonBoxes,
-		alt: 'Balloon Boxes Image',
-		description:
-			'Balloon boxes are stylish transparent cubes filled with balloons, perfect for spelling out themed words like "BABY" or "LOVE" to add a fun, eye-catching touch to your celebration décor.',
-		price: 25,
-	},
+	// {
+	// 	id: 17,
+	// 	title: 'Balloon Boxes',
+	// 	image: balloonBoxes,
+	// 	alt: 'Balloon Boxes Image',
+	// 	description:
+	// 		'Balloon boxes are stylish transparent cubes filled with balloons, perfect for spelling out themed words like "BABY" or "LOVE" to add a fun, eye-catching touch to your celebration décor.',
+	// 	price: 25,
+	// },
 	{
 		id: 18,
 		title: 'Character Cut Out',

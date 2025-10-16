@@ -1,7 +1,7 @@
 import React from 'react';
 import { Typography, Box, useMediaQuery } from '@mui/material';
-import us from '../../Assets/Photos/HomePageImages/OwnersPhoto.jpg';
-import them from '../../Assets/Photos/HomePageImages/ownersLandscape.jpg';
+import us from '../../Assets/Photos/HomePageImages/OwnersPhoto.webp';
+import them from '../../Assets/Photos/HomePageImages/ownersLandscape.webp';
 import Grid from '@mui/material/Grid';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import theme from '../../theme';
