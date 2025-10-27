@@ -40,7 +40,7 @@ export default function FrequentlyAskedQuestions() {
 			id='Ansom_Events_FAQS'
 			aria-label='Ansom Events FAQS'>
 			<PageTitle
-				pageHeader={'FAQs'}
+				pageHeader={'Frequently Asked Questions'}
 				pageSubheader={'Your Questions Answered'}
 			/>
 			<LayoutWrapper>
