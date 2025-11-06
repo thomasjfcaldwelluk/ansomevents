@@ -39,7 +39,10 @@ export default function SpecialOffers() {
 				/>
 				<link rel='canonical' href='https://ansomevents.com/special-offers' />
 			</Helmet>
-			<PageTitle pageHeader='Latest Special' pageSubheader='At Ansom Events' />
+			<PageTitle
+				pageHeader='Latest Special Offers'
+				pageSubheader='At Ansom Events'
+			/>
 			<LayoutWrapper>
 				<BabyShowerPackage />
 			</LayoutWrapper>

@@ -38,7 +38,7 @@ export default function Props() {
 				<link rel='canonical' href='https://ansomevents.com/prop-decor-hire' />
 			</Helmet>
 			<PageTitle
-				pageHeader={'Prop Hire'}
+				pageHeader={'Prop Hire To Elevate'}
 				pageSubheader={'Chic, versatile props for unforgettable setups.'}
 				smallSubheaderOnMobile
 			/>
@@ -69,7 +69,7 @@ export default function Props() {
 									<Typography component={'h3'} variant='productTitle'>
 										{pkg.title}
 									</Typography>
-									<Typography component={'h5'} variant='titleText'>
+									<Typography component={'h4'} variant='titleText'>
 										£{pkg.price}
 									</Typography>
 								</Box>

@@ -25,7 +25,7 @@ export default function Home() {
 					name='keywords'
 					content='wedding planning Cornwall, corporate event planning Devon, full-service event design, luxury prop hire, Ansom Events'
 				/>
-				<link rel='canonical' href='https://ansomevents.com' />
+				<link rel='canonical' href='https://ansomevents.com/' />
 				<meta
 					property='og:title'
 					content='Ansom Events: Full-Service Event Planning & Styling for the South West'

@@ -22,6 +22,7 @@ export default function BabyShowerPackage() {
 					<Box
 						component='img'
 						src={babyShowerSpecial}
+						alt='Baby Shower Package Special'
 						sx={{
 							width: '100%',
 							height: '100%',

@@ -3,6 +3,7 @@ import PageTitle from '../../ReuseableComponents/PageTitle';
 import LayoutWrapper from '../../ReuseableComponents/LayoutWrapper';
 import { Box, Grid, Typography } from '@mui/material';
 import designPrintOne from '../../../src/Assets/Photos/DesignPrint/designPrintOne.webp';
+import { Helmet } from 'react-helmet-async';
 
 export default function DesignPrintServices() {
 	return (
@@ -10,6 +11,37 @@ export default function DesignPrintServices() {
 			component='main'
 			id='design_print_services'
 			aria-label='Design and Print Services'>
+			<Helmet>
+				<title>
+					Ansom Events - Design & Print Services in Cornwall & Devon
+				</title>
+				<meta
+					name='description'
+					content='Custom invitations, menus, signage, and more. Professional design and print services for weddings, parties, and corporate events.'
+				/>
+				<meta
+					name='keywords'
+					content='design service, print service, invitations, menus, event stationery, Cornwall, Devon'
+				/>
+				<meta
+					property='og:title'
+					content='Ansom Events - Design & Print Services'
+				/>
+				<meta
+					property='og:description'
+					content='Bring your event to life with our bespoke design and print services.'
+				/>
+				<meta
+					property='og:image'
+					content='https://example.com/your-image.jpg'
+				/>
+				<meta
+					property='og:url'
+					content='https://ansomevents.com/design-print'
+				/>
+				<link rel='canonical' href='https://ansomevents.com/design-print' />
+			</Helmet>
+
 			<PageTitle
 				pageHeader={'Design & Print'}
 				pageSubheader={'Custom Creations for Your Event'}

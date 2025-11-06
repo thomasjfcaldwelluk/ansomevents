@@ -144,8 +144,9 @@ const Navbar = () => {
 							<Box
 								component='img'
 								src={logo}
-								alt='Logo of Ansom Events'
-								title='Logo Of Ansom Events'
+								alt='Ansom Events logo'
+								title='Ansom Events logo'
+								fetchPriority='high'
 								loading='eager'
 								sx={{ ...navBarStyles.navLogo }}
 							/>

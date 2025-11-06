@@ -4,6 +4,7 @@ import QuestionAndAnswers from './QuestionsAndAnswers';
 import theme from '../../theme';
 import PageTitle from '../../ReuseableComponents/PageTitle';
 import LayoutWrapper from '../../ReuseableComponents/LayoutWrapper';
+import { Helmet } from 'react-helmet-async';
 
 const faqStyles = {
 	faqContainer: {
@@ -39,6 +40,45 @@ export default function FrequentlyAskedQuestions() {
 			component={'main'}
 			id='Ansom_Events_FAQS'
 			aria-label='Ansom Events FAQS'>
+			<Helmet>
+				<title>
+					Ansom Events FAQs | Wedding & Corporate Event Planning Questions
+				</title>
+
+				<meta
+					name='description'
+					content='Got questions about wedding planning, corporate events, décor, or prop hire in Cornwall & Devon? Explore our FAQs for clear answers and expert guidance from Ansom Events.'
+				/>
+
+				<link rel='canonical' href='https://ansomevents.com/faqs' />
+
+				{/* Open Graph / Social */}
+				<meta
+					property='og:title'
+					content='Ansom Events FAQs | Event Planning Made Simple'
+				/>
+				<meta
+					property='og:description'
+					content='Answers to the most common questions about wedding planning, corporate event coordination, décor packages, and prop hire across Cornwall & Devon.'
+				/>
+				<meta
+					property='og:image'
+					content='https://ansomevents.com/images/homepage-brand-hero.jpg'
+				/>
+				<meta property='og:url' content='https://ansomevents.com/faqs' />
+
+				{/* Twitter */}
+				<meta name='twitter:card' content='summary_large_image' />
+				<meta name='twitter:title' content='Ansom Events FAQs' />
+				<meta
+					name='twitter:description'
+					content='Everything you need to know about booking décor, prop hire, and planning support in Cornwall & Devon.'
+				/>
+				<meta
+					name='twitter:image'
+					content='https://ansomevents.com/images/homepage-brand-hero.jpg'
+				/>
+			</Helmet>
 			<PageTitle
 				pageHeader={'Frequently Asked Questions'}
 				pageSubheader={'Your Questions Answered'}

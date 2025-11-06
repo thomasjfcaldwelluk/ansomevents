@@ -65,7 +65,7 @@ export default function Packages() {
 				<link rel='canonical' href='https://ansomevents.com/packages' />
 			</Helmet>
 			<PageTitle
-				pageHeader='Decor Packages'
+				pageHeader='Decor Packages For All Occasions'
 				pageSubheader='Impress Your Guests'
 			/>
 			<LayoutWrapper>

@@ -73,19 +73,19 @@ export default function XmasDisplays() {
 			id='xmas_displays'
 			aria-label='Christmas Displays At Ansom Events'>
 			<Helmet>
-				<title>Ansom Events - Prop & Decor Hire in Cornwall & Devon</title>
+				<title>Ansom Events - Christmas Decor in Cornwall & Devon</title>
 				<meta
 					name='description'
-					content='Rent stunning event props, backdrops, balloon garlands, and more. Perfect for weddings, parties, and corporate events.'
+					content='Festive Christmas décor for parties, offices, and events. Stylish setups ready to wow in Cornwall & Devon.'
 				/>
 				<meta
 					name='keywords'
-					content='prop hire, decor hire, event styling, Cornwall, Devon, wedding decor'
+					content='Christmas décor, holiday decorations, event styling, Cornwall, Devon'
 				/>
-				<meta property='og:title' content='Ansom Events - Prop & Decor Hire' />
+				<meta property='og:title' content='Ansom Events - Christmas Decor' />
 				<meta
 					property='og:description'
-					content='Transform your event with our stunning props and decorations for hire.'
+					content='Bring festive cheer to your events with our Christmas décor packages.'
 				/>
 				<meta
 					property='og:image'
@@ -93,12 +93,13 @@ export default function XmasDisplays() {
 				/>
 				<meta
 					property='og:url'
-					content='https://ansomevents.com/prop-decor-hire'
+					content='https://ansomevents.com/christmas-decor'
 				/>
-				<link rel='canonical' href='https://ansomevents.com/prop-decor-hire' />
+				<link rel='canonical' href='https://ansomevents.com/christmas-decor' />
 			</Helmet>
+
 			<PageTitle
-				pageHeader={'Christmas Displays'}
+				pageHeader={'Festive Christmas Displays'}
 				pageSubheader={'Festive, eye-catching setups for the holiday season.'}
 				smallSubheaderOnMobile
 			/>

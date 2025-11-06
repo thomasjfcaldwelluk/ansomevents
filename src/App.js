@@ -37,40 +37,39 @@ function App() {
 					<NavBar />
 					<Routes>
 						<Route path='/' element={<Home />} />
-						<Route path='/whatweoffer/packages' element={<Packages />} />
-						<Route
-							path='/whatweoffer/design_print_services'
-							element={<DesignPrintServices />}
-						/>
+						<Route path='/services' element={<Services />} />
+						<Route path='/events' element={<Events />} />
+						<Route path='/contact' element={<Contact />} />
 						<Route
 							path='/whatweoffer/full_event_service'
 							element={<FullEventService />}
 						/>
 						<Route
-							path='/whatweoffer/balloondisplays'
-							element={<BalloonDisplays />}
-						/>
-						<Route path='/whatweoffer/prophire' element={<Props />} />
-						<Route path='/whatweoffer/backdrops' element={<Backdrops />} />
-						<Route
 							path='/whatweoffer/specialoffers'
 							element={<SpecialOffers />}
+						/>
+						<Route
+							path='/whatweoffer/design_print_services'
+							element={<DesignPrintServices />}
 						/>
 						<Route
 							path='/whatweoffer/ansom_and_easy'
 							element={<AnsomAndEasy />}
 						/>
-						<Route path='/services' element={<Services />} />
-						<Route path='/gallery' element={<Gallery />} />
-						<Route path='/events' element={<Events />} />
-						<Route path='/faqs' element={<FrequentlyAskedQuestions />} />
-						<Route path='/contact' element={<Contact />} />
-						<Route path='/aboutus' element={<About />} />
+						<Route path='/whatweoffer/prophire' element={<Props />} />
+						<Route
+							path='/whatweoffer/balloondisplays'
+							element={<BalloonDisplays />}
+						/>
 						<Route
 							path='/whatweoffer/xmasdisplays'
 							element={<XmasDisplays />}
 						/>
-
+						<Route path='/whatweoffer/backdrops' element={<Backdrops />} />
+						<Route path='/whatweoffer/packages' element={<Packages />} />
+						<Route path='/gallery' element={<Gallery />} />
+						<Route path='/aboutus' element={<About />} />
+						<Route path='/faqs' element={<FrequentlyAskedQuestions />} />
 						<Route
 							path='/termsandconditions'
 							element={<TermsAndConditions />}

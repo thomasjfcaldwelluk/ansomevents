@@ -19,7 +19,7 @@ export default function AnsomAndEasy() {
 				</title>
 				<meta
 					name='description'
-					content='Planning made easy! Our Ansom & Easy packs offer affordable, pre-prepped party decorations and styling kits ready for collection in Cornwall and Devon. Perfect for DIY events.'
+					content='Ansom & Easy packs: affordable, ready-to-collect party décor kits in Cornwall & Devon – perfect for DIY events!'
 				/>
 				<meta
 					name='keywords'

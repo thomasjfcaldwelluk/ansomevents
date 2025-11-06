@@ -5,6 +5,7 @@ import fullEventServiceImageOne from '../../../src/Assets/Photos/FullEvents/full
 import fullEventServiceImageTwo from '../../../src/Assets/Photos/FullEvents/fullEventTwo.webp';
 import fullEventServiceImageThree from '../../../src/Assets/Photos/FullEvents/fullEventThree.webp';
 import theme from '../../../src/theme';
+import { Helmet } from 'react-helmet-async';
 
 const fullEventServiceImages = [
 	fullEventServiceImageOne,
@@ -18,6 +19,40 @@ export default function FullEventService() {
 			component='main'
 			id='Full_Event_Service'
 			aria-label='Full Event Service'>
+			<Helmet>
+				<title>
+					Ansom Events - Weddings & Celebrations in Cornwall & Devon
+				</title>
+				<meta
+					name='description'
+					content='Stylish wedding and celebration packages with décor, styling, and coordination. Stress-free events in Cornwall & Devon.'
+				/>
+				<meta
+					name='keywords'
+					content='wedding packages, celebration packages, event styling, Cornwall, Devon'
+				/>
+				<meta
+					property='og:title'
+					content='Ansom Events - Weddings & Celebrations'
+				/>
+				<meta
+					property='og:description'
+					content='Make your special day effortless with our stylish wedding and celebration packages.'
+				/>
+				<meta
+					property='og:image'
+					content='https://example.com/your-image.jpg'
+				/>
+				<meta
+					property='og:url'
+					content='https://ansomevents.com/wedding-celebration-packages'
+				/>
+				<link
+					rel='canonical'
+					href='https://ansomevents.com/wedding-celebration-packages'
+				/>
+			</Helmet>
+
 			<PageTitle
 				pageHeader={'Wedding & Celebration Packages'}
 				pageSubheader={'Event Styling and Coordination'}
