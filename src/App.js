@@ -1,23 +1,23 @@
 // import './App.css';
-import Home from './Pages/Home/Home';
-import Packages from './Pages/WhatWeOffer/Packages';
-import XmasDisplays from './Pages/WhatWeOffer/XmasDisplays';
-import AnsomAndEasy from './Pages/WhatWeOffer/AnsomAndEasy';
-import DesignPrintServices from './Pages/WhatWeOffer/DesignPrintServices';
-import FullEventService from './Pages/WhatWeOffer/FullEventService';
-import Services from './Pages/Services/Services';
-import Props from './Pages/WhatWeOffer/Props';
-import SpecialOffers from './Pages/WhatWeOffer/SpecialOffers/SpecialOffers';
-import Gallery from './Pages/Gallery/Gallery';
-import About from './Pages/AboutUs/About';
-import Contact from './Pages/Contact/Contact';
-import Backdrops from './Pages/WhatWeOffer/Backdrops';
-import BalloonDisplays from './Pages/WhatWeOffer/BalloonDisplays';
-import TermsAndConditions from './Pages/TermsConditions/TermsAndConditions';
-import FrequentlyAskedQuestions from './Pages/FAQS/FrequentlyAskedQuestions';
-import Events from './Pages/Events/Events';
-import Footer from './Footer/Footer';
-import NavBar from './NavBar/NavBar';
+// import Home from './Pages/Home/Home';
+// import Packages from './Pages/WhatWeOffer/Packages';
+// import XmasDisplays from './Pages/WhatWeOffer/XmasDisplays';
+// import AnsomAndEasy from './Pages/WhatWeOffer/AnsomAndEasy';
+// import DesignPrintServices from './Pages/WhatWeOffer/DesignPrintServices';
+// import FullEventService from './Pages/WhatWeOffer/FullEventService';
+// import Services from './Pages/Services/Services';
+// import Props from './Pages/WhatWeOffer/Props';
+// import SpecialOffers from './Pages/WhatWeOffer/SpecialOffers/SpecialOffers';
+// import Gallery from './Pages/Gallery/Gallery';
+// import About from './Pages/AboutUs/About';
+// import Contact from './Pages/Contact/Contact';
+// import Backdrops from './Pages/WhatWeOffer/Backdrops';
+// import BalloonDisplays from './Pages/WhatWeOffer/BalloonDisplays';
+// import TermsAndConditions from './Pages/TermsConditions/TermsAndConditions';
+// import FrequentlyAskedQuestions from './Pages/FAQS/FrequentlyAskedQuestions';
+// import Events from './Pages/Events/Events';
+// import Footer from './Footer/Footer';
+// import NavBar from './NavBar/NavBar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import useAnalytics from './useAnalytics';
 import CookieConsent from 'react-cookie-consent';
@@ -34,9 +34,10 @@ function App() {
 			<Router>
 				<ScrollToTop />
 				<AnalyticsWrapper>
-					<NavBar />
+					{/* <NavBar /> */}
 					<Routes>
-						<Route path='/' element={<Home />} />
+						{/* <Route path='/' element={<Home />} /> */}
+						{/* <Route path='/' element={<Home />} />
 						<Route path='/services' element={<Services />} />
 						<Route path='/events' element={<Events />} />
 						<Route path='/contact' element={<Contact />} />
@@ -73,7 +74,7 @@ function App() {
 						<Route
 							path='/termsandconditions'
 							element={<TermsAndConditions />}
-						/>
+						/> */}
 					</Routes>
 					<CookieConsent
 						location='bottom'
@@ -90,7 +91,7 @@ function App() {
 							You can change your cookie settings at any time.
 						</span>
 					</CookieConsent>
-					<Footer />
+					{/* <Footer /> */}
 				</AnalyticsWrapper>
 			</Router>
 		</div>

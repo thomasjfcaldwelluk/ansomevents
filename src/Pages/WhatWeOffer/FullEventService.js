@@ -4,7 +4,7 @@ import { Box, Typography, Grid, Card, CardContent } from '@mui/material';
 import fullEventServiceImageOne from '../../../src/Assets/Photos/FullEvents/fullEventOne.webp';
 import fullEventServiceImageTwo from '../../../src/Assets/Photos/FullEvents/fullEventTwo.webp';
 import fullEventServiceImageThree from '../../../src/Assets/Photos/FullEvents/fullEventThree.webp';
-import theme from '../../../src/theme';
+import theme from '../../theme';
 import { Helmet } from 'react-helmet-async';
 
 const fullEventServiceImages = [

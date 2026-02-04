@@ -1,13 +1,13 @@
 import { Box, Typography } from '@mui/material';
 import theme from '../../../theme';
-import heroImage from '../../../Assets/Photos/HomePageImages/websiteHero.webp';
+import { cloudinaryImages } from '../../../Assets/Cloudinary';
 
 const heroStyles = {
 	sectionContainer: {
 		height: '100vh',
 		display: 'flex',
 		justifyContent: 'center',
-		backgroundImage: `url(${heroImage})`,
+		backgroundImage: `url(${cloudinaryImages.hero})`,
 		backgroundColor: 'black',
 		backgroundSize: 'cover',
 		backgroundPosition: 'center',
