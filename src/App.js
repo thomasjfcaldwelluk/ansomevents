@@ -1,80 +1,51 @@
-// import './App.css';
-// import Home from './Pages/Home/Home';
-// import Packages from './Pages/WhatWeOffer/Packages';
-// import XmasDisplays from './Pages/WhatWeOffer/XmasDisplays';
-// import AnsomAndEasy from './Pages/WhatWeOffer/AnsomAndEasy';
-// import DesignPrintServices from './Pages/WhatWeOffer/DesignPrintServices';
-// import FullEventService from './Pages/WhatWeOffer/FullEventService';
-// import Services from './Pages/Services/Services';
-// import Props from './Pages/WhatWeOffer/Props';
-// import SpecialOffers from './Pages/WhatWeOffer/SpecialOffers/SpecialOffers';
-// import Gallery from './Pages/Gallery/Gallery';
-// import About from './Pages/AboutUs/About';
-// import Contact from './Pages/Contact/Contact';
-// import Backdrops from './Pages/WhatWeOffer/Backdrops';
-// import BalloonDisplays from './Pages/WhatWeOffer/BalloonDisplays';
-// import TermsAndConditions from './Pages/TermsConditions/TermsAndConditions';
-// import FrequentlyAskedQuestions from './Pages/FAQS/FrequentlyAskedQuestions';
-// import Events from './Pages/Events/Events';
-// import Footer from './Footer/Footer';
-// import NavBar from './NavBar/NavBar';
+import Footer from './Components/Layout/Footer/Footer';
+import NavBar from './Components/Layout/NavBar/NavBar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import useAnalytics from './useAnalytics';
+import useAnalytics from './Hooks/useAnalytics';
 import CookieConsent from 'react-cookie-consent';
-import ScrollToTop from './ReuseableComponents/ScrollToTop';
+import ScrollToTop from './Utils/ScrollToTop';
+import Home from './Pages/Home/Home';
+import Wedding from './Pages/Weddings/Weddings';
+import Contact from './Pages/Contact/Contact';
+import About from './Pages/AboutUs/About';
+import Services from './Pages/Services/Services';
+import Gallery from './Pages/Gallery/Gallery';
+import Decor from './Pages/Decor/Decor';
+import Corporate from './Pages/Corporate/Corporate';
+import FrequentlyAskedQuestions from './Pages/FAQS/FrequentlyAskedQuestions';
+import CookiePolicy from './Pages/Legal/CookiePolicy';
+import PrivacyPolicy from './Pages/Legal/PrivacyPolicy';
+import TermsOfService from './Pages/Legal/TermsOfService';
 
 const AnalyticsWrapper = ({ children }) => {
 	useAnalytics(); // Call the analytics hook
 	return <>{children}</>;
 };
-
 function App() {
 	return (
 		<div className='App'>
 			<Router>
 				<ScrollToTop />
 				<AnalyticsWrapper>
-					{/* <NavBar /> */}
+					<NavBar />
 					<Routes>
-						{/* <Route path='/' element={<Home />} /> */}
-						{/* <Route path='/' element={<Home />} />
-						<Route path='/services' element={<Services />} />
-						<Route path='/events' element={<Events />} />
+						{/* Top level nav routes */}
+						<Route path='/' element={<Home />} />
+						<Route path='/weddings' element={<Wedding />} />
 						<Route path='/contact' element={<Contact />} />
-						<Route
-							path='/whatweoffer/full_event_service'
-							element={<FullEventService />}
-						/>
-						<Route
-							path='/whatweoffer/specialoffers'
-							element={<SpecialOffers />}
-						/>
-						<Route
-							path='/whatweoffer/design_print_services'
-							element={<DesignPrintServices />}
-						/>
-						<Route
-							path='/whatweoffer/ansom_and_easy'
-							element={<AnsomAndEasy />}
-						/>
-						<Route path='/whatweoffer/prophire' element={<Props />} />
-						<Route
-							path='/whatweoffer/balloondisplays'
-							element={<BalloonDisplays />}
-						/>
-						<Route
-							path='/whatweoffer/xmasdisplays'
-							element={<XmasDisplays />}
-						/>
-						<Route path='/whatweoffer/backdrops' element={<Backdrops />} />
-						<Route path='/whatweoffer/packages' element={<Packages />} />
 						<Route path='/gallery' element={<Gallery />} />
-						<Route path='/aboutus' element={<About />} />
+						<Route path='/decor' element={<Decor />} />
+						<Route path='/corporate' element={<Corporate />} />
+						<Route path='/services' element={<Services />} />
+						{/* Bottom level nav routes */}
+						<Route path='/about-us' element={<About />} />
 						<Route path='/faqs' element={<FrequentlyAskedQuestions />} />
-						<Route
-							path='/termsandconditions'
-							element={<TermsAndConditions />}
-						/> */}
+						{/* Legal pages */}
+						<Route path='/cookie-policy' element={<CookiePolicy />} />
+						<Route path='/privacy-policy' element={<PrivacyPolicy />} />
+						<Route path='/terms-of-service' element={<TermsOfService />} />{' '}
+						{/* Catch-all route for 404 */}{' '}
+						<Route path='*' element={<Home />} />
 					</Routes>
 					<CookieConsent
 						location='bottom'
@@ -91,7 +62,7 @@ function App() {
 							You can change your cookie settings at any time.
 						</span>
 					</CookieConsent>
-					{/* <Footer /> */}
+					<Footer />
 				</AnalyticsWrapper>
 			</Router>
 		</div>
