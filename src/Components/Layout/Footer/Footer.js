@@ -31,13 +31,13 @@ export default function Footer(company, contact, socials, legal, copyright) {
 					))}
 				</Box>
 			)}
-			{/* <Box sx={{ display: 'flex', gap: 2 }}>
+			<Box sx={{ display: 'flex', gap: 2 }}>
 				{footerLinks.map((link) => (
 					<Button key={link.id} component={RouterLink} to={link.path}>
 						{link.label}
 					</Button>
 				))}
-			</Box> */}
+			</Box>
 			{footerData.legal && (
 				<Box>
 					{footerData.legal.map((item) => (

@@ -5,7 +5,13 @@ export default function DesktopNav({ links }) {
 	return (
 		<Box display='flex' gap={2}>
 			{links.map((link) => (
-				<Button key={link.id} component={Link} to={link.path} color='inherit'>
+				<Button
+					key={link.id}
+					component={Link}
+					to={link.path}
+					color={link.button ? 'secondary' : 'inherit'}
+					variant={link.button ? 'contained' : 'text'}
+					sx={{ fontWeight: link.button ? 600 : 400 }}>
 					{link.label}
 				</Button>
 			))}

@@ -14,6 +14,7 @@ let theme = createTheme({
 			default: '#FBFAF7',
 			paper: '#FFFFFF',
 			card: '#FBFAF7',
+			subtle: '#F4F1E8',
 		},
 		text: {
 			primary: '#1F1F1F',
@@ -32,7 +33,7 @@ let theme = createTheme({
 		h1: { fontSize: '3.4rem', fontWeight: 600 },
 		h2: {
 			fontSize: '2.5rem',
-			fontWeight: 500,
+			fontWeight: 400,
 		},
 		h3: {
 			fontSize: '2rem',
@@ -43,8 +44,9 @@ let theme = createTheme({
 			fontWeight: 500,
 		},
 		h5: {
-			fontSize: '1.3rem',
+			fontSize: 'clamp(1.1rem, 1.7vw, 1.4rem)',
 			fontWeight: 500,
+			lineHeight: 1.3,
 		},
 		h6: {
 			fontSize: '1.1rem',
@@ -57,12 +59,36 @@ let theme = createTheme({
 		body2: {
 			fontSize: '1.15rem',
 			lineHeight: 1.5,
+			fontWeight: 700,
+			textAlign: 'center',
 		},
 		button: {
 			fontSize: '0.8rem',
 		},
 		caption: {
 			fontSize: '1.28rem',
+		},
+		pageHeader: {
+			fontFamily: '"Playfair Display", serif',
+			fontSize: 'clamp(2.2rem, 4vw, 3.2rem)',
+			fontWeight: 400,
+			letterSpacing: '0.01em',
+			lineHeight: 1.15,
+			color: '#1C3D5A',
+		},
+		pageSubHeader: {
+			fontSize: 'clamp(1.3rem, 2vw, 1.7rem)',
+			fontWeight: 300,
+			letterSpacing: '0.01em',
+			lineHeight: 1.15,
+			color: '#1C3D5A',
+		},
+		sectionHeader: {
+			fontFamily: '"Playfair Display", serif',
+			fontSize: 'clamp(1.3rem, 2vw, 1.7rem)',
+			fontWeight: 300,
+			letterSpacing: '0.03em',
+			marginBottom: 10,
 		},
 		overline: {},
 	},
@@ -100,6 +126,10 @@ let theme = createTheme({
 					borderRadius: 12,
 					boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
 					padding: 2,
+					display: 'flex',
+					flexDirection: 'column',
+					height: '100%',
+					overflow: 'hidden',
 				},
 			},
 			variants: [
@@ -110,6 +140,27 @@ let theme = createTheme({
 						border: '0.5px solid #E5E2D9',
 						height: '100%',
 						justifyContent: 'space-between',
+					},
+				},
+			],
+		},
+		MuiCardMedia: {
+			variants: [
+				{
+					props: { variant: 'standard' },
+					style: {
+						height: 300,
+						objectFit: 'cover',
+						borderTopLeftRadius: 12,
+						borderTopRightRadius: 12,
+					},
+				},
+				{
+					props: { variant: 'rounded' },
+					style: {
+						height: 200,
+						objectFit: 'cover',
+						borderRadius: 12,
 					},
 				},
 			],

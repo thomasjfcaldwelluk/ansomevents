@@ -1,5 +1,6 @@
 const corporateData = {
 	hero: {
+		id: 'corporate-hero',
 		title: 'Corporate Events, Styled Without Stress',
 		subtitle:
 			'Professional décor, branding and seamless setup for launches, parties and business celebrations.',
@@ -22,6 +23,7 @@ const corporateData = {
 	],
 
 	services: {
+		id: 'corporate-services',
 		title: 'What We Do',
 		items: [
 			{ id: 1, title: 'Venue styling' },
@@ -34,6 +36,7 @@ const corporateData = {
 	},
 
 	eventTypes: {
+		id: 'event-types',
 		title: 'Events We Support',
 		items: [
 			{ id: 1, title: 'Product launches' },
@@ -44,6 +47,7 @@ const corporateData = {
 	},
 
 	whyUs: {
+		id: 'why-us',
 		title: 'Why Companies Choose Us',
 		items: [
 			{ id: 1, text: 'Clear, transparent quotations' },
@@ -54,6 +58,7 @@ const corporateData = {
 	},
 
 	cta: {
+		id: 'call-to-action',
 		title: 'Let’s plan your next company event',
 		subtitle: 'Tell us what you need and we’ll handle the rest.',
 		button: {

@@ -1,13 +1,13 @@
-import { Box } from '@mui/material';
 import SectionHeader from 'Components/ui/Typography/SectionHeader';
 import React from 'react';
+import SectionWrapper from 'Components/Layout/SectionWrapper/SectionWrapper';
 
 export default function CTA({ title, subtitle, primaryCta }) {
 	return (
-		<Box>
+		<SectionWrapper id='call-to-action'>
 			<SectionHeader sectionHeader={title} />
 			<p>{subtitle}</p>
 			<a href={primaryCta.link}>{primaryCta.label}</a>
-		</Box>
+		</SectionWrapper>
 	);
 }

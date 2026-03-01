@@ -1,9 +1,11 @@
 const aboutData = {
 	hero: {
+		id: 'about-us',
 		title: 'About Us',
 		text: 'We’re a husband and wife team passionate about transforming venues into unforgettable experiences.',
 	},
 	story: {
+		id: 'our-story',
 		title: 'Our Story',
 		paragraph: [
 			'Ansom Events was built from a shared love of bringing people together.',
@@ -11,6 +13,7 @@ const aboutData = {
 		],
 	},
 	team: {
+		id: 'meet-the-team',
 		title: 'Meet the Team',
 		members: [
 			{
@@ -28,6 +31,7 @@ const aboutData = {
 		],
 	},
 	why: {
+		id: 'why-us',
 		title: 'Why Choose Us?',
 		points: [
 			'Experienced, reliable and friendly',
@@ -38,10 +42,12 @@ const aboutData = {
 		],
 	},
 	locations: {
+		id: 'where-we-serve',
 		title: 'Where We Serve',
 		text: 'We proudly serve the following locations:',
 	},
 	cta: {
+		id: 'call-to-action',
 		title: 'Ready to Plan Your Event?',
 		primaryBtn: {
 			text: 'Enquire Now',

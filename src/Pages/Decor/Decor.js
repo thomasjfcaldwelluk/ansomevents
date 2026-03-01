@@ -1,19 +1,24 @@
-import { Box } from '@mui/material';
 import decorData from '../../Data/Pages/decorData';
 import DecorSection from './Components/DecorSection';
 import PageWrapper from 'Components/Layout/PageWrapper/PageWrapper';
-import PageTitle from 'Components/ui/Typography/PageTitle';
+import DecorHero from './Components/DecorHero';
 
 export default function Decor() {
 	return (
-		<Box component='main' id='Ansom_Events_Decor' aria-label='Main Decor'>
-			<PageWrapper>
-				<PageTitle pageHeader='Decor' pageSubheader='Get it here' />
-				<DecorSection {...decorData.packages} />
-				<DecorSection {...decorData.backdrops} />
-				<DecorSection {...decorData.props} />
-				<DecorSection {...decorData.balloons} />
-			</PageWrapper>
-		</Box>
+		<PageWrapper id='Ansom_Events_Decor' aria-label='Main Decor'>
+			<DecorHero variant={'light'} />
+			<DecorSection {...decorData.packages} variant={'dark'} />
+			<DecorSection
+				{...decorData.backdrops}
+				variant={'light'}
+				imageVariant='standard'
+			/>
+			<DecorSection
+				{...decorData.props}
+				variant={'dark'}
+				imageVariant='rounded'
+			/>
+			<DecorSection {...decorData.balloons} variant={'light'} />
+		</PageWrapper>
 	);
 }

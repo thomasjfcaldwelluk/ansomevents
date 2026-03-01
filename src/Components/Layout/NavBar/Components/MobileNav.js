@@ -25,6 +25,8 @@ export default function MobileNav({ links }) {
 							key={link.id}
 							component={Link}
 							to={link.path}
+							color={link.button ? 'secondary' : 'inherit'}
+							variant={link.button ? 'contained' : 'text'}
 							onClick={() => setOpen(false)}>
 							<ListItemText primary={link.label} />
 						</ListItemButton>

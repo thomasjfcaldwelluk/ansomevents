@@ -1,5 +1,6 @@
 import SectionHeader from 'Components/ui/Typography/SectionHeader';
 import GridLayout from 'Components/Layout/GridLayout/GridLayout';
+import SectionWrapper from 'Components/Layout/SectionWrapper/SectionWrapper';
 import React from 'react';
 import { Link as RouterLink } from 'react-router-dom';
 import {
@@ -13,7 +14,7 @@ import {
 
 export default function Features({ title, subtitle, items }) {
 	return (
-		<div>
+		<SectionWrapper id='features' variant='light'>
 			<SectionHeader sectionHeader={title} />
 			<p>{subtitle}</p>
 			<GridLayout>
@@ -47,6 +48,6 @@ export default function Features({ title, subtitle, items }) {
 					</Grid>
 				))}
 			</GridLayout>
-		</div>
+		</SectionWrapper>
 	);
 }

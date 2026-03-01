@@ -11,7 +11,7 @@ export default function NavBar() {
 	const theme = useTheme();
 	const isTabletDown = useMediaQuery(theme.breakpoints.down('md'));
 	return (
-		<AppBar position='sticky'>
+		<AppBar position='sticky' sx={{ backgroundColor: 'background.default' }}>
 			<Toolbar sx={{ justifyContent: 'space-between' }}>
 				<Logo />
 				{isTabletDown ? (

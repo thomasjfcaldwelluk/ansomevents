@@ -1,7 +1,12 @@
+import { ReactComponent as PropIcon } from '../../Assets/SVG/props.svg';
+import { ReactComponent as DayOfCoordinationIcon } from '../../Assets/SVG/eventPlanning.svg';
+import { ReactComponent as WeddingSetUpIcon } from '../../Assets/SVG/WeddingSetUp.svg';
+import { ReactComponent as FullStylingIcon } from '../../Assets/SVG/FullVenue.svg';
+
 const weddingData = {
 	hero: {
-		title: 'Filler Text',
-		subtitle: 'Filler Text',
+		title: 'Love Celebrations',
+		subtitle: 'Make Memories',
 		image: 'https://res.cloudinary.com/your-image.jpg',
 		ctas: [
 			{
@@ -22,22 +27,22 @@ const weddingData = {
 		items: [
 			{
 				id: 1,
-				icon: 'FaGlassCheers',
+				icon: FullStylingIcon,
 				text: 'Full Venue Styling',
 			},
 			{
 				id: 2,
-				icon: 'FaChair',
+				icon: WeddingSetUpIcon,
 				text: 'Ceremony & Reception Set Up',
 			},
 			{
 				id: 3,
-				icon: 'FaCameraRetro',
+				icon: PropIcon,
 				text: 'Prop, Backdrops & Florals',
 			},
 			{
 				id: 4,
-				icon: 'FaGem',
+				icon: DayOfCoordinationIcon,
 				text: 'On-The-Day Coordination',
 			},
 		],

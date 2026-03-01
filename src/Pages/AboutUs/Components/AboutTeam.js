@@ -1,8 +1,9 @@
+import SectionWrapper from 'Components/Layout/SectionWrapper/SectionWrapper';
 import React from 'react';
 
-export default function AboutTeam({ title, members }) {
+export default function AboutTeam({ id, title, members }) {
 	return (
-		<div>
+		<SectionWrapper id={id} variant='light'>
 			<h2>{title}</h2>
 			<div style={{ display: 'flex', gap: '20px' }}>
 				{members.map((member, index) => (
@@ -20,6 +21,6 @@ export default function AboutTeam({ title, members }) {
 					</div>
 				))}
 			</div>
-		</div>
+		</SectionWrapper>
 	);
 }

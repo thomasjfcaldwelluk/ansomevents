@@ -1,6 +1,6 @@
 const decorData = {
 	packages: {
-		id: '',
+		id: 'decor-packages',
 		title: 'Packages',
 		intro: '',
 		grid: { size: { sm: 12, md: 6 } },
@@ -72,7 +72,7 @@ const decorData = {
 					},
 				],
 				price: {
-					amount: 350,
+					amount: 200,
 					display: 'from £350',
 				},
 				cta: {
@@ -279,7 +279,8 @@ const decorData = {
 		items: [
 			{
 				id: 'single-stack',
-				image: 'Single Stack',
+				image:
+					'https://res.cloudinary.com/djjqsmlei/image/upload/v1770204778/Ansom%20Events/BalloonDisplay/Single_Stack_qkd1us.webp',
 				title: 'Single Stack',
 				description:
 					'A large foil balloon stack makes a bold statement with vibrant metallic balloons, available as a single or double stack to create a striking, high-impact focal point at your event.',
@@ -290,7 +291,8 @@ const decorData = {
 			},
 			{
 				id: 'double-stack',
-				image: 'Double Stack',
+				image:
+					'https://res.cloudinary.com/djjqsmlei/image/upload/v1770204777/Ansom%20Events/BalloonDisplay/doubleStack_rcrigw.webp',
 				title: 'Double Stack',
 				description:
 					'A large foil balloon stack makes a bold statement with vibrant metallic balloons, available as a single or double stack to create a striking, high-impact focal point at your event.',
@@ -301,7 +303,8 @@ const decorData = {
 			},
 			{
 				id: 'welcome-sign-with-balloon-garland',
-				image: 'Welcome Sign With Balloon Garland',
+				image:
+					'https://res.cloudinary.com/djjqsmlei/image/upload/v1770204783/Ansom%20Events/BalloonDisplay/WelcomeSign_ewmfny.webp',
 				title: 'Welcome Sign With Balloon Garland',
 				description:
 					'A stylish welcome sign with a matching balloon garland. Perfect for creating a warm and festive entrance at your event.',
@@ -312,7 +315,8 @@ const decorData = {
 			},
 			{
 				id: 'easel-sign-with-balloon-garland',
-				image: 'Easel Sign With Balloon Garland',
+				image:
+					'https://res.cloudinary.com/djjqsmlei/image/upload/v1770204782/Ansom%20Events/BalloonDisplay/easelSign_g8wfuj.webp',
 				title: 'Easel Sign With Balloon Garland',
 				description:
 					'A stylish easel sign with a matching balloon garland. Perfect for creating a warm and festive entrance at your event.',
@@ -322,19 +326,9 @@ const decorData = {
 				},
 			},
 			{
-				id: 'light-up-letter-number',
-				image: 'Light Up Letter/Number',
-				title: 'Light Up Letter/Number',
-				description:
-					'Our 4ft light-up letters and numbers are a show-stopping addition to any event. Perfect for birthdays, anniversaries, or special occasions, they create a vibrant, personalized focal point that’s sure to impress.',
-				price: {
-					amount: 35,
-					display: 'Starting from £35',
-				},
-			},
-			{
 				id: 'single-light-up-letter-number-with-balloon-garland',
-				image: 'Single Light Up Letter/Number With Balloon Garland',
+				image:
+					'https://res.cloudinary.com/djjqsmlei/image/upload/v1770204777/Ansom%20Events/BalloonDisplay/lightUpSmallGarland_no10y2.webp',
 				title: 'Single Light Up Letter/Number With Balloon Garland',
 				description:
 					'A single light-up letter or number with a matching balloon garland. Perfect for creating a personalized and festive focal point at your event.',
@@ -345,7 +339,8 @@ const decorData = {
 			},
 			{
 				id: 'double-light-up-letter-number-with-balloon-garland',
-				image: 'Double Light Up Letter/Number With Balloon Garland',
+				image:
+					'https://res.cloudinary.com/djjqsmlei/image/upload/v1770204775/Ansom%20Events/BalloonDisplay/lightUpBigGarland_d2bort.webp',
 				title: 'Double Light Up Letter/Number With Balloon Garland',
 				description:
 					'Two light-up letters or numbers with a matching balloon garland. Perfect for creating a personalized and festive focal point at your event.',
@@ -355,41 +350,9 @@ const decorData = {
 				},
 			},
 			{
-				id: 'full-hoop-balloon-garland',
-				image: 'Full Hoop Balloon Garland',
-				title: 'Full Hoop Balloon Garland',
-				description:
-					'A stunning full hoop balloon garland that creates a beautiful and festive atmosphere. Perfect for weddings, parties, and special occasions.',
-				price: {
-					amount: 220,
-					display: 'from £220',
-				},
-			},
-			{
-				id: 'half-hoop-balloon-garland',
-				image: 'Half Hoop Balloon Garland',
-				title: 'Half Hoop Balloon Garland',
-				description:
-					'A stylish half hoop balloon garland that adds a festive touch to any event. Perfect for weddings, parties, and special occasions.',
-				price: {
-					amount: 175,
-					display: 'from £175',
-				},
-			},
-			{
-				id: 'diagonal-hoop-balloon-garland',
-				image: 'Diagonal Hoop Balloon Garland',
-				title: 'Diagonal Hoop Balloon Garland',
-				description:
-					'A diagonal hoop balloon garland that creates a dynamic and eye-catching display. Perfect for adding a modern and festive touch to any event.',
-				price: {
-					amount: 195,
-					display: 'from £195',
-				},
-			},
-			{
 				id: 'single-sailboard',
-				image: 'Single Sailboard',
+				image:
+					'https://res.cloudinary.com/djjqsmlei/image/upload/v1770204781/Ansom%20Events/BalloonDisplay/singleSailBoard_acokoj.webp',
 				title: 'Single Sailboard',
 				description:
 					'A single sailboard backdrop with a balloon garland. Perfect for creating a stylish and festive focal point at your event.',
@@ -400,7 +363,8 @@ const decorData = {
 			},
 			{
 				id: 'double-sailboard',
-				image: 'Double Sailboard',
+				image:
+					'https://res.cloudinary.com/djjqsmlei/image/upload/v1770204772/Ansom%20Events/BalloonDisplay/doubleSailBoard_hegx7j.webp',
 				title: 'Double Sailboard',
 				description:
 					'Two sailboard backdrops with a balloon garland. Perfect for creating a stylish and festive focal point at your event.',
@@ -411,7 +375,8 @@ const decorData = {
 			},
 			{
 				id: 'balloon-wall',
-				image: 'Balloon Wall',
+				image:
+					'https://res.cloudinary.com/djjqsmlei/image/upload/v1770204788/Ansom%20Events/BalloonDisplay/balloonWall_ffeo42.webp',
 				title: 'Balloon Wall',
 				description:
 					'A stunning balloon wall that creates a vibrant and festive atmosphere. Perfect for weddings, parties, and special occasions.',
@@ -422,7 +387,8 @@ const decorData = {
 			},
 			{
 				id: 'Table Center Piece',
-				image: 'Table Center Piece',
+				image:
+					'https://res.cloudinary.com/djjqsmlei/image/upload/v1770204771/Ansom%20Events/BalloonDisplay/TableCenterPiece_ctldeu.webp',
 				title: 'Table Center Piece',
 				description:
 					'A beautiful table center piece that adds elegance and charm to any event.',

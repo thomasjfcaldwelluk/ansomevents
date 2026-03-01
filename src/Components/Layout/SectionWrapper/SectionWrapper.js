@@ -1,26 +1,25 @@
-import { Box, Container } from '@mui/material';
+import { Box } from '@mui/material';
 import React from 'react';
 
 export default function SectionWrapper({
 	children,
 	variant = 'default',
+	id,
 	sx,
 	...props
 }) {
 	return (
 		<Box
+			id={id}
 			component='section'
 			sx={(theme) => ({
-				py: { xs: 1, md: 2, lg: 2 },
-				borderRadius: 4,
-				marginBlock: 4,
-
+				p: { xs: 1, md: 2, lg: 2 },
 				...(variant === 'light' && {
-					backgroundColor: theme.palette.primary.main,
+					backgroundColor: theme.palette.background.subtle,
 				}),
 
 				...(variant === 'dark' && {
-					backgroundColor: theme.palette.grey[900],
+					backgroundColor: theme.palette.brand.header,
 					color: theme.palette.common.white,
 				}),
 

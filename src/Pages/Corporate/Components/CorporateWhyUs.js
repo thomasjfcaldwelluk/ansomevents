@@ -1,14 +1,22 @@
+import { Box, Grid, Typography } from '@mui/material';
+import GridLayout from 'Components/Layout/GridLayout/GridLayout';
+import SectionWrapper from 'Components/Layout/SectionWrapper/SectionWrapper';
+import SectionHeader from 'Components/ui/Typography/SectionHeader';
 import React from 'react';
 
-export default function CorporateWhyUs({ title, items }) {
+export default function CorporateWhyUs({ id, title, items }) {
 	return (
-		<section aria-label={title}>
-			<h2>{title}</h2>
-			<ul>
+		<SectionWrapper id={id} aria-label={title} variant='light'>
+			<SectionHeader sectionHeader={title} />
+			<GridLayout>
 				{items.map((item) => (
-					<li key={item.id}>{item.text}</li>
+					<Grid key={item.id} size={{ xs: 3 }}>
+						<Box>
+							<Typography>{item.text}</Typography>
+						</Box>
+					</Grid>
 				))}
-			</ul>
-		</section>
+			</GridLayout>
+		</SectionWrapper>
 	);
 }

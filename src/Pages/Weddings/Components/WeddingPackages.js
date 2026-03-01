@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-	Box,
 	Grid,
 	Card,
 	CardContent,
@@ -10,25 +9,22 @@ import {
 } from '@mui/material';
 import GridLayout from 'Components/Layout/GridLayout/GridLayout';
 import SectionHeader from 'Components/ui/Typography/SectionHeader';
+import SectionWrapper from 'Components/Layout/SectionWrapper/SectionWrapper';
+import CardTitle from 'Components/ui/Card/CardTitle';
 
 export default function WeddingPackages({ title, items }) {
 	return (
-		<>
+		<SectionWrapper id='wedding-packages' variant='dark'>
 			<SectionHeader sectionHeader={title} />
 			<GridLayout>
 				{items.map((pkg) => (
 					<Grid key={pkg.id} size={{ xs: 12, md: 4 }}>
-						<Card sx={{ height: '100%' }}>
-							<CardContent>
-								{/* Name */}
-								<Typography variant='h3' component={'h3'}>
-									{pkg.name}
+						<Card variant='primary'>
+							<CardContent sx={{ flexGrow: 1 }}>
+								<CardTitle>{pkg.name}</CardTitle>
+								<Typography variant='h4' component={'h4'}>
+									{pkg.price.display}
 								</Typography>
-
-								{/* Price */}
-								<Typography>{pkg.price.display}</Typography>
-
-								{/* Includes */}
 								<List>
 									{pkg.includes.map((item, index) => (
 										<ListItem
@@ -48,6 +44,6 @@ export default function WeddingPackages({ title, items }) {
 					</Grid>
 				))}
 			</GridLayout>
-		</>
+		</SectionWrapper>
 	);
 }

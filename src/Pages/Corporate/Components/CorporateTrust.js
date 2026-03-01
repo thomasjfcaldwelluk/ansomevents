@@ -1,14 +1,27 @@
+import { Box, Grid, Typography } from '@mui/material';
+import GridLayout from 'Components/Layout/GridLayout/GridLayout';
+import SectionWrapper from 'Components/Layout/SectionWrapper/SectionWrapper';
+import SectionHeader from 'Components/ui/Typography/SectionHeader';
 import React from 'react';
 
 export default function CorporateTrust({ items }) {
 	return (
-		<section aria-label='Why Choose Us'>
-			<h2>Why Choose Us</h2>
-			<ul>
+		<SectionWrapper
+			id='why-choose-us'
+			variant='dark'
+			aria-label='Why Choose Us'>
+			<SectionHeader sectionHeader='reasons to work with us' />
+			<GridLayout>
 				{items.map((item) => (
-					<li key={item.id}>{item.text}</li>
+					<Grid item key={item.id} size={{ xs: 3 }}>
+						<Box>
+							<Typography variant='h6' sx={{ textAlign: 'center' }}>
+								{item.text}
+							</Typography>
+						</Box>
+					</Grid>
 				))}
-			</ul>
-		</section>
+			</GridLayout>
+		</SectionWrapper>
 	);
 }

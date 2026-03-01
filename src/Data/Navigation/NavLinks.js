@@ -91,8 +91,8 @@ const navLinks = [
 		type: 'anchor',
 		path: '/#testimonials',
 		showInNav: false,
-		showInMobile: true,
-		showInFooter: false,
+		showInMobile: false,
+		showInFooter: true,
 	},
 ];
 export default navLinks;

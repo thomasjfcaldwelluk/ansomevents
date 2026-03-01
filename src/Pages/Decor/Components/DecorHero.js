@@ -2,10 +2,10 @@ import SectionWrapper from 'Components/Layout/SectionWrapper/SectionWrapper';
 import React from 'react';
 import PageTitle from 'Components/ui/Typography/PageTitle';
 
-export default function ServicesHero({ title, text }) {
+export default function DecorHero({ variant }) {
 	return (
-		<SectionWrapper id='services-hero' variant='light'>
-			<PageTitle pageHeader='Services' pageSubheader='Come on Guys' />
+		<SectionWrapper id='decor-hero' variant={variant}>
+			<PageTitle pageHeader='Decor' pageSubheader='Get it here' />
 		</SectionWrapper>
 	);
 }

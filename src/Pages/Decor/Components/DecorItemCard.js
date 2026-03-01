@@ -1,4 +1,13 @@
-import { Card, CardContent, Typography, Button, Box } from '@mui/material';
+import {
+	Card,
+	CardContent,
+	Typography,
+	Button,
+	Box,
+	CardMedia,
+} from '@mui/material';
+import CardDescription from 'Components/ui/Card/CardDescription';
+import CardTitle from 'Components/ui/Card/CardTitle';
 
 export default function DecorItemCard({
 	title,
@@ -7,29 +16,21 @@ export default function DecorItemCard({
 	includes,
 	price,
 	cta,
+	imageVariant = 'standard',
 }) {
 	return (
 		<Card variant='primary'>
-			<CardContent>
-				{image && (
-					<img
-						src={image}
-						alt={title}
-						style={{
-							width: '100%',
-							height: '400px',
-							objectFit: 'cover',
-							borderRadius: 8,
-						}}
-					/>
-				)}
-				<Typography variant='h5' gutterBottom>
-					{title}
-				</Typography>
-
-				<Typography variant='body2' sx={{ mb: 2 }}>
-					{description}
-				</Typography>
+			{image && (
+				<CardMedia
+					component='img'
+					src={image}
+					alt={title}
+					variant={imageVariant}
+				/>
+			)}
+			<CardContent sx={{ flexGrow: 1 }}>
+				<CardTitle>{title}</CardTitle>
+				<CardDescription>{description}</CardDescription>
 
 				{includes && (
 					<Box component='ul' sx={{ pl: 2, mb: 2 }}>
@@ -50,7 +51,6 @@ export default function DecorItemCard({
 						{price.display}
 					</Typography>
 				)}
-
 				{cta && (
 					<Button variant='secondary' sx={{ mt: 2 }}>
 						{cta.label}
