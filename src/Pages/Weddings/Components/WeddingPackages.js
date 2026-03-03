@@ -22,10 +22,13 @@ export default function WeddingPackages({ title, items }) {
 						<Card variant='primary'>
 							<CardContent sx={{ flexGrow: 1 }}>
 								<CardTitle>{pkg.name}</CardTitle>
-								<Typography variant='h4' component={'h4'}>
+								<Typography
+									variant='h4'
+									component={'h4'}
+									sx={{ mb: 2, textAlign: 'center' }}>
 									{pkg.price.display}
 								</Typography>
-								<List>
+								<List sx={{ marginInline: 2 }}>
 									{pkg.includes.map((item, index) => (
 										<ListItem
 											key={index}

@@ -31,7 +31,7 @@ export default function Footer(company, contact, socials, legal, copyright) {
 					))}
 				</Box>
 			)}
-			<Box sx={{ display: 'flex', gap: 2 }}>
+			<Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 2 }}>
 				{footerLinks.map((link) => (
 					<Button key={link.id} component={RouterLink} to={link.path}>
 						{link.label}

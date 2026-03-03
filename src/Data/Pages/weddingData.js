@@ -61,7 +61,11 @@ const weddingData = {
 				includes: [
 					{ text: 'Welcome sign with easel' },
 					{ text: 'Card box with simple table décor' },
-					{ text: 'Your choice of one photo backdrop:', bullet: false },
+					{
+						text: 'Your choice of one photo backdrop:',
+						bullet: false,
+						bold: true,
+					},
 					{
 						text: 'Either Arch with fabric & faux florals or Sailboard with balloon garland or Shimmer wall with balloon garland',
 					},

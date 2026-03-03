@@ -11,16 +11,17 @@ import {
 	Grid,
 	CardMedia,
 } from '@mui/material';
+import CardTitle from 'Components/ui/Card/CardTitle';
 
 export default function Features({ title, subtitle, items }) {
 	return (
-		<SectionWrapper id='features' variant='light'>
+		<SectionWrapper id='features' aria-label={title}>
 			<SectionHeader sectionHeader={title} />
 			<p>{subtitle}</p>
-			<GridLayout>
+			<GridLayout spacing={0}>
 				{items.map((item, index) => (
-					<Grid key={index} size={{ xs: 12, md: 6, lg: 3 }}>
-						<Card variant='primary'>
+					<Grid key={index} size={{ xs: 12, lg: 6 }}>
+						<Card variant='transparent' sx={{ height: '100%' }}>
 							<CardContent>
 								<CardMedia
 									component='img'
@@ -33,7 +34,7 @@ export default function Features({ title, subtitle, items }) {
 										},
 									}}
 								/>
-								<Typography>{item.title}</Typography>
+								<CardTitle>{item.title}</CardTitle>
 								<Typography>{item.caption}</Typography>
 								<Typography>{item.description}</Typography>
 								<Link

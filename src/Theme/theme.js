@@ -15,6 +15,7 @@ let theme = createTheme({
 			paper: '#FFFFFF',
 			card: '#FBFAF7',
 			subtle: '#F4F1E8',
+			dark: '#234A6B',
 		},
 		text: {
 			primary: '#1F1F1F',
@@ -24,7 +25,6 @@ let theme = createTheme({
 		brand: {
 			header: '#1C3D5A',
 			accentGold: '#C5A46D',
-			charcoal: '#3B3C36',
 		},
 	},
 	typography: {
@@ -114,7 +114,6 @@ let theme = createTheme({
 					props: { variant: 'secondary' },
 					style: {
 						backgroundColor: 'transparent',
-						border: '2px solid #C5A46D',
 						color: '#C5A46D',
 					},
 				},
@@ -139,7 +138,23 @@ let theme = createTheme({
 						backgroundColor: '#FEFEFC',
 						border: '0.5px solid #E5E2D9',
 						height: '100%',
-						justifyContent: 'space-between',
+					},
+				},
+				{
+					props: { variant: 'secondary' },
+					style: {
+						backgroundColor: '#ffffd6',
+						border: '0.5px solid #373737',
+						height: '100%',
+					},
+				},
+				{
+					props: { variant: 'transparent' },
+					style: {
+						backgroundColor: 'transparent',
+						boxShadow: 'none',
+						border: 'none',
+						padding: 0,
 					},
 				},
 			],
@@ -178,7 +193,7 @@ let theme = createTheme({
 					},
 				},
 				body: {
-					backgroundColor: '#FBFAF7',
+					backgroundColor: '#F7F5EF',
 					margin: 0,
 					padding: 0,
 				},

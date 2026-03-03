@@ -44,7 +44,7 @@ const homeData = {
 			},
 			{
 				image:
-					'https://res.cloudinary.com/djjqsmlei/image/upload/v1770205602/Ansom%20Events/Home%20Page/galleryPreview2_tagdge.webp',
+					'https://res.cloudinary.com/djjqsmlei/image/upload/v1770204685/Ansom%20Events/Gallery/newGalleryLong2_guqx9f.webp',
 				title: 'Bespoke Parties',
 				caption: 'Themes, Pop-ups, Seasonal',
 				description: 'Intimate and memorable bespoke party styling.',
@@ -95,10 +95,12 @@ const homeData = {
 	},
 	about: {
 		title: 'Beyond the Decor',
-		subtitle: 'Meet the hands & hearts behind your milestones.',
 		description:
 			'We’re Melissa and Thomas, the duo behind Ansom Events. We transform spaces and help you celebrate in style, combining creative design with seamless coordination to make every detail unforgettable.',
-		cta: { label: 'Learn More', link: '/about' },
+		cta: {
+			label: 'Meet the hands & hearts behind your milestones.',
+			link: '/about-us',
+		},
 	},
 };
 

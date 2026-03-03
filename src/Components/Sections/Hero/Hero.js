@@ -1,11 +1,12 @@
 import { Box, Typography, Grid } from '@mui/material';
 import GridLayout from 'Components/Layout/GridLayout/GridLayout';
+import SectionWrapper from 'Components/Layout/SectionWrapper/SectionWrapper';
 import React from 'react';
 
 export default function Hero({ title, adj, subtitle }) {
 	const lines = title.split('\n');
 	return (
-		<Box id='hero' component={'section'}>
+		<SectionWrapper id='hero' aria-label='Hero Section' variant='dark'>
 			<GridLayout>
 				<Grid size={{ xs: 12, md: 6 }}>
 					<Typography sx={{ whiteSpace: 'pre-line' }} variant='h1'>
@@ -39,6 +40,6 @@ export default function Hero({ title, adj, subtitle }) {
 					/>
 				</Grid>
 			</GridLayout>
-		</Box>
+		</SectionWrapper>
 	);
 }

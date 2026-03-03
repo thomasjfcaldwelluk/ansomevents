@@ -19,7 +19,7 @@ export default function SectionWrapper({
 				}),
 
 				...(variant === 'dark' && {
-					backgroundColor: theme.palette.brand.header,
+					backgroundColor: theme.palette.background.dark,
 					color: theme.palette.common.white,
 				}),
 

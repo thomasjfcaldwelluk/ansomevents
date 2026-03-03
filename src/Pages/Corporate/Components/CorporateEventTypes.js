@@ -11,7 +11,7 @@ export default function CorporateEventTypes({ id, title, items }) {
 			<GridLayout>
 				{items.map((item) => (
 					<Grid item key={item.id} size={{ xs: 3 }}>
-						<Card>{item.title}</Card>
+						<Card variant='secondary'>{item.title}</Card>
 					</Grid>
 				))}
 			</GridLayout>
