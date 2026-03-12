@@ -1,16 +1,11 @@
 import React from 'react';
-import {
-	Grid,
-	Card,
-	CardContent,
-	Typography,
-	List,
-	ListItem,
-} from '@mui/material';
+import { Grid, Card, CardContent, Typography, Stack } from '@mui/material';
 import GridLayout from 'Components/Layout/GridLayout/GridLayout';
 import SectionHeader from 'Components/ui/Typography/SectionHeader';
 import SectionWrapper from 'Components/Layout/SectionWrapper/SectionWrapper';
 import CardTitle from 'Components/ui/Card/CardTitle';
+import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
+import LuxuryDivider from 'Components/ui/Divider/LuxuryDivider';
 
 export default function WeddingPackages({ title, items }) {
 	return (
@@ -20,28 +15,39 @@ export default function WeddingPackages({ title, items }) {
 				{items.map((pkg) => (
 					<Grid key={pkg.id} size={{ xs: 12, md: 4 }}>
 						<Card variant='primary'>
-							<CardContent sx={{ flexGrow: 1 }}>
+							<CardContent sx={{ flexGrow: 1, padding: 3 }}>
+								<Typography variant='label'>{pkg.label}</Typography>
 								<CardTitle>{pkg.name}</CardTitle>
 								<Typography
-									variant='h4'
+									variant='body2'
 									component={'h4'}
 									sx={{ mb: 2, textAlign: 'center' }}>
 									{pkg.price.display}
 								</Typography>
-								<List sx={{ marginInline: 2 }}>
+								<LuxuryDivider />
+								<Stack
+									component='ul'
+									sx={{ listStyle: 'none', padding: 0, margin: 0, gap: 1 }}>
 									{pkg.includes.map((item, index) => (
-										<ListItem
+										<Stack
 											key={index}
-											sx={{
-												display: 'list-item',
-												listStyleType: item.bullet === false ? 'none' : 'disc',
-												pl: item.bullet === false ? 3 : 2,
-												fontWeight: item.bold ? 700 : 400,
-											}}>
-											{item.text}
-										</ListItem>
+											direction='row'
+											alignItems='center'
+											spacing={1}>
+											<CheckCircleOutlineIcon
+												sx={{ fontSize: 18, mt: '3px', color: 'primary.light' }}
+											/>
+											<Typography
+												variant='body1'
+												component='li'
+												sx={{
+													fontWeight: item.bold ? 700 : 400,
+												}}>
+												{item.text}
+											</Typography>
+										</Stack>
 									))}
-								</List>
+								</Stack>
 							</CardContent>
 						</Card>
 					</Grid>

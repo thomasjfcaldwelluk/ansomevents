@@ -4,9 +4,9 @@ import { Typography } from '@mui/material';
 export default function CardTitle({ children, ...props }) {
 	return (
 		<Typography
-			variant='h5'
+			variant='cardHeader'
 			component='h3'
-			sx={{ textAlign: 'center' }}
+			sx={{ textAlign: 'center', marginTop: 1 }}
 			gutterBottom
 			{...props}>
 			{children}

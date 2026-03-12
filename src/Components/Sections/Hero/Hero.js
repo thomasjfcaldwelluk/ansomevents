@@ -8,7 +8,7 @@ export default function Hero({ title, adj, subtitle }) {
 	return (
 		<SectionWrapper id='hero' aria-label='Hero Section' variant='dark'>
 			<GridLayout>
-				<Grid size={{ xs: 12, md: 6 }}>
+				<Grid size={{ xs: 12, md: 6 }} padding={4}>
 					<Typography sx={{ whiteSpace: 'pre-line' }} variant='h1'>
 						{lines.map((line, index) => (
 							<span

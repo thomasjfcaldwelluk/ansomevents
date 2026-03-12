@@ -7,27 +7,33 @@ import {
 	Card,
 	CardContent,
 	Typography,
-	Link,
 	Grid,
 	CardMedia,
+	Button,
 } from '@mui/material';
 import CardTitle from 'Components/ui/Card/CardTitle';
 
 export default function Features({ title, subtitle, items }) {
 	return (
 		<SectionWrapper id='features' aria-label={title}>
-			<SectionHeader sectionHeader={title} />
-			<p>{subtitle}</p>
+			<SectionHeader sectionHeader={title} subHeader={subtitle} />
 			<GridLayout spacing={0}>
 				{items.map((item, index) => (
 					<Grid key={index} size={{ xs: 12, lg: 6 }}>
 						<Card variant='transparent' sx={{ height: '100%' }}>
-							<CardContent>
+							<CardContent
+								sx={{
+									display: 'flex',
+									flexDirection: 'column',
+									justifyContent: 'center',
+									alignItems: 'center',
+								}}>
 								<CardMedia
 									component='img'
 									image={item.image}
 									alt={item.title}
 									sx={{
+										borderRadius: 2,
 										transition: 'transform 0.4s ease',
 										'&:hover': {
 											transform: 'scale(1.05)',
@@ -35,15 +41,19 @@ export default function Features({ title, subtitle, items }) {
 									}}
 								/>
 								<CardTitle>{item.title}</CardTitle>
-								<Typography>{item.caption}</Typography>
-								<Typography>{item.description}</Typography>
-								<Link
+								<Typography
+									sx={{ padding: 1, textAlign: 'center' }}
+									variant='body2'
+									component={'p'}>
+									{item.caption}
+								</Typography>
+								<Button
+									variant='primary'
 									component={RouterLink}
 									to={item.link}
-									underline='hover'
-									sx={{ mt: 2, display: 'inline-block' }}>
-									View Packages →
-								</Link>
+									underline='hover'>
+									More Information →
+								</Button>
 							</CardContent>
 						</Card>
 					</Grid>

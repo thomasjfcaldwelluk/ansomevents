@@ -1,11 +1,13 @@
+import { Typography } from '@mui/material';
 import SectionWrapper from 'Components/Layout/SectionWrapper/SectionWrapper';
+import PageTitle from 'Components/ui/Typography/PageTitle';
 import React from 'react';
 
 export default function AboutHero({ id, title, text }) {
 	return (
 		<SectionWrapper id={id} variant='light'>
-			<h1>{title}</h1>
-			<p>{text}</p>
+			<PageTitle pageHeader={title} />
+			<Typography>{text}</Typography>
 		</SectionWrapper>
 	);
 }

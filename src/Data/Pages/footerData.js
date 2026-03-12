@@ -1,10 +1,13 @@
+import ansomLogo from '../../Assets/Logo/AnsomEventsLogoForWeb.svg';
+import { Facebook, Instagram, WhatsApp } from '@mui/icons-material';
+
 const footerData = {
 	company: {
-		logo: '/images/logo.svg',
-		address: ['Ansom Events', 'Saltash, Cornwall', 'United Kingdom'],
+		logo: ansomLogo,
+		address: ['Saltash, Cornwall'],
 	},
 	contact: {
-		phone: '+44 1234 567890',
+		phone: '+44 7310 009764',
 		email: 'info@ansomevents.com',
 	},
 	socials: {
@@ -12,17 +15,17 @@ const footerData = {
 			{
 				name: 'Facebook',
 				url: 'https://www.facebook.com/ansomevents',
-				icon: 'facebook',
+				icon: Facebook,
 			},
 			{
 				name: 'Instagram',
 				url: 'https://www.instagram.com/ansomevents',
-				icon: 'instagram',
+				icon: Instagram,
 			},
 			{
 				name: 'Whatsapp',
 				url: 'https://wa.me/441234567890',
-				icon: 'whatsapp',
+				icon: WhatsApp,
 			},
 		],
 	},

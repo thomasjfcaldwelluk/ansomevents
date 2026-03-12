@@ -44,7 +44,7 @@ const homeData = {
 			},
 			{
 				image:
-					'https://res.cloudinary.com/djjqsmlei/image/upload/v1770204685/Ansom%20Events/Gallery/newGalleryLong2_guqx9f.webp',
+					'https://res.cloudinary.com/djjqsmlei/image/upload/v1770132139/Ansom%20Events/Brand/websiteHero_iuvlgl.webp',
 				title: 'Bespoke Parties',
 				caption: 'Themes, Pop-ups, Seasonal',
 				description: 'Intimate and memorable bespoke party styling.',

@@ -3,7 +3,7 @@ import { Typography } from '@mui/material';
 
 export default function PageTitle({ pageHeader, pageSubheader }) {
 	return (
-		<Stack alignItems='center' justifyContent={'center'}>
+		<Stack alignItems='center' justifyContent={'center'} sx={{ mb: 3 }}>
 			<Typography variant='pageHeader' component={'h1'}>
 				{pageHeader}
 			</Typography>

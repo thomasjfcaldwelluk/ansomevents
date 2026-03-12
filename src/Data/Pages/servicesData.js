@@ -10,29 +10,24 @@ const servicesData = {
 	},
 	services: [
 		{
-			id: 1,
-			title: 'Day-of Coordination',
-			text: 'We Manage suppliers, timelines and logistics so you can enjoy the day.',
-			icon: DayOfCoordinationIcon,
+			type: 'image',
+			image:
+				'https://res.cloudinary.com/djjqsmlei/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1709161608/veggieBox_lolz9l.jpg',
 		},
+		{ type: 'text', title: 'Business Card Design', description: '...' },
 		{
-			id: 2,
-			title: 'Venue Layout & Styling Plans',
-			text: 'Visual planning to ensure the space flows and looks incredible.',
-			icon: VenueLayoutIcon,
+			type: 'image',
+			image:
+				'https://res.cloudinary.com/djjqsmlei/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1709161608/veggieBox_lolz9l.jpg',
 		},
+
+		{ type: 'text', title: 'Logo Branding', description: '...' },
 		{
-			id: 3,
-			title: 'Design & Print',
-			text: 'Menus, welcome signs, seating plans and more.',
-			icon: PrintServicesIcon,
+			type: 'image',
+			image:
+				'https://res.cloudinary.com/djjqsmlei/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1709161608/veggieBox_lolz9l.jpg',
 		},
-		{
-			id: 4,
-			title: 'Setup & Collection',
-			text: 'Professional installation and pack down of hired items.',
-			icon: SetUpIcon,
-		},
+		{ type: 'text', title: 'Brand Identity', description: '...' },
 	],
 	cta: {
 		title: 'Need support with your event?',

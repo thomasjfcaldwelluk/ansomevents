@@ -5,7 +5,7 @@ import PageTitle from 'Components/ui/Typography/PageTitle';
 export default function ServicesHero({ title, text }) {
 	return (
 		<SectionWrapper id='services-hero' variant='light'>
-			<PageTitle pageHeader='Services' pageSubheader='Come on Guys' />
+			<PageTitle pageHeader={title} pageSubheader={text} />
 		</SectionWrapper>
 	);
 }

@@ -53,6 +53,7 @@ const weddingData = {
 		items: [
 			{
 				id: 1,
+				label: 'Beautifully Simple',
 				name: 'Essential',
 				price: {
 					amount: 350,
@@ -76,6 +77,7 @@ const weddingData = {
 			},
 			{
 				id: 2,
+				label: 'Most Popular',
 				name: 'Signature',
 				price: {
 					amount: 350,
@@ -92,6 +94,7 @@ const weddingData = {
 			},
 			{
 				id: 3,
+				label: 'The Ultimate Celebration',
 				name: 'Luxury',
 				price: {
 					amount: 350,
@@ -115,10 +118,30 @@ const weddingData = {
 	addOns: {
 		title: 'Enhance Your Package',
 		items: [
-			{ id: 1, image: '', name: 'Neon signs' },
-			{ id: 2, image: '', name: 'Sweet cart' },
-			{ id: 3, image: '', name: 'Welcome easel' },
-			{ id: 4, image: '', name: 'Extra florals' },
+			{
+				id: 1,
+				image: '',
+				name: 'Neon signs',
+				price: { amount: 100, display: 'from £100' },
+			},
+			{
+				id: 2,
+				image: '',
+				name: 'Sweet cart',
+				price: { amount: 150, display: 'from £150' },
+			},
+			{
+				id: 3,
+				image: '',
+				name: 'Welcome easel',
+				price: { amount: 75, display: 'from £75' },
+			},
+			{
+				id: 4,
+				image: '',
+				name: 'Extra florals',
+				price: { amount: 200, display: 'from £200' },
+			},
 		],
 	},
 };

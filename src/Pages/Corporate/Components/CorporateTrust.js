@@ -10,12 +10,15 @@ export default function CorporateTrust({ items }) {
 			id='why-choose-us'
 			variant='dark'
 			aria-label='Why Choose Us'>
-			<SectionHeader sectionHeader='reasons to work with us' />
+			<SectionHeader sectionHeader='Reasons to work with us' />
 			<GridLayout>
 				{items.map((item) => (
-					<Grid item key={item.id} size={{ xs: 3 }}>
+					<Grid item key={item.id} size={{ xs: 6, md: 3 }}>
 						<Box>
-							<Typography variant='h6' sx={{ textAlign: 'center' }}>
+							<Typography
+								variant='cardHeader'
+								component={'h4'}
+								sx={{ textAlign: 'center' }}>
 								{item.text}
 							</Typography>
 						</Box>

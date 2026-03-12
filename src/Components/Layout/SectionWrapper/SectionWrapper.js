@@ -13,7 +13,7 @@ export default function SectionWrapper({
 			id={id}
 			component='section'
 			sx={(theme) => ({
-				p: { xs: 1, md: 2, lg: 2 },
+				p: { xs: 1, md: 2, lg: 8 },
 				...(variant === 'light' && {
 					backgroundColor: theme.palette.background.subtle,
 				}),

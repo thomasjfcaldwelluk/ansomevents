@@ -34,8 +34,8 @@ function App() {
 						<Route path='/weddings' element={<Wedding />} />
 						<Route path='/contact-us' element={<Contact />} />
 						<Route path='/gallery' element={<Gallery />} />
-						<Route path='/decor' element={<Decor />} />
-						<Route path='/corporate' element={<Corporate />} />
+						{/* <Route path='/decor' element={<Decor />} /> */}
+						{/* <Route path='/corporate' element={<Corporate />} /> */}
 						<Route path='/services' element={<Services />} />
 						{/* Bottom level nav routes */}
 						<Route path='/about-us' element={<About />} />

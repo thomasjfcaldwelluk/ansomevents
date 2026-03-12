@@ -1,15 +1,16 @@
-import { Typography } from '@mui/material';
 import SectionWrapper from 'Components/Layout/SectionWrapper/SectionWrapper';
 import SectionHeader from 'Components/ui/Typography/SectionHeader';
 import React from 'react';
 
-export default function AboutStory({ id, title, paragraph }) {
+export default function ContactServiceArea({ id, title, items }) {
 	return (
-		<SectionWrapper id={id} variant='dark'>
+		<SectionWrapper id={id} aria-label='Contact Service Area Section'>
 			<SectionHeader sectionHeader={title} />
-			{paragraph.map((text, index) => (
-				<Typography key={index}>{text}</Typography>
-			))}
+			<ul>
+				{items.map((area) => (
+					<li key={area}>{area}</li>
+				))}
+			</ul>
 		</SectionWrapper>
 	);
 }

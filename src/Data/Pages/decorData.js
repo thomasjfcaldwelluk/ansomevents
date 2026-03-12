@@ -7,6 +7,7 @@ const decorData = {
 		items: [
 			{
 				id: 'ansom-signature',
+				label: 'Signature Package',
 				title: 'Ansom Signature',
 				description:
 					'Our most complete and statement-making décor package, designed to transform your space and create a true focal point for your celebration. Perfect for larger events where impact, layering and detail matter.',
@@ -47,6 +48,7 @@ const decorData = {
 			},
 			{
 				id: 'ansom-deluxe',
+				label: 'Deluxe Package',
 				title: 'Ansom Deluxe',
 				description:
 					'A beautifully balanced package offering style, structure and visual interest. Ideal for celebrations that want a polished, cohesive look without feeling overdone.',
@@ -82,6 +84,7 @@ const decorData = {
 			},
 			{
 				id: 'ansom-classic',
+				label: 'Classic Package',
 				title: 'Ansom Classic',
 				description:
 					'A stylish, versatile package designed to elevate smaller celebrations or intimate spaces. Clean, coordinated and effortlessly elegant.',
@@ -111,6 +114,7 @@ const decorData = {
 			},
 			{
 				id: 'ansom-basic',
+				label: 'Basic Package',
 				title: 'Ansom Basic',
 				description:
 					'A simple yet impactful décor package that adds charm and structure to your event. Ideal for relaxed gatherings, home celebrations or smaller venues.',
@@ -216,7 +220,8 @@ const decorData = {
 			},
 			{
 				id: 'Happy Birthday Sign',
-				image: 'Happy Birthday Sign',
+				image:
+					'https://res.cloudinary.com/djjqsmlei/image/upload/v1772717371/Ansom%20Events/Props/happyBirthdaySign_jnnf5q.webp',
 				title: 'Happy Birthday Sign',
 				price: {
 					amount: 5,
@@ -224,17 +229,9 @@ const decorData = {
 				},
 			},
 			{
-				id: 'baby-shower-banner',
-				image: 'Baby Shower Banner',
-				title: 'Baby Shower Banner',
-				price: {
-					amount: 5,
-					display: 'from £5',
-				},
-			},
-			{
 				id: 'baby-name-sign',
-				image: 'Baby Name Sign',
+				image:
+					'https://res.cloudinary.com/djjqsmlei/image/upload/v1772717370/Ansom%20Events/Props/ohBabySign_a3gr7n.webp',
 				title: 'Baby Name Sign',
 				price: {
 					amount: 5,
@@ -243,7 +240,8 @@ const decorData = {
 			},
 			{
 				id: 'peacock-chair',
-				image: 'Peacock Chair',
+				image:
+					'https://res.cloudinary.com/djjqsmlei/image/upload/v1772717371/Ansom%20Events/Props/peacockChair_dasemb.webp',
 				title: 'Peacock Chair',
 				price: {
 					amount: 75,
@@ -252,7 +250,8 @@ const decorData = {
 			},
 			{
 				id: 'Decor Pedestal',
-				image: 'Decor Pedestal',
+				image:
+					'https://res.cloudinary.com/djjqsmlei/image/upload/v1772717371/Ansom%20Events/Props/vase_nikhqw.webp',
 				title: 'Decor Pedestal',
 				price: {
 					amount: 25,
@@ -261,7 +260,8 @@ const decorData = {
 			},
 			{
 				id: 'cardboard-display',
-				image: 'Cardboard Display',
+				image:
+					'https://res.cloudinary.com/djjqsmlei/image/upload/v1770204786/Ansom%20Events/BalloonDisplay/characterCutout_yz1qnn.webp',
 				title: 'Cardboard Display',
 				price: {
 					amount: 25,
@@ -282,8 +282,8 @@ const decorData = {
 				image:
 					'https://res.cloudinary.com/djjqsmlei/image/upload/v1770204778/Ansom%20Events/BalloonDisplay/Single_Stack_qkd1us.webp',
 				title: 'Single Stack',
-				description:
-					'A large foil balloon stack makes a bold statement with vibrant metallic balloons, available as a single or double stack to create a striking, high-impact focal point at your event.',
+				// description:
+				// 	'A large foil balloon stack makes a bold statement with vibrant metallic balloons, available as a single or double stack to create a striking, high-impact focal point at your event.',
 				price: {
 					amount: 25,
 					display: 'from £25',
@@ -294,8 +294,8 @@ const decorData = {
 				image:
 					'https://res.cloudinary.com/djjqsmlei/image/upload/v1770204777/Ansom%20Events/BalloonDisplay/doubleStack_rcrigw.webp',
 				title: 'Double Stack',
-				description:
-					'A large foil balloon stack makes a bold statement with vibrant metallic balloons, available as a single or double stack to create a striking, high-impact focal point at your event.',
+				// description:
+				// 	'A large foil balloon stack makes a bold statement with vibrant metallic balloons, available as a single or double stack to create a striking, high-impact focal point at your event.',
 				price: {
 					amount: 50,
 					display: 'from £50',
@@ -306,8 +306,8 @@ const decorData = {
 				image:
 					'https://res.cloudinary.com/djjqsmlei/image/upload/v1770204783/Ansom%20Events/BalloonDisplay/WelcomeSign_ewmfny.webp',
 				title: 'Welcome Sign With Balloon Garland',
-				description:
-					'A stylish welcome sign with a matching balloon garland. Perfect for creating a warm and festive entrance at your event.',
+				// description:
+				// 	'A stylish welcome sign with a matching balloon garland. Perfect for creating a warm and festive entrance at your event.',
 				price: {
 					amount: 110,
 					display: 'from £110',
@@ -318,8 +318,8 @@ const decorData = {
 				image:
 					'https://res.cloudinary.com/djjqsmlei/image/upload/v1770204782/Ansom%20Events/BalloonDisplay/easelSign_g8wfuj.webp',
 				title: 'Easel Sign With Balloon Garland',
-				description:
-					'A stylish easel sign with a matching balloon garland. Perfect for creating a warm and festive entrance at your event.',
+				// description:
+				// 	'A stylish easel sign with a matching balloon garland. Perfect for creating a warm and festive entrance at your event.',
 				price: {
 					amount: 90,
 					display: 'from £90',
@@ -330,8 +330,8 @@ const decorData = {
 				image:
 					'https://res.cloudinary.com/djjqsmlei/image/upload/v1770204777/Ansom%20Events/BalloonDisplay/lightUpSmallGarland_no10y2.webp',
 				title: 'Single Light Up Letter/Number With Balloon Garland',
-				description:
-					'A single light-up letter or number with a matching balloon garland. Perfect for creating a personalized and festive focal point at your event.',
+				// description:
+				// 	'A single light-up letter or number with a matching balloon garland. Perfect for creating a personalized and festive focal point at your event.',
 				price: {
 					amount: 85,
 					display: 'from £85',
@@ -342,8 +342,8 @@ const decorData = {
 				image:
 					'https://res.cloudinary.com/djjqsmlei/image/upload/v1770204775/Ansom%20Events/BalloonDisplay/lightUpBigGarland_d2bort.webp',
 				title: 'Double Light Up Letter/Number With Balloon Garland',
-				description:
-					'Two light-up letters or numbers with a matching balloon garland. Perfect for creating a personalized and festive focal point at your event.',
+				// description:
+				// 	'Two light-up letters or numbers with a matching balloon garland. Perfect for creating a personalized and festive focal point at your event.',
 				price: {
 					amount: 110,
 					display: 'from £110',
@@ -354,8 +354,8 @@ const decorData = {
 				image:
 					'https://res.cloudinary.com/djjqsmlei/image/upload/v1770204781/Ansom%20Events/BalloonDisplay/singleSailBoard_acokoj.webp',
 				title: 'Single Sailboard',
-				description:
-					'A single sailboard backdrop with a balloon garland. Perfect for creating a stylish and festive focal point at your event.',
+				// description:
+				// 	'A single sailboard backdrop with a balloon garland. Perfect for creating a stylish and festive focal point at your event.',
 				price: {
 					amount: 125,
 					display: 'from £125',
@@ -366,8 +366,8 @@ const decorData = {
 				image:
 					'https://res.cloudinary.com/djjqsmlei/image/upload/v1770204772/Ansom%20Events/BalloonDisplay/doubleSailBoard_hegx7j.webp',
 				title: 'Double Sailboard',
-				description:
-					'Two sailboard backdrops with a balloon garland. Perfect for creating a stylish and festive focal point at your event.',
+				// description:
+				// 	'Two sailboard backdrops with a balloon garland. Perfect for creating a stylish and festive focal point at your event.',
 				price: {
 					amount: 175,
 					display: 'from £175',
@@ -378,8 +378,8 @@ const decorData = {
 				image:
 					'https://res.cloudinary.com/djjqsmlei/image/upload/v1770204788/Ansom%20Events/BalloonDisplay/balloonWall_ffeo42.webp',
 				title: 'Balloon Wall',
-				description:
-					'A stunning balloon wall that creates a vibrant and festive atmosphere. Perfect for weddings, parties, and special occasions.',
+				// description:
+				// 	'A stunning balloon wall that creates a vibrant and festive atmosphere. Perfect for weddings, parties, and special occasions.',
 				price: {
 					amount: 220,
 					display: 'from £220',
@@ -390,8 +390,8 @@ const decorData = {
 				image:
 					'https://res.cloudinary.com/djjqsmlei/image/upload/v1770204771/Ansom%20Events/BalloonDisplay/TableCenterPiece_ctldeu.webp',
 				title: 'Table Center Piece',
-				description:
-					'A beautiful table center piece that adds elegance and charm to any event.',
+				// description:
+				// 	'A beautiful table center piece that adds elegance and charm to any event.',
 				price: { amount: 20, display: 'from £20' },
 			},
 		],

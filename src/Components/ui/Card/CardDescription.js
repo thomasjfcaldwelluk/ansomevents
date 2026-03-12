@@ -8,8 +8,8 @@ export default function CardDescription({ children }) {
 			component={'p'}
 			color='text.secondary'
 			sx={{
-				maxWidth: 420,
 				mx: 'auto',
+				maxWidth: 500,
 			}}>
 			{children}
 		</Typography>

@@ -8,19 +8,26 @@ export default function IconWrapper({
 }) {
 	return (
 		<Box
-			sx={{
-				display: 'flex',
-				alignItems: 'center',
-				justifyContent: 'center',
-				color: (theme) => {
-					const map = {
-						primary: theme.palette.primary.main,
-						gold: theme.palette.brand.accentGold,
-						charcoal: theme.palette.brand.charcoal,
-						muted: theme.palette.text.secondary,
-					};
-					return map[colorVariant];
-				},
+			sx={(theme) => {
+				const map = {
+					primary: theme.palette.primary.main,
+					gold: theme.palette.brand.accentGold,
+					charcoal: theme.palette.brand.charcoal,
+					muted: theme.palette.text.secondary,
+				};
+
+				return {
+					display: 'flex',
+					alignItems: 'center',
+					justifyContent: 'center',
+					color: map[colorVariant],
+					transition: 'all 0.2s ease',
+
+					'&:hover': {
+						transform: 'translateY(-2px)',
+						color: theme.palette.primary.main,
+					},
+				};
 			}}>
 			<Icon sx={{ fontSize: size }} width={size} height={size} />
 		</Box>

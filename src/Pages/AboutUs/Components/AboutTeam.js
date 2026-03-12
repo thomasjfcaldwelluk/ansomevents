@@ -1,26 +1,33 @@
+import { Box, Grid, Typography } from '@mui/material';
+import GridLayout from 'Components/Layout/GridLayout/GridLayout';
 import SectionWrapper from 'Components/Layout/SectionWrapper/SectionWrapper';
+import SectionHeader from 'Components/ui/Typography/SectionHeader';
 import React from 'react';
 
 export default function AboutTeam({ id, title, members }) {
 	return (
 		<SectionWrapper id={id} variant='light'>
-			<h2>{title}</h2>
-			<div style={{ display: 'flex', gap: '20px' }}>
+			<SectionHeader sectionHeader={title} />
+			<GridLayout>
 				{members.map((member, index) => (
-					<div key={index}>
-						{/* <img
+					<Grid
+						key={index}
+						size={{ xs: 12, md: 6 }}
+						sx={{ textAlign: 'center' }}>
+						<Box
+							component={'img'}
 							src={member.photo}
 							alt={`${member.name}'s photo`}
-							style={{ width: '100%' }}
-						/> */}
-						<h3>{member.name}</h3>
-						<p>
-							<strong>{member.role}</strong>
-						</p>
-						<p>{member.bio}</p>
-					</div>
+							sx={{ width: '100%' }}
+						/>
+						<Typography variant='h5'>{member.name}</Typography>
+						<Typography variant='body2' color='text.secondary'>
+							{member.role}
+						</Typography>
+						<Typography variant='body1'>{member.bio}</Typography>
+					</Grid>
 				))}
-			</div>
+			</GridLayout>
 		</SectionWrapper>
 	);
 }

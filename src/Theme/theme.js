@@ -36,7 +36,7 @@ let theme = createTheme({
 			fontWeight: 400,
 		},
 		h3: {
-			fontSize: '2rem',
+			fontSize: '1.5rem',
 			fontWeight: 500,
 		},
 		h4: {
@@ -45,22 +45,23 @@ let theme = createTheme({
 		},
 		h5: {
 			fontSize: 'clamp(1.1rem, 1.7vw, 1.4rem)',
-			fontWeight: 500,
+			fontWeight: 600,
 			lineHeight: 1.3,
 		},
 		h6: {
-			fontSize: '1.1rem',
-			fontWeight: 500,
+			fontSize: '1rem',
+			fontWeight: 600,
 		},
 		body1: {
-			fontSize: '1rem',
+			fontSize: '0.8rem',
 			lineHeight: 1.6,
 		},
 		body2: {
-			fontSize: '1.15rem',
+			fontFamily: '"Playfair Display", serif',
+			fontSize: '1.1rem',
 			lineHeight: 1.5,
-			fontWeight: 700,
-			textAlign: 'center',
+			fontWeight: 500,
+			color: '#1C3D5A',
 		},
 		button: {
 			fontSize: '0.8rem',
@@ -68,12 +69,21 @@ let theme = createTheme({
 		caption: {
 			fontSize: '1.28rem',
 		},
+		label: {
+			fontSize: '0.7rem',
+			fontWeight: 600,
+			letterSpacing: '0.02em',
+			textTransform: 'uppercase',
+			textAlign: 'center',
+			color: '#0f0f0e',
+			marginBottom: 4,
+		},
 		pageHeader: {
 			fontFamily: '"Playfair Display", serif',
-			fontSize: 'clamp(2.2rem, 4vw, 3.2rem)',
-			fontWeight: 400,
-			letterSpacing: '0.01em',
+			fontSize: '2.8rem',
+			fontWeight: 700,
 			lineHeight: 1.15,
+			letterSpacing: '-0.02em',
 			color: '#1C3D5A',
 		},
 		pageSubHeader: {
@@ -85,10 +95,17 @@ let theme = createTheme({
 		},
 		sectionHeader: {
 			fontFamily: '"Playfair Display", serif',
-			fontSize: 'clamp(1.3rem, 2vw, 1.7rem)',
-			fontWeight: 300,
-			letterSpacing: '0.03em',
+			fontSize: '2rem',
+			fontWeight: 600,
+			lineHeight: 1.25,
+			letterSpacing: '-0.01em',
 			marginBottom: 10,
+		},
+		cardHeader: {
+			fontSize: '1.2rem',
+			fontWeight: 550,
+			lineHeight: 1.35,
+			letterSpacing: '-0.01em',
 		},
 		overline: {},
 	},
@@ -124,7 +141,7 @@ let theme = createTheme({
 				root: {
 					borderRadius: 12,
 					boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
-					padding: 2,
+					// padding: 2,
 					display: 'flex',
 					flexDirection: 'column',
 					height: '100%',
@@ -136,8 +153,7 @@ let theme = createTheme({
 					props: { variant: 'primary' },
 					style: {
 						backgroundColor: '#FEFEFC',
-						border: '0.5px solid #E5E2D9',
-						height: '100%',
+						border: '0.5px solid #E8E3D3',
 					},
 				},
 				{
@@ -145,7 +161,6 @@ let theme = createTheme({
 					style: {
 						backgroundColor: '#ffffd6',
 						border: '0.5px solid #373737',
-						height: '100%',
 					},
 				},
 				{
@@ -174,6 +189,14 @@ let theme = createTheme({
 					props: { variant: 'rounded' },
 					style: {
 						height: 200,
+						objectFit: 'cover',
+						borderRadius: 12,
+					},
+				},
+				{
+					props: { variant: 'long' },
+					style: {
+						height: 400,
 						objectFit: 'cover',
 						borderRadius: 12,
 					},
