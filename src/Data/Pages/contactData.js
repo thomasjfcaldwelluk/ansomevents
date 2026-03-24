@@ -51,7 +51,9 @@ const contactData = {
 	serviceArea: {
 		id: 'service-area',
 		title: 'Areas We Cover',
-		items: ['Cornwall', 'Plymouth', 'Devon', 'South West'],
+		paragraph:
+			'Based near Saltash, we proudly serve Cornwall, Devon, and surrounding areas.We regularly work across a wide range of venues and are happy to travel for the right event.Explore some of the locations we cover below, and if you don’t see your area listed, just ask! We’re always happy to discuss how we can bring our event planning expertise to your special day, no matter where it is.',
+		areas: ['Cornwall', 'Devon', 'Dorset', 'Somerset', 'Bristol	'],
 	},
 
 	cta: {

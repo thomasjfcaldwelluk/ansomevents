@@ -1,9 +1,17 @@
-import { Box, Typography, Grid } from '@mui/material';
+import { Box, Typography, Grid, Button } from '@mui/material';
 import GridLayout from 'Components/Layout/GridLayout/GridLayout';
 import SectionWrapper from 'Components/Layout/SectionWrapper/SectionWrapper';
 import React from 'react';
 
-export default function Hero({ title, adj, subtitle }) {
+export default function Hero({
+	title,
+	adj,
+	subtitle,
+	heroImage,
+	alt,
+	primaryCta,
+	secondaryCta,
+}) {
 	const lines = title.split('\n');
 	return (
 		<SectionWrapper id='hero' aria-label='Hero Section' variant='dark'>
@@ -25,12 +33,16 @@ export default function Hero({ title, adj, subtitle }) {
 					</Typography>
 					<Typography variant='h2'>{adj}</Typography>
 					<Typography variant='body1'>{subtitle}</Typography>
+					<Box marginTop={4}>
+						<Button variant='primary'>{primaryCta.label}</Button>
+						<Button variant='secondary'>{secondaryCta.label}</Button>
+					</Box>
 				</Grid>
 				<Grid size={{ xs: 12, md: 6 }}>
 					<Box
 						component='img'
-						src='https://res.cloudinary.com/djjqsmlei/image/upload/v1770205598/Ansom%20Events/Home%20Page/galleryPreview1_mqoy8n.webp'
-						alt='decor setup'
+						src={heroImage}
+						alt={alt}
 						sx={{
 							width: '100%',
 							height: '100%',

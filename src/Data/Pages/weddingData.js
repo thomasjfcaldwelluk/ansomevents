@@ -7,7 +7,8 @@ const weddingData = {
 	hero: {
 		title: 'Love Celebrations',
 		subtitle: 'Make Memories',
-		image: 'https://res.cloudinary.com/your-image.jpg',
+		image:
+			'https://res.cloudinary.com/djjqsmlei/image/upload/v1774278002/Ansom%20Events/HeroImage.2_mtewtu.webp',
 		ctas: [
 			{
 				id: 'view-packages',
@@ -120,25 +121,29 @@ const weddingData = {
 		items: [
 			{
 				id: 1,
-				image: '',
+				image:
+					'https://res.cloudinary.com/djjqsmlei/image/upload/v1773833429/Ansom%20Events/WeddingNeonSign_ywkfp4.webp',
 				name: 'Neon signs',
 				price: { amount: 100, display: 'from £100' },
 			},
 			{
 				id: 2,
-				image: '',
+				image:
+					'https://res.cloudinary.com/djjqsmlei/image/upload/v1773833429/Ansom%20Events/weddingSweetCart_ualkep.webp',
 				name: 'Sweet cart',
 				price: { amount: 150, display: 'from £150' },
 			},
 			{
 				id: 3,
-				image: '',
+				image:
+					'https://res.cloudinary.com/djjqsmlei/image/upload/v1773833429/Ansom%20Events/weddingWelcomeSign_ldk3yq.webp',
 				name: 'Welcome easel',
 				price: { amount: 75, display: 'from £75' },
 			},
 			{
 				id: 4,
-				image: '',
+				image:
+					'https://res.cloudinary.com/djjqsmlei/image/upload/v1773833429/Ansom%20Events/weddingExtraFlorals_bflfmb.webp',
 				name: 'Extra florals',
 				price: { amount: 200, display: 'from £200' },
 			},

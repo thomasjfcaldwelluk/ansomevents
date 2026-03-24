@@ -2,7 +2,7 @@ import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import { Box, Button, Typography } from '@mui/material';
 import TextField from '@mui/material/TextField';
-import theme from '../../theme';
+// import theme from '../../theme';
 
 export default function ContactForm() {
 	const [state, handleSubmit] = useForm('manepldw');
@@ -23,7 +23,6 @@ export default function ContactForm() {
 				width: '100%',
 				padding: 5,
 				borderRadius: 1,
-				backgroundColor: theme.palette.primaryBackground.secondary,
 			}}>
 			<TextField
 				label='Name'
@@ -57,12 +56,6 @@ export default function ContactForm() {
 				disabled={state.submitting}
 				sx={{
 					marginBlock: 2,
-					backgroundColor: theme.palette.primaryHeader.main,
-					color: theme.palette.primaryBackground.main,
-					'&:hover': {
-						backgroundColor: theme.palette.primaryAccent.secondary,
-						color: theme.palette.primaryBackground.main,
-					},
 				}}>
 				Send Message
 			</Button>

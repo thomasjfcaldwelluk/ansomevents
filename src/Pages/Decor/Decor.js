@@ -6,7 +6,7 @@ import DecorHero from './Components/DecorHero';
 export default function Decor() {
 	return (
 		<PageWrapper id='Ansom_Events_Decor' aria-label='Main Decor'>
-			<DecorHero variant={'light'} />
+			<DecorHero variant={'light'} {...decorData.decorIntro} />
 			<DecorSection {...decorData.packages} variant={'dark'} />
 			<DecorSection
 				{...decorData.backdrops}

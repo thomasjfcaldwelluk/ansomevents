@@ -1,8 +1,8 @@
 import GridLayout from 'Components/Layout/GridLayout/GridLayout';
 import React from 'react';
-import ContactForm from './ContactForm';
 import ContactInfo from './ContactInfo';
 import { Grid } from '@mui/material';
+import ContactForm from 'Components/Forms/ContactForm/ContactForm';
 
 export default function ContactMainSection({ form, contactInfo }) {
 	return (
@@ -11,7 +11,7 @@ export default function ContactMainSection({ form, contactInfo }) {
 				<ContactInfo contactInfo={contactInfo} />
 			</Grid>
 			<Grid size={{ xs: 12, md: 7 }} aria-label='Contact Form'>
-				<ContactForm form={form} />
+				<ContactForm />
 			</Grid>
 		</GridLayout>
 	);

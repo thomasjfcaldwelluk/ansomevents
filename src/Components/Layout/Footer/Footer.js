@@ -1,7 +1,7 @@
 import React from 'react';
 import navLinks from '../../../Data/Navigation/NavLinks';
 import footerData from '../../../Data/Pages/footerData';
-import { Box, Grid, IconButton, Typography } from '@mui/material';
+import { Box, Grid, IconButton, Link, Typography } from '@mui/material';
 import { Link as RouterLink } from 'react-router-dom';
 import SectionWrapper from '../SectionWrapper/SectionWrapper';
 import GridLayout from '../GridLayout/GridLayout';
@@ -85,18 +85,16 @@ export default function Footer({
 					<GridLayout marginBottom={5} spacing={0}>
 						{footerData.legal.map((item) => (
 							<Grid item key={item.id} size={{ xs: 4 }} textAlign={'center'}>
-								<Typography
-									key={item.id}
-									href={item.path}
+								<Link
+									to={item.path}
 									component={RouterLink}
 									variant='body1'
 									sx={{
 										fontWeight: '500',
 										textDecoration: 'none',
-										color: 'text.primary',
 									}}>
 									{item.label}
-								</Typography>
+								</Link>
 							</Grid>
 						))}
 					</GridLayout>

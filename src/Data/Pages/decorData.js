@@ -1,8 +1,14 @@
 const decorData = {
+	decorIntro: {
+		title: 'Decor',
+		subTitle: 'come get it fam',
+		image:
+			'https://res.cloudinary.com/djjqsmlei/image/upload/v1774278006/Ansom%20Events/HeroImage.4_ni2i2l.webp',
+	},
+
 	packages: {
 		id: 'decor-packages',
 		title: 'Packages',
-		intro: '',
 		grid: { size: { sm: 12, md: 6 } },
 		items: [
 			{

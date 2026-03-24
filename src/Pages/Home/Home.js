@@ -7,6 +7,7 @@ import GalleryPreview from '../../Components/Sections/GalleryPreview/GalleryPrev
 import CTA from '../../Components/Sections/CTA/CTA';
 import homeData from '../../Data/Pages/homeData';
 import PageWrapper from 'Components/Layout/PageWrapper/PageWrapper';
+import Testimonials from 'Components/Sections/Testimonials/Testimonials';
 
 export default function Home() {
 	return (
@@ -22,7 +23,7 @@ export default function Home() {
 			<AboutPreview {...homeData.about} />
 			<GalleryPreview />
 			<CTA {...homeData.cta} />
-			{/* <Testimonials {...homeData.testimonials} /> */}
+			<Testimonials {...homeData.testimonials} />
 		</PageWrapper>
 	);
 }

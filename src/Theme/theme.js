@@ -56,12 +56,16 @@ let theme = createTheme({
 			fontSize: '0.8rem',
 			lineHeight: 1.6,
 		},
+		bodySmall: {
+			fontSize: '0.6rem',
+			lineHeight: 1.6,
+		},
 		body2: {
 			fontFamily: '"Playfair Display", serif',
-			fontSize: '1.1rem',
+			fontSize: '1rem',
 			lineHeight: 1.5,
-			fontWeight: 500,
-			color: '#1C3D5A',
+			fontWeight: 400,
+			color: '#223e56',
 		},
 		button: {
 			fontSize: '0.8rem',
@@ -179,10 +183,11 @@ let theme = createTheme({
 				{
 					props: { variant: 'standard' },
 					style: {
-						height: 300,
 						objectFit: 'cover',
 						borderTopLeftRadius: 12,
 						borderTopRightRadius: 12,
+						width: '100%',
+						aspectRatio: '1/1',
 					},
 				},
 				{

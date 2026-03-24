@@ -34,6 +34,7 @@ export default function Features({ title, subtitle, items }) {
 									alt={item.title}
 									sx={{
 										borderRadius: 2,
+										height: 400,
 										transition: 'transform 0.4s ease',
 										'&:hover': {
 											transform: 'scale(1.05)',
@@ -42,7 +43,7 @@ export default function Features({ title, subtitle, items }) {
 								/>
 								<CardTitle>{item.title}</CardTitle>
 								<Typography
-									sx={{ padding: 1, textAlign: 'center' }}
+									sx={{ textAlign: 'center' }}
 									variant='body2'
 									component={'p'}>
 									{item.caption}

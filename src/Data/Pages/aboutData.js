@@ -7,26 +7,26 @@ const aboutData = {
 	story: {
 		id: 'our-story',
 		title: 'Our Story',
-		paragraph: [
-			'Ansom Events was built from a shared love of bringing people together.',
-			'Melissa brings over 20 years of event expertise while Thomas focuses on design and visual impact.',
-		],
+		paragraph:
+			'Ansom Events is a husband and wife team creating beautifully planned and thoughtfully styled events across Cornwall and Devon. Founded in 2024, our name is a little nod to Cornish slang — “Ansom” meaning really good — which is exactly the standard we bring to every event. With over 20 years of event planning experience in Los Angeles, we combine a relaxed, friendly approach with a real eye for detail. Whether it’s full planning, venue styling or seamless setup on the day, we love working closely with our clients and suppliers to keep everything smooth, enjoyable, and as stress-free as possible.',
 	},
 	team: {
 		id: 'meet-the-team',
 		title: 'Meet the Team',
 		members: [
 			{
-				name: 'John Doe',
+				name: 'Thomas Caldwell',
 				role: 'Founder & CEO',
-				bio: 'John has over 20 years of experience in event planning and is passionate about creating unforgettable experiences.',
-				photo: 'https://via.placeholder.com/150',
+				bio: 'Thomas has over 20 years of experience in event planning and is passionate about creating unforgettable experiences.',
+				photo:
+					'https://res.cloudinary.com/djjqsmlei/image/upload/v1773846300/Ansom%20Events/Thomas_r6gqtl.webp',
 			},
 			{
-				name: 'Jane Smith',
+				name: 'Melissa Caldwell',
 				role: 'Lead Event Planner',
-				bio: 'Jane specializes in wedding planning and has a keen eye for detail, ensuring every event is flawless.',
-				photo: 'https://via.placeholder.com/150',
+				bio: 'Melissa specializes in wedding planning and has a keen eye for detail, ensuring every event is flawless.',
+				photo:
+					'https://res.cloudinary.com/djjqsmlei/image/upload/v1773846300/Ansom%20Events/Mel_qbv7xb.webp',
 			},
 		],
 	},
@@ -39,6 +39,7 @@ const aboutData = {
 			'Clear communication',
 			'Professional setup & collection',
 			'Personal tailored service',
+			'Passionate about creating unforgettable events',
 		],
 	},
 	locations: {

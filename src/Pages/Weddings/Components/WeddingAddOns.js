@@ -14,7 +14,17 @@ export default function WeddingAddOns({ title, items }) {
 				{items.map((item) => (
 					<Grid item key={item.id} size={{ xs: 12, sm: 6, md: 4, lg: 3 }}>
 						<Card variant='primary'>
-							<CardMedia src={item.image} alt={item.name} variant='rounded' />
+							<CardMedia
+								component={'img'}
+								variant='standard'
+								src={item.image}
+								alt={item.name}
+								style={{
+									width: '100%',
+									aspectRatio: '1/1',
+									objectFit: 'cover',
+								}}
+							/>
 							<CardContent sx={{ flexGrow: 1, mt: 'auto' }}>
 								<CardTitle>{item.name}</CardTitle>
 								<SectionDivider variant='gold' />

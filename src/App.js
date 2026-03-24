@@ -16,6 +16,7 @@ import FrequentlyAskedQuestions from './Pages/FAQS/FrequentlyAskedQuestions';
 import CookiePolicy from './Pages/Legal/CookiePolicy';
 import PrivacyPolicy from './Pages/Legal/PrivacyPolicy';
 import TermsOfService from './Pages/Legal/TermsOfService';
+import 'leaflet/dist/leaflet.css';
 
 const AnalyticsWrapper = ({ children }) => {
 	useAnalytics(); // Call the analytics hook
@@ -34,8 +35,8 @@ function App() {
 						<Route path='/weddings' element={<Wedding />} />
 						<Route path='/contact-us' element={<Contact />} />
 						<Route path='/gallery' element={<Gallery />} />
-						{/* <Route path='/decor' element={<Decor />} /> */}
-						{/* <Route path='/corporate' element={<Corporate />} /> */}
+						<Route path='/decor' element={<Decor />} />
+						<Route path='/corporate' element={<Corporate />} />
 						<Route path='/services' element={<Services />} />
 						{/* Bottom level nav routes */}
 						<Route path='/about-us' element={<About />} />

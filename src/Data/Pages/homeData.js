@@ -3,6 +3,9 @@ const homeData = {
 		title: 'Ansom Events,\nExpertly Styled,\nAlways Ansom.',
 		adj: 'Ansom (adj.)',
 		subtitle: 'Cornish for something exceptionally good.',
+		heroImage:
+			'https://res.cloudinary.com/djjqsmlei/image/upload/v1773750875/Ansom%20Events/babyShowerLong_kuh2tr.webp',
+		alt: 'Ansom Events Set Up',
 		primaryCta: {
 			label: 'Enquire Here',
 			link: '/decor-packages',
@@ -20,7 +23,7 @@ const homeData = {
 		items: [
 			{
 				image:
-					'https://res.cloudinary.com/djjqsmlei/image/upload/v1770204685/Ansom%20Events/Gallery/newGalleryLong2_guqx9f.webp',
+					'https://res.cloudinary.com/djjqsmlei/image/upload/v1773750875/Ansom%20Events/weddingRusticLong_ciurnc.webp',
 				title: 'Weddings',
 				caption: 'Weddings, Elopements, Engagements',
 				description: 'Elegant and timeless wedding styling.',
@@ -36,7 +39,7 @@ const homeData = {
 			},
 			{
 				image:
-					'https://res.cloudinary.com/djjqsmlei/image/upload/v1770204686/Ansom%20Events/Gallery/newGalleryLong1_mtyhro.webp',
+					'https://res.cloudinary.com/djjqsmlei/image/upload/v1773167103/Ansom%20Events/corpEvent_ocbxic.webp',
 				title: 'Corporate Events',
 				caption: 'Corporate, Launches, Galas',
 				description: 'Intimate and memorable corporate event styling.',

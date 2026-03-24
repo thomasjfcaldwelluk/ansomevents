@@ -1,4 +1,5 @@
-import { Grid, Box } from '@mui/material';
+import { Grid, Typography } from '@mui/material';
+import CenterBox from 'Components/Layout/CenteredBox/CenterBox';
 import GridLayout from 'Components/Layout/GridLayout/GridLayout';
 import SectionWrapper from 'Components/Layout/SectionWrapper/SectionWrapper';
 import SectionHeader from 'Components/ui/Typography/SectionHeader';
@@ -10,8 +11,12 @@ export default function AboutWhy({ id, title, points }) {
 			<SectionHeader sectionHeader={title} />
 			<GridLayout>
 				{points.map((point, index) => (
-					<Grid key={index} size={{ xs: 3 }} sx={{ textAlign: 'center' }}>
-						<Box>{point}</Box>
+					<Grid key={index} size={{ xs: 2 }} sx={{ textAlign: 'center' }}>
+						<CenterBox padding={0}>
+							<Typography variant='bodySmall' component={'p'}>
+								{point}
+							</Typography>
+						</CenterBox>
 					</Grid>
 				))}
 			</GridLayout>
