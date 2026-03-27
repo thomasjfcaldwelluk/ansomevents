@@ -27,10 +27,10 @@ const navLinks = [
 		showInFooter: true,
 	},
 	{
-		id: 'weddings',
-		label: 'Weddings',
+		id: 'love_celebrations',
+		label: 'Love Celebrations',
 		type: 'page',
-		path: '/weddings',
+		path: '/love-celebrations',
 		showInNav: true,
 		showInMobile: true,
 		showInFooter: true,

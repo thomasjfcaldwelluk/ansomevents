@@ -5,6 +5,8 @@ import HelpWith from './Components/HelpWith';
 import WeddingHero from './Components/WeddingHero';
 import weddingData from '../../Data/Pages/weddingData';
 import PageWrapper from 'Components/Layout/PageWrapper/PageWrapper';
+import CallToActSection from 'Components/Sections/CallToActSection/CallToActSection';
+import ctaData from 'Data/Pages/ctaData';
 
 export default function Weddings() {
 	return (
@@ -13,6 +15,7 @@ export default function Weddings() {
 			<HelpWith {...weddingData.helpWith} />
 			<WeddingPackages {...weddingData.packages} />
 			<WeddingAddOns {...weddingData.addOns} />
+			<CallToActSection {...ctaData.wedding} />
 		</PageWrapper>
 	);
 }

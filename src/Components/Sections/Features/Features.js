@@ -34,7 +34,8 @@ export default function Features({ title, subtitle, items }) {
 									alt={item.title}
 									sx={{
 										borderRadius: 2,
-										height: 400,
+										height: 300,
+										width: '75%',
 										transition: 'transform 0.4s ease',
 										'&:hover': {
 											transform: 'scale(1.05)',
@@ -49,6 +50,7 @@ export default function Features({ title, subtitle, items }) {
 									{item.caption}
 								</Typography>
 								<Button
+									sx={{ marginBlock: 2 }}
 									variant='primary'
 									component={RouterLink}
 									to={item.link}

@@ -54,7 +54,8 @@ let theme = createTheme({
 		},
 		body1: {
 			fontSize: '0.8rem',
-			lineHeight: 1.6,
+			lineHeight: 1.3,
+			color: '#6B6B6B',
 		},
 		bodySmall: {
 			fontSize: '0.6rem',
@@ -63,7 +64,7 @@ let theme = createTheme({
 		body2: {
 			fontFamily: '"Playfair Display", serif',
 			fontSize: '1rem',
-			lineHeight: 1.5,
+			lineHeight: 1.3,
 			fontWeight: 400,
 			color: '#223e56',
 		},
@@ -106,7 +107,7 @@ let theme = createTheme({
 			marginBottom: 10,
 		},
 		cardHeader: {
-			fontSize: '1.2rem',
+			fontSize: '1.1rem',
 			fontWeight: 550,
 			lineHeight: 1.35,
 			letterSpacing: '-0.01em',
@@ -121,6 +122,7 @@ let theme = createTheme({
 					textTransform: 'none',
 					fontWeight: 600,
 					padding: '10px 22px',
+					transition: 'all 0.3s ease',
 				},
 			},
 			variants: [
@@ -128,7 +130,12 @@ let theme = createTheme({
 					props: { variant: 'primary' },
 					style: {
 						backgroundColor: '#1C3D5A',
-						color: '#fff',
+						color: '#F5F5F5',
+						'&:hover': {
+							backgroundColor: '#16324A',
+							transform: 'translateY(-2px)',
+							boxShadow: '0 6px 16px rgba(0,0,0,0.2)',
+						},
 					},
 				},
 				{
@@ -136,6 +143,24 @@ let theme = createTheme({
 					style: {
 						backgroundColor: 'transparent',
 						color: '#C5A46D',
+						border: '1px solid #C5A46D',
+						transition: 'all 0.3s ease',
+						'&:hover': {
+							backgroundColor: '#C5A46D',
+							color: '#1C3D5A',
+						},
+					},
+				},
+				{
+					props: { variant: 'light' },
+					style: {
+						backgroundColor: '#F5F5F5',
+						color: '#1C3D5A',
+						transition: 'all 0.3s ease',
+						'&:hover': {
+							backgroundColor: '#E8E8E8',
+							transform: 'translateY(-2px)',
+						},
 					},
 				},
 			],

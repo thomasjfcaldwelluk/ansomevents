@@ -3,11 +3,12 @@ import {
 	Card,
 	CardContent,
 	Typography,
-	Button,
 	Box,
 	Avatar,
 	Rating,
 } from '@mui/material';
+import CenterBox from 'Components/Layout/CenteredBox/CenterBox';
+import SectionDivider from 'Components/ui/Divider/SectionDivider';
 
 export default function TestimonialsCard({
 	review,
@@ -18,7 +19,7 @@ export default function TestimonialsCard({
 }) {
 	return (
 		<Card variant='primary'>
-			<CardContent>
+			<CardContent sx={{ padding: 4 }}>
 				<Typography
 					variant='body1'
 					sx={{
@@ -29,17 +30,25 @@ export default function TestimonialsCard({
 					}}>
 					{review}
 				</Typography>
-				<Button size='small' sx={{ mt: 1 }}>
-					Read more
-				</Button>
-				<Rating value={rating} readOnly sx={{ mt: 1 }} />
-				<Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mt: 2 }}>
+				<CenterBox padding={0} justifyContent='flex-start'>
+					<Typography>Read more</Typography>
+					<Rating value={rating} readOnly />
+				</CenterBox>
+				<SectionDivider variant='gold' />
+				<CenterBox
+					sx={{
+						display: 'flex',
+						alignItems: 'center',
+						justifyContent: 'flex-start',
+						gap: 1,
+						padding: 0,
+					}}>
 					<Avatar src={image} />
 					<Box>
-						<Typography fontWeight={600}>{name}</Typography>
-						<Typography variant='caption'>{event}</Typography>
+						<Typography variant='body2'>{name}</Typography>
+						<Typography variant='body1'>{event}</Typography>
 					</Box>
-				</Box>
+				</CenterBox>
 			</CardContent>
 		</Card>
 	);

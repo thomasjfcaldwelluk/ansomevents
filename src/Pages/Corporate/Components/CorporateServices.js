@@ -13,19 +13,20 @@ export default function CorporateServices({ id, title, items }) {
 			<SectionHeader sectionHeader={title} />
 			<GridLayout>
 				{items.map((item) => (
-					<Grid item key={item.id} size={{ xs: 6, md: 4 }}>
+					<Grid key={item.id} size={{ xs: 6, md: 4 }}>
 						<Card>
-							<CardContent sx={{ paddingInline: 5, paddingBottom: 5 }}>
+							<CardContent>
 								<Stack
 									direction='row'
 									alignItems='center'
 									justifyContent={'center'}
-									spacing={1}
-									mb={2}>
+									spacing={2}>
 									<IconWrapper Icon={item.icon} size={24} />
 									<CardTitle>{item.title}</CardTitle>
 								</Stack>
-								<CardDescription>{item.text}</CardDescription>
+								<CardDescription sx={{ marginBlock: 2 }}>
+									{item.text}
+								</CardDescription>
 							</CardContent>
 						</Card>
 					</Grid>

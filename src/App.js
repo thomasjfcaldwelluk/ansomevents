@@ -32,7 +32,7 @@ function App() {
 					<Routes>
 						{/* Top level nav routes */}
 						<Route path='/' element={<Home />} />
-						<Route path='/weddings' element={<Wedding />} />
+						<Route path='/love-celebrations' element={<Wedding />} />
 						<Route path='/contact-us' element={<Contact />} />
 						<Route path='/gallery' element={<Gallery />} />
 						<Route path='/decor' element={<Decor />} />

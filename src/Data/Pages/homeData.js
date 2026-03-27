@@ -24,7 +24,7 @@ const homeData = {
 			{
 				image:
 					'https://res.cloudinary.com/djjqsmlei/image/upload/v1773750875/Ansom%20Events/weddingRusticLong_ciurnc.webp',
-				title: 'Weddings',
+				title: 'Love Celebrations',
 				caption: 'Weddings, Elopements, Engagements',
 				description: 'Elegant and timeless wedding styling.',
 				link: '/weddings',
@@ -99,9 +99,13 @@ const homeData = {
 	about: {
 		title: 'Beyond the Decor',
 		description:
-			'We’re Melissa and Thomas, the duo behind Ansom Events. We transform spaces and help you celebrate in style, combining creative design with seamless coordination to make every detail unforgettable.',
+			'At Ansom Events, we believe great events are about more than just décor they’re about creating moments people remember.As a husband-and-wife team, we bring a personal approach to every event we style, combining creativity, experience, and a genuine passion for what we do. From elegant weddings to intimate celebrations, we work closely with you to bring your vision to life with care and attention to detail.Every event is different and that’s exactly how we like it.',
+		image:
+			'https://res.cloudinary.com/djjqsmlei/image/upload/v1774456202/Ansom%20Events/Home%20Page/caldwells.photo_nbqtdi.webp',
+		alt: 'Image of Thomas & Melissa - Owners of Ansom Events',
+		text: 'Meet the hands & hearts behind your milestones.',
 		cta: {
-			label: 'Meet the hands & hearts behind your milestones.',
+			label: 'Learn More',
 			link: '/about-us',
 		},
 	},

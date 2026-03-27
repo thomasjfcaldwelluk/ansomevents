@@ -4,10 +4,11 @@ import Hero from '../../Components/Sections/Hero/Hero';
 import Features from '../../Components/Sections/Features/Features';
 import AboutPreview from '../../Components/Sections/AboutPreview/AboutPreview';
 import GalleryPreview from '../../Components/Sections/GalleryPreview/GalleryPreview';
-import CTA from '../../Components/Sections/CTA/CTA';
 import homeData from '../../Data/Pages/homeData';
 import PageWrapper from 'Components/Layout/PageWrapper/PageWrapper';
 import Testimonials from 'Components/Sections/Testimonials/Testimonials';
+import CallToActSection from 'Components/Sections/CallToActSection/CallToActSection';
+import ctaData from '../../Data/Pages/ctaData';
 
 export default function Home() {
 	return (
@@ -22,7 +23,7 @@ export default function Home() {
 			<Features {...homeData.features} />
 			<AboutPreview {...homeData.about} />
 			<GalleryPreview />
-			<CTA {...homeData.cta} />
+			<CallToActSection {...ctaData.home} />
 			<Testimonials {...homeData.testimonials} />
 		</PageWrapper>
 	);
