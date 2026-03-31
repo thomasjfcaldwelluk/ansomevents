@@ -7,10 +7,10 @@ import CardTitle from 'Components/ui/Card/CardTitle';
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 import LuxuryDivider from 'Components/ui/Divider/LuxuryDivider';
 
-export default function WeddingPackages({ title, items }) {
+export default function WeddingPackages({ title, intro, items }) {
 	return (
 		<SectionWrapper id='wedding-packages' variant='dark'>
-			<SectionHeader sectionHeader={title} />
+			<SectionHeader sectionHeader={title} subHeader={intro} />
 			<GridLayout>
 				{items.map((pkg) => (
 					<Grid key={pkg.id} size={{ xs: 12, md: 4 }}>

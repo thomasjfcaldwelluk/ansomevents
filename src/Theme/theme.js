@@ -92,7 +92,7 @@ let theme = createTheme({
 			color: '#1C3D5A',
 		},
 		pageSubHeader: {
-			fontSize: 'clamp(1.3rem, 2vw, 1.7rem)',
+			fontSize: 'clamp(1.3rem, 2vw, 1.5rem)',
 			fontWeight: 300,
 			letterSpacing: '0.01em',
 			lineHeight: 1.15,
@@ -100,7 +100,7 @@ let theme = createTheme({
 		},
 		sectionHeader: {
 			fontFamily: '"Playfair Display", serif',
-			fontSize: '2rem',
+			fontSize: '1.7rem',
 			fontWeight: 600,
 			lineHeight: 1.25,
 			letterSpacing: '-0.01em',

@@ -25,6 +25,8 @@ const weddingData = {
 
 	helpWith: {
 		title: 'How We Can Help',
+		intro:
+			'From styling to coordination, we’re here to help bring your event together seamlessly.',
 		items: [
 			{
 				id: 1,
@@ -51,6 +53,8 @@ const weddingData = {
 
 	packages: {
 		title: 'Our Wedding Packages',
+		intro:
+			'We’ve created a range of packages to get you started, all of which can be tailored to suit your event.',
 		items: [
 			{
 				id: 1,
@@ -118,6 +122,8 @@ const weddingData = {
 
 	addOns: {
 		title: 'Enhance Your Package',
+		intro:
+			'Looking to add the finishing touches to your event? Take a look at our range of special add-ons.',
 		items: [
 			{
 				id: 1,

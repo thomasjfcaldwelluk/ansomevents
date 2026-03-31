@@ -6,10 +6,10 @@ import SectionWrapper from 'Components/Layout/SectionWrapper/SectionWrapper';
 import IconWrapper from 'Components/ui/Icon/IconWrapper';
 import CardTitle from 'Components/ui/Card/CardTitle';
 
-export default function HelpWith({ title, items }) {
+export default function HelpWith({ title, intro, items }) {
 	return (
 		<SectionWrapper id='weddings-help' variant='light'>
-			<SectionHeader sectionHeader={title} />
+			<SectionHeader sectionHeader={title} subHeader={intro} />
 			<GridLayout>
 				{items.map((item, index) => (
 					<Grid item size={{ xs: 12, md: 6, lg: 3 }} key={index}>

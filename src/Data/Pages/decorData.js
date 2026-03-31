@@ -1,6 +1,6 @@
 const decorData = {
 	decorIntro: {
-		title: 'Decor',
+		title: 'Decor For All Occasions',
 		subTitle: 'come get it fam',
 		image:
 			'https://res.cloudinary.com/djjqsmlei/image/upload/v1774278006/Ansom%20Events/HeroImage.4_ni2i2l.webp',
@@ -9,6 +9,8 @@ const decorData = {
 	packages: {
 		id: 'decor-packages',
 		title: 'Packages',
+		intro:
+			'We offer a range of thoughtfully designed packages to suit your event. If you’d like something tailored, we’re always happy to customize it to your needs.',
 		grid: { size: { sm: 12, md: 6 } },
 		items: [
 			{

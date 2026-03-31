@@ -30,9 +30,15 @@ export default function TestimonialsCard({
 					}}>
 					{review}
 				</Typography>
-				<CenterBox padding={0} justifyContent='flex-start'>
-					<Typography>Read more</Typography>
+				<CenterBox
+					sx={{
+						marginBlock: 2,
+						justifyContent: 'space-between',
+						gap: 1,
+						padding: 0,
+					}}>
 					<Rating value={rating} readOnly />
+					<Typography>Read more</Typography>
 				</CenterBox>
 				<SectionDivider variant='gold' />
 				<CenterBox

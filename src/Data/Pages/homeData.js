@@ -60,32 +60,32 @@ const homeData = {
 		subtitle: 'True notes from occasions we style.',
 		items: [
 			{
-				id: 'sarah-wedding',
+				id: 'jemma-birthday',
 				review:
-					'Ansom Events completely transformed our venue. The team handled every detail and it was more beautiful than we ever imagined. Guests are still talking about it weeks later.',
+					'I couldn’t be happier with the amazing service from Ansom Events for my 40th birthday party! From start to finish, they took care of everything and made the day completely stress-free.The decorations and balloons were absolutely perfect and brought the whole venue to life. A huge thank you to Tom & Mel, who coordinated everything on the evening before and the whole day—They were incredible! Mel liaised seamlessly with the children’s entertainer, music, and caterers, so I didn’t have to lift a finger. I was able to fully enjoy the celebration with my family and friends, knowing everything little detail was in safe hands.Highly recommend this team for any event—professional, creative, and genuinely lovely to work with. Thank you again for making my birthday so special!',
 				rating: 5,
-				name: 'Sarah & Tom',
-				event: 'Wedding',
+				name: 'Jemma',
+				event: '40th Birthday',
 				image:
 					'https://res.cloudinary.com/your-cloud/image/upload/reviewer1.jpg',
 			},
 			{
 				id: 'mark-birthday',
 				review:
-					'Professional, creative and stress free from start to finish. The balloons and backdrop made the party.',
+					'Absolutely fabulous service from start to finish.Easy to discuss requirements and browse through styles and designs over the phone and online.The finished balloons were stunning and really enhanced the room and the occasion.',
 				rating: 5,
-				name: 'Mark',
+				name: 'Stuart',
 				event: 'Birthday Party',
 				image:
 					'https://res.cloudinary.com/your-cloud/image/upload/reviewer2.jpg',
 			},
 			{
-				id: 'steve-birthday',
+				id: 'georgia-babyshower',
 				review:
-					'Professional, creative and stress free from start to finish. The balloons and backdrop made the party.',
+					'Ansom Events created the most beautiful set up for my friends baby shower, I cannot recommend them enough it was just like the pictures I sent & they made the whole process so easy. Highly Recommend',
 				rating: 5,
-				name: 'Steve',
-				event: 'Birthday Party',
+				name: 'Georgia',
+				event: 'Baby Shower',
 				image:
 					'https://res.cloudinary.com/your-cloud/image/upload/reviewer3.jpg',
 			},

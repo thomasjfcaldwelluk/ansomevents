@@ -6,10 +6,10 @@ import SectionDivider from 'Components/ui/Divider/SectionDivider';
 import SectionHeader from 'Components/ui/Typography/SectionHeader';
 import React from 'react';
 
-export default function WeddingAddOns({ title, items }) {
+export default function WeddingAddOns({ title, intro, items }) {
 	return (
 		<SectionWrapper id='weddings-add-ons' variant='light'>
-			<SectionHeader sectionHeader={title} />
+			<SectionHeader sectionHeader={title} subHeader={intro} />
 			<GridLayout>
 				{items.map((item) => (
 					<Grid item key={item.id} size={{ xs: 12, sm: 6, md: 4, lg: 3 }}>

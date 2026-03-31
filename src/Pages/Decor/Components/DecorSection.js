@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography, Grid } from '@mui/material';
+import { Grid } from '@mui/material';
 import DecorItemCard from './DecorItemCard';
 import SectionHeader from 'Components/ui/Typography/SectionHeader';
 import GridLayout from 'Components/Layout/GridLayout/GridLayout';
@@ -12,17 +12,12 @@ export default function DecorSection({
 	items,
 	grid,
 	variant,
+
 	imageVariant = 'standard',
 }) {
 	return (
 		<SectionWrapper id={id} variant={variant}>
-			<SectionHeader sectionHeader={title} />
-
-			{intro && (
-				<Typography variant='body1' sx={{ mb: 4 }}>
-					{intro}
-				</Typography>
-			)}
+			<SectionHeader sectionHeader={title} subHeader={intro} />
 			<GridLayout>
 				{items.map((item) => (
 					<Grid item key={item.id} {...grid}>

@@ -27,6 +27,7 @@ const corporateData = {
 	services: {
 		id: 'corporate-services',
 		title: 'What We Do',
+		intro: 'Below are the services that we provide to compliment your event',
 		items: [
 			{
 				id: 1,

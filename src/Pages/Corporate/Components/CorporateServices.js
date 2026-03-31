@@ -7,10 +7,10 @@ import IconWrapper from 'Components/ui/Icon/IconWrapper';
 import SectionHeader from 'Components/ui/Typography/SectionHeader';
 import React from 'react';
 
-export default function CorporateServices({ id, title, items }) {
+export default function CorporateServices({ id, title, intro, items }) {
 	return (
 		<SectionWrapper id={id} aria-label={title} variant='light'>
-			<SectionHeader sectionHeader={title} />
+			<SectionHeader sectionHeader={title} subHeader={intro} />
 			<GridLayout>
 				{items.map((item) => (
 					<Grid key={item.id} size={{ xs: 6, md: 4 }}>

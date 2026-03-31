@@ -16,10 +16,7 @@ export default function CorporateSupport({
 }) {
 	return (
 		<SectionWrapper id={id} variant='light'>
-			<SectionHeader sectionHeader={title} />
-			<Typography variant='body1' component={'p'} textAlign={'center'}>
-				{intro}
-			</Typography>
+			<SectionHeader sectionHeader={title} subHeader={intro} />
 			<GridLayout>
 				<Grid item size={{ xs: 12, md: 6 }}>
 					<Box

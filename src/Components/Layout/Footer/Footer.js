@@ -92,6 +92,7 @@ export default function Footer({
 									sx={{
 										fontWeight: '500',
 										textDecoration: 'none',
+										color: 'background.card',
 									}}>
 									{item.label}
 								</Link>
@@ -99,7 +100,10 @@ export default function Footer({
 						))}
 					</GridLayout>
 				)}
-				<Typography variant='body1' textAlign={'center'}>
+				<Typography
+					variant='body1'
+					textAlign={'center'}
+					color='background.card'>
 					{footerData.copyright}
 				</Typography>
 			</SectionWrapper>

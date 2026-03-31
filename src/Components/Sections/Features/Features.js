@@ -53,8 +53,7 @@ export default function Features({ title, subtitle, items }) {
 									sx={{ marginBlock: 2 }}
 									variant='primary'
 									component={RouterLink}
-									to={item.link}
-									underline='hover'>
+									to={item.link}>
 									More Information →
 								</Button>
 							</CardContent>
