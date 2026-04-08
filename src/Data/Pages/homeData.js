@@ -98,8 +98,9 @@ const homeData = {
 	},
 	about: {
 		title: 'Beyond the Decor',
+		intro: 'A little about the team',
 		description:
-			'At Ansom Events, we believe great events are about more than just décor they’re about creating moments people remember.As a husband-and-wife team, we bring a personal approach to every event we style, combining creativity, experience, and a genuine passion for what we do. From elegant weddings to intimate celebrations, we work closely with you to bring your vision to life with care and attention to detail.Every event is different and that’s exactly how we like it.',
+			'At Ansom Events, we believe that events should be happy memories that last a lifetime. We are Melissa & Thomas the owners of Ansom Events, we started the business after moving to Cornwall from California. Melissa wanted to bring her years of experience in the Los Angeles events industry to her new home in Cornwall and Thomas was passionate about creating unforgettable experiences for every client. We are a small, family-run business, and we treat every event as if it were our own. We are dedicated to making your vision come to life and creating an unforgettable experience for you and your guests.',
 		image:
 			'https://res.cloudinary.com/djjqsmlei/image/upload/v1774456202/Ansom%20Events/Home%20Page/caldwells.photo_nbqtdi.webp',
 		alt: 'Image of Thomas & Melissa - Owners of Ansom Events',
@@ -107,6 +108,14 @@ const homeData = {
 		cta: {
 			label: 'Learn More',
 			link: '/about-us',
+		},
+	},
+	gallery: {
+		title: 'Our Gallery',
+		intro: 'Check out our past work',
+		cta: {
+			label: 'Check Out Our Full Gallery',
+			link: '/gallery',
 		},
 	},
 };

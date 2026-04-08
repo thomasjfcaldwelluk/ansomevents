@@ -1,14 +1,7 @@
-import PageWrapper from 'Components/Layout/PageWrapper/PageWrapper';
-import SectionWrapper from 'Components/Layout/SectionWrapper/SectionWrapper';
-import PageTitle from 'Components/ui/Typography/PageTitle';
 import React from 'react';
+import LegalPage from './LegalPage';
+import termsOfServiceData from '../../Data/Legal/termsOfServiceData';
 
 export default function TermsOfService() {
-	return (
-		<PageWrapper>
-			<SectionWrapper>
-				<PageTitle pageHeader={'Terms of Service'} />
-			</SectionWrapper>
-		</PageWrapper>
-	);
+	return <LegalPage {...termsOfServiceData} />;
 }

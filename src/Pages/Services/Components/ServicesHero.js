@@ -10,8 +10,10 @@ export default function ServicesHero({ title, text, description, image }) {
 		<SectionWrapper id='services-hero' variant='light'>
 			<PageTitle pageHeader={title} pageSubheader={text} />
 			<HeroImage src={image} title={title} />
-			<CenterBox>
-				<Typography variant='body1'>{description}</Typography>
+			<CenterBox maxWidth='1100px' margin='0 auto'>
+				<Typography variant='body1' fontWeight={550} fontSize={'1rem'}>
+					{description}
+				</Typography>
 			</CenterBox>
 		</SectionWrapper>
 	);

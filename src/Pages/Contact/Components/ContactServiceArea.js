@@ -1,4 +1,4 @@
-import { Grid, Typography } from '@mui/material';
+import { Box, Grid, Typography } from '@mui/material';
 import CenterBox from 'Components/Layout/CenteredBox/CenterBox';
 import GridLayout from 'Components/Layout/GridLayout/GridLayout';
 import SectionWrapper from 'Components/Layout/SectionWrapper/SectionWrapper';
@@ -6,31 +6,27 @@ import Map from 'Components/Sections/Map/Map';
 import SectionHeader from 'Components/ui/Typography/SectionHeader';
 import React from 'react';
 
-export default function ContactServiceArea({ id, title, paragraph, areas }) {
+export default function ContactServiceArea({ id, title, paragraph, image }) {
 	return (
 		<SectionWrapper id={id} aria-label='Contact Service Area Section'>
 			<SectionHeader sectionHeader={title} />
 			<GridLayout>
-				<Grid item size={{ xs: 12, md: 4 }}>
-					<CenterBox alignItems='flex-start'>
-						<Typography variant='body1' component='p' gutterBottom>
+				<Grid item size={{ xs: 12, md: 5 }}>
+					<CenterBox alignItems='flex-start' padding={0}>
+						<Typography variant='body1' component='p'>
 							{paragraph}
 						</Typography>
 					</CenterBox>
-					<CenterBox flexDirection='column' padding={6} alignItems='flex-start'>
-						<Typography variant='h6' component='h3' gutterBottom>
-							Areas We Cover:
-						</Typography>
-						<ul>
-							{areas.map((area, index) => (
-								<li key={index}>
-									<Typography variant='body1'>{area}</Typography>
-								</li>
-							))}
-						</ul>
+					<CenterBox marginTop={2}>
+						<Box
+							component={'img'}
+							src={image}
+							alt='Service Area'
+							width={'55%'}
+						/>
 					</CenterBox>
 				</Grid>
-				<Grid item size={{ xs: 12, md: 8 }}>
+				<Grid item size={{ xs: 12, md: 7 }}>
 					<Map />
 				</Grid>
 			</GridLayout>

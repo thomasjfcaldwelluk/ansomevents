@@ -3,7 +3,6 @@ import {
 	CardContent,
 	Typography,
 	Button,
-	CardMedia,
 	CardActions,
 	Stack,
 	Box,
@@ -12,6 +11,10 @@ import CardDescription from 'Components/ui/Card/CardDescription';
 import CardTitle from 'Components/ui/Card/CardTitle';
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 import SectionDivider from 'Components/ui/Divider/SectionDivider';
+import CardImage from 'Components/ui/Image/CardImage';
+import { Select, MenuItem } from '@mui/material';
+import { useState } from 'react';
+
 export default function DecorItemCard({
 	title,
 	label,
@@ -19,24 +22,20 @@ export default function DecorItemCard({
 	description,
 	includes,
 	price,
+	prices,
 	cta,
 	imageVariant = 'standard',
 }) {
+	const [selectedPrice, setSelectedPrice] = useState(prices ? prices[0] : null);
 	return (
 		<Card variant='primary'>
-			{image && (
-				<CardMedia
-					component='img'
-					src={image}
-					alt={title}
-					variant={imageVariant}
-				/>
-			)}
+			{image && <CardImage image={image} />}
 			<CardContent
 				sx={{
 					flexGrow: 1,
 					display: 'flex',
 					flexDirection: 'column',
+					padding: 5,
 				}}>
 				<Typography variant='label'>{label}</Typography>
 				<CardTitle>{title}</CardTitle>
@@ -85,16 +84,44 @@ export default function DecorItemCard({
 				)}
 				<Box sx={{ mt: 'auto' }}>
 					<SectionDivider variant='gold' />
-					{price && (
-						<Typography
-							variant='body2'
-							component='p'
-							sx={{ mt: 2, textAlign: 'center' }}>
-							{price.display}
-						</Typography>
+					{prices ? (
+						<>
+							<Select
+								fullWidth
+								size='small'
+								value={selectedPrice?.label}
+								onChange={(e) => {
+									const selected = prices.find(
+										(p) => p.label === e.target.value,
+									);
+									setSelectedPrice(selected);
+								}}
+								sx={{ mb: 2 }}>
+								{prices.map((option) => (
+									<MenuItem key={option.label} value={option.label}>
+										{option.label}
+									</MenuItem>
+								))}
+							</Select>
+							<Typography
+								variant='body2'
+								component='p'
+								sx={{ mb: 2, textAlign: 'center', fontWeight: 600 }}>
+								£{selectedPrice?.price}
+							</Typography>
+						</>
+					) : (
+						price && (
+							<Typography
+								variant='body2'
+								component='p'
+								sx={{ mb: 2, textAlign: 'center', fontWeight: 600 }}>
+								{price.display}
+							</Typography>
+						)
 					)}
 					{cta && (
-						<CardActions sx={{ justifyContent: 'center' }}>
+						<CardActions sx={{ justifyContent: 'center', marginBlock: 2 }}>
 							<Button variant='secondary'>{cta.label}</Button>
 						</CardActions>
 					)}

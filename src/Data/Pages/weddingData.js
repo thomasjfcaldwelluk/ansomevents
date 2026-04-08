@@ -1,7 +1,7 @@
-import { ReactComponent as PropIcon } from '../../Assets/SVG/props.svg';
-import { ReactComponent as DayOfCoordinationIcon } from '../../Assets/SVG/eventPlanning.svg';
-import { ReactComponent as WeddingSetUpIcon } from '../../Assets/SVG/WeddingSetUp.svg';
-import { ReactComponent as FullStylingIcon } from '../../Assets/SVG/FullVenue.svg';
+import CelebrationOutlinedIcon from '@mui/icons-material/CelebrationOutlined';
+import CurtainsOutlinedIcon from '@mui/icons-material/CurtainsOutlined';
+import InventoryOutlinedIcon from '@mui/icons-material/InventoryOutlined';
+import ChairAltOutlinedIcon from '@mui/icons-material/ChairAltOutlined';
 
 const weddingData = {
 	hero: {
@@ -30,22 +30,22 @@ const weddingData = {
 		items: [
 			{
 				id: 1,
-				icon: FullStylingIcon,
+				icon: CelebrationOutlinedIcon,
 				text: 'Full Venue Styling',
 			},
 			{
 				id: 2,
-				icon: WeddingSetUpIcon,
+				icon: ChairAltOutlinedIcon,
 				text: 'Ceremony & Reception Set Up',
 			},
 			{
 				id: 3,
-				icon: PropIcon,
+				icon: CurtainsOutlinedIcon,
 				text: 'Prop, Backdrops & Florals',
 			},
 			{
 				id: 4,
-				icon: DayOfCoordinationIcon,
+				icon: InventoryOutlinedIcon,
 				text: 'On-The-Day Coordination',
 			},
 		],
@@ -85,8 +85,8 @@ const weddingData = {
 				label: 'Most Popular',
 				name: 'Signature',
 				price: {
-					amount: 350,
-					display: 'from £350',
+					amount: 600,
+					display: 'from £550',
 				},
 				includes: [
 					{
@@ -94,7 +94,7 @@ const weddingData = {
 						bold: true,
 					},
 					{ text: 'Styling for 8 guest tables' },
-					{ text: 'Light-up LOVE sign or Seating Plan sign' },
+					{ text: 'Artificial Floral Horn Arch(Green & White)' },
 				],
 			},
 			{
@@ -102,8 +102,8 @@ const weddingData = {
 				label: 'The Ultimate Celebration',
 				name: 'Luxury',
 				price: {
-					amount: 350,
-					display: 'from £350',
+					amount: 750,
+					display: 'from £750',
 				},
 				includes: [
 					{
@@ -111,10 +111,10 @@ const weddingData = {
 						bold: true,
 					},
 					{
-						text: 'Styling for up to 10 guest tables',
+						text: 'Styling for up to 8 guest tables',
 					},
 					{ text: 'Chair covers & bows for up to 80 seats' },
-					{ text: 'Both Love Sign & Seating plan sign' },
+					{ text: 'Artificial Floral Horn Arch(Green & White)' },
 				],
 			},
 		],
@@ -135,21 +135,21 @@ const weddingData = {
 			{
 				id: 2,
 				image:
-					'https://res.cloudinary.com/djjqsmlei/image/upload/v1773833429/Ansom%20Events/weddingSweetCart_ualkep.webp',
+					'https://res.cloudinary.com/djjqsmlei/image/upload/c_pad,b_gen_fill,ar_4:3/v1773833429/Ansom%20Events/weddingSweetCart_ualkep.webp',
 				name: 'Sweet cart',
 				price: { amount: 150, display: 'from £150' },
 			},
 			{
 				id: 3,
 				image:
-					'https://res.cloudinary.com/djjqsmlei/image/upload/v1773833429/Ansom%20Events/weddingWelcomeSign_ldk3yq.webp',
+					'https://res.cloudinary.com/djjqsmlei/image/upload/v1774962339/Ansom%20Events/welcomeSign_ukcwwc.webp',
 				name: 'Welcome easel',
 				price: { amount: 75, display: 'from £75' },
 			},
 			{
 				id: 4,
 				image:
-					'https://res.cloudinary.com/djjqsmlei/image/upload/v1773833429/Ansom%20Events/weddingExtraFlorals_bflfmb.webp',
+					'https://res.cloudinary.com/djjqsmlei/image/upload/v1775062934/Ansom%20Events/extraFlorals_hrcubt.webp',
 				name: 'Extra florals',
 				price: { amount: 200, display: 'from £200' },
 			},

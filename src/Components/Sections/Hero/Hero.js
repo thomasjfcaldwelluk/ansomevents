@@ -22,12 +22,18 @@ export default function Hero({
 						sx={{
 							flexDirection: 'column',
 							alignItems: 'flex-start',
-							padding: { xs: 0, md: 4 },
+							padding: { xs: 0, lg: 4 },
 							mx: { xs: 'auto', md: 0 },
 							width: '100%',
 							maxWidth: '650px',
 						}}>
-						<Typography sx={{ whiteSpace: 'pre-line' }} variant='h1'>
+						<Typography
+							sx={{
+								whiteSpace: 'pre-line',
+								textAlign: { xs: 'center', md: 'left' },
+							}}
+							variant='h1'
+							component={'h1'}>
 							{lines.map((line, index) => (
 								<span
 									key={index}
@@ -41,14 +47,21 @@ export default function Hero({
 								</span>
 							))}
 						</Typography>
-						<Typography variant='h2'>{adj}</Typography>
-						<Typography variant='body1' color='#F5F5F5'>
+						<Typography
+							variant='h2'
+							sx={{ textAlign: { xs: 'center', md: 'left' } }}>
+							{adj}
+						</Typography>
+						<Typography
+							variant='body1'
+							color='#F5F5F5'
+							sx={{ textAlign: { xs: 'center', md: 'left' } }}>
 							{subtitle}
 						</Typography>
 						<CenterBox
 							marginTop={4}
 							gap={2}
-							justifyContent='flex-start'
+							justifyContent={{ xs: 'center', md: 'flex-start' }}
 							padding={0}>
 							<Button variant='primary'>{primaryCta.label}</Button>
 							<Button variant='light'>{secondaryCta.label}</Button>

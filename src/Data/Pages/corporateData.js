@@ -1,4 +1,10 @@
-import { ReactComponent as PropIcon } from '../../Assets/SVG/props.svg';
+import ChairAltOutlinedIcon from '@mui/icons-material/ChairAltOutlined';
+import ChairOutlinedIcon from '@mui/icons-material/ChairOutlined';
+import CurtainsOutlinedIcon from '@mui/icons-material/CurtainsOutlined';
+import InventoryOutlinedIcon from '@mui/icons-material/InventoryOutlined';
+import CelebrationOutlinedIcon from '@mui/icons-material/CelebrationOutlined';
+import EggOutlinedIcon from '@mui/icons-material/EggOutlined';
+
 const corporateData = {
 	hero: {
 		id: 'corporate-hero',
@@ -32,37 +38,37 @@ const corporateData = {
 			{
 				id: 1,
 				title: 'Venue styling',
-				icon: PropIcon,
+				icon: ChairAltOutlinedIcon,
 				text: 'Professional venue styling to create the perfect atmosphere for your corporate event.',
 			},
 			{
 				id: 2,
 				title: 'Branded Décor',
-				icon: PropIcon,
+				icon: ChairOutlinedIcon,
 				text: 'Custom branded décor to showcase your company’s identity and make a lasting impression.',
 			},
 			{
 				id: 3,
 				title: 'Balloon Installations',
-				icon: PropIcon,
+				icon: EggOutlinedIcon,
 				text: 'Eye-catching balloon installations to add a touch of fun and creativity to your corporate event.',
 			},
 			{
 				id: 4,
 				title: 'Backdrops & Staging',
-				icon: PropIcon,
+				icon: CurtainsOutlinedIcon,
 				text: 'Professional backdrops and staging to enhance the visual appeal of your corporate event.',
 			},
 			{
 				id: 5,
 				title: 'Full Event Design',
-				icon: PropIcon,
+				icon: CelebrationOutlinedIcon,
 				text: 'Comprehensive event design and management services to ensure a seamless and successful corporate event.',
 			},
 			{
 				id: 6,
 				title: 'Day-Of Event Coordination',
-				icon: PropIcon,
+				icon: InventoryOutlinedIcon,
 				text: 'Professional day-of event coordination to ensure a smooth and successful corporate event.',
 			},
 		],

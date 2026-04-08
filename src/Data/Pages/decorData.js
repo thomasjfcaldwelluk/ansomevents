@@ -159,7 +159,7 @@ const decorData = {
 		id: 'backdrops',
 		title: 'Backdrops',
 		intro:
-			'If you’re looking for just a backdrop, we’ve got you covered! Choose from shimmer, fringe, or classic plain white. We also offer hoop designs—full or half—for a stunning event feature!',
+			'Choose from shimmer, fringe, or classic plain white. We also offer hoop designs—full or half—for a stunning event feature!',
 		grid: { size: { sm: 12, md: 4 } },
 		items: [
 			{
@@ -176,6 +176,12 @@ const decorData = {
 					{ text: 'Shimmer Backdrop' },
 					{ text: 'Balloon Garland' },
 				],
+				prices: [
+					{ id: 'base', label: 'Backdrop Only', price: 120 },
+					{ id: 'standard', label: 'Half Display Balloon Garland', price: 180 },
+					{ id: 'premium', label: '3/4 Display Balloon Garland', price: 250 },
+					{ id: 'deluxe', label: 'Full Display Balloon Garland', price: 300 },
+				],
 			},
 			{
 				id: 'fringe-wall',
@@ -190,6 +196,12 @@ const decorData = {
 					},
 					{ text: 'Fringe Backdrop' },
 					{ text: 'Balloon Garland' },
+				],
+				prices: [
+					{ id: 'base', label: 'Backdrop Only', price: 120 },
+					{ id: 'standard', label: 'Half Display Balloon Garland', price: 180 },
+					{ id: 'premium', label: '3/4 Display Balloon Garland', price: 250 },
+					{ id: 'deluxe', label: 'Full Display Balloon Garland', price: 300 },
 				],
 			},
 			{
@@ -206,6 +218,12 @@ const decorData = {
 					{ text: '2m by 2m Hoop Stand' },
 					{ text: 'Balloon Garland' },
 				],
+				prices: [
+					{ id: 'base', label: 'Backdrop Only', price: 120 },
+					{ id: 'standard', label: 'Half Hoop Balloon Garland', price: 180 },
+					{ id: 'premium', label: '3/4 Hoop Balloon Garland', price: 250 },
+					{ id: 'deluxe', label: 'Full Hoop Balloon Garland', price: 300 },
+				],
 			},
 		],
 	},
@@ -213,7 +231,7 @@ const decorData = {
 		id: 'props',
 		title: 'Props',
 		intro:
-			'Enhance your event with our stunning add-on décor! From elegant peacock chairs to stylish props, custom signs, and so much more, we have the perfect extras to complete your setup.',
+			'From elegant peacock chairs to stylish props, custom signs, and so much more, we have the perfect extras to complete your setup.',
 		grid: { size: { sm: 6, md: 3 } },
 		items: [
 			{
@@ -229,7 +247,7 @@ const decorData = {
 			{
 				id: 'Happy Birthday Sign',
 				image:
-					'https://res.cloudinary.com/djjqsmlei/image/upload/v1772717371/Ansom%20Events/Props/happyBirthdaySign_jnnf5q.webp',
+					'https://res.cloudinary.com/djjqsmlei/image/upload/v1775040519/Ansom%20Events/Props/happyBirthdaySign_1_kx57zm.webp',
 				title: 'Happy Birthday Sign',
 				price: {
 					amount: 5,
@@ -239,7 +257,7 @@ const decorData = {
 			{
 				id: 'baby-name-sign',
 				image:
-					'https://res.cloudinary.com/djjqsmlei/image/upload/v1772717370/Ansom%20Events/Props/ohBabySign_a3gr7n.webp',
+					'https://res.cloudinary.com/djjqsmlei/image/upload/v1775040514/Ansom%20Events/Props/ohBabySign_1_pz0pwd.webp',
 				title: 'Baby Name Sign',
 				price: {
 					amount: 5,
@@ -249,7 +267,7 @@ const decorData = {
 			{
 				id: 'peacock-chair',
 				image:
-					'https://res.cloudinary.com/djjqsmlei/image/upload/v1772717371/Ansom%20Events/Props/peacockChair_dasemb.webp',
+					'https://res.cloudinary.com/djjqsmlei/image/upload/v1775039107/Ansom%20Events/Props/peacockChair_xmeb02.webp',
 				title: 'Peacock Chair',
 				price: {
 					amount: 75,
@@ -259,7 +277,7 @@ const decorData = {
 			{
 				id: 'Decor Pedestal',
 				image:
-					'https://res.cloudinary.com/djjqsmlei/image/upload/v1772717371/Ansom%20Events/Props/vase_nikhqw.webp',
+					'https://res.cloudinary.com/djjqsmlei/image/upload/v1775039101/Ansom%20Events/Props/vaseImage_tan0io.webp',
 				title: 'Decor Pedestal',
 				price: {
 					amount: 25,
@@ -282,7 +300,7 @@ const decorData = {
 		id: 'balloons',
 		title: 'Balloons Displays',
 		intro:
-			'Our bespoke balloon displays are the perfect way to make your event stand out. From elegant garlands to playful stacks and striking installations, we tailor each design to suit your theme and space. Ideal for weddings, parties, and special occasions of all kinds!',
+			'Our bespoke balloon displays are the perfect way to make your event stand out.Ideal for weddings, parties, and special occasions of all kinds!',
 		grid: { size: { sm: 6, md: 3 } },
 		items: [
 			{
@@ -314,8 +332,6 @@ const decorData = {
 				image:
 					'https://res.cloudinary.com/djjqsmlei/image/upload/v1770204783/Ansom%20Events/BalloonDisplay/WelcomeSign_ewmfny.webp',
 				title: 'Welcome Sign With Balloon Garland',
-				// description:
-				// 	'A stylish welcome sign with a matching balloon garland. Perfect for creating a warm and festive entrance at your event.',
 				price: {
 					amount: 110,
 					display: 'from £110',
@@ -326,8 +342,6 @@ const decorData = {
 				image:
 					'https://res.cloudinary.com/djjqsmlei/image/upload/v1770204782/Ansom%20Events/BalloonDisplay/easelSign_g8wfuj.webp',
 				title: 'Easel Sign With Balloon Garland',
-				// description:
-				// 	'A stylish easel sign with a matching balloon garland. Perfect for creating a warm and festive entrance at your event.',
 				price: {
 					amount: 90,
 					display: 'from £90',
@@ -338,8 +352,6 @@ const decorData = {
 				image:
 					'https://res.cloudinary.com/djjqsmlei/image/upload/v1770204777/Ansom%20Events/BalloonDisplay/lightUpSmallGarland_no10y2.webp',
 				title: 'Single Light Up Letter/Number With Balloon Garland',
-				// description:
-				// 	'A single light-up letter or number with a matching balloon garland. Perfect for creating a personalized and festive focal point at your event.',
 				price: {
 					amount: 85,
 					display: 'from £85',
@@ -350,8 +362,6 @@ const decorData = {
 				image:
 					'https://res.cloudinary.com/djjqsmlei/image/upload/v1770204775/Ansom%20Events/BalloonDisplay/lightUpBigGarland_d2bort.webp',
 				title: 'Double Light Up Letter/Number With Balloon Garland',
-				// description:
-				// 	'Two light-up letters or numbers with a matching balloon garland. Perfect for creating a personalized and festive focal point at your event.',
 				price: {
 					amount: 110,
 					display: 'from £110',
@@ -362,8 +372,6 @@ const decorData = {
 				image:
 					'https://res.cloudinary.com/djjqsmlei/image/upload/v1770204781/Ansom%20Events/BalloonDisplay/singleSailBoard_acokoj.webp',
 				title: 'Single Sailboard',
-				// description:
-				// 	'A single sailboard backdrop with a balloon garland. Perfect for creating a stylish and festive focal point at your event.',
 				price: {
 					amount: 125,
 					display: 'from £125',
@@ -374,8 +382,6 @@ const decorData = {
 				image:
 					'https://res.cloudinary.com/djjqsmlei/image/upload/v1770204772/Ansom%20Events/BalloonDisplay/doubleSailBoard_hegx7j.webp',
 				title: 'Double Sailboard',
-				// description:
-				// 	'Two sailboard backdrops with a balloon garland. Perfect for creating a stylish and festive focal point at your event.',
 				price: {
 					amount: 175,
 					display: 'from £175',
@@ -386,8 +392,6 @@ const decorData = {
 				image:
 					'https://res.cloudinary.com/djjqsmlei/image/upload/v1770204788/Ansom%20Events/BalloonDisplay/balloonWall_ffeo42.webp',
 				title: 'Balloon Wall',
-				// description:
-				// 	'A stunning balloon wall that creates a vibrant and festive atmosphere. Perfect for weddings, parties, and special occasions.',
 				price: {
 					amount: 220,
 					display: 'from £220',
@@ -398,8 +402,6 @@ const decorData = {
 				image:
 					'https://res.cloudinary.com/djjqsmlei/image/upload/v1770204771/Ansom%20Events/BalloonDisplay/TableCenterPiece_ctldeu.webp',
 				title: 'Table Center Piece',
-				// description:
-				// 	'A beautiful table center piece that adds elegance and charm to any event.',
 				price: { amount: 20, display: 'from £20' },
 			},
 		],

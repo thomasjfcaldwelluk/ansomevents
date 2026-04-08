@@ -16,7 +16,7 @@ export default function About() {
 			<AboutStory {...aboutData.story} />
 			<AboutTeam {...aboutData.team} />
 			<AboutWhy {...aboutData.why} />
-			<AboutLocations {...aboutData.locations} />
+			{/* <AboutLocations {...aboutData.locations} /> */}
 			<CallToActSection {...ctaData.about} />
 		</PageWrapper>
 	);

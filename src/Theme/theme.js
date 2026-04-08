@@ -30,13 +30,26 @@ let theme = createTheme({
 	typography: {
 		fontFamily: 'Montserrat,sans-serif',
 		fontSize: 14,
-		h1: { fontSize: '3.4rem', fontWeight: 600 },
+		h1: {
+			fontSize: '3.4rem',
+			fontWeight: 600,
+
+			// Tablet (md and below)
+			'@media (max-width:900px)': {
+				fontSize: '5rem',
+			},
+
+			// Mobile (optional - tighter)
+			'@media (max-width:600px)': {
+				fontSize: '2.2rem',
+			},
+		},
 		h2: {
 			fontSize: '2.5rem',
 			fontWeight: 400,
 		},
 		h3: {
-			fontSize: '1.5rem',
+			fontSize: '1.8rem',
 			fontWeight: 500,
 		},
 		h4: {
@@ -80,7 +93,7 @@ let theme = createTheme({
 			letterSpacing: '0.02em',
 			textTransform: 'uppercase',
 			textAlign: 'center',
-			color: '#0f0f0e',
+			color: '#414140',
 			marginBottom: 4,
 		},
 		pageHeader: {
@@ -104,7 +117,7 @@ let theme = createTheme({
 			fontWeight: 600,
 			lineHeight: 1.25,
 			letterSpacing: '-0.01em',
-			marginBottom: 10,
+			// marginBottom: 10,
 		},
 		cardHeader: {
 			fontSize: '1.1rem',
@@ -169,8 +182,7 @@ let theme = createTheme({
 			styleOverrides: {
 				root: {
 					borderRadius: 12,
-					boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
-					// padding: 2,
+					boxShadow: '0 4px 12px rgba(0, 0, 0, 0.2)',
 					display: 'flex',
 					flexDirection: 'column',
 					height: '100%',
@@ -212,13 +224,12 @@ let theme = createTheme({
 						borderTopLeftRadius: 12,
 						borderTopRightRadius: 12,
 						width: '100%',
-						aspectRatio: '1/1',
+						aspectRatio: '4/3',
 					},
 				},
 				{
 					props: { variant: 'rounded' },
 					style: {
-						height: 200,
 						objectFit: 'cover',
 						borderRadius: 12,
 					},
@@ -246,7 +257,7 @@ let theme = createTheme({
 					},
 				},
 				body: {
-					backgroundColor: '#F7F5EF',
+					backgroundColor: '#FBFAF7d',
 					margin: 0,
 					padding: 0,
 				},

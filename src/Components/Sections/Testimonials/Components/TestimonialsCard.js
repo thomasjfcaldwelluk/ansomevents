@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
 	Card,
 	CardContent,
@@ -17,14 +17,15 @@ export default function TestimonialsCard({
 	event,
 	image,
 }) {
+	const [expanded, setExpanded] = useState(false);
 	return (
 		<Card variant='primary'>
 			<CardContent sx={{ padding: 4 }}>
 				<Typography
 					variant='body1'
 					sx={{
-						display: '-webkit-box',
-						WebkitLineClamp: 3,
+						display: expanded ? 'block' : '-webkit-box',
+						WebkitLineClamp: expanded ? 'unset' : 3,
 						WebkitBoxOrient: 'vertical',
 						overflow: 'hidden',
 					}}>
@@ -38,7 +39,13 @@ export default function TestimonialsCard({
 						padding: 0,
 					}}>
 					<Rating value={rating} readOnly />
-					<Typography>Read more</Typography>
+					<Typography
+						variant='body1'
+						fontWeight={550}
+						sx={{ cursor: 'pointer' }}
+						onClick={() => setExpanded((prev) => !prev)}>
+						{expanded ? 'Show less' : 'Read more'}
+					</Typography>
 				</CenterBox>
 				<SectionDivider variant='gold' />
 				<CenterBox

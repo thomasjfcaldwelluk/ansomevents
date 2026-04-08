@@ -5,7 +5,7 @@ import SectionHeader from 'Components/ui/Typography/SectionHeader';
 import SectionWrapper from 'Components/Layout/SectionWrapper/SectionWrapper';
 import CardTitle from 'Components/ui/Card/CardTitle';
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
-import LuxuryDivider from 'Components/ui/Divider/LuxuryDivider';
+import SectionDivider from 'Components/ui/Divider/SectionDivider';
 
 export default function WeddingPackages({ title, intro, items }) {
 	return (
@@ -14,17 +14,17 @@ export default function WeddingPackages({ title, intro, items }) {
 			<GridLayout>
 				{items.map((pkg) => (
 					<Grid key={pkg.id} size={{ xs: 12, md: 4 }}>
-						<Card variant='primary'>
-							<CardContent sx={{ flexGrow: 1, padding: 3 }}>
-								<Typography variant='label'>{pkg.label}</Typography>
+						<Card variant='primary' sx={{ padding: { xs: 2, lg: 3 } }}>
+							<Typography variant='label'>{pkg.label}</Typography>
+							<CardContent sx={{ flexGrow: 1 }}>
 								<CardTitle>{pkg.name}</CardTitle>
 								<Typography
-									variant='body2'
+									variant='body1'
 									component={'h4'}
-									sx={{ mb: 2, textAlign: 'center' }}>
+									sx={{ mb: 2, textAlign: 'center', fontWeight: 600 }}>
 									{pkg.price.display}
 								</Typography>
-								<LuxuryDivider />
+								<SectionDivider variant='gold' />
 								<Stack
 									component='ul'
 									sx={{ listStyle: 'none', padding: 0, margin: 0, gap: 1 }}>

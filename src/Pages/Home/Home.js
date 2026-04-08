@@ -22,7 +22,7 @@ export default function Home() {
 			<Hero {...homeData.hero} />
 			<Features {...homeData.features} />
 			<AboutPreview {...homeData.about} />
-			<GalleryPreview />
+			<GalleryPreview {...homeData.gallery} />
 			<CallToActSection {...ctaData.home} />
 			<Testimonials {...homeData.testimonials} />
 		</PageWrapper>

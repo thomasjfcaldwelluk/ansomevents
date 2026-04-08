@@ -1,14 +1,7 @@
-import PageWrapper from 'Components/Layout/PageWrapper/PageWrapper';
-import SectionWrapper from 'Components/Layout/SectionWrapper/SectionWrapper';
-import PageTitle from 'Components/ui/Typography/PageTitle';
+import cookiePolicyData from '../../Data/Legal/cookiePolicyData';
 import React from 'react';
+import LegalPage from './LegalPage';
 
 export default function CookiePolicy() {
-	return (
-		<PageWrapper>
-			<SectionWrapper>
-				<PageTitle pageHeader={'Cookie Policy'} />
-			</SectionWrapper>
-		</PageWrapper>
-	);
+	return <LegalPage {...cookiePolicyData} />;
 }

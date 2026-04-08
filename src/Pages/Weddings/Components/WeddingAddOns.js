@@ -1,8 +1,9 @@
-import { Card, CardContent, CardMedia, Grid, Typography } from '@mui/material';
+import { Card, CardContent, Grid, Typography } from '@mui/material';
 import GridLayout from 'Components/Layout/GridLayout/GridLayout';
 import SectionWrapper from 'Components/Layout/SectionWrapper/SectionWrapper';
 import CardTitle from 'Components/ui/Card/CardTitle';
 import SectionDivider from 'Components/ui/Divider/SectionDivider';
+import CardImage from 'Components/ui/Image/CardImage';
 import SectionHeader from 'Components/ui/Typography/SectionHeader';
 import React from 'react';
 
@@ -14,17 +15,7 @@ export default function WeddingAddOns({ title, intro, items }) {
 				{items.map((item) => (
 					<Grid item key={item.id} size={{ xs: 12, sm: 6, md: 4, lg: 3 }}>
 						<Card variant='primary'>
-							<CardMedia
-								component={'img'}
-								variant='standard'
-								src={item.image}
-								alt={item.name}
-								style={{
-									width: '100%',
-									aspectRatio: '1/1',
-									objectFit: 'cover',
-								}}
-							/>
+							<CardImage image={item.image} alt={item.alt} />
 							<CardContent sx={{ flexGrow: 1, mt: 'auto' }}>
 								<CardTitle>{item.name}</CardTitle>
 								<SectionDivider variant='gold' />

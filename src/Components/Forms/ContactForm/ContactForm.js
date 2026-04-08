@@ -20,9 +20,25 @@ export default function ContactForm() {
 			sx={{
 				display: 'flex',
 				flexDirection: 'column',
-				width: '100%',
+				width: '75%',
 				padding: 5,
 				borderRadius: 1,
+				border: '1px solid',
+				borderColor: 'background.dark',
+				margin: '0 auto',
+
+				'& .MuiTextField-root': {
+					marginBottom: 2,
+				},
+				'& .MuiInputLabel-root': {
+					color: 'background.dark',
+				},
+				'& .MuiInput-underline:before': {
+					borderBottomColor: 'background.dark',
+				},
+				'& .MuiInput-underline:hover:not(.Mui-disabled):before': {
+					borderBottomColor: 'background.dark',
+				},
 			}}>
 			<TextField
 				label='Name'
@@ -52,6 +68,7 @@ export default function ContactForm() {
 			/>
 			<ValidationError prefix='Message' field='message' errors={state.errors} />
 			<Button
+				variant='primary'
 				type='submit'
 				disabled={state.submitting}
 				sx={{

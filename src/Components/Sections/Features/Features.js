@@ -34,6 +34,7 @@ export default function Features({ title, subtitle, items }) {
 									alt={item.title}
 									sx={{
 										borderRadius: 2,
+										boxShadow: '0 20px 40px rgba(0,0,0,0.08)',
 										height: 300,
 										width: '75%',
 										transition: 'transform 0.4s ease',

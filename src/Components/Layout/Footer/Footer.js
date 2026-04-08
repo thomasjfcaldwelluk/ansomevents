@@ -53,6 +53,7 @@ export default function Footer({
 											Icon={social.icon}
 											colorVariant='muted'
 											size={{ xs: 12, sm: 22 }}
+											sx={{ padding: 0 }}
 										/>
 									</IconButton>
 								))}

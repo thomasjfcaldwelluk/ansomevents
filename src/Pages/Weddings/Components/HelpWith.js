@@ -5,6 +5,7 @@ import GridLayout from 'Components/Layout/GridLayout/GridLayout';
 import SectionWrapper from 'Components/Layout/SectionWrapper/SectionWrapper';
 import IconWrapper from 'Components/ui/Icon/IconWrapper';
 import CardTitle from 'Components/ui/Card/CardTitle';
+import SectionDivider from 'Components/ui/Divider/SectionDivider';
 
 export default function HelpWith({ title, intro, items }) {
 	return (
@@ -13,9 +14,12 @@ export default function HelpWith({ title, intro, items }) {
 			<GridLayout>
 				{items.map((item, index) => (
 					<Grid item size={{ xs: 12, md: 6, lg: 3 }} key={index}>
-						<Card key={item.id} variant='transparent'>
+						<Card key={item.id} variant='primary' sx={{ paddingBottom: 2 }}>
 							<CardContent sx={{ flexGrow: 1 }}>
-								<CardTitle>{item.text}</CardTitle>
+								<CardTitle sx={{ fontSize: '1rem', textAlign: 'center' }}>
+									{item.text}
+								</CardTitle>
+								<SectionDivider variant='gold' />
 							</CardContent>
 							<IconWrapper Icon={item.icon} colorVariant='gold' />
 						</Card>

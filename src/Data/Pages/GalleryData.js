@@ -8,7 +8,7 @@ const galleryData = {
 	galleryGridData: [
 		{
 			id: 1,
-			src: 'https://res.cloudinary.com/djjqsmlei/image/upload/v1774367522/Ansom%20Events/GalleryGrid/Tall3_ociwlp.webp',
+			src: 'https://res.cloudinary.com/djjqsmlei/image/upload/v1774974048/Ansom%20Events/GalleryGrid/pinkTable_iaza2c.webp',
 			alt: 'Wedding backdrop setup',
 			size: 'tall',
 			category: 'Wedding',
@@ -22,7 +22,7 @@ const galleryData = {
 		},
 		{
 			id: 3,
-			src: 'https://res.cloudinary.com/djjqsmlei/image/upload/v1774367521/Ansom%20Events/GalleryGrid/Square1_lagadh.webp',
+			src: 'https://res.cloudinary.com/djjqsmlei/image/upload/v1774974044/Ansom%20Events/GalleryGrid/fairyTables_lfixa5.webp',
 			alt: 'Wedding backdrop setup',
 			size: 'square',
 			category: 'Wedding',

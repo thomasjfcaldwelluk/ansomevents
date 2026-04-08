@@ -29,7 +29,11 @@ export default function IconWrapper({
 					},
 				};
 			}}>
-			<Icon sx={{ fontSize: size }} width={size} height={size} />
+			<Icon
+				sx={{ fontSize: size, filter: 'drop-shadow(0 0 0.5px colorVariant)' }}
+				width={size}
+				height={size}
+			/>
 		</Box>
 	);
 }
