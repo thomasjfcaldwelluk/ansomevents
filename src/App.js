@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import useAnalytics from './Hooks/useAnalytics';
 import CookieConsent from 'react-cookie-consent';
 import ScrollToTop from './Utils/ScrollToTop';
+import ScrollToHash from 'Utils/StrollToHash';
 import Home from './Pages/Home/Home';
 import Wedding from './Pages/Weddings/Weddings';
 import Contact from './Pages/Contact/Contact';
@@ -27,6 +28,7 @@ function App() {
 		<div className='App'>
 			<Router>
 				<ScrollToTop />
+				<ScrollToHash />
 				<AnalyticsWrapper>
 					<NavBar />
 					<Routes>

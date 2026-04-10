@@ -1,6 +1,5 @@
 import React from 'react';
 import AboutHero from './Components/AboutHero';
-import AboutLocations from './Components/AboutLocations';
 import AboutStory from './Components/AboutStory';
 import AboutTeam from './Components/AboutTeam';
 import AboutWhy from './Components/AboutWhy';

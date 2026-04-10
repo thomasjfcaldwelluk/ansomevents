@@ -1,10 +1,9 @@
-import { Box, Grid } from '@mui/material';
+import { Grid } from '@mui/material';
 import React from 'react';
 import TestimonialsCard from './TestimonialsCard';
 import GridLayout from 'Components/Layout/GridLayout/GridLayout';
 
 export default function TestimonialGrids({ items }) {
-	console.log('items =', items);
 	return (
 		<GridLayout>
 			{items.map((item) => (

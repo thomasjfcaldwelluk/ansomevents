@@ -1,9 +1,9 @@
 const decorData = {
 	decorIntro: {
 		title: 'Decor For All Occasions',
-		subTitle: 'come get it fam',
+		subTitle: 'Complete Your Event With Our Stunning Decor',
 		image:
-			'https://res.cloudinary.com/djjqsmlei/image/upload/v1774278006/Ansom%20Events/HeroImage.4_ni2i2l.webp',
+			'https://res.cloudinary.com/djjqsmlei/image/upload/v1775816334/Ansom%20Events/prop_niq63z.webp',
 	},
 
 	packages: {
@@ -51,7 +51,7 @@ const decorData = {
 				},
 				cta: {
 					label: 'Enquire Now',
-					link: '/contact-us',
+					href: '/contact-us',
 				},
 			},
 			{
@@ -87,7 +87,7 @@ const decorData = {
 				},
 				cta: {
 					label: 'Enquire Now',
-					link: '/contact-us',
+					href: '/contact-us',
 				},
 			},
 			{
@@ -117,7 +117,7 @@ const decorData = {
 				},
 				cta: {
 					label: 'Enquire Now',
-					link: '/contact-us',
+					href: '/contact-us',
 				},
 			},
 			{
@@ -150,7 +150,7 @@ const decorData = {
 				},
 				cta: {
 					label: 'Enquire Now',
-					link: '/contact-us',
+					href: '/contact-us',
 				},
 			},
 		],

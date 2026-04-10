@@ -12,15 +12,14 @@ export default function DecorSection({
 	items,
 	grid,
 	variant,
-
 	imageVariant = 'standard',
 }) {
 	return (
 		<SectionWrapper id={id} variant={variant}>
 			<SectionHeader sectionHeader={title} subHeader={intro} />
-			<GridLayout>
+			<GridLayout sx={{ marginTop: 4 }}>
 				{items.map((item) => (
-					<Grid item key={item.id} {...grid}>
+					<Grid key={item.id} {...grid}>
 						<DecorItemCard {...item} imageVariant={imageVariant} />
 					</Grid>
 				))}

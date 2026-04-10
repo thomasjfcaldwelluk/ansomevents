@@ -3,7 +3,7 @@ import L from 'leaflet';
 import markerIcon from 'leaflet/dist/images/marker-icon.png';
 import markerIcon2x from 'leaflet/dist/images/marker-icon-2x.png';
 import markerShadow from 'leaflet/dist/images/marker-shadow.png';
-import { Box, Typography } from '@mui/material';
+import { Box } from '@mui/material';
 import { events } from '../../../Data/Events/eventsMap';
 import CenterBox from 'Components/Layout/CenteredBox/CenterBox';
 

@@ -19,7 +19,7 @@ export default function Features({ title, subtitle, items }) {
 			<SectionHeader sectionHeader={title} subHeader={subtitle} />
 			<GridLayout spacing={0}>
 				{items.map((item, index) => (
-					<Grid key={index} size={{ xs: 12, lg: 6 }}>
+					<Grid key={index} size={{ xs: 12, md: 6 }}>
 						<Card variant='transparent' sx={{ height: '100%' }}>
 							<CardContent
 								sx={{
@@ -36,7 +36,7 @@ export default function Features({ title, subtitle, items }) {
 										borderRadius: 2,
 										boxShadow: '0 20px 40px rgba(0,0,0,0.08)',
 										height: 300,
-										width: '75%',
+										width: { xs: '100%', md: '75%', lg: '90%' },
 										transition: 'transform 0.4s ease',
 										'&:hover': {
 											transform: 'scale(1.05)',

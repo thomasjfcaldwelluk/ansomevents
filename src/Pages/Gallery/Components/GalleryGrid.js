@@ -25,7 +25,7 @@ export default function GalleryGrid({ galleryImages }) {
 					},
 				}}>
 				{galleryImages.map((images) => (
-					<GalleryGridItem images={images} />
+					<GalleryGridItem key={images.id} images={images} />
 				))}
 			</GridLayout>
 		</SectionWrapper>

@@ -14,6 +14,7 @@ import SectionDivider from 'Components/ui/Divider/SectionDivider';
 import CardImage from 'Components/ui/Image/CardImage';
 import { Select, MenuItem } from '@mui/material';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function DecorItemCard({
 	title,
@@ -24,7 +25,6 @@ export default function DecorItemCard({
 	price,
 	prices,
 	cta,
-	imageVariant = 'standard',
 }) {
 	const [selectedPrice, setSelectedPrice] = useState(prices ? prices[0] : null);
 	return (
@@ -35,7 +35,7 @@ export default function DecorItemCard({
 					flexGrow: 1,
 					display: 'flex',
 					flexDirection: 'column',
-					padding: 5,
+					padding: { xs: 3, md: 4, lg: 5 },
 				}}>
 				<Typography variant='label'>{label}</Typography>
 				<CardTitle>{title}</CardTitle>
@@ -122,7 +122,9 @@ export default function DecorItemCard({
 					)}
 					{cta && (
 						<CardActions sx={{ justifyContent: 'center', marginBlock: 2 }}>
-							<Button variant='secondary'>{cta.label}</Button>
+							<Button variant='secondary' component={Link} to={cta.href}>
+								{cta.label}
+							</Button>
 						</CardActions>
 					)}
 				</Box>

@@ -4,7 +4,7 @@ const ctaData = {
 		subTitle:
 			'Take a look through some of our recent work and get inspired for your own event.',
 		buttonText: 'Start Your Journey',
-		buttonLink: '/contact',
+		buttonLink: '/contact-us',
 		buttonVariant: 'light',
 	},
 	about: {
@@ -12,14 +12,14 @@ const ctaData = {
 		subTitle:
 			'We’re a husband-and-wife team passionate about creating events that feel personal, seamless, and beautifully styled.',
 		buttonText: 'Work With Us',
-		buttonLink: '/contact',
+		buttonLink: '/contact-us',
 		buttonVariant: 'primary',
 	},
 	services: {
 		title: 'Enquire With Us',
 		subTitle: 'Let Us Do The Hard Stuff',
 		buttonText: 'Send Us A Message',
-		buttonLink: '/contact',
+		buttonLink: '/contact-us',
 		buttonVariant: 'primary',
 	},
 	corporate: {
@@ -27,7 +27,7 @@ const ctaData = {
 		subTitle:
 			'From brand activations to corporate celebrations, we deliver polished setups that leave a lasting impression.',
 		buttonText: 'Plan Your Event',
-		buttonLink: '/contact',
+		buttonLink: '/contact-us',
 		buttonVariant: 'light',
 	},
 	decor: {
@@ -35,7 +35,7 @@ const ctaData = {
 		subTitle:
 			'From statement backdrops to bespoke styling, our décor is designed to transform any space into something special.',
 		buttonText: 'Explore Your Options',
-		buttonLink: '/contact',
+		buttonLink: '/contact-us',
 		buttonVariant: 'primary',
 	},
 	home: {
@@ -43,7 +43,7 @@ const ctaData = {
 		subTitle:
 			'From intimate celebrations to large-scale events, we bring your vision to life with thoughtful design and attention to detail.',
 		buttonText: 'Start Planning',
-		buttonLink: '/contact',
+		buttonLink: '/contact-us',
 		buttonVariant: 'primary',
 	},
 	wedding: {
@@ -51,7 +51,7 @@ const ctaData = {
 		subTitle:
 			'From elegant backdrops to those finishing touches, we create wedding spaces that feel personal, refined, and truly yours.',
 		buttonText: 'Enquire About Your Celebration',
-		buttonLink: '/contact',
+		buttonLink: '/contact-us',
 		buttonVariant: 'secondary',
 	},
 };

@@ -1,4 +1,4 @@
-import { Box, Card, CardContent, Grid, Typography } from '@mui/material';
+import { Box, Grid, Typography } from '@mui/material';
 import GridLayout from 'Components/Layout/GridLayout/GridLayout';
 import SectionWrapper from 'Components/Layout/SectionWrapper/SectionWrapper';
 import SectionHeader from 'Components/ui/Typography/SectionHeader';

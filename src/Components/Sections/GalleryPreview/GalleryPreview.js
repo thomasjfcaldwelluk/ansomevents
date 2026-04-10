@@ -5,6 +5,7 @@ import galleryData from '../../../Data/Pages/GalleryData';
 import GalleryGrid from 'Pages/Gallery/Components/GalleryGrid';
 import CenterBox from 'Components/Layout/CenteredBox/CenterBox';
 import { Button } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 export default function GalleryPreview({ title, intro, cta }) {
 	const { galleryGridData } = galleryData;
@@ -14,7 +15,9 @@ export default function GalleryPreview({ title, intro, cta }) {
 			<SectionHeader sectionHeader={title} subHeader={intro} />
 			<GalleryGrid galleryImages={previewImages} />
 			<CenterBox>
-				<Button variant='light'>{cta.label}</Button>
+				<Button variant='light' component={Link} to={cta.href}>
+					{cta.label}
+				</Button>
 			</CenterBox>
 		</SectionWrapper>
 	);

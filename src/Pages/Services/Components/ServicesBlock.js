@@ -6,7 +6,7 @@ import CardImage from 'Components/ui/Image/CardImage';
 
 export default function ServiceBlock({ title, description, image, icon }) {
 	return (
-		<Grid item size={{ xs: 12, md: 4 }}>
+		<Grid size={{ xs: 12, md: 4 }}>
 			<Card variant='primary'>
 				<CardImage image={image} alt={title} />
 				<CardContent sx={{ padding: 3 }} gap={3}>

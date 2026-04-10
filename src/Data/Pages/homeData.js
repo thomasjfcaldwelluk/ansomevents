@@ -8,11 +8,11 @@ const homeData = {
 		alt: 'Ansom Events Set Up',
 		primaryCta: {
 			label: 'Enquire Here',
-			link: '/decor-packages',
+			href: '/contact-us',
 		},
 		secondaryCta: {
 			label: 'See Our Styles',
-			link: '/contact',
+			href: '/decor',
 		},
 		image: 'https://res.cloudinary.com/your-cloud-name/image/upload/hero.jpg',
 	},
@@ -27,7 +27,7 @@ const homeData = {
 				title: 'Love Celebrations',
 				caption: 'Weddings, Elopements, Engagements',
 				description: 'Elegant and timeless wedding styling.',
-				link: '/weddings',
+				link: '/love-celebrations',
 			},
 			{
 				image:
@@ -115,7 +115,7 @@ const homeData = {
 		intro: 'Check out our past work',
 		cta: {
 			label: 'Check Out Our Full Gallery',
-			link: '/gallery',
+			href: '/gallery',
 		},
 	},
 };

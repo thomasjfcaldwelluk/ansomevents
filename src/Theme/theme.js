@@ -98,18 +98,20 @@ let theme = createTheme({
 		},
 		pageHeader: {
 			fontFamily: '"Playfair Display", serif',
-			fontSize: '2.8rem',
+			fontSize: 'clamp(1.8rem, 3vw, 2.8rem)',
 			fontWeight: 700,
 			lineHeight: 1.15,
 			letterSpacing: '-0.02em',
 			color: '#1C3D5A',
+			textAlign: 'center',
 		},
 		pageSubHeader: {
-			fontSize: 'clamp(1.3rem, 2vw, 1.5rem)',
+			fontSize: 'clamp(1.2rem, 1.9vw, 1.4rem)',
 			fontWeight: 300,
 			letterSpacing: '0.01em',
 			lineHeight: 1.15,
 			color: '#1C3D5A',
+			textAlign: 'center',
 		},
 		sectionHeader: {
 			fontFamily: '"Playfair Display", serif',

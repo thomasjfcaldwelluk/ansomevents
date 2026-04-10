@@ -19,7 +19,7 @@ const corporateData = {
 			link: '#services',
 		},
 		image:
-			'https://res.cloudinary.com/djjqsmlei/image/upload/v1774275155/Ansom%20Events/HeroImage.1_bdagis.webp',
+			'https://res.cloudinary.com/djjqsmlei/image/upload/v1775816823/Ansom%20Events/corp_z5bwsf.webp',
 		alt: 'An example of a corporate event styled by Ansom Events',
 	},
 

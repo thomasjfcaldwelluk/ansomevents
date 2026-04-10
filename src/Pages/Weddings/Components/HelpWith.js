@@ -13,10 +13,10 @@ export default function HelpWith({ title, intro, items }) {
 			<SectionHeader sectionHeader={title} subHeader={intro} />
 			<GridLayout>
 				{items.map((item, index) => (
-					<Grid item size={{ xs: 12, md: 6, lg: 3 }} key={index}>
+					<Grid size={{ xs: 12, sm: 6, lg: 3 }} key={index}>
 						<Card key={item.id} variant='primary' sx={{ paddingBottom: 2 }}>
 							<CardContent sx={{ flexGrow: 1 }}>
-								<CardTitle sx={{ fontSize: '1rem', textAlign: 'center' }}>
+								<CardTitle sx={{ fontSize: '0.9rem', textAlign: 'center' }}>
 									{item.text}
 								</CardTitle>
 								<SectionDivider variant='gold' />

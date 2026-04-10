@@ -11,7 +11,7 @@ export default function ContactServiceArea({ id, title, paragraph, image }) {
 		<SectionWrapper id={id} aria-label='Contact Service Area Section'>
 			<SectionHeader sectionHeader={title} />
 			<GridLayout>
-				<Grid item size={{ xs: 12, md: 5 }}>
+				<Grid size={{ xs: 12, md: 5 }}>
 					<CenterBox alignItems='flex-start' padding={0}>
 						<Typography variant='body1' component='p'>
 							{paragraph}
@@ -26,7 +26,7 @@ export default function ContactServiceArea({ id, title, paragraph, image }) {
 						/>
 					</CenterBox>
 				</Grid>
-				<Grid item size={{ xs: 12, md: 7 }}>
+				<Grid size={{ xs: 12, md: 7 }}>
 					<Map />
 				</Grid>
 			</GridLayout>

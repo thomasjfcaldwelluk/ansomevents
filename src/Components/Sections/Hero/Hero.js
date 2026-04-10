@@ -2,6 +2,7 @@ import { Box, Typography, Grid, Button } from '@mui/material';
 import CenterBox from 'Components/Layout/CenteredBox/CenterBox';
 import GridLayout from 'Components/Layout/GridLayout/GridLayout';
 import SectionWrapper from 'Components/Layout/SectionWrapper/SectionWrapper';
+import { Link } from 'react-router-dom';
 import React from 'react';
 
 export default function Hero({
@@ -63,8 +64,12 @@ export default function Hero({
 							gap={2}
 							justifyContent={{ xs: 'center', md: 'flex-start' }}
 							padding={0}>
-							<Button variant='primary'>{primaryCta.label}</Button>
-							<Button variant='light'>{secondaryCta.label}</Button>
+							<Button variant='primary' component={Link} to={primaryCta.href}>
+								{primaryCta.label}
+							</Button>
+							<Button variant='light' component={Link} to={secondaryCta.href}>
+								{secondaryCta.label}
+							</Button>
 						</CenterBox>
 					</Box>
 				</Grid>

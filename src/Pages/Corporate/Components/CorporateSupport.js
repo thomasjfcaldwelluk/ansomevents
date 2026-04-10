@@ -1,5 +1,4 @@
 import { Box, Card, CardContent, Grid, Typography } from '@mui/material';
-import CenterBox from 'Components/Layout/CenteredBox/CenterBox';
 import GridLayout from 'Components/Layout/GridLayout/GridLayout';
 import SectionWrapper from 'Components/Layout/SectionWrapper/SectionWrapper';
 import SectionHeader from 'Components/ui/Typography/SectionHeader';
@@ -18,7 +17,7 @@ export default function CorporateSupport({
 		<SectionWrapper id={id} variant='light'>
 			<SectionHeader sectionHeader={title} subHeader={intro} />
 			<GridLayout>
-				<Grid item size={{ xs: 12, md: 6 }}>
+				<Grid size={{ xs: 12, md: 6 }}>
 					<Box
 						component={'img'}
 						src={image}
@@ -32,20 +31,19 @@ export default function CorporateSupport({
 					/>
 				</Grid>
 				<Grid
-					item
 					size={{ xs: 12, md: 6 }}
 					sx={{
 						padding: 1,
 						borderRadius: 2,
 					}}>
 					<GridLayout spacing={1}>
-						<Grid item size={{ xs: 12 }}>
+						<Grid size={{ xs: 12 }}>
 							<Typography variant='h6' fontWeight={600} textAlign={'center'}>
 								Types of Corporate Events We Support:
 							</Typography>
 						</Grid>
 						{eventTypes.map((type) => (
-							<Grid item key={type} size={{ xs: 12, sm: 6 }}>
+							<Grid key={type} size={{ xs: 12, sm: 6 }}>
 								<Card variant='primary'>
 									<CardContent>
 										<Typography
@@ -61,13 +59,13 @@ export default function CorporateSupport({
 						))}
 					</GridLayout>
 					<GridLayout spacing={1}>
-						<Grid item size={{ xs: 12 }}>
+						<Grid size={{ xs: 12 }}>
 							<Typography variant='h6' fontWeight={600} textAlign={'center'}>
 								Benefits of Choosing Ansom Events:
 							</Typography>
 						</Grid>
 						{benefits.map((benefit) => (
-							<Grid item key={benefit} size={{ xs: 12, sm: 6 }}>
+							<Grid key={benefit} size={{ xs: 12, sm: 6 }}>
 								<Card variant='primary'>
 									<CardContent>
 										<Typography

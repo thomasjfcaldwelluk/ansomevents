@@ -19,7 +19,7 @@ export default function Footer({
 		<Box component={'footer'}>
 			<SectionWrapper aria-label='Footer Main Section'>
 				<GridLayout alignItems='flex-start'>
-					<Grid item size={{ xs: 12, md: 6 }}>
+					<Grid size={{ xs: 12, sm: 6 }}>
 						{footerData.company && (
 							<Box>
 								<Box
@@ -52,7 +52,7 @@ export default function Footer({
 										<IconWrapper
 											Icon={social.icon}
 											colorVariant='muted'
-											size={{ xs: 12, sm: 22 }}
+											fontSize={{ xs: 12, sm: 15 }}
 											sx={{ padding: 0 }}
 										/>
 									</IconButton>
@@ -60,10 +60,10 @@ export default function Footer({
 							</Box>
 						)}
 					</Grid>
-					<Grid item size={{ xs: 12, md: 6 }}>
+					<Grid size={{ xs: 12, sm: 6 }}>
 						<GridLayout spacing={1}>
 							{footerLinks.map((link) => (
-								<Grid item key={link.id} size={{ xs: 6 }}>
+								<Grid key={link.id} size={{ xs: 6 }}>
 									<Typography
 										variant='body1'
 										sx={{
@@ -85,7 +85,7 @@ export default function Footer({
 				{footerData.legal && (
 					<GridLayout marginBottom={5} spacing={0}>
 						{footerData.legal.map((item) => (
-							<Grid item key={item.id} size={{ xs: 4 }} textAlign={'center'}>
+							<Grid key={item.id} size={{ xs: 4 }} textAlign={'center'}>
 								<Link
 									to={item.path}
 									component={RouterLink}
