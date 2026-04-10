@@ -1,13 +1,14 @@
 import React from 'react';
 import { Box } from '@mui/material';
 
-export default function HeroImage({ src, alt = '', title, height = 550 }) {
+export default function HeroImage({ src, alt = '', height = 550 }) {
 	return (
 		<Box sx={{ position: 'relative' }}>
 			<Box
 				component='img'
 				src={src}
 				alt={alt}
+				sizes='100vw'
 				sx={{
 					width: '100%',
 					height: { xs: 220, md: 450, lg: height },
