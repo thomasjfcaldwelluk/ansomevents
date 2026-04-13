@@ -19,7 +19,7 @@ export default function TestimonialsCard({
 }) {
 	const [expanded, setExpanded] = useState(false);
 	return (
-		<Card variant='primary'>
+		<Card variant='secondary'>
 			<CardContent sx={{ padding: 4 }}>
 				<Typography
 					variant='body1'

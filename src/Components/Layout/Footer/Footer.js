@@ -17,7 +17,7 @@ export default function Footer({
 }) {
 	return (
 		<Box component={'footer'}>
-			<SectionWrapper aria-label='Footer Main Section'>
+			<SectionWrapper aria-label='Footer Main Section' variant='light'>
 				<GridLayout alignItems='flex-start'>
 					<Grid size={{ xs: 12, sm: 6 }}>
 						{footerData.company && (

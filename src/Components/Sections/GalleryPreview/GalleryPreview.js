@@ -9,11 +9,11 @@ import { Link } from 'react-router-dom';
 
 export default function GalleryPreview({ title, intro, cta }) {
 	const { galleryGridData } = galleryData;
-	const previewImages = galleryGridData.slice(0, 4);
+	const previewImages = galleryGridData.slice(0, 6);
 	return (
-		<SectionWrapper id='gallery-preview' variant='dark' padding={0}>
+		<SectionWrapper id='gallery-preview' variant='dark'>
 			<SectionHeader sectionHeader={title} subHeader={intro} />
-			<GalleryGrid galleryImages={previewImages} />
+			<GalleryGrid galleryImages={previewImages} disablePadding={true} />
 			<CenterBox>
 				<Button variant='light' component={Link} to={cta.href}>
 					{cta.label}

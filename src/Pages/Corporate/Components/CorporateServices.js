@@ -10,12 +10,12 @@ import React from 'react';
 
 export default function CorporateServices({ id, title, intro, items }) {
 	return (
-		<SectionWrapper id={id} aria-label={title} variant='light'>
+		<SectionWrapper id={id} aria-label={title} variant='dark'>
 			<SectionHeader sectionHeader={title} subHeader={intro} />
 			<GridLayout>
 				{items.map((item) => (
 					<Grid key={item.id} size={{ xs: 12, sm: 6, md: 4 }}>
-						<Card variant='primary'>
+						<Card variant='secondary'>
 							<CardContent>
 								<Stack
 									direction='row'

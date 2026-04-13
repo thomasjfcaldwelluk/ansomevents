@@ -4,6 +4,7 @@ import React from 'react';
 export default function SectionWrapper({
 	children,
 	variant = 'default',
+	disablePadding = false,
 	id,
 	sx,
 	...props
@@ -13,18 +14,25 @@ export default function SectionWrapper({
 			id={id}
 			component='section'
 			sx={(theme) => ({
-				p: { xs: 1, md: 2, lg: 8 },
+				...(!disablePadding && {
+					px: { xs: 1, md: 4 },
+					py: { xs: 3, md: 7 },
+				}),
+
 				...(variant === 'light' && {
-					backgroundColor: theme.palette.background.subtle,
+					backgroundColor: theme.palette.background.default,
+					color: theme.palette.background.dark,
 				}),
 
 				...(variant === 'dark' && {
 					backgroundColor: theme.palette.background.dark,
-					color: theme.palette.common.white,
+					color: theme.palette.background.default,
 				}),
-
-				...(variant === 'compact' && {
-					py: { xs: 6, md: 8 },
+				...(variant === 'default' && {
+					backgroundColor: theme.palette.primary.main,
+				}),
+				...(variant === 'transparent' && {
+					backgroundColor: 'transparent',
 				}),
 
 				...sx,

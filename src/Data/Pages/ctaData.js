@@ -40,16 +40,14 @@ const ctaData = {
 	},
 	home: {
 		title: 'Let’s Create Something Unforgettable',
-		subTitle:
-			'From intimate celebrations to large-scale events, we bring your vision to life with thoughtful design and attention to detail.',
+		subTitle: 'Get the party started',
 		buttonText: 'Start Planning',
 		buttonLink: '/contact-us',
 		buttonVariant: 'primary',
 	},
 	wedding: {
 		title: 'Your Day, Beautifully Styled',
-		subTitle:
-			'From elegant backdrops to those finishing touches, we create wedding spaces that feel personal, refined, and truly yours.',
+		subTitle: 'Start your journey now',
 		buttonText: 'Enquire About Your Celebration',
 		buttonLink: '/contact-us',
 		buttonVariant: 'secondary',

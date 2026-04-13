@@ -11,7 +11,7 @@ let theme = createTheme({
 			main: '#2E2E2E',
 		},
 		background: {
-			default: '#FBFAF7',
+			default: '#FAFAFA',
 			paper: '#FFFFFF',
 			card: '#FBFAF7',
 			subtle: '#F4F1E8',
@@ -57,8 +57,8 @@ let theme = createTheme({
 			fontWeight: 500,
 		},
 		h5: {
-			fontSize: 'clamp(1.1rem, 1.7vw, 1.4rem)',
-			fontWeight: 600,
+			fontSize: 'clamp(1rem, 1.4vw, 1.2rem)',
+			fontWeight: 500,
 			lineHeight: 1.3,
 		},
 		h6: {
@@ -119,7 +119,6 @@ let theme = createTheme({
 			fontWeight: 600,
 			lineHeight: 1.25,
 			letterSpacing: '-0.01em',
-			// marginBottom: 10,
 		},
 		cardHeader: {
 			fontSize: '1.1rem',
@@ -195,14 +194,14 @@ let theme = createTheme({
 				{
 					props: { variant: 'primary' },
 					style: {
-						backgroundColor: '#FEFEFC',
-						border: '0.5px solid #E8E3D3',
+						background: '#fff',
+						border: '1px solid #EAEAEA',
 					},
 				},
 				{
 					props: { variant: 'secondary' },
 					style: {
-						backgroundColor: '#ffffd6',
+						backgroundColor: '#FAFAFA',
 						border: '0.5px solid #373737',
 					},
 				},
@@ -259,7 +258,7 @@ let theme = createTheme({
 					},
 				},
 				body: {
-					backgroundColor: '#FBFAF7d',
+					backgroundColor: '#FAFAFA',
 					margin: 0,
 					padding: 0,
 				},

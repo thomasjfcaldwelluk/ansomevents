@@ -3,9 +3,9 @@ import GalleryGridItem from './GalleryGridItem';
 import GridLayout from 'Components/Layout/GridLayout/GridLayout';
 import SectionWrapper from 'Components/Layout/SectionWrapper/SectionWrapper';
 
-export default function GalleryGrid({ galleryImages }) {
+export default function GalleryGrid({ galleryImages, disablePadding }) {
 	return (
-		<SectionWrapper>
+		<SectionWrapper disablePadding={disablePadding} variant='transparent'>
 			<GridLayout
 				sx={{
 					display: 'grid',

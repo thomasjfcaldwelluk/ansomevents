@@ -14,7 +14,7 @@ export default function WeddingPackages({ title, intro, items }) {
 			<GridLayout>
 				{items.map((pkg) => (
 					<Grid key={pkg.id} size={{ xs: 12, md: 4 }}>
-						<Card variant='primary' sx={{ padding: { xs: 2, lg: 3 } }}>
+						<Card variant='secondary' sx={{ padding: { xs: 2, lg: 3 } }}>
 							<Typography variant='label'>{pkg.label}</Typography>
 							<CardContent sx={{ flexGrow: 1 }}>
 								<CardTitle>{pkg.name}</CardTitle>

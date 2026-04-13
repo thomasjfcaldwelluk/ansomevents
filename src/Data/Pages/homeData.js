@@ -4,7 +4,7 @@ const homeData = {
 		adj: 'Ansom (adj.)',
 		subtitle: 'Cornish for something exceptionally good.',
 		heroImage:
-			'https://res.cloudinary.com/djjqsmlei/image/upload/v1773750875/Ansom%20Events/babyShowerLong_kuh2tr.webp',
+			'https://res.cloudinary.com/djjqsmlei/image/upload/v1776082817/Ansom%20Events/Home%20Page/homeHero_mcsx54.webp',
 		alt: 'Ansom Events Set Up',
 		primaryCta: {
 			label: 'Enquire Here',
@@ -18,8 +18,7 @@ const homeData = {
 	},
 	features: {
 		title: 'Events We Style',
-		subtitle:
-			'Whatever the moment, we ensure it is expertly styled and intentionally crafted.',
+		subtitle: 'Whatever the moment tis Ansom',
 		items: [
 			{
 				image:

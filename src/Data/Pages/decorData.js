@@ -1,7 +1,7 @@
 const decorData = {
 	decorIntro: {
 		title: 'Decor For All Occasions',
-		subTitle: 'Complete Your Event With Our Stunning Decor',
+		subTitle: 'Complete Your Event',
 		image:
 			'https://res.cloudinary.com/djjqsmlei/image/upload/v1775816334/Ansom%20Events/prop_niq63z.webp',
 	},

@@ -5,11 +5,11 @@ import InventoryOutlinedIcon from '@mui/icons-material/InventoryOutlined';
 const servicesData = {
 	hero: {
 		title: 'Our Services',
-		text: 'Expert support to keep your event seamless, stylish, and effortlessly Ansom.',
+		text: 'Expert support From Ansom.',
 		description:
 			'At Ansom Events we do not just organize, style & manage your events we also offer a range of other services such as design and print services to day-of coordination, we offer a range of services to support your event needs. Below is a list of support services we offer, if you do not see what you need please reach out to us and we can discuss how we can support your event needs.',
 		image:
-			'https://res.cloudinary.com/djjqsmlei/image/upload/v1775817231/Ansom%20Events/services_er8wdo.webp',
+			'https://res.cloudinary.com/djjqsmlei/image/upload/v1776086914/Ansom%20Events/servicesNew_kcrbls.webp',
 	},
 	services: [
 		{

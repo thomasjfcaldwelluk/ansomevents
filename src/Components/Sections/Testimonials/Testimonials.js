@@ -7,7 +7,7 @@ export default function Testimonials({ title, subtitle, items }) {
 	return (
 		<SectionWrapper
 			id='testimonials'
-			variant='light'
+			variant='dark'
 			sx={{ scrollMarginTop: '80px' }}>
 			<SectionHeader sectionHeader={title} subHeader={subtitle} />
 			<TestimonialsDisplay items={items} />

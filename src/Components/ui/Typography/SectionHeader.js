@@ -4,7 +4,7 @@ import { Typography } from '@mui/material';
 
 export default function SectionHeader({ sectionHeader, subHeader }) {
 	return (
-		<Stack textAlign={'center'} sx={{ mb: 2 }}>
+		<Stack textAlign={'center'} spacing={1} marginBottom={3}>
 			<Typography variant='sectionHeader' component={'h2'}>
 				{sectionHeader}
 			</Typography>
