@@ -9,7 +9,7 @@ const servicesData = {
 		description:
 			'At Ansom Events we do not just organize, style & manage your events we also offer a range of other services such as design and print services to day-of coordination, we offer a range of services to support your event needs. Below is a list of support services we offer, if you do not see what you need please reach out to us and we can discuss how we can support your event needs.',
 		image:
-			'https://res.cloudinary.com/djjqsmlei/image/upload/v1776086914/Ansom%20Events/servicesNew_kcrbls.webp',
+			'https://res.cloudinary.com/djjqsmlei/image/upload/e_auto_enhance/v1776086914/Ansom%20Events/servicesNew_kcrbls.webp',
 	},
 	services: [
 		{

@@ -14,8 +14,8 @@ export default function Home() {
 	return (
 		<PageWrapper id='home' aria-label='home'>
 			<SEO
-				title='Home — Ansom Events'
-				description='We create amazing events & décor in Cornwall.'
+				title='Event Decor & Planning in Cornwall | Ansom Events'
+				description='We create amazing events & décor in Cornwall & Devon.'
 				url='https://www.ansomevents.com'
 				image='https://www.ansomevents.com/og-image.jpg'
 			/>

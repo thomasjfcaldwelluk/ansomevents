@@ -4,7 +4,10 @@ import React from 'react';
 
 export default function ContactHero({ title, subtitle }) {
 	return (
-		<SectionWrapper id='contact-hero' aria-label='Contact Hero Section'>
+		<SectionWrapper
+			id='contact-hero'
+			aria-label='Contact Hero Section'
+			variant='light'>
 			<PageTitle pageHeader={title} pageSubheader={subtitle} />
 		</SectionWrapper>
 	);

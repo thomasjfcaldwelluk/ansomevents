@@ -16,7 +16,7 @@ const galleryData = {
 		{
 			id: 2,
 			src: 'https://res.cloudinary.com/djjqsmlei/image/upload/v1774974053/Ansom%20Events/GalleryGrid/workies_wu4pzk.webp',
-			alt: 'Wedding Table POSSIBLE CHANGE',
+			alt: 'Wedding Table',
 			size: 'tall',
 			category: 'Wedding',
 		},

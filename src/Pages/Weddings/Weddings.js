@@ -7,10 +7,18 @@ import weddingData from '../../Data/Pages/weddingData';
 import PageWrapper from 'Components/Layout/PageWrapper/PageWrapper';
 import CallToActSection from 'Components/Sections/CallToActSection/CallToActSection';
 import ctaData from 'Data/Pages/ctaData';
+import SEO from 'Components/SEO';
 
 export default function Weddings() {
 	return (
 		<PageWrapper id='weddings' aria-label='Weddings with Ansom Events'>
+			<SEO
+				title='Wedding Planning Services in Plymouth | Ansom Events'
+				description='Make your dream wedding a reality with Ansom Events. We offer expert wedding planning services in Plymouth, ensuring your special day is unforgettable.'
+				url='https://www.ansomevents.com/love-celebrations'
+				image='https://www.ansomevents.com/og-image.jpg'
+				canonical='https://www.ansomevents.com/love-celebrations'
+			/>
 			<WeddingHero {...weddingData.hero} />
 			<HelpWith {...weddingData.helpWith} />
 			<WeddingPackages {...weddingData.packages} />

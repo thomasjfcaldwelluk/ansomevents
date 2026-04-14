@@ -5,10 +5,17 @@ import PageTitle from 'Components/ui/Typography/PageTitle';
 import GridLayout from 'Components/Layout/GridLayout/GridLayout';
 import { Grid, Typography } from '@mui/material';
 import CenterBox from 'Components/Layout/CenteredBox/CenterBox';
+import SEO from 'Components/SEO';
 
 export default function LegalPage({ title, lastUpdated, sections }) {
 	return (
 		<PageWrapper>
+			<SEO
+				title={`${title} - Ansom Events`}
+				description={`Read the ${title.toLowerCase()} for Ansom Events, outlining our policies and terms for using our services.`}
+				url={`https://www.ansomevents.com/${title.toLowerCase().replace(/\s+/g, '-')}`}
+				image='https://www.ansomevents.com/og-image.jpg'
+			/>
 			<SectionWrapper>
 				<PageTitle
 					pageHeader={title}

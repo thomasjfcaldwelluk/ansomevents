@@ -18,9 +18,9 @@ export default function AboutPreview({
 	return (
 		<SectionWrapper id='about-us-preview' variant='light'>
 			<SectionHeader sectionHeader={title} subHeader={intro} />
-			<GridLayout alignItems='center'>
+			<GridLayout alignItems='center' gap={4}>
 				<Grid size={{ xs: 12, md: 7 }}>
-					<CenterBox padding={{ xs: 0, md: 2 }}>
+					<CenterBox padding={{ xs: 0, md: 5 }}>
 						<Typography
 							variant='body1'
 							component={'p'}
@@ -50,6 +50,7 @@ export default function AboutPreview({
 							borderRadius: 2,
 							width: '100%',
 							boxShadow: '0 20px 40px rgba(0,0,0,0.2)',
+							filter: 'contrast(1.05) brightness(0.98)',
 						}}
 					/>
 				</Grid>

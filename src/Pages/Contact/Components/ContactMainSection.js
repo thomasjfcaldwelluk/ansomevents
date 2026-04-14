@@ -6,7 +6,10 @@ import ContactForm from 'Components/Forms/ContactForm/ContactForm';
 
 export default function ContactMainSection({ form, contactInfo }) {
 	return (
-		<GridLayout>
+		<GridLayout
+			paddingInline={{ xs: 0, md: 5 }}
+			marginBottom={5}
+			aria-label='Contact Main Section'>
 			<Grid size={{ xs: 12, md: 5 }} aria-label='Contact Information'>
 				<ContactInfo contactInfo={contactInfo} />
 			</Grid>

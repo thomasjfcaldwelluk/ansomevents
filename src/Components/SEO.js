@@ -1,7 +1,7 @@
 import React from 'react';
 import { Title, Meta, Link } from 'react-meta-seo';
 
-export default function SEO({ title, description, url, image }) {
+export default function SEO({ title, description, url, image, canonical }) {
 	return (
 		<>
 			<Title>{title}</Title>
@@ -11,6 +11,7 @@ export default function SEO({ title, description, url, image }) {
 			{title && <Meta property='og:title' content={title} />}
 			{description && <Meta property='og:description' content={description} />}
 			{image && <Meta property='og:image' content={image} />}
+
 			{/* Optional canonical link */}
 			{url && <Link rel='canonical' href={url} />}
 		</>

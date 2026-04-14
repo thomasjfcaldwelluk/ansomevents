@@ -6,10 +6,17 @@ import PageTitle from 'Components/ui/Typography/PageTitle';
 import SectionWrapper from 'Components/Layout/SectionWrapper/SectionWrapper';
 import CenterBox from 'Components/Layout/CenteredBox/CenterBox';
 import GridLayout from 'Components/Layout/GridLayout/GridLayout';
+import SEO from 'Components/SEO';
 
 export default function FrequentlyAskedQuestions() {
 	return (
 		<PageWrapper id='Ansom_Events_FAQS' aria-label='Ansom Events FAQS'>
+			<SEO
+				title='FAQs - Ansom Events'
+				description='Find answers to your questions about our event planning services.'
+				url='https://www.ansomevents.com/faqs'
+				image='https://www.ansomevents.com/og-image.jpg'
+			/>
 			<SectionWrapper>
 				<PageTitle
 					pageHeader={'FAQs'}

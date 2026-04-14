@@ -8,12 +8,15 @@ import React from 'react';
 
 export default function ContactServiceArea({ id, title, paragraph, image }) {
 	return (
-		<SectionWrapper id={id} aria-label='Contact Service Area Section'>
+		<SectionWrapper
+			id={id}
+			aria-label='Contact Service Area Section'
+			variant='dark'>
 			<SectionHeader sectionHeader={title} />
 			<GridLayout>
 				<Grid size={{ xs: 12, md: 5 }}>
 					<CenterBox alignItems='flex-start' padding={0}>
-						<Typography variant='body1' component='p'>
+						<Typography variant='body1' component='p' color='#FFFFFF'>
 							{paragraph}
 						</Typography>
 					</CenterBox>
