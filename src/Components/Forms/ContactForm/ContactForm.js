@@ -8,7 +8,7 @@ export default function ContactForm() {
 	const [state, handleSubmit] = useForm('manepldw');
 	if (state.succeeded) {
 		return (
-			<Typography component={'p'} variant='titleText'>
+			<Typography component={'p'}>
 				Thanks For Reaching Out - We're Respond Within 24 hours!
 			</Typography>
 		);

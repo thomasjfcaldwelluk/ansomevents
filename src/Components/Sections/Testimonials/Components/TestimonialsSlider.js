@@ -16,7 +16,7 @@ export default function TestimonialsSlider({ items }) {
 				<Box
 					key={item.id}
 					sx={{
-						minWidth: '85%',
+						minWidth: { xs: '100%', sm: '100%', md: '40%' },
 						scrollSnapAlign: 'start',
 					}}>
 					<TestimonialCard {...item} />

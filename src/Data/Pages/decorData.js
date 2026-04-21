@@ -22,27 +22,23 @@ const decorData = {
 
 				includes: [
 					{
-						text: 'Feature backdrop (Twinkle Wall) with balloon garland',
+						text: '2 Sailboards with balloon garland',
 						weight: 'bold',
-					},
-					{
-						text: 'Secondary backdrop choice: Circle Arch or Sailboard with balloon garland',
-						weight: 'bold',
-					},
-					{
-						text: 'Pedestal with styled vase & arrangement',
 					},
 					{
 						text: 'Selection of up to 3 non-chrome balloon colours',
 					},
 					{
-						text: 'Feature statement chair',
+						text: 'Cake pedestal or welcome table decor',
 					},
 					{
-						text: 'Customisable display boxes (wording or theme adjusted to suit your event)',
+						text: 'Personalized Acrylic sign with Easel ',
 					},
 					{
-						text: 'Personalised sign or statement phrase (event-appropriate wording)',
+						text: 'Table Design (3 tables or one long table)',
+					},
+					{
+						text: 'Plus choice of welcome reception, gift or cake table design/ styling',
 					},
 				],
 				price: {
@@ -62,28 +58,22 @@ const decorData = {
 					'A beautifully balanced package offering style, structure and visual interest. Ideal for celebrations that want a polished, cohesive look without feeling overdone.',
 				includes: [
 					{
-						text: 'Choice of backdrop: Twinkle Wall, Circle Arch or Sailboard with balloon garland',
+						text: 'Choice of Backdrop with balloon garland',
 						weight: 'bold',
-					},
-					{
-						text: 'Pedestal with styled vase & arrangement',
-					},
-					{
-						text: 'Feature statement chair',
-					},
-					{
-						text: 'Customisable display boxes (event wording tailored to suit)',
 					},
 					{
 						text: 'Selection of up to 3 non-chrome balloon colours',
 					},
 					{
-						text: 'Personalised sign or statement phrase (event-appropriate wording)',
+						text: 'Personalized Acrylic sign with Easel ',
+					},
+					{
+						text: 'Plus choice of welcome reception, gift or cake table design/ styling',
 					},
 				],
 				price: {
-					amount: 200,
-					display: 'from £350',
+					amount: 250,
+					display: 'from £250',
 				},
 				cta: {
 					label: 'Enquire Now',
@@ -102,13 +92,13 @@ const decorData = {
 						weight: 'bold',
 					},
 					{
-						text: 'Display boxes or Pedestal with styled vase & arrangement',
+						text: 'Cake Pedestal ',
 					},
 					{
 						text: 'Selection of up to 3 non-chrome balloon colours',
 					},
 					{
-						text: 'Personalised sign or statement phrase',
+						text: 'Personalized Acrylic sign with easel',
 					},
 				],
 				price: {

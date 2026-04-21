@@ -76,7 +76,7 @@ const weddingData = {
 						text: 'Either Arch with fabric & faux florals or Sailboard with balloon garland or Shimmer wall with balloon garland',
 					},
 					{
-						text: 'Styling for 5 guest tables + top couple’s table including - Table runners, faux white florals/greenery, LED candles',
+						text: 'Styling for 4 guest tables + top couple’s table including - Table runners, faux white florals/greenery, LED candles',
 					},
 				],
 			},
@@ -130,7 +130,7 @@ const weddingData = {
 				image:
 					'https://res.cloudinary.com/djjqsmlei/image/upload/v1773833429/Ansom%20Events/WeddingNeonSign_ywkfp4.webp',
 				name: 'Neon signs',
-				price: { amount: 100, display: 'from £100' },
+				price: { amount: 15, display: 'from £15' },
 			},
 			{
 				id: 2,
@@ -151,7 +151,7 @@ const weddingData = {
 				image:
 					'https://res.cloudinary.com/djjqsmlei/image/upload/v1775062934/Ansom%20Events/extraFlorals_hrcubt.webp',
 				name: 'Extra florals',
-				price: { amount: 200, display: 'from £200' },
+				price: { amount: 200, display: 'Price on Request' },
 			},
 		],
 	},

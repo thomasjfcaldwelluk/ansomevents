@@ -4,7 +4,7 @@ const homeData = {
 		adj: 'Ansom (adj.)',
 		subtitle: 'Cornish for something exceptionally good.',
 		heroImage:
-			'https://res.cloudinary.com/djjqsmlei/image/upload/e_sepia/v1776082817/Ansom%20Events/Home%20Page/homeHero_mcsx54.webp',
+			'https://res.cloudinary.com/djjqsmlei/image/upload/v1776082817/Ansom%20Events/Home%20Page/homeHero_mcsx54.webp',
 		alt: 'Ansom Events Set Up',
 		primaryCta: {
 			label: 'Enquire Here',
@@ -85,6 +85,26 @@ const homeData = {
 				rating: 5,
 				name: 'Georgia',
 				event: 'Baby Shower',
+				image:
+					'https://res.cloudinary.com/your-cloud/image/upload/reviewer3.jpg',
+			},
+			{
+				id: 'theresa-Birthday',
+				review:
+					'A wonderful service! Mel and Tom know their stuff inside out.Mel came round for a genuine no obligation chat and I realised that she knew her stuff EXTREMELY well and her added value would be.. well, invaluable.Mel and Tom came in and helped with the big stuff, but it was the little things that made the difference things that I hadn’t considered, but raised the party from great to excellent! They’re so easy to work with, have amazing ideas, go above and beyond and I don’t regret a single thing!Hire them!!',
+				rating: 5,
+				name: 'Theresa',
+				event: 'Birthday Party',
+				image:
+					'https://res.cloudinary.com/your-cloud/image/upload/reviewer3.jpg',
+			},
+			{
+				id: 'omolola-Birthday',
+				review:
+					'I had an amazing experience using Ansom Event. From the outset, I knew they’d deliver a fantastic job. Their quick responses and thoughtful exchanges of ideas and suggestions, coupled with their promptness, were truly impressive. The friendly and kind approach while remaining professional made the whole experience even better. The decoration was simply stunning and everyone kept complimenting and asking who had done it',
+				rating: 5,
+				name: 'Omolola',
+				event: 'Kids Birthday Party',
 				image:
 					'https://res.cloudinary.com/your-cloud/image/upload/reviewer3.jpg',
 			},

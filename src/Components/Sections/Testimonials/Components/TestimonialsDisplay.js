@@ -5,7 +5,7 @@ import TestimonialsGrid from './TestimonialsGrid';
 
 export default function TestimonialsDisplay({ items }) {
 	const theme = useTheme();
-	const isTabletDown = useMediaQuery(theme.breakpoints.down('md'));
+	const isTabletDown = useMediaQuery(theme.breakpoints.down('xl'));
 
 	return isTabletDown ? (
 		<TestimonialsSlider items={items} />
