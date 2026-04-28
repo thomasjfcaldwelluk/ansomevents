@@ -16,7 +16,7 @@ export default function LegalPage({ title, lastUpdated, sections }) {
 				url={`https://www.ansomevents.com/${title.toLowerCase().replace(/\s+/g, '-')}`}
 				image='https://www.ansomevents.com/og-image.jpg'
 			/>
-			<SectionWrapper>
+			<SectionWrapper variant='light'>
 				<PageTitle
 					pageHeader={title}
 					pageSubheader={`Last Updated: ${lastUpdated}`}
@@ -28,7 +28,7 @@ export default function LegalPage({ title, lastUpdated, sections }) {
 								flexDirection='column'
 								alignItems='flex-start'
 								padding={0}>
-								<Typography variant='h6' component={'h6'}>
+								<Typography variant='h6' component={'h3'}>
 									{section.title}
 								</Typography>
 								<Typography variant='body1' component={'p'}>

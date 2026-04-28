@@ -25,8 +25,10 @@ export default function Footer({
 								<Box
 									component='img'
 									src={footerData.company.logo}
-									alt='Company Logo'
+									alt='Ansom Events Logo'
+									loading='lazy'
 									sx={{ width: 150, mb: 2 }}
+									title='Ansom Events Logo'
 								/>
 								{footerData.company.address.map((addressLine, index) => (
 									<Typography variant='body1' component='p' key={index}>

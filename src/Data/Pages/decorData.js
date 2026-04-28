@@ -284,13 +284,23 @@ const decorData = {
 					display: 'from £25',
 				},
 			},
+			{
+				id: 'party-games',
+				image:
+					'https://res.cloudinary.com/djjqsmlei/image/upload/v1776789431/Ansom%20Events/Props/partyGames_1_gsmwkc.webp',
+				title: 'Party Games',
+				price: {
+					amount: 25,
+					display: 'Depending on Party Amount',
+				},
+			},
 		],
 	},
 	balloons: {
 		id: 'balloons',
 		title: 'Balloons Displays',
 		intro:
-			'Our bespoke balloon displays are the perfect way to make your event stand out.Ideal for weddings, parties, and special occasions of all kinds!',
+			'Our bespoke balloon displays are the perfect way to make your event stand out. Ideal for weddings, parties, and special occasions of all kinds!',
 		grid: { size: { sm: 6, md: 3 } },
 		items: [
 			{

@@ -24,6 +24,8 @@ export default function GalleryGridItem({ images }) {
 				component='img'
 				src={images.src}
 				alt={images.alt}
+				title={images.alt}
+				loading='lazy'
 				sx={{
 					width: '100%',
 					height: '100%',

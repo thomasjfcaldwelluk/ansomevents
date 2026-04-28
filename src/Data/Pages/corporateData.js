@@ -8,7 +8,7 @@ import EggOutlinedIcon from '@mui/icons-material/EggOutlined';
 const corporateData = {
 	hero: {
 		id: 'corporate-hero',
-		title: 'Corporate Events',
+		title: 'Corporate Event Planning, Styling & Prop Hire',
 		subtitle: 'Styled Without Stress',
 		primaryCta: {
 			label: 'Make an Enquiry',

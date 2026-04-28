@@ -119,7 +119,7 @@ const homeData = {
 		title: 'Beyond the Decor',
 		intro: 'A little about the team',
 		description:
-			'We are Thomas & Melissa we run Ansom Events! We love working together to create amazing & ansom events for our clients. Bring a blend of Cornwall hard work & creativity with Californian class, style & organization',
+			'We are Thomas & Melissa, we run Ansom Events! We love working together to create amazing & ansom events for our clients. Bringing a blend of Cornish hard work & creativity with Californian class, style & organization.',
 		image:
 			'https://res.cloudinary.com/djjqsmlei/image/upload/v1776181584/Ansom%20Events/Home%20Page/CaldwellHome_hswlie.webp',
 		alt: 'Image of Thomas & Melissa - Owners of Ansom Events',

@@ -5,7 +5,7 @@ import ChairAltOutlinedIcon from '@mui/icons-material/ChairAltOutlined';
 
 const weddingData = {
 	hero: {
-		title: 'Love Celebrations',
+		title: 'Romantic Event Styling & Love Celebrations',
 		subtitle: 'Make Memories',
 		image:
 			'https://res.cloudinary.com/djjqsmlei/image/upload/v1774278002/Ansom%20Events/HeroImage.2_mtewtu.webp',
@@ -93,7 +93,7 @@ const weddingData = {
 						text: 'Everything included in the Essential Package PLUS',
 						bold: true,
 					},
-					{ text: 'Styling for 8 guest tables' },
+					{ text: 'Styling for up to 8 guest tables' },
 					{ text: 'Artificial Floral Horn Arch(Green & White)' },
 				],
 			},

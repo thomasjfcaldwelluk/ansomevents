@@ -1,5 +1,5 @@
 const termsOfServiceData = {
-	title: 'Terms of Service',
+	title: 'Our Terms of Service',
 	lastUpdated: 'April 2026',
 	sections: [
 		{

@@ -1,7 +1,7 @@
 const aboutData = {
 	hero: {
 		id: 'about-us',
-		title: 'About Us',
+		title: 'Meet the Team Behind Ansom Events',
 		text: 'Learn What Makes Us Ansom',
 	},
 	story: {
@@ -9,7 +9,7 @@ const aboutData = {
 		title: 'Our Story',
 		intro: 'Story of Ansom Events',
 		paragraph:
-			'Ansom Events is a husband and wife team creating beautifully planned and thoughtfully styled events across Cornwall and Devon. Founded in 2024  With over 20 years of event planning experience in Los Angeles CA, our name is a little nod to Cornish slang “Ansom” meaning really good which is exactly the standard we bring to every event. Married since 2013 with the dream of working together and running a business, the opportunity to start Ansom Events arrived when they relocated to Cornwall to be closer to family. Based in Cornwall with their 3 Californian cats, when they not planning or styling ansom events, they can be found traveling the world or exploring the beautiful Cornish coast.',
+			'Ansom Events is a husband and wife team creating beautifully planned and thoughtfully styled events across Cornwall and Devon. Founded in 2024  With over 20 years of event planning experience in Los Angeles CA, our name is a little nod to Cornish slang “Ansom” meaning really good which is exactly the standard we bring to every event. Married since 2013 with the dream of working together and running a business, the opportunity to start Ansom Events arrived when they relocated to Cornwall to be closer to family. Based in Cornwall with their 3 Californian cats, when they are not planning or styling ansom events, they can be found traveling the world or exploring the beautiful Cornish coast.',
 	},
 	team: {
 		id: 'meet-the-team',
@@ -25,8 +25,8 @@ const aboutData = {
 			},
 			{
 				name: 'Melissa Caldwell',
-				role: 'Lead Event Planner',
-				bio: 'Melissa spent her childhood in Orange County California. Within walking distance of Disneyland, where she spent many a day, developing her love of all things magical and creative. After graduating college she found employment within the Disney company firstly as a server at a restaurant then as a sales manager & events producer. Wanting to expand her events experience she then moved on to work for a high end event rental company where she styled and produced over 40 events each year for the last 15 years. Events range from High School proms to corporate gales & everything between. Melissa brings her extensive event planning experience and creative vision to every event, ensuring that each one is executed flawlessly.',
+				role: 'Co-Founder & Lead Event Planner',
+				bio: 'Melissa spent her childhood in Orange County California. Within walking distance of Disneyland, where she spent many a day, developing her love of all things magical and creative. After graduating college she found employment on Disney property firstly as a server at a restaurant then as a sales manager & events producer. Wanting to expand her events experience she then moved on to work for a high end event planning company where she styled and produced over 40 events each year for the last 15 years. Events range from high school proms to corporate gales & everything between. Melissa brings her extensive event planning experience and creative vision to every event, ensuring that each one is executed flawlessly.',
 				photo:
 					'https://res.cloudinary.com/djjqsmlei/image/upload/v1773846300/Ansom%20Events/about%20us/Mel_qbv7xb.webp',
 			},

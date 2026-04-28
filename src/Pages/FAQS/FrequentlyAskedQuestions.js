@@ -17,27 +17,31 @@ export default function FrequentlyAskedQuestions() {
 				url='https://www.ansomevents.com/faqs'
 				image='https://www.ansomevents.com/og-image.jpg'
 			/>
-			<SectionWrapper>
+			<SectionWrapper variant='light'>
 				<PageTitle
-					pageHeader={'FAQs'}
+					pageHeader={'Frequently Asked Questions'}
 					pageSubheader={'All Your Question Answered'}
 				/>
 			</SectionWrapper>
-			<GridLayout spacing={0}>
-				{faqData.map((item, index) => (
-					<Grid size={{ xs: 12 }} key={index}>
-						<CenterBox
-							padding={2}
-							flexDirection='column'
-							alignItems='flex-start'>
-							<Typography variant='body2' gutterBottom>
-								{item.question}
-							</Typography>
-							<Typography variant='body1'>{item.answer}</Typography>
-						</CenterBox>
-					</Grid>
-				))}
-			</GridLayout>
+			<SectionWrapper variant='dark'>
+				<GridLayout spacing={0}>
+					{faqData.map((item, index) => (
+						<Grid size={{ xs: 12 }} key={index}>
+							<CenterBox
+								padding={2}
+								flexDirection='column'
+								alignItems='flex-start'>
+								<Typography variant='h6' gutterBottom sx={{ color: '#fff' }}>
+									{item.question}
+								</Typography>
+								<Typography variant='body1' sx={{ color: '#fff' }}>
+									{item.answer}
+								</Typography>
+							</CenterBox>
+						</Grid>
+					))}
+				</GridLayout>
+			</SectionWrapper>
 		</PageWrapper>
 	);
 }

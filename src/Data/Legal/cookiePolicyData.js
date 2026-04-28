@@ -1,5 +1,5 @@
 const cookiePolicyData = {
-	title: 'Cookie Policy',
+	title: 'Ansom Events Cookie Policy',
 	lastUpdated: 'April 2026',
 	sections: [
 		{

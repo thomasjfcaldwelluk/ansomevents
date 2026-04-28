@@ -9,7 +9,9 @@ export default function Logo() {
 			<Box
 				component='img'
 				src={ansomLogo}
-				alt='Ansom Events'
+				alt='Ansom Events Logo'
+				loading='lazy'
+				title='Ansom Events Logo'
 				sx={{ height: 48 }}
 			/>
 		</Box>

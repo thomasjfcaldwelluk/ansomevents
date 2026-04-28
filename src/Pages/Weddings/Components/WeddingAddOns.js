@@ -15,7 +15,12 @@ export default function WeddingAddOns({ title, intro, items }) {
 				{items.map((item) => (
 					<Grid key={item.id} size={{ xs: 12, sm: 6, md: 4, lg: 3 }}>
 						<Card variant='primary'>
-							<CardImage image={item.image} alt={item.alt} />
+							<CardImage
+								image={item.image}
+								alt={item.name}
+								loading='lazy'
+								title={item.name}
+							/>
 							<CardContent sx={{ flexGrow: 1, mt: 'auto' }}>
 								<CardTitle>{item.name}</CardTitle>
 								<SectionDivider variant='gold' />

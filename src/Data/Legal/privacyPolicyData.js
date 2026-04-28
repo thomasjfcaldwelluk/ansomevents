@@ -1,5 +1,5 @@
 const privacyPolicyData = {
-	title: 'Privacy Policy',
+	title: 'Ansom Events Privacy Policy',
 	lastUpdated: 'April 2026',
 	sections: [
 		{

@@ -18,11 +18,13 @@ export default function AboutTeam({ id, title, intro, members }) {
 							component={'img'}
 							src={member.photo}
 							alt={`${member.name}'s photo`}
+							title={`${member.name}'s photo`}
+							loading='lazy'
 							sx={{ width: '50%', borderRadius: '50%', boxShadow: 2 }}
 						/>
 						<Typography
 							variant='h6'
-							component={'h6'}
+							component={'h4'}
 							sx={{ fontSize: '1.3rem' }}>
 							{member.name}
 						</Typography>

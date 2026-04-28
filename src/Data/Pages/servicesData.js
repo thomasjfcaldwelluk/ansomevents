@@ -4,10 +4,10 @@ import InventoryOutlinedIcon from '@mui/icons-material/InventoryOutlined';
 
 const servicesData = {
 	hero: {
-		title: 'Our Services',
+		title: 'Services We Offer At Ansom Events',
 		text: 'Expert support From Ansom.',
 		description:
-			'At Ansom Events we do not just organize, style & manage your events we also offer a range of other services such as design and print services to day-of coordination, we offer a range of services to support your event needs. Below is a list of support services we offer, if you do not see what you need please reach out to us and we can discuss how we can support your event needs.',
+			'At Ansom Events we do not just organise, style & manage your events.We also offer a range of other services such as design/ print services, day-of coordination to full event planning to support your event needs.',
 		image:
 			'https://res.cloudinary.com/djjqsmlei/image/upload/e_auto_enhance/v1776086914/Ansom%20Events/servicesNew_kcrbls.webp',
 	},
@@ -24,9 +24,9 @@ const servicesData = {
 			title: 'Ansom & Easy',
 			icon: AllInboxOutlinedIcon,
 			description:
-				'Ansom & Easy is a service where you can use our supplies to host your event. Want to save money or your event is on location, save time by telling us what supplies you need and we can pack it them up for you.',
+				'Ansom & Easy is a service where you can use our supplies to host your event. Want to save money or your event is on location, save time by telling us what supplies you need and we can pack them up for you.',
 			image:
-				'https://res.cloudinary.com/djjqsmlei/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1770206835/Ansom%20Events/AnsomAndEasy/partyPackTwo_vlmkia.webp',
+				'https://res.cloudinary.com/djjqsmlei/image/upload/v1777387617/Ansom%20Events/AnsomAndEasy/ansomAndEasy_t5sjis.webp',
 		},
 		{
 			title: 'Vendor Coordination',

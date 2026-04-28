@@ -7,7 +7,7 @@ export default function WeddingHero({ title, subtitle, image }) {
 	return (
 		<SectionWrapper id='wedding-hero' variant='light'>
 			<PageTitle pageHeader={title} pageSubheader={subtitle} />
-			<HeroImage src={image} alt={title} />
+			<HeroImage src={image} alt={title} title={title} loading='lazy' />
 		</SectionWrapper>
 	);
 }
