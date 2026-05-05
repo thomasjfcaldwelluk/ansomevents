@@ -14,9 +14,9 @@ export default function Weddings() {
 		<PageWrapper id='weddings' aria-label='Weddings with Ansom Events'>
 			<SEO
 				title='Wedding Planning Services in Plymouth | Ansom Events'
-				description='Make your dream wedding a reality with Ansom Events. We offer expert wedding planning services in Plymouth, ensuring your special day is unforgettable.'
+				description='Make your dream wedding a reality with Ansom Events. We offer expert wedding planning services in Devon and Cornwall, ensuring your special day is unforgettable.'
 				url='https://www.ansomevents.com/love-celebrations'
-				image='https://www.ansomevents.com/og-image.jpg'
+				image='public/ansom-events-og-image.jpg'
 				canonical='https://www.ansomevents.com/love-celebrations'
 			/>
 			<WeddingHero {...weddingData.hero} />

@@ -19,7 +19,7 @@ const corporateData = {
 			link: '#services',
 		},
 		image:
-			'https://res.cloudinary.com/djjqsmlei/image/upload/v1776086914/Ansom%20Events/corpAgain_y0nhbt.webp',
+			' https://res.cloudinary.com/djjqsmlei/image/upload/v1777647643/Ansom%20Events/corporateEventsHero_vqwpp4.webp',
 		alt: 'An example of a corporate event styled by Ansom Events',
 	},
 
@@ -79,7 +79,7 @@ const corporateData = {
 		intro:
 			'From first concept to final pack-down, we work alongside your team to deliver a smooth, professional experience.',
 		image:
-			'https://res.cloudinary.com/djjqsmlei/image/upload/v1770204675/Ansom%20Events/Gallery/newGallerySq1_mjh9aq.webp',
+			'https://res.cloudinary.com/djjqsmlei/image/upload/v1777485439/Ansom%20Events/welcomeSignCorp_dz4fl8.webp',
 		alt: 'An example of a corporate event styled by Ansom Events',
 
 		eventTypes: [

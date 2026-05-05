@@ -9,7 +9,7 @@ const servicesData = {
 		description:
 			'At Ansom Events we do not just organise, style & manage your events.We also offer a range of other services such as design/ print services, day-of coordination to full event planning to support your event needs.',
 		image:
-			'https://res.cloudinary.com/djjqsmlei/image/upload/e_auto_enhance/v1776086914/Ansom%20Events/servicesNew_kcrbls.webp',
+			'https://res.cloudinary.com/djjqsmlei/image/upload/v1777481340/Ansom%20Events/ServicesAprilNew_rvwjdh.webp',
 	},
 	services: [
 		{

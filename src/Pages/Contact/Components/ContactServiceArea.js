@@ -20,12 +20,14 @@ export default function ContactServiceArea({ id, title, paragraph, image }) {
 							{paragraph}
 						</Typography>
 					</CenterBox>
-					<CenterBox marginTop={2}>
+					<CenterBox>
 						<Box
 							component={'img'}
 							src={image}
 							alt='Service Area'
-							width={'55%'}
+							width={'100%'}
+							borderRadius={2}
+							sx={{ objectFit: 'cover' }}
 						/>
 					</CenterBox>
 				</Grid>

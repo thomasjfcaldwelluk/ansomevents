@@ -98,7 +98,7 @@ const contactData = {
 		paragraph:
 			'We are based in Saltash, Cornwall, so we’re ideally located to serve clients across Cornwall and Devon. We’ve built strong relationships with trusted venues, suppliers, and entertainers throughout the region, helping us bring everything together seamlessly. Whether you’re planning something local or a little further afield, we’re always happy to travel for the right event. Travel costs may apply for events outside of our core service area.',
 		image:
-			'https://res.cloudinary.com/djjqsmlei/image/upload/v1773750875/Ansom%20Events/ShineTable_zd9dfv.webp',
+			'https://res.cloudinary.com/djjqsmlei/image/upload/v1777986194/Ansom%20Events/contactImage_dgk7ee.webp',
 	},
 
 	cta: {
