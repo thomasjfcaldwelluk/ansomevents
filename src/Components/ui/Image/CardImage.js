@@ -12,7 +12,6 @@ export default function CardImage({
 		<Box
 			sx={{
 				width: '100%',
-				aspectRatio: ratio,
 				overflow: 'hidden',
 			}}>
 			<CardMedia
@@ -22,9 +21,13 @@ export default function CardImage({
 				variant={variant}
 				loading='lazy'
 				sx={{
-					width: '100%',
-					height: '100%',
+					aspectRatio: ratio,
+					height: 'auto',
 					objectFit: 'cover',
+					transition: 'transform 0.3s ease',
+					'&:hover': {
+						transform: 'scale(1.05)',
+					},
 				}}
 				{...props}
 			/>

@@ -8,7 +8,7 @@ const weddingData = {
 		title: 'Romantic Event Styling & Love Celebrations',
 		subtitle: 'Make Memories',
 		image:
-			'https://res.cloudinary.com/djjqsmlei/image/upload/v1774278002/Ansom%20Events/HeroImage.2_mtewtu.webp',
+			'https://res.cloudinary.com/djjqsmlei/image/upload/e_auto_enhance/q_auto/f_auto/v1774278002/Ansom%20Events/HeroImage.2_mtewtu.webp',
 		ctas: [
 			{
 				id: 'view-packages',
@@ -128,28 +128,28 @@ const weddingData = {
 			{
 				id: 1,
 				image:
-					'https://res.cloudinary.com/djjqsmlei/image/upload/v1773833429/Ansom%20Events/WeddingNeonSign_ywkfp4.webp',
+					'https://res.cloudinary.com/djjqsmlei/image/upload/e_auto_enhance/q_auto/f_auto/v1773833429/Ansom%20Events/WeddingNeonSign_ywkfp4.webp',
 				name: 'Neon signs',
 				price: { amount: 15, display: 'from £15' },
 			},
 			{
 				id: 2,
 				image:
-					'https://res.cloudinary.com/djjqsmlei/image/upload/c_pad,b_gen_fill,ar_4:3/v1773833429/Ansom%20Events/weddingSweetCart_ualkep.webp',
+					'https://res.cloudinary.com/djjqsmlei/image/upload/e_auto_enhance/q_auto/f_auto/c_pad,b_gen_fill,ar_4:3/v1773833429/Ansom%20Events/weddingSweetCart_ualkep.webp',
 				name: 'Sweet cart',
 				price: { amount: 150, display: 'from £150' },
 			},
 			{
 				id: 3,
 				image:
-					'https://res.cloudinary.com/djjqsmlei/image/upload/v1774962339/Ansom%20Events/welcomeSign_ukcwwc.webp',
+					'https://res.cloudinary.com/djjqsmlei/image/upload/e_auto_enhance/q_auto/f_auto/v1774962339/Ansom%20Events/welcomeSign_ukcwwc.webp',
 				name: 'Welcome easel',
 				price: { amount: 75, display: 'from £75' },
 			},
 			{
 				id: 4,
 				image:
-					'https://res.cloudinary.com/djjqsmlei/image/upload/v1775062934/Ansom%20Events/extraFlorals_hrcubt.webp',
+					'https://res.cloudinary.com/djjqsmlei/image/upload/e_auto_enhance/q_auto/f_auto/v1775062934/Ansom%20Events/extraFlorals_hrcubt.webp',
 				name: 'Extra florals',
 				price: { amount: 200, display: 'Price on Request' },
 			},

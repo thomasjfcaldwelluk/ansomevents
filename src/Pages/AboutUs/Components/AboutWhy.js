@@ -16,7 +16,11 @@ export default function AboutWhy({ id, title, intro, points }) {
 						sx={{ textAlign: 'center' }}>
 						<Card padding={0}>
 							<CardContent>
-								<Typography variant='body1' component={'p'}>
+								<Typography
+									variant='body1'
+									component={'p'}
+									marginTop={'10px'}
+									fontWeight={600}>
 									{point}
 								</Typography>
 							</CardContent>

@@ -27,7 +27,9 @@ export default function Footer({
 									src={footerData.company.logo}
 									alt='Ansom Events Logo'
 									loading='lazy'
-									sx={{ width: 150, mb: 2 }}
+									width={150}
+									height={50}
+									sx={{ mb: 2 }}
 									title='Ansom Events Logo'
 								/>
 								{footerData.company.address.map((addressLine, index) => (
@@ -50,7 +52,10 @@ export default function Footer({
 						{footerData.socials && (
 							<Box>
 								{footerData.socials.links.map((social, index) => (
-									<IconButton key={index} href={social.url}>
+									<IconButton
+										key={index}
+										href={social.url}
+										aria-label={social.ariaLabel}>
 										<IconWrapper
 											Icon={social.icon}
 											colorVariant='muted'

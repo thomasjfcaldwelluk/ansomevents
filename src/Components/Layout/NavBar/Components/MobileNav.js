@@ -14,7 +14,9 @@ export default function MobileNav({ links }) {
 
 	return (
 		<>
-			<IconButton onClick={() => setOpen(true)}>
+			<IconButton
+				onClick={() => setOpen(true)}
+				aria-label='Open navigation menu'>
 				<MenuIcon />
 			</IconButton>
 

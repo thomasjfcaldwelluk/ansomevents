@@ -10,7 +10,6 @@ export default function Logo() {
 				component='img'
 				src={ansomLogo}
 				alt='Ansom Events Logo'
-				loading='lazy'
 				title='Ansom Events Logo'
 				sx={{ height: 48 }}
 			/>

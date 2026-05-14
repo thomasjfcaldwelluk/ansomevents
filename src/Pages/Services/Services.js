@@ -12,7 +12,6 @@ export default function Services() {
 		<PageWrapper id='services' aria-label='Services At Ansom Events'>
 			<SEO
 				title='Services We Offer — Ansom Events'
-				description='We create amazing events & décor in Cornwall & Devon.'
 				url='https://www.ansomevents.com'
 				image='https://www.ansomevents.com/og-image.jpg'
 				canonical='https://www.ansomevents.com/services'

@@ -8,7 +8,7 @@ export default function AboutStory({ id, title, intro, paragraph }) {
 	return (
 		<SectionWrapper id={id} variant='dark'>
 			<SectionHeader sectionHeader={title} subHeader={intro} />
-			<CenterBox padding={{ xs: 2, lg: 0 }} maxWidth='1000px' mx='auto'>
+			<CenterBox padding={{ xs: 2, lg: 0 }} maxWidth='1400px' mx='auto'>
 				<Typography variant='smallBody'>{paragraph}</Typography>
 			</CenterBox>
 		</SectionWrapper>

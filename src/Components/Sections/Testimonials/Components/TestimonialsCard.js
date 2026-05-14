@@ -20,7 +20,8 @@ export default function TestimonialsCard({
 	const [expanded, setExpanded] = useState(false);
 	return (
 		<Card variant='secondary'>
-			<CardContent sx={{ padding: 4 }}>
+			<CardContent
+				sx={{ padding: 4, gap: 2, display: 'flex', flexDirection: 'column' }}>
 				<Typography
 					variant='body1'
 					sx={{
@@ -58,7 +59,9 @@ export default function TestimonialsCard({
 					}}>
 					<Avatar src={image} />
 					<Box>
-						<Typography variant='body2'>{name}</Typography>
+						<Typography variant='body2' fontWeight={700}>
+							{name}
+						</Typography>
 						<Typography variant='body1'>{event}</Typography>
 					</Box>
 				</CenterBox>

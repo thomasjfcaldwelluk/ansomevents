@@ -7,7 +7,7 @@ export default function PageWrapper({ children, sx = {} }) {
 			component={'main'}
 			sx={{
 				width: '100%',
-				maxWidth: '2000px',
+				maxWidth: '1920px',
 				minWidth: '300px',
 				mx: 'auto',
 

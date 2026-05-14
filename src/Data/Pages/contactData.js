@@ -76,18 +76,27 @@ const contactData = {
 		socials: [
 			{
 				id: 'facebook',
-				href: 'https://www.facebook.com/',
+				href: 'https://www.facebook.com/ansomevents',
 				icon: FacebookRoundedIcon,
+				ariaLabel: 'Visit our Facebook page',
+				title: 'Ansom Events Facebook',
+				rel: 'noopener noreferrer',
 			},
 			{
 				id: 'instagram',
-				href: 'https://www.instagram.com/ansomevents/',
+				href: 'https://www.instagram.com/ansomeventsuk/',
 				icon: InstagramIcon,
+				ariaLabel: 'Visit our Instagram page',
+				title: 'Ansom Events Instagram',
+				rel: 'noopener noreferrer',
 			},
 			{
 				id: 'whatsapp',
 				href: 'https://wa.me/447310009764',
 				icon: WhatsAppIcon,
+				ariaLabel: 'Chat with us on WhatsApp',
+				title: 'Ansom Events WhatsApp',
+				rel: 'noopener noreferrer',
 			},
 		],
 	},
@@ -98,7 +107,7 @@ const contactData = {
 		paragraph:
 			'We are based in Saltash, Cornwall, so we’re ideally located to serve clients across Cornwall and Devon. We’ve built strong relationships with trusted venues, suppliers, and entertainers throughout the region, helping us bring everything together seamlessly. Whether you’re planning something local or a little further afield, we’re always happy to travel for the right event. Travel costs may apply for events outside of our core service area.',
 		image:
-			'https://res.cloudinary.com/djjqsmlei/image/upload/v1777986194/Ansom%20Events/contactImage_dgk7ee.webp',
+			'https://res.cloudinary.com/djjqsmlei/image/upload/e_auto_enhance/q_auto/f_auto/v1777986194/Ansom%20Events/contactImage_dgk7ee.webp',
 	},
 
 	cta: {

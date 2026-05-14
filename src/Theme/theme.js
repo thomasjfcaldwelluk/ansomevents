@@ -261,6 +261,7 @@ let theme = createTheme({
 					backgroundColor: '#FAFAFA',
 					margin: 0,
 					padding: 0,
+					fontDisplay: 'swap',
 				},
 			},
 		},

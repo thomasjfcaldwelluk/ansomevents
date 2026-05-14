@@ -4,7 +4,7 @@ const homeData = {
 		adj: 'Ansom (adj.)',
 		subtitle: 'Cornish for something exceptionally good.',
 		heroImage:
-			'https://res.cloudinary.com/djjqsmlei/image/upload/v1776082817/Ansom%20Events/Home%20Page/homeHero_mcsx54.webp',
+			'https://res.cloudinary.com/djjqsmlei/image/upload/e_auto_enhance/w_1200/q_auto/f_auto/v1776082817/Ansom%20Events/Home%20Page/homeHero_mcsx54.webp',
 		alt: 'Ansom Events Set Up',
 		primaryCta: {
 			label: 'Enquire Here',
@@ -14,7 +14,6 @@ const homeData = {
 			label: 'See Our Styles',
 			href: '/decor',
 		},
-		image: 'https://res.cloudinary.com/your-cloud-name/image/upload/hero.jpg',
 	},
 	features: {
 		title: 'Events We Style',
@@ -22,7 +21,7 @@ const homeData = {
 		items: [
 			{
 				image:
-					'https://res.cloudinary.com/djjqsmlei/image/upload/v1776177749/Ansom%20Events/Home%20Page/weddingHome_vd7bh4.webp',
+					'https://res.cloudinary.com/djjqsmlei/image/upload/e_auto_enhance/q_auto/f_auto/v1778166541/Ansom%20Events/Home%20Page/weddingHome_vd7bh4.webp',
 				title: 'Love Celebrations',
 				caption: 'Weddings, Elopements, Engagements',
 				description: 'Elegant and timeless wedding styling.',
@@ -30,7 +29,7 @@ const homeData = {
 			},
 			{
 				image:
-					'https://res.cloudinary.com/djjqsmlei/image/upload/v1776177746/Ansom%20Events/Home%20Page/birthdayHome_unrakq.webp',
+					'https://res.cloudinary.com/djjqsmlei/image/upload/e_auto_enhance/q_auto/f_auto/v1778167123/Ansom%20Events/Home%20Page/birthdayHome_unrakq.webp',
 				title: 'Private Parties',
 				caption: 'Birthdays, Anniversaries, Showers',
 				description: 'Professional and impactful private party styling.',
@@ -38,7 +37,7 @@ const homeData = {
 			},
 			{
 				image:
-					'https://res.cloudinary.com/djjqsmlei/image/upload/v1776177748/Ansom%20Events/Home%20Page/CorporateHome_jdp12h.webp',
+					'https://res.cloudinary.com/djjqsmlei/image/upload/e_auto_enhance/q_auto/f_auto/v1778166890/Ansom%20Events/Home%20Page/CorporateHome_jdp12h.webp',
 				title: 'Corporate Events',
 				caption: 'Corporate, Launches, Galas',
 				description: 'Intimate and memorable corporate event styling.',
@@ -46,7 +45,7 @@ const homeData = {
 			},
 			{
 				image:
-					'https://res.cloudinary.com/djjqsmlei/image/upload/v1776177747/Ansom%20Events/Home%20Page/bespokeHome_rdsjle.webp',
+					'https://res.cloudinary.com/djjqsmlei/image/upload/e_auto_enhance/q_auto/f_auto/v1778167376/Ansom%20Events/Home%20Page/bespokeHome_rdsjle.webp',
 				title: 'Bespoke Parties',
 				caption: 'Themes, Pop-ups, Seasonal',
 				description: 'Intimate and memorable bespoke party styling.',
@@ -121,7 +120,7 @@ const homeData = {
 		description:
 			'We are Thomas & Melissa, we run Ansom Events! We love working together to create amazing & ansom events for our clients. Bringing a blend of Cornish hard work & creativity with Californian class, style & organization.',
 		image:
-			'https://res.cloudinary.com/djjqsmlei/image/upload/v1776181584/Ansom%20Events/Home%20Page/CaldwellHome_hswlie.webp',
+			'https://res.cloudinary.com/djjqsmlei/image/upload/e_auto_enhance/q_auto/f_auto/v1778166050/Ansom%20Events/Home%20Page/CaldwellHome_hswlie.webp',
 		alt: 'Image of Thomas & Melissa - Owners of Ansom Events',
 		text: 'Meet the hands & hearts behind your milestones.',
 		cta: {

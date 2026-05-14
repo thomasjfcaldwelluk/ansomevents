@@ -5,6 +5,7 @@ export default function SEO({ title, description, url, image, canonical }) {
 	return (
 		<>
 			<Title>{title}</Title>
+			<Meta property='og:type' content='website' />
 			<Meta name='description' content={description} />
 			{/* OpenGraph / social */}
 			{url && <Meta property='og:url' content={url} />}

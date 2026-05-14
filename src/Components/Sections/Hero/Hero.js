@@ -40,9 +40,9 @@ export default function Hero({
 									key={index}
 									style={{
 										display: 'block',
-										opacity: 0,
-										animation: `fadeUp 0.6s ease forwards`,
-										animationDelay: `${index * 0.3}s`,
+										// opacity: 0,
+										// animation: `fadeUp 0.6s ease forwards`,
+										// animationDelay: `${index * 0.3}s`,
 									}}>
 									{line}
 								</span>
@@ -78,9 +78,15 @@ export default function Hero({
 						component='img'
 						src={heroImage}
 						alt={alt}
+						title={alt}
+						loading='eager'
+						fetchPriority='high'
+						width={1200}
+						height={900}
 						sx={{
+							display: 'block',
 							width: '100%',
-							height: '100%',
+							height: 'auto',
 							objectFit: 'cover',
 							borderRadius: 2,
 						}}

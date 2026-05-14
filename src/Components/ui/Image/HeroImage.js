@@ -1,7 +1,12 @@
 import React from 'react';
 import { Box } from '@mui/material';
 
-export default function HeroImage({ src, alt = '', title = '', height = 400 }) {
+export default function HeroImage({
+	src,
+	alt = 'Ansom Events Hero Image',
+	title = '',
+	height = 475,
+}) {
 	return (
 		<Box sx={{ position: 'relative' }}>
 			<Box

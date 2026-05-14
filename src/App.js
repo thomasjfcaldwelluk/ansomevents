@@ -1,23 +1,26 @@
+import React, { Suspense, lazy } from 'react';
 import Footer from './Components/Layout/Footer/Footer';
 import NavBar from './Components/Layout/NavBar/NavBar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import useAnalytics from './Hooks/useAnalytics';
-import CookieConsent from 'react-cookie-consent';
 import ScrollToTop from './Utils/ScrollToTop';
 import ScrollToHash from 'Utils/StrollToHash';
-import Home from './Pages/Home/Home';
-import Wedding from './Pages/Weddings/Weddings';
-import Contact from './Pages/Contact/Contact';
-import About from './Pages/AboutUs/About';
-import Services from './Pages/Services/Services';
-import Gallery from './Pages/Gallery/Gallery';
-import Decor from './Pages/Decor/Decor';
-import Corporate from './Pages/Corporate/Corporate';
-import FrequentlyAskedQuestions from './Pages/FAQS/FrequentlyAskedQuestions';
-import CookiePolicy from './Pages/Legal/CookiePolicy';
-import PrivacyPolicy from './Pages/Legal/PrivacyPolicy';
-import TermsOfService from './Pages/Legal/TermsOfService';
-import 'leaflet/dist/leaflet.css';
+import CookieConsent from 'react-cookie-consent';
+
+const Home = lazy(() => import('./Pages/Home/Home'));
+const Wedding = lazy(() => import('./Pages/Weddings/Weddings'));
+const Contact = lazy(() => import('./Pages/Contact/Contact'));
+const About = lazy(() => import('./Pages/AboutUs/About'));
+const Services = lazy(() => import('./Pages/Services/Services'));
+const Gallery = lazy(() => import('./Pages/Gallery/Gallery'));
+const Decor = lazy(() => import('./Pages/Decor/Decor'));
+const Corporate = lazy(() => import('./Pages/Corporate/Corporate'));
+const FrequentlyAskedQuestions = lazy(
+	() => import('./Pages/FAQS/FrequentlyAskedQuestions'),
+);
+const CookiePolicy = lazy(() => import('./Pages/Legal/CookiePolicy'));
+const PrivacyPolicy = lazy(() => import('./Pages/Legal/PrivacyPolicy'));
+const TermsOfService = lazy(() => import('./Pages/Legal/TermsOfService'));
 
 const AnalyticsWrapper = ({ children }) => {
 	useAnalytics(); // Call the analytics hook
@@ -31,25 +34,30 @@ function App() {
 				<ScrollToHash />
 				<AnalyticsWrapper>
 					<NavBar />
-					<Routes>
-						{/* Top level nav routes */}
-						<Route path='/' element={<Home />} />
-						<Route path='/love-celebrations' element={<Wedding />} />
-						<Route path='/contact-us' element={<Contact />} />
-						<Route path='/gallery' element={<Gallery />} />
-						<Route path='/decor' element={<Decor />} />
-						<Route path='/corporate' element={<Corporate />} />
-						<Route path='/services' element={<Services />} />
-						{/* Bottom level nav routes */}
-						<Route path='/about-us' element={<About />} />
-						<Route path='/faqs' element={<FrequentlyAskedQuestions />} />
-						{/* Legal pages */}
-						<Route path='/cookie-policy' element={<CookiePolicy />} />
-						<Route path='/privacy-policy' element={<PrivacyPolicy />} />
-						<Route path='/terms-of-service' element={<TermsOfService />} />{' '}
-						{/* Catch-all route for 404 */}{' '}
-						<Route path='*' element={<Home />} />
-					</Routes>
+					<Suspense fallback={<div>Loading...</div>}>
+						<Routes>
+							{/* Top level nav routes */}
+							<Route path='/' element={<Home />} />
+							<Route path='/love-celebrations' element={<Wedding />} />
+							<Route path='/contact-us' element={<Contact />} />
+							<Route path='/gallery' element={<Gallery />} />
+							<Route path='/decor' element={<Decor />} />
+							<Route path='/corporate' element={<Corporate />} />
+							<Route path='/services' element={<Services />} />
+							{/* Bottom level nav routes */}
+							<Route path='/about-us' element={<About />} />
+							<Route path='/faqs' element={<FrequentlyAskedQuestions />} />
+							{/* Legal pages */}
+							<Route path='/cookie-policy' element={<CookiePolicy />} />
+							<Route path='/privacy-policy' element={<PrivacyPolicy />} />
+							<Route
+								path='/terms-of-service'
+								element={<TermsOfService />}
+							/>{' '}
+							{/* Catch-all route for 404 */}{' '}
+							<Route path='*' element={<Home />} />
+						</Routes>
+					</Suspense>
 					<CookieConsent
 						location='bottom'
 						buttonText='Accept'
