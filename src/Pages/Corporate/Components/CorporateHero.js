@@ -14,7 +14,6 @@ export default function CorporateHero({
 	return (
 		<SectionWrapper id={id} variant='light'>
 			<PageTitle pageHeader={title} pageSubheader={subtitle} />
-			<HeroImage src={image} />
 		</SectionWrapper>
 	);
 }

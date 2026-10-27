@@ -9,7 +9,7 @@ export default function ContactForm() {
 	if (state.succeeded) {
 		return (
 			<Typography component={'p'}>
-				Thanks For Reaching Out - We're Respond Within 24 hours!
+				Thanks For Reaching Out - We'll Respond Within 24 hours!
 			</Typography>
 		);
 	}

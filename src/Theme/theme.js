@@ -258,7 +258,7 @@ let theme = createTheme({
 					},
 				},
 				body: {
-					backgroundColor: '#FAFAFA',
+					backgroundColor: '#FAF8F6',
 					margin: 0,
 					padding: 0,
 					fontDisplay: 'swap',

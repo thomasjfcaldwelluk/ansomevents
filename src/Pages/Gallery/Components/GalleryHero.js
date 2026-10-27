@@ -5,9 +5,11 @@ import React from 'react';
 
 export default function GalleryHero({ pageHeader, pageSubHeader, mainImage }) {
 	return (
-		<SectionWrapper aria-label='Gallery Hero Section' variant='light'>
+		<SectionWrapper
+			aria-label='Gallery Hero Section'
+			variant='light'
+			id='gallery-hero'>
 			<PageTitle pageHeader={pageHeader} pageSubheader={pageSubHeader} />
-			<HeroImage src={mainImage} />
 		</SectionWrapper>
 	);
 }

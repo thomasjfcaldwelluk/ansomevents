@@ -7,7 +7,7 @@ export default function DecorHero({ variant, title, subTitle, image }) {
 	return (
 		<SectionWrapper id='decor-hero' variant={variant}>
 			<PageTitle pageHeader={title} pageSubheader={subTitle} />
-			<HeroImage src={image} alt={title} />
+			{/* <HeroImage src={image} alt={title} /> */}
 		</SectionWrapper>
 	);
 }
